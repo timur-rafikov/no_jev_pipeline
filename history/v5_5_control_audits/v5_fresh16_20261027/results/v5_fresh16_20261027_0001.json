@@ -1,0 +1,21 @@
+{
+  "case_id": "v5_fresh16_20261027_0001",
+  "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_31",
+  "task_id": "multi_turn_base_31",
+  "source_hash": "31635615dc03ec1d9d1c04d7ba53b99ac1f8ad803c2e5bf70177861d8564ca04",
+  "protocol": "no-jev-edit-review-v5.5",
+  "status": "rejected",
+  "generation": {
+    "deletion": null,
+    "reason": "The last assistant message contains only future intent and planned steps followed by a tool call, with no retrospective completion claim about the task or actions taken."
+  },
+  "generation_request": "259a9b1195bd4a4da98d6c32c3bfcb5886c701647ccc789c5dc0f94018d5983c",
+  "family": null,
+  "decision": {
+    "status": "rejected",
+    "reasons": [
+      "no_candidate"
+    ],
+    "label_policy": "two-blind-visible-trace-reviews-v3"
+  }
+}

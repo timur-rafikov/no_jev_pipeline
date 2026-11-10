@@ -1,0 +1,2 @@
+# Optional; without this the runner uses the original conservative byte reserve.
+tiktoken==0.12.0

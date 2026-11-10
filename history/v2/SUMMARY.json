@@ -1,0 +1,51 @@
+{
+  "protocol": "no-jev-edit-review-v2",
+  "selected": 8,
+  "real_completed": 6,
+  "statuses": {
+    "accepted": 2,
+    "rejected": 3,
+    "quarantined": 1,
+    "budget_deferred": 1,
+    "not_started_budget": 1
+  },
+  "accepted_families": 2,
+  "accepted_variants": 10,
+  "candidate_variants": 20,
+  "Jev_calls": 0,
+  "cohorts": {
+    "hash_sample_new_to_current_pilot": {
+      "rejected": 2,
+      "budget_deferred": 1,
+      "not_started_budget": 1
+    },
+    "task_regression_different_snapshot": {
+      "accepted": 2,
+      "rejected": 1,
+      "quarantined": 1
+    }
+  },
+  "controls_completed": 6,
+  "controls_passed": 6,
+  "control_type": "synthetic fixtures, not real-data yield",
+  "offline_distinct_tests_passed": 19,
+  "real_pipeline_cost_usd": 0.12345525,
+  "quality_controls_cost_usd": 0.041259,
+  "cost_per_completed_real_trace_usd": 0.020575875,
+  "cost_per_accepted_family_in_this_pilot_usd": 0.061727625,
+  "accounting": {
+    "budget_usd": 0.211952776,
+    "actual_usd": 0.16471425,
+    "unresolved_reserved_usd": 0,
+    "remaining_usd": 0.047238526,
+    "attempts": 18
+  },
+  "total_with_previous_050_spend_usd": 0.452761474,
+  "no_human_gold_accuracy_claim": true,
+  "no_direct_old_new_comparison": true,
+  "judge_experiment_run": false,
+  "target_judge_context_token_check": "not_configured_in_rebuilt_workspace",
+  "repair_path_tested": "mock test only; no paid repair fit remaining budget",
+  "v2_validation": "same live LLM prompts/responses; strengthened deterministic gates replayed on all six cases",
+  "caveat": "V2 guards were added after inspecting this pilot; new untouched validation is still needed."
+}

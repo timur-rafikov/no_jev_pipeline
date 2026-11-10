@@ -1,0 +1,23 @@
+{
+  "previous_authorization_usd": 0.5,
+  "previous_confirmed_spend_usd": 0.288047224,
+  "new_available_usd": 0.211952776,
+  "new_extra_budget_assumed": false,
+  "historical_other_costs_and_unknown_reserves_not_released": true,
+  "extensions": [
+    {
+      "amount_usd": 0.5,
+      "purpose": "Run the frozen ten new samples through v3 and audit selection quality",
+      "authorization": "User explicitly answered yes to the additional limit of $0.50",
+      "date": "2026-10-26"
+    },
+    {
+      "amount_usd": 1.0,
+      "purpose": "Finish and validate automated assembly v5",
+      "authorization": "Explicit user instruction: budget $1",
+      "date": "2026-10-27"
+    }
+  ],
+  "total_authorization_usd": 2.0,
+  "shared_ledger_cap_usd": 1.711952776
+}

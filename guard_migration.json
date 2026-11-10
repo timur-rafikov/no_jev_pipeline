@@ -1,0 +1,6 @@
+{
+  "status": "superseded_by_v3",
+  "historical_record": "history/v2/guard_migration.json",
+  "current_record": "migration_v3.json",
+  "note": "The numeric and punctuation vetoes are removed; do not apply historical v2 guards."
+}

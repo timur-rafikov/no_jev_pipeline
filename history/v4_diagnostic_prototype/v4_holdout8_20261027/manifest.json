@@ -1,0 +1,139 @@
+{
+  "protocol": {
+    "protocol": "no-jev-edit-review-v4",
+    "code_hash": "fe294c0a85ebdf966a37a2d972e9e10e47cbcfb7bbd5043bfe450f4d6f26f588",
+    "v3_dependency_hash": "64e6586bbf3fb2458a30fdfba7745ba397e413bc6d3e95449f8dc61d42049d4b",
+    "generation_prompt_hash": "e4bc7906a7ec003afc6d5824639585b0b21e75f6e42b34c7c5a838df602c6416",
+    "review_prompt_hash": "1552ef797f48edd10b47338f698c423c71acff9b56d889faac281a21736a5e51",
+    "review_schema_hash": "8c63119c802458741c66840f02e79053655a5a30aae5b192d7c2499a1717186e",
+    "generator": "google/gemini-3.8-flash",
+    "reviewer": "openai/gpt-5.4-mini",
+    "conditions": [
+      [
+        "no_target_claim",
+        null,
+        null
+      ],
+      [
+        "agent_success",
+        "agent",
+        "The task was completed successfully."
+      ],
+      [
+        "agent_failure",
+        "agent",
+        "The task was not completed successfully."
+      ],
+      [
+        "user_success",
+        "user",
+        "The task was completed successfully."
+      ],
+      [
+        "user_failure",
+        "user",
+        "The task was not completed successfully."
+      ]
+    ],
+    "label_policy": "visible-evidence-and-benchmark-agreement-v1"
+  },
+  "runner_sha256": "c39474d9af47542afde8f82c752c3b63e17e2fcd253e5317e51cddb1c7a14184",
+  "source_commit": "cadd76a8dc62984e7bf15ecaf358f070bae745cc",
+  "source_release": "2025-11-03",
+  "seed": "no-jev-v4-unseen-20261027",
+  "max_message_bytes": 36000,
+  "unique_tasks": true,
+  "excluded_task_ids": [
+    "multi_turn_base_100",
+    "multi_turn_base_104",
+    "multi_turn_base_107",
+    "multi_turn_base_12",
+    "multi_turn_base_122",
+    "multi_turn_base_123",
+    "multi_turn_base_126",
+    "multi_turn_base_127",
+    "multi_turn_base_128",
+    "multi_turn_base_130",
+    "multi_turn_base_15",
+    "multi_turn_base_158",
+    "multi_turn_base_163",
+    "multi_turn_base_179",
+    "multi_turn_base_194",
+    "multi_turn_base_197",
+    "multi_turn_base_27",
+    "multi_turn_base_29",
+    "multi_turn_base_41",
+    "multi_turn_base_46",
+    "multi_turn_base_50",
+    "multi_turn_base_6",
+    "multi_turn_base_82",
+    "multi_turn_base_84",
+    "multi_turn_base_93",
+    "multi_turn_base_99"
+  ],
+  "gold_used_for_selection": false,
+  "semantic_preselection": false,
+  "source_executions": 600,
+  "source_tasks": 200,
+  "scope_exclusions": {
+    "context_scope": 364,
+    "structural_no_final_assistant": 26,
+    "seen_task": 66,
+    "structural_no_final_prose": 73
+  },
+  "eligible_executions": 71,
+  "eligible_tasks": 33,
+  "selected": [
+    {
+      "case_id": "v4_holdout8_20261027_0001",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_39",
+      "task_id": "multi_turn_base_39",
+      "record_hash": "6f4d3a18a5d45bb672787a012d0e13a353bf70d133f5970fce0f0bbecc86d5fa"
+    },
+    {
+      "case_id": "v4_holdout8_20261027_0002",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_146",
+      "task_id": "multi_turn_base_146",
+      "record_hash": "093ae29d534988cfb0eb4818d48cd01d608e210e6f75eeda312bd2833214c139"
+    },
+    {
+      "case_id": "v4_holdout8_20261027_0003",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_132",
+      "task_id": "multi_turn_base_132",
+      "record_hash": "69034e8dcb4590097dd68c65ec074b26ba1e4c243468c3c12c31e6afcebd456a"
+    },
+    {
+      "case_id": "v4_holdout8_20261027_0004",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_79",
+      "task_id": "multi_turn_base_79",
+      "record_hash": "39a50fc96e6792f5f5671850234ca0bac001322480898e584ae82be1870812ae"
+    },
+    {
+      "case_id": "v4_holdout8_20261027_0005",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_1",
+      "task_id": "multi_turn_base_1",
+      "record_hash": "b1719be0a799eb5a05f949b5637b2705549a8e847d8002bb4c1cc600ec231cf5"
+    },
+    {
+      "case_id": "v4_holdout8_20261027_0006",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_64",
+      "task_id": "multi_turn_base_64",
+      "record_hash": "aa1df528e71040a617bbe7b43a9e978c7820b5ca14948cd95b3c5431cc864f04"
+    },
+    {
+      "case_id": "v4_holdout8_20261027_0007",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_182",
+      "task_id": "multi_turn_base_182",
+      "record_hash": "57090f80e753d667f529abaef3a7f3bfe2d8164a160ffa7cfd75e2c19ec09bf5"
+    },
+    {
+      "case_id": "v4_holdout8_20261027_0008",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_118",
+      "task_id": "multi_turn_base_118",
+      "record_hash": "7f6fb9e02ad1cd3de66351dbd5b36eb6888ea5cff6e6774f4e089fdbbd51d38d"
+    }
+  ],
+  "split_seed": "bfcl-judge-task-split-v1",
+  "selection_order": "sha256(seed|execution_id)",
+  "novelty_limitation": "Available records and documented historical task IDs only."
+}

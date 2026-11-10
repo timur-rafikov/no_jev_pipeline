@@ -1,0 +1,38 @@
+{
+  "synthetic": true,
+  "exported": false,
+  "inputs": [
+    {
+      "key": "wrong_status",
+      "message_id": "tool",
+      "quote": "{\"status\":\"Filled\"}",
+      "source": "{\"status\":\"Pending\"}",
+      "purpose": "Prove that the purchase completed."
+    },
+    {
+      "key": "wrong_amount",
+      "message_id": "tool",
+      "quote": "{\"amount\":150}",
+      "source": "{\"amount\":50}",
+      "purpose": "Prove that the action was performed for 150 units."
+    }
+  ],
+  "request_id": "da0addd0d27afb65f30a115a97e767ce2b100e890436995d9ebfd7d8bc95f364",
+  "response": {
+    "repairs": [
+      {
+        "key": "wrong_status",
+        "verdict": "cannot_repair",
+        "replacement": null,
+        "reason": "The source contradicts the stated proposition because the status is Pending, not Filled."
+      },
+      {
+        "key": "wrong_amount",
+        "verdict": "cannot_repair",
+        "replacement": null,
+        "reason": "The source contradicts the stated proposition because the amount is 50, not 150."
+      }
+    ]
+  },
+  "passed": true
+}

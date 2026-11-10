@@ -1,0 +1,3068 @@
+{
+  "protocol": {
+    "protocol": "no-jev-edit-review-v4.2",
+    "code_hash": "bce3b34e337d8e7d467041eacbe0492b0a7ef7d46dd0995ba9ef313c0691ed3c",
+    "v3_dependency_hash": "64e6586bbf3fb2458a30fdfba7745ba397e413bc6d3e95449f8dc61d42049d4b",
+    "generation_prompt_hash": "e4bc7906a7ec003afc6d5824639585b0b21e75f6e42b34c7c5a838df602c6416",
+    "review_prompt_hash": "dc622ce9af4dabbe085650d169e6731822e43d802406dfa949aeb88ac3e5e567",
+    "review_schema_hash": "7793f12534af45d561027d592febc51d7bcb45357c8a99aaeee1e702919da1f0",
+    "generator": "google/gemini-3.8-flash",
+    "reviewer": "openai/gpt-5.4-mini",
+    "conditions": [
+      [
+        "no_target_claim",
+        null,
+        null
+      ],
+      [
+        "agent_success",
+        "agent",
+        "The task was completed successfully."
+      ],
+      [
+        "agent_failure",
+        "agent",
+        "The task was not completed successfully."
+      ],
+      [
+        "user_success",
+        "user",
+        "The task was completed successfully."
+      ],
+      [
+        "user_failure",
+        "user",
+        "The task was not completed successfully."
+      ]
+    ],
+    "label_policy": "visible-evidence-and-benchmark-agreement-v1"
+  },
+  "runner_sha256": "680c056e7abfb61468b72c48185a533c6e7855264ee342922d35333f8f39f8fe",
+  "source_commit": "cadd76a8dc62984e7bf15ecaf358f070bae745cc",
+  "source_release": "2025-11-03",
+  "seed": "no-jev-v4-full-pool-20261027",
+  "max_message_bytes": 0,
+  "unique_tasks": false,
+  "excluded_task_ids": [],
+  "gold_used_for_selection": false,
+  "semantic_preselection": false,
+  "source_executions": 600,
+  "source_tasks": 200,
+  "scope_exclusions": {
+    "structural_no_final_assistant": 26,
+    "structural_no_final_prose": 73
+  },
+  "eligible_executions": 501,
+  "eligible_tasks": 200,
+  "selected": [
+    {
+      "case_id": "v4_full_pool_plan_20261027_0001",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_153",
+      "task_id": "multi_turn_base_153",
+      "record_hash": "23ea916e0102a356fd26492e59369298ba6c57fd829480dc592697d7e0a22bf0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0002",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_127",
+      "task_id": "multi_turn_base_127",
+      "record_hash": "35fff393764f1eff8265f4a811ba92db2474f596d4086e6191db97c7298bc4dc"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0003",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_139",
+      "task_id": "multi_turn_base_139",
+      "record_hash": "5bf4dda1a5ce27953c9fb2afd2216656caf65ce49befc214cc01fc932f2676be"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0004",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_154",
+      "task_id": "multi_turn_base_154",
+      "record_hash": "24deafe1a56ed165884b86fc443d8a822c1f09199dca9736fc50f979f0c73841"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0005",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_86",
+      "task_id": "multi_turn_base_86",
+      "record_hash": "adea14451973b90b52460225c123d6c5e2bd3351c14e8936a4ab5e56d436f25c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0006",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_67",
+      "task_id": "multi_turn_base_67",
+      "record_hash": "32b81d2d254821f27683528b009ce304dcbe9858dca9804f1c8cfa62a06814c3"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0007",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_93",
+      "task_id": "multi_turn_base_93",
+      "record_hash": "218e9bb01b23e061964e59e5f075231da1e782f90288b14d7cd13c5c44106454"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0008",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_36",
+      "task_id": "multi_turn_base_36",
+      "record_hash": "6b655ef70d9676d5461c91c053b785f020c3303a1f5385d3baf63f1872dfd04e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0009",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_122",
+      "task_id": "multi_turn_base_122",
+      "record_hash": "61829d977c3b1cef84bfa9adefdb64dc75cbd1dd70650eb0a76740094fc8376d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0010",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_164",
+      "task_id": "multi_turn_base_164",
+      "record_hash": "934128b7be6d6d55ee8174ad3315bdc18efe4a2c88f253de49345365647c6e2d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0011",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_129",
+      "task_id": "multi_turn_base_129",
+      "record_hash": "5faabf715c6e6cc57ffe5281957d3f3c430339c85312cd5805edc0c376a1592f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0012",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_198",
+      "task_id": "multi_turn_base_198",
+      "record_hash": "6c63015dacfced781d3ee29cc091718f3e7591a68a3174d5b6ef77e0ef121852"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0013",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_196",
+      "task_id": "multi_turn_base_196",
+      "record_hash": "ce4f05701e05711b8ccbd359edc028ec9ebb1ac8fac33f5aea9293050b412ae8"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0014",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_79",
+      "task_id": "multi_turn_base_79",
+      "record_hash": "f83b4a80ee796ec80178c40312ac4a10ad79b911183a11ed9cf84ff26ad470a3"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0015",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_99",
+      "task_id": "multi_turn_base_99",
+      "record_hash": "61c6bec1c8a1c1c6a82070a0b804b3027e65c7a1b756acf64cf6d675bb51eb27"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0016",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_140",
+      "task_id": "multi_turn_base_140",
+      "record_hash": "16b7ca23d5eb1f6d226b23d727b23a3614d57375d26a9bb3dd224350caebfdd5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0017",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_178",
+      "task_id": "multi_turn_base_178",
+      "record_hash": "0036fa49264681dd7fd5c11ed59f7de817659a2437d1ef36221248edf441dd24"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0018",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_29",
+      "task_id": "multi_turn_base_29",
+      "record_hash": "5aae19ac486e34e768ca9614bbeb47b2990cd212bf6b2d8f4207114e2fa3b580"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0019",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_112",
+      "task_id": "multi_turn_base_112",
+      "record_hash": "19cdcf4baf76350f5f3a94f090d286495b07d739c6e5d9f8908633915d479e54"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0020",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_54",
+      "task_id": "multi_turn_base_54",
+      "record_hash": "ad8b7b402e3737f8a33d824419030755f3f85a0e6a88292a68ed3c178cff034e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0021",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_176",
+      "task_id": "multi_turn_base_176",
+      "record_hash": "c3af1ed1b648223d568d9ecff0e4929f8dfeb3919f806c4271964fa3b771dd24"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0022",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_160",
+      "task_id": "multi_turn_base_160",
+      "record_hash": "c2e4521b7f18ff9cac410539a3f46d13a2581c6c69dd3cd6f0baf6db4e8c082d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0023",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_90",
+      "task_id": "multi_turn_base_90",
+      "record_hash": "c4d20b86f113e242b5f69c29c6870f08778b7af5cbcc6e14a7d3efa586ff7a8c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0024",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_25",
+      "task_id": "multi_turn_base_25",
+      "record_hash": "19797f3db78fc3826eaee5447105f205f4f44eaf871288a05162e51abd0fe334"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0025",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_193",
+      "task_id": "multi_turn_base_193",
+      "record_hash": "08bc49db51b8aad8a15f63189f36f0a3b176a37afe4fea6cd740583e31bfd59d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0026",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_172",
+      "task_id": "multi_turn_base_172",
+      "record_hash": "a3cb7be27bcfe066c7ac687070da017d0d3d4591302716e579d5fe903b22c4f8"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0027",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_14",
+      "task_id": "multi_turn_base_14",
+      "record_hash": "68afd36e8b9901617ee1590a54a4ad52a3301fd5dce5de5b7f8b62632032f423"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0028",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_38",
+      "task_id": "multi_turn_base_38",
+      "record_hash": "d96fd1e028070ff68c95215a02bf43aca7132cb85bbbb9bd23f25675d0e7528e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0029",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_176",
+      "task_id": "multi_turn_base_176",
+      "record_hash": "1a9586444c72dd313338455e27db67db1b426371e0a61109af7212e927e14b43"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0030",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_183",
+      "task_id": "multi_turn_base_183",
+      "record_hash": "20c4dc06c03c566a23c60dedf1d04fc85df2d2cec9c5424bfc769259a419b58a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0031",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_34",
+      "task_id": "multi_turn_base_34",
+      "record_hash": "3ea2375dbae6ef48080ee31d837f81fc4b2cbfef2172b60debf0555a3efef19a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0032",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_40",
+      "task_id": "multi_turn_base_40",
+      "record_hash": "f50b0e8639a0495686ed0d49ccd01621c5756d3b66d75b58c18783b03134bdc5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0033",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_173",
+      "task_id": "multi_turn_base_173",
+      "record_hash": "053498c5e89d2f7aabb9629a3acc539ddec351b45f6189c7b199eae617372f02"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0034",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_124",
+      "task_id": "multi_turn_base_124",
+      "record_hash": "cf24983ec60b2a32d3c7037634d9e031d02bef1a8e2e81711d51d83d22be09ef"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0035",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_185",
+      "task_id": "multi_turn_base_185",
+      "record_hash": "3844d670bf8ad70b8e07663b3f6845f477c6de506513a14e47bbbc0f56854883"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0036",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_198",
+      "task_id": "multi_turn_base_198",
+      "record_hash": "6f307e7f45cdad9fec07b81d3e9d3422b4dcf83c1cb45164bd94fc6ac4d97219"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0037",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_181",
+      "task_id": "multi_turn_base_181",
+      "record_hash": "bfe6f9ad1594ed0adef708f1c58e2eebcd83a6b6d3972ff39ac7c271a77bf462"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0038",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_156",
+      "task_id": "multi_turn_base_156",
+      "record_hash": "e7f8dd14395c145e6cadad5d21ea303c739e88dc528e8b0c26f48fcb6fef654a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0039",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_35",
+      "task_id": "multi_turn_base_35",
+      "record_hash": "644555aaa55e19e1a9b7bda10b3b866284358dc850cf5cdae9027492933d3696"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0040",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_36",
+      "task_id": "multi_turn_base_36",
+      "record_hash": "90ba21928ebb621467438dc1509aa86c9b842f4aeb46bc42efba063f9bdeac50"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0041",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_94",
+      "task_id": "multi_turn_base_94",
+      "record_hash": "e374a159d842102219f7f08d160cc48a7a19f51ce8b8cf137bafbb7f0e79e291"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0042",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_173",
+      "task_id": "multi_turn_base_173",
+      "record_hash": "631b0e408fe7cca8b332aefcc16af35b30f5b3e242679ce137f240119e5bf171"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0043",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_79",
+      "task_id": "multi_turn_base_79",
+      "record_hash": "6fe772725f2687e95017921e03409e48bfb3e07ba961b79e67d88e0bd42fe01a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0044",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_36",
+      "task_id": "multi_turn_base_36",
+      "record_hash": "71fe3623171ca597431ffc8fe32fcfcd31db2eee6e5f7331c7215c5f2966542d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0045",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_34",
+      "task_id": "multi_turn_base_34",
+      "record_hash": "4cd106f4c8a54f80a13f36d73c1d1b6b7381e98389b61a569c6e5c97320ac666"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0046",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_62",
+      "task_id": "multi_turn_base_62",
+      "record_hash": "06c4b9813c37267d107c15e759e7d3aa4bb1688ca3308717eb72f7efe3cb9323"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0047",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_58",
+      "task_id": "multi_turn_base_58",
+      "record_hash": "03f8006e09385191098204cd7bf3924ae9c8fd395caeb38a20bc117de8b69cbc"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0048",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_134",
+      "task_id": "multi_turn_base_134",
+      "record_hash": "b666f68d29ba8e826a6f6f254fe0d14b9725119a9c3c7f4c2fcbc5aa0b947fa8"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0049",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_169",
+      "task_id": "multi_turn_base_169",
+      "record_hash": "096745055424d005e867f1591c4b22de31f7ba09b15ece12948ee118b9df26b6"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0050",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_126",
+      "task_id": "multi_turn_base_126",
+      "record_hash": "74c3c5c4c7c72f51dc486573b8d0923a250f35d8ec4e8dd38b03c8deb366bfd7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0051",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_117",
+      "task_id": "multi_turn_base_117",
+      "record_hash": "cf0f33e005f24f90931d3bc7c30f9f3a3168a14a936658c5e34d68ca57356d4e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0052",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_70",
+      "task_id": "multi_turn_base_70",
+      "record_hash": "cf775ef3521347b216d191fd63131804502e0ffa49ce3fa184de3635eb95488d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0053",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_110",
+      "task_id": "multi_turn_base_110",
+      "record_hash": "1fa0739b1c5c63e790554b007545f80e1b1dc43730d66cde655637e3461a3d77"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0054",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_116",
+      "task_id": "multi_turn_base_116",
+      "record_hash": "295add76306a43c6586c1e274a71abff7235182ec34250b07fedaaffa4bc87ab"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0055",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_129",
+      "task_id": "multi_turn_base_129",
+      "record_hash": "64ffc7da1c9596748aa611f021f557625e03b89061cb83fecc4b32d18ab7409c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0056",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_82",
+      "task_id": "multi_turn_base_82",
+      "record_hash": "ca4711053c238537cae729bb7172ff86bb4d79ed29ea81f035f8d715075824bd"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0057",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_84",
+      "task_id": "multi_turn_base_84",
+      "record_hash": "3e759532585d8f69b0512fc31823fa96840f867215e923ea565467703b1e941d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0058",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_125",
+      "task_id": "multi_turn_base_125",
+      "record_hash": "5e6ed169dc292373e6868645b5728b8f0a5060fc562787e26df8685b331f33b4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0059",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_43",
+      "task_id": "multi_turn_base_43",
+      "record_hash": "e8887b852d9782168e30edeb41e1950e820832535898ec94cff9b7a07e237989"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0060",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_170",
+      "task_id": "multi_turn_base_170",
+      "record_hash": "ce42c4eaaee5ce70114c2e09521a9ce1904cfff2b4cd133fa3a479125b65bf85"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0061",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_15",
+      "task_id": "multi_turn_base_15",
+      "record_hash": "2ebeff59c8abac0075161ec367a738932066f5661ce8b4558587a34fe9f38321"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0062",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_39",
+      "task_id": "multi_turn_base_39",
+      "record_hash": "f48bd5de8e16bd9c7fb9bd6a5dc8844f3d7c95555f5fac0dd05ea6d398cdb16a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0063",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_198",
+      "task_id": "multi_turn_base_198",
+      "record_hash": "7ee7f1d46dc5a85e339c21b3259d6c848f3a858788d74c2a24fea1cae2e1f9f9"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0064",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_58",
+      "task_id": "multi_turn_base_58",
+      "record_hash": "28bc1b37492df8ef3e0da428f57384b5fc6ed290e8001ef297f843931a57898a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0065",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_166",
+      "task_id": "multi_turn_base_166",
+      "record_hash": "824ab8eacd952bb2e1749e77eb7d0f1e522d22e60951455fd3a9c7f13e0a9f4f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0066",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_2",
+      "task_id": "multi_turn_base_2",
+      "record_hash": "b514bbbc4e52a637a762e52e793785be9da0df1057cc3a11ec1fbd69960431a6"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0067",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_44",
+      "task_id": "multi_turn_base_44",
+      "record_hash": "ed3898b06f267223b2f1f25a93869d1ba8b226ee16426ebfda6bc24045540eeb"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0068",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_73",
+      "task_id": "multi_turn_base_73",
+      "record_hash": "33d74bb3db36c64d774446775dc5e21b4189ee18d528842dafd746c45b070c11"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0069",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_34",
+      "task_id": "multi_turn_base_34",
+      "record_hash": "1b54c6fa4fe3573c1f0ed8c9eeb64d590ab3a50b9514fe81202fe73c4e881ec4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0070",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_39",
+      "task_id": "multi_turn_base_39",
+      "record_hash": "6407fa4390b24eb35751373c7629c473a291d33e0750672d01698084458ff999"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0071",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_183",
+      "task_id": "multi_turn_base_183",
+      "record_hash": "def80c0ef40d755d54b3789fb1ed2a1d2e980338481e7f608e13e9fe3aa39eeb"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0072",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_57",
+      "task_id": "multi_turn_base_57",
+      "record_hash": "f338966e21ddf99acda2627d52525404bbdb224f973966f15538f6890923dd1c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0073",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_133",
+      "task_id": "multi_turn_base_133",
+      "record_hash": "ca0e6151f004b0a37a460b0343a4cb37dff0f77e2f07c13645f3550c38627281"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0074",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_72",
+      "task_id": "multi_turn_base_72",
+      "record_hash": "d8e24e9bbd1fea576101939bdece727739a4c6924f93db937ed272397c46de51"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0075",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_33",
+      "task_id": "multi_turn_base_33",
+      "record_hash": "84dbedee543f8fe1a993908931a37399c9823f092267552159b0c7c840d95fa0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0076",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_128",
+      "task_id": "multi_turn_base_128",
+      "record_hash": "23bb558c2edab9e6aeac2d8551f517de94132808137649dea7edc2aae3765526"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0077",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_6",
+      "task_id": "multi_turn_base_6",
+      "record_hash": "97746fe32017d4e34df89a02aa340cacc0bd6f5e365421fa027417bb53adfe1d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0078",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_143",
+      "task_id": "multi_turn_base_143",
+      "record_hash": "7ca40f54083fe32cf7c412c0a146392ab06b9e5e5dab3d9566cc4f1eeb8126c8"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0079",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_116",
+      "task_id": "multi_turn_base_116",
+      "record_hash": "4b5695936c344b3d022fd4a7801d87f0eb6103775ca490f3a02ab605acf74c57"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0080",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_106",
+      "task_id": "multi_turn_base_106",
+      "record_hash": "e7e509a8b11e7ec12b92cf1355224a29413ba527dfac5ac565a63324259fbc1f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0081",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_67",
+      "task_id": "multi_turn_base_67",
+      "record_hash": "537d89e236f385757863b67ae6b8d647e8d7a4193da5130e5269ba6b0fb52614"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0082",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_108",
+      "task_id": "multi_turn_base_108",
+      "record_hash": "9f462d76c8298e6b1a00a13cb7b2a9f712fc03d2ea432dd41756e4099753f08f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0083",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_132",
+      "task_id": "multi_turn_base_132",
+      "record_hash": "41e122ce8e70de0526f4b8424bd75ed857c2296ed9afbbda758c358f7d220751"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0084",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_152",
+      "task_id": "multi_turn_base_152",
+      "record_hash": "016ae4a30be2257ba67c04a93ecce72da4840ae2acc902d28718c667c0a808aa"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0085",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_51",
+      "task_id": "multi_turn_base_51",
+      "record_hash": "f7db7a08a1156c28abaa15518d84a5964a0e32c02a4429b176893c9e57500bb6"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0086",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_76",
+      "task_id": "multi_turn_base_76",
+      "record_hash": "b4504fe4364033b95f2972c3ed61f1fef4105ee5ab5992c1af2bbad3fe5cb294"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0087",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_4",
+      "task_id": "multi_turn_base_4",
+      "record_hash": "819c9cd158a4887285dca4f8778328eb11252158f5f9b0983f12fc393c84f457"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0088",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_123",
+      "task_id": "multi_turn_base_123",
+      "record_hash": "a8cc133d0ff1f8c14b6cb0f215a06e94e870a9d3020968ad6d3b14eeb1176a21"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0089",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_67",
+      "task_id": "multi_turn_base_67",
+      "record_hash": "ca0b4815de066e1f5218175f007b4e3def95c53727ea37ef8efc503bbaf96dc2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0090",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_91",
+      "task_id": "multi_turn_base_91",
+      "record_hash": "30aebfc7203d5621538884ca0d684c9316d96bc653efe4adc6de6dcfc1bab319"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0091",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_26",
+      "task_id": "multi_turn_base_26",
+      "record_hash": "86ff8dd837def826c1a7492bb4b76982af533892653a63e88b8bee24dbe5053d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0092",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_184",
+      "task_id": "multi_turn_base_184",
+      "record_hash": "98ad4c9bbdd9dd7ac7dc59e56eb17a5b50ac6c9c08e1d39ef9dca66b0cdeded0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0093",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_23",
+      "task_id": "multi_turn_base_23",
+      "record_hash": "1ab7eefcc1f109cdd2f448182710746d9e74ed243dacbac9f8a6a83b67d71e38"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0094",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_69",
+      "task_id": "multi_turn_base_69",
+      "record_hash": "f438c3da8b98be016f8fee376a12eebca489d37febb3ca1287298656a7d083a2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0095",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_166",
+      "task_id": "multi_turn_base_166",
+      "record_hash": "3ef19bca28184497123086e391dcf6711d3c5e7a3fa4098ac56bb5a0c2c94585"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0096",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_24",
+      "task_id": "multi_turn_base_24",
+      "record_hash": "9d10d62b42ca7618fe6b727f3266f46b203ff20b7dd976d886fe0c3f6ff76ff0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0097",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_113",
+      "task_id": "multi_turn_base_113",
+      "record_hash": "58778e64f7f3154c34229b1436420d827198fb63ed3af3fef2b4efcc80e33f23"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0098",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_131",
+      "task_id": "multi_turn_base_131",
+      "record_hash": "d38bf6cc7d62247fc0ac93ace6ff9c7611d3fe28baed8af24955553565e7f6ab"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0099",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_1",
+      "task_id": "multi_turn_base_1",
+      "record_hash": "e10832b57280cccee556d97573a4cbb690b1ec5417fe54f4e7dd9de9b9f9f79c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0100",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_75",
+      "task_id": "multi_turn_base_75",
+      "record_hash": "17dbbd74518f111fceea9330bbf7badb701b93e69358ad4d8ccb9f433fdf6f49"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0101",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_66",
+      "task_id": "multi_turn_base_66",
+      "record_hash": "5613eb1c7a90501b7560cce5f47243554942ed28f3fe4d5b2d05c604aad22c09"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0102",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_158",
+      "task_id": "multi_turn_base_158",
+      "record_hash": "202544a3d4ad442fca2afdc4e0df3aa8edc8660b41eedcf67b5a12f640fb04ff"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0103",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_49",
+      "task_id": "multi_turn_base_49",
+      "record_hash": "6ad6d115f9ce97df90db64d8bdca0fe923416487a9044998d6bd635a5364e2bd"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0104",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_51",
+      "task_id": "multi_turn_base_51",
+      "record_hash": "6e415890237f5951eb2546bc6cf260bc531f24608ff19fbde877290d481bcc30"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0105",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_16",
+      "task_id": "multi_turn_base_16",
+      "record_hash": "c9b24b1d9f2ee4fc0530d0a9adfee431bfe6ba70dc9ad447ee5c175afbfb8735"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0106",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_83",
+      "task_id": "multi_turn_base_83",
+      "record_hash": "76b9276c14570c7f17d3a80b76b88662ed4ab9e6bd8888415595469b1f09637a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0107",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_140",
+      "task_id": "multi_turn_base_140",
+      "record_hash": "320b28ca9e5493b1f117810681ee00fadc96ffcbac8f3e3cb1d45fd194e77c12"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0108",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_135",
+      "task_id": "multi_turn_base_135",
+      "record_hash": "e7bea077323761ec36130316ffa4d4e93741dc0f6f70f7b19c00ed88e42fed75"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0109",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_189",
+      "task_id": "multi_turn_base_189",
+      "record_hash": "5d3fd4dc543a469a62053d545897eef18e2b9580b473631a0494871371556ed2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0110",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_120",
+      "task_id": "multi_turn_base_120",
+      "record_hash": "e0fc1264e54e44cc1a97b39f8d2ce3d3e2aef0b24793c42b93dc25c4fa69b85d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0111",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_50",
+      "task_id": "multi_turn_base_50",
+      "record_hash": "b4b221867f989b7826e9816c15230753868385bbf6d2563853484e24232000c1"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0112",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_171",
+      "task_id": "multi_turn_base_171",
+      "record_hash": "167c49f0b225f2577a3282b95ca399fb39b4a433ea8ff7ac233f9a30746b3865"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0113",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_7",
+      "task_id": "multi_turn_base_7",
+      "record_hash": "b3668b8c29bc6abe1990ec5e5eaa28bf38208efce6c44affd22808e18d1ed1d4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0114",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_22",
+      "task_id": "multi_turn_base_22",
+      "record_hash": "d3275321cce00042b5924ab45ea359490b9cb539bab2a3ffe547f15e4abe3cb4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0115",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_115",
+      "task_id": "multi_turn_base_115",
+      "record_hash": "73a24cd7d342589d99e6e3926d3af18c2f5aeeb01205826e8e81ae8b228b0374"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0116",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_28",
+      "task_id": "multi_turn_base_28",
+      "record_hash": "700217b1d54666401a3fa3039c98841373970e9b17a4ce145dc7a4c3c7368fdc"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0117",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_148",
+      "task_id": "multi_turn_base_148",
+      "record_hash": "1bbff0d380a9727a60f4027b244d73a3c621d35a0d3949cbf8d3e2f0bfcec78c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0118",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_63",
+      "task_id": "multi_turn_base_63",
+      "record_hash": "d86ec1e641ab512551f2fb49dae1badccacfaca6ea88d602f1f31fd8fb681981"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0119",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_180",
+      "task_id": "multi_turn_base_180",
+      "record_hash": "8faad500adac8560ace60c7aa6b5b95de7495fee5b6ccddeeb11e54879b924b4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0120",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_5",
+      "task_id": "multi_turn_base_5",
+      "record_hash": "3e621f2245b32ad2e2f6437fc838d7c270c36d5e718840b1f0e2af46ebf9fc21"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0121",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_90",
+      "task_id": "multi_turn_base_90",
+      "record_hash": "f1f45c349193f194359a7701333582a7b8de323bf630c47e1994a2df9d073ed3"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0122",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_159",
+      "task_id": "multi_turn_base_159",
+      "record_hash": "bc5a91e53d6824f50dc1fb4db62030c2f7b4a3c609c0f9b48b4c01f520b34def"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0123",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_110",
+      "task_id": "multi_turn_base_110",
+      "record_hash": "91904ff5dea38689951ff9b20fa03232daf46cf5447e85db6f592e47037db7ac"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0124",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_101",
+      "task_id": "multi_turn_base_101",
+      "record_hash": "726b5ddf74b4bc65d713944b717858ca34ec823aa537cd821a099dbbde255db0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0125",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_81",
+      "task_id": "multi_turn_base_81",
+      "record_hash": "4edd608e8ff1e4605a42662bea69510a154b3800ee7aeabbcd9c48dfa6be2c7b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0126",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_104",
+      "task_id": "multi_turn_base_104",
+      "record_hash": "bef569365b13b0f6e6e1cd97b4436b2b785947ae5026a20ab074327432dda4df"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0127",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_136",
+      "task_id": "multi_turn_base_136",
+      "record_hash": "e86b2cb7d3cfa28df9c35191723ca5f46d262a627db045527b3f7c4ba2ef457c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0128",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_173",
+      "task_id": "multi_turn_base_173",
+      "record_hash": "6a3f6a8355248975fbb15528446c6402e43ca431948c4a12d42be8dc888e9ddd"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0129",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_41",
+      "task_id": "multi_turn_base_41",
+      "record_hash": "1f99e523a89d4883d75279445568ee6676c1cb563c5e50a2e7ff4f1bf5d9f3d0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0130",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_29",
+      "task_id": "multi_turn_base_29",
+      "record_hash": "9defa860cb2464f445750597236c139675c6f222faa18c43dee88a9470ee850c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0131",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_104",
+      "task_id": "multi_turn_base_104",
+      "record_hash": "4fe01f7e96a22758026fb4d46f1e7b0bb7eedc235bf7c030846f8bc1419a425f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0132",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_13",
+      "task_id": "multi_turn_base_13",
+      "record_hash": "21b660bd66d28655c637eca89017b0b3bbf1ccbaeb51de8071b7fcd4c632de1b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0133",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_161",
+      "task_id": "multi_turn_base_161",
+      "record_hash": "f492411f5b4d7262ed1bb1a49b5b7b397f4dba28e172aa27f70c1efd96424b59"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0134",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_7",
+      "task_id": "multi_turn_base_7",
+      "record_hash": "da36360fc2e688a20c11d60d62bfd5d4582bb372806dc97d6705786b7d22b40e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0135",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_105",
+      "task_id": "multi_turn_base_105",
+      "record_hash": "43e865bc2427dd6cb8469b0ae6aeee219067459be7fda326b3e5d81191ceff59"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0136",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_82",
+      "task_id": "multi_turn_base_82",
+      "record_hash": "f0988deb219471c82df365a8669739ff45963afc61e5aaba808c2e42b19991a6"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0137",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_48",
+      "task_id": "multi_turn_base_48",
+      "record_hash": "124c1015e85d2572ddda03fe397e3c41eb9d047a17742e84f999e2987600d6a0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0138",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_62",
+      "task_id": "multi_turn_base_62",
+      "record_hash": "54a119e4f91924c76dec654c0d791b81be5a7a9b7c00352013c639c22a260eea"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0139",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_17",
+      "task_id": "multi_turn_base_17",
+      "record_hash": "20f17527f41c59da1d90daa4139a3ee25098bcac955ae214b205542fcb89dfc9"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0140",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_107",
+      "task_id": "multi_turn_base_107",
+      "record_hash": "e728c105a73374e315802b62769659e4d1c047bea114be6ca4b806302952e9cb"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0141",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_119",
+      "task_id": "multi_turn_base_119",
+      "record_hash": "8decee994a95e06e3753bd2e792f3ef3a452cbd78084c9f6e0240b6d84d017c5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0142",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_54",
+      "task_id": "multi_turn_base_54",
+      "record_hash": "0eeff237d41eabd2d5b9f0dca3841d04ebc3fe488f7e353e61e01afb7969cde5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0143",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_46",
+      "task_id": "multi_turn_base_46",
+      "record_hash": "f68bac110774bdeb4415d40cad9b7dfdeb1cda45ef93417b5b4e59468162783b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0144",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_122",
+      "task_id": "multi_turn_base_122",
+      "record_hash": "7ea7da63eb8e43b0da3830db701a6687fa900a931a7414070b6120bf5e77a4db"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0145",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_74",
+      "task_id": "multi_turn_base_74",
+      "record_hash": "bac84333fb38d79ccdb8ac6b5762f51e6c98f24904235f5328562b1d75a5712a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0146",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_181",
+      "task_id": "multi_turn_base_181",
+      "record_hash": "a454485934d8284a613a61eb04cc723116fabc53668f9b4814f7a66c642aa3f2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0147",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_199",
+      "task_id": "multi_turn_base_199",
+      "record_hash": "89c4f9bc8dca9e913315dd20f4e3ffe7f89780e9ef99c0e797493246fcdce729"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0148",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_26",
+      "task_id": "multi_turn_base_26",
+      "record_hash": "afe988705b0e2e5c691190e0c2a1084f21e709fb1dcc28a075dbf50131829a07"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0149",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_31",
+      "task_id": "multi_turn_base_31",
+      "record_hash": "2d24c257afef5676b60321d77d99a1148ded2b5b0902ecf9107ff39f5e6de577"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0150",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_188",
+      "task_id": "multi_turn_base_188",
+      "record_hash": "dbf0c4bea5a609137745803ef8a113097ca217a8867ecdbda0c70a5cfacef681"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0151",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_157",
+      "task_id": "multi_turn_base_157",
+      "record_hash": "166e711929d1974b9c90743154f848deaaedba2d51ca4dbf306990e51834ac9b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0152",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_95",
+      "task_id": "multi_turn_base_95",
+      "record_hash": "ea4c4f4a91778d6a9d5ddff7903cd428b4e7df70c52017cbc6eb5501db24b461"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0153",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_109",
+      "task_id": "multi_turn_base_109",
+      "record_hash": "ac96ae896eec05420ff8dfbb3c5d591de13acc4bc892768187627328c392c466"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0154",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_167",
+      "task_id": "multi_turn_base_167",
+      "record_hash": "c38cfc2c52044926f309b1023af4af7e5b2700aed0b6ac849f4bea9092333db2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0155",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_149",
+      "task_id": "multi_turn_base_149",
+      "record_hash": "b135bca592d8b9f9542496f46593d8ae5e24c831572eefc948a1ca3cceef3eb7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0156",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_4",
+      "task_id": "multi_turn_base_4",
+      "record_hash": "555c38728e48899197307790ba76ec442cb1240c2a318e2b0f28cb17499c7a1e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0157",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_74",
+      "task_id": "multi_turn_base_74",
+      "record_hash": "f9997580865a8b158e4814b83f7d6e1161a2e60ad7ca0eb43e629e161c4d71fb"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0158",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_42",
+      "task_id": "multi_turn_base_42",
+      "record_hash": "e0533bae160ffdcf37f02a53efc220bb860200514013223a1958f302660e12fb"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0159",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_112",
+      "task_id": "multi_turn_base_112",
+      "record_hash": "8cbdf366b12e68f9fcf3e3482d76663eb53a2801f57af666cc6d120ed8dc040b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0160",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_18",
+      "task_id": "multi_turn_base_18",
+      "record_hash": "eff1fc2e75c26e56e297504d448b7083d36039c88c62c1f2a49686989151a9f7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0161",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_128",
+      "task_id": "multi_turn_base_128",
+      "record_hash": "cf3ae4e466c812d0cb6db37bd16e9e052ddff018beedf2049e6cc5c5f5358356"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0162",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_31",
+      "task_id": "multi_turn_base_31",
+      "record_hash": "a82743f729d8367f7f4a1e1b1425bb45a9c106f92e5f8b8ba24bd365785c9db7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0163",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_49",
+      "task_id": "multi_turn_base_49",
+      "record_hash": "ac6d8343cf5e2fc9eef11c03a8a5c2d4508b8e8dc08b0b90027b17662ced6d0e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0164",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_182",
+      "task_id": "multi_turn_base_182",
+      "record_hash": "aa75c7397a40211838fe775ffc7c3d866b25d73ae808f8a97f90f34ac032ccd7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0165",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_141",
+      "task_id": "multi_turn_base_141",
+      "record_hash": "018c6748dcac01643cd9ef21bb70eec05a218ba8c346bc7639b0167348d9fefb"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0166",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_118",
+      "task_id": "multi_turn_base_118",
+      "record_hash": "e9e6d2e600e98469ab506624e8cea23cabde65d0a1015341f9e5e088dc3d071e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0167",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_102",
+      "task_id": "multi_turn_base_102",
+      "record_hash": "ab00331570fcc1567bb2e2584fac53e3426761aaeb76e459a84b5ace6a2623dc"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0168",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_134",
+      "task_id": "multi_turn_base_134",
+      "record_hash": "1bd8cb479ddc3086b7ee85012e07b6e83fe9241c86d97d5406c23e668f4c5856"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0169",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_37",
+      "task_id": "multi_turn_base_37",
+      "record_hash": "60f6156add85dd786d6b0e6e6a0040d4e9bf97d82cb5413ba406eab7e80cb03b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0170",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_105",
+      "task_id": "multi_turn_base_105",
+      "record_hash": "d11ca2829d58825d362a02f446f2957f3149341e22cbed98b36fda21d76b0eb7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0171",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_144",
+      "task_id": "multi_turn_base_144",
+      "record_hash": "4a7c9f14fbffcbdccb2b578393c1a274031ae664763003ff5bf52dbff000677e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0172",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_0",
+      "task_id": "multi_turn_base_0",
+      "record_hash": "2f48852773e07c2031ea70c1f780f028ca1da1d76d724e04de1f75654e2f8d7e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0173",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_107",
+      "task_id": "multi_turn_base_107",
+      "record_hash": "99f767de88ca062e2a4278c6e3f005d872dea635e72fe1b819e5a6071443bad4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0174",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_37",
+      "task_id": "multi_turn_base_37",
+      "record_hash": "73c9de5372fa0822010ed37fcbb6191128a6f6a791fb5ca9009fad70280e6a25"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0175",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_121",
+      "task_id": "multi_turn_base_121",
+      "record_hash": "f0071bb3c6addace7e5b60d9673946918698ce4d578dc537cc9930491c366326"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0176",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_133",
+      "task_id": "multi_turn_base_133",
+      "record_hash": "be610332e77a55137ba3532c9290c4c7a1f772003c2d0a323148e8376858d174"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0177",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_181",
+      "task_id": "multi_turn_base_181",
+      "record_hash": "0cadc8e11f9e82688d9d7a672d6fbb3fc1ee20fcba3f4cefb5bea37ea46de119"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0178",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_101",
+      "task_id": "multi_turn_base_101",
+      "record_hash": "9684aeb6e703c97e7338165a2dc21fe42412f1a764daa7c057fb3b2927fa799f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0179",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_154",
+      "task_id": "multi_turn_base_154",
+      "record_hash": "929b3c75e012516e8a950d375fb216abf762d23c85d86fa477267c1dfc970f5b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0180",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_88",
+      "task_id": "multi_turn_base_88",
+      "record_hash": "619526f78ed84adae4635febd10d5692ac7c19851eec7a350000ffc4f44921b1"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0181",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_53",
+      "task_id": "multi_turn_base_53",
+      "record_hash": "5badc9106afdffa20a6559e72677641866a02cfad32aa8de09bfa9c24492023e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0182",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_146",
+      "task_id": "multi_turn_base_146",
+      "record_hash": "acada72040de961e74badff4c747cac2123afd8621f17751a9d90621ea6fcb2e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0183",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_131",
+      "task_id": "multi_turn_base_131",
+      "record_hash": "9ee828c0d4946ab8d8e0bc648069c4d82d0ee53516f17874a205420e3ba65fca"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0184",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_136",
+      "task_id": "multi_turn_base_136",
+      "record_hash": "c3343b6824958f60f4298945a4fbd6cf208e30b72d5f56167dd013607886a5f7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0185",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_189",
+      "task_id": "multi_turn_base_189",
+      "record_hash": "35023f9903726fd02533704c4ec404599c8f2a63f13f52ac92c13e0d7a49104f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0186",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_164",
+      "task_id": "multi_turn_base_164",
+      "record_hash": "7548453afb6978d82c6e492c7b17695201e269eb974ac69ec02fc3b00f0f4c6b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0187",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_186",
+      "task_id": "multi_turn_base_186",
+      "record_hash": "da60ae1c973c93e3d06f7b876b12ace71aa40d418ff066c0fa9f31333bf956e6"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0188",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_138",
+      "task_id": "multi_turn_base_138",
+      "record_hash": "32b5e62a4808d193990dab379241a7725907b911d317ced762f857b3476f6a7a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0189",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_51",
+      "task_id": "multi_turn_base_51",
+      "record_hash": "11c0b6341c1d5697d0a6e7979f46a24d87302603ef65cdddb1445e5fe5d545a2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0190",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_127",
+      "task_id": "multi_turn_base_127",
+      "record_hash": "d4a7e8cc1caf37ab227bbfb8cf835ad7fe093a499c75a307f3b2a110655f1ab6"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0191",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_186",
+      "task_id": "multi_turn_base_186",
+      "record_hash": "e3ecb011f6e46d8cb51bbbdd871a530c3df2ba1f4b145bd67f2cefca9f47d753"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0192",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_165",
+      "task_id": "multi_turn_base_165",
+      "record_hash": "694a85dc74da6b1da2bb1abeebf57605431f2bd2ffaca2871a0492cb220eaab4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0193",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_195",
+      "task_id": "multi_turn_base_195",
+      "record_hash": "bfd336c5546ce98169738d87648a07aaddf6191c752a9eb7eb0e91c26d88b5f7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0194",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_101",
+      "task_id": "multi_turn_base_101",
+      "record_hash": "223f251c6e455c808a51d7f829cf1c615399346c09557e45692f15b555c1fe19"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0195",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_186",
+      "task_id": "multi_turn_base_186",
+      "record_hash": "021f67282524d1bff4f6f288990fdf5ee737c88910864ec455f103d3ca1bf2e0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0196",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_0",
+      "task_id": "multi_turn_base_0",
+      "record_hash": "a218fbc550136bd0cbfee14a844b8505f011e9686e819623e62b48bcf0dd5aa9"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0197",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_119",
+      "task_id": "multi_turn_base_119",
+      "record_hash": "7d724f1775dc2631fd1983c0c78dfebc0930616c9540c5f3db37376819152b86"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0198",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_61",
+      "task_id": "multi_turn_base_61",
+      "record_hash": "c6025b665d017fb41aad9b15880a81952db8d8b3cc5bb1a1f68f869872f24bbe"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0199",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_42",
+      "task_id": "multi_turn_base_42",
+      "record_hash": "7566edbade08d75f2064d6dddeacd74f999978dfa1096fd57fbd1413cfb61728"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0200",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_22",
+      "task_id": "multi_turn_base_22",
+      "record_hash": "7e928f3d1fb61749bfdea59ae323a0565b09078c3486624249d1590ff1e518d7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0201",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_158",
+      "task_id": "multi_turn_base_158",
+      "record_hash": "603e4f09ca4408b0c56fc1fbb846895072947999830cf00552875b89f57967ca"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0202",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_60",
+      "task_id": "multi_turn_base_60",
+      "record_hash": "22578ca8229b908f61cb9dfd4f5b50d8c0fbcf69261f37fd1fba79a259447429"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0203",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_168",
+      "task_id": "multi_turn_base_168",
+      "record_hash": "f9ba7307ebe53f3fc815bc113961afc34250b390b53a53d5701de992518dde9c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0204",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_91",
+      "task_id": "multi_turn_base_91",
+      "record_hash": "0928660921cf54b3cd7bb0fb2bbe48b3182793c68b961ba53ba50f0013486e78"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0205",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_117",
+      "task_id": "multi_turn_base_117",
+      "record_hash": "746541e2aed60795de69c4876aedc91b2897fb935925c05659d21a13bbc7f331"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0206",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_191",
+      "task_id": "multi_turn_base_191",
+      "record_hash": "cb8cdccb198f3fa3d8f12fecd6367173bd339474ecb4a30bbe4924490a38dc27"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0207",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_167",
+      "task_id": "multi_turn_base_167",
+      "record_hash": "7e338e277a676cd7cd59ebbf046402df42fe71ce73ac4059db74e5f5cee0e7a1"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0208",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_84",
+      "task_id": "multi_turn_base_84",
+      "record_hash": "025314638bfefe9b1ad2361ad284f59fe4c1d9e041ae2a53dfbe5208ed801d33"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0209",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_80",
+      "task_id": "multi_turn_base_80",
+      "record_hash": "5a5b4a3c8ea55a1bcea855840e9090b27b1cb075ead29b2662ec460d6127c04a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0210",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_161",
+      "task_id": "multi_turn_base_161",
+      "record_hash": "454cb7f681f4afebad48370875232ec4b90fd8ef65c92b8538aff529a2066d23"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0211",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_104",
+      "task_id": "multi_turn_base_104",
+      "record_hash": "3a085390d8dcc8e4e64c91ef7116e4b528bdbd4d198c8b4c3f01880e5b63ee9c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0212",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_27",
+      "task_id": "multi_turn_base_27",
+      "record_hash": "a770ee55fc651b4867c6bc849bb1e05bd379ba69d4a0059a76aaf8ad2843000d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0213",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_145",
+      "task_id": "multi_turn_base_145",
+      "record_hash": "5756f86d9b528026e297d7775d318b281106f29fe7d9586e0a38c9fa16eec667"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0214",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_1",
+      "task_id": "multi_turn_base_1",
+      "record_hash": "6a9415eb27b0f320154beedd9476966f4ab468c6e1da02f21933e7f12adad746"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0215",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_139",
+      "task_id": "multi_turn_base_139",
+      "record_hash": "dd1e0df1ba66d0afafdf232671dbe5cf5ef461998b72c64cd8d6ba0cac01c07e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0216",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_111",
+      "task_id": "multi_turn_base_111",
+      "record_hash": "8ab561a986a6823e5a8605f117306af31ac8ebe01df20790c48d1cd7fb786e0a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0217",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_153",
+      "task_id": "multi_turn_base_153",
+      "record_hash": "de6f89213080b303318d2ed047f391b1afa8e6e70b6cf3cadde2fd64b2e254f3"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0218",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_109",
+      "task_id": "multi_turn_base_109",
+      "record_hash": "203b188ae2371979b83d25b49b5e6f49e13503c4293c3c52b90ab34120bc9740"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0219",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_16",
+      "task_id": "multi_turn_base_16",
+      "record_hash": "83671377dc7606ef9131e0487b8b2f77b338ad27c78b1a0f1833968410dfc901"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0220",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_7",
+      "task_id": "multi_turn_base_7",
+      "record_hash": "644b11bcd86ceea93710bac51c2a501132aa0383870e759d5767f530d6ed487e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0221",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_154",
+      "task_id": "multi_turn_base_154",
+      "record_hash": "acdcfe58f4c57c73d917e1ae24c1cb8b1760755b9aaa727d5473f8a2bf686884"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0222",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_40",
+      "task_id": "multi_turn_base_40",
+      "record_hash": "54aca6c30e914b57f6598935dd503a49fbe4f0f0d10edaff630465c0d2f1d268"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0223",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_169",
+      "task_id": "multi_turn_base_169",
+      "record_hash": "fba588f42742c9cce5a459436945ab422d199376d7c3c35e2516ac5d874b9b36"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0224",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_114",
+      "task_id": "multi_turn_base_114",
+      "record_hash": "a96e934e807b431e7d16df1091206a4b85ea3585fb59c65c8f4d0f36b196c7c3"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0225",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_150",
+      "task_id": "multi_turn_base_150",
+      "record_hash": "3e6200f5c19687247524793e079f19f8bfee386241149a75b91fefb9d143d85e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0226",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_142",
+      "task_id": "multi_turn_base_142",
+      "record_hash": "be4f0f93663b11ac92539c8f546f610b118a540620a1939d67e4bd1d716d7319"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0227",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_147",
+      "task_id": "multi_turn_base_147",
+      "record_hash": "d9eb8c89f5356d4873b8bdf52ab72dcf45e4895eb7aebd317e294702d99ce93b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0228",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_113",
+      "task_id": "multi_turn_base_113",
+      "record_hash": "d6e60e16d76e8d1d11dd8ec112152880a9c0c974ec5fec60ec552eebdfd487d5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0229",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_72",
+      "task_id": "multi_turn_base_72",
+      "record_hash": "3fe45cdcd24cdeabe5bd4e186c74aa6c5452ae1ee06b8ec6d4e470aad25fb5c8"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0230",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_137",
+      "task_id": "multi_turn_base_137",
+      "record_hash": "3d14672d4ef786f5cd0d5de38dbc54de858f2222bed1d55bf6e8e66e748a4308"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0231",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_165",
+      "task_id": "multi_turn_base_165",
+      "record_hash": "71dac7875ad91750cce6bb6149b734fbe68e88dace0b3604e147f8473e09e1b0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0232",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_9",
+      "task_id": "multi_turn_base_9",
+      "record_hash": "9ea5a3c6b559becd27e65338b0c9f3aad493e0f78889d5ddc72fa02d3a607301"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0233",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_81",
+      "task_id": "multi_turn_base_81",
+      "record_hash": "f8a560747078bd30d4d5448251281fbe829a4e5cf201ddb4746d2d98897d0735"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0234",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_170",
+      "task_id": "multi_turn_base_170",
+      "record_hash": "e2f7a08502015e3a70b90f1c2438681afa0d3015620005ed1222b095d7b05088"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0235",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_59",
+      "task_id": "multi_turn_base_59",
+      "record_hash": "b11842766e727479ef068c14ca9a9a72a7e77c677fd193b404aad822685fb3bc"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0236",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_177",
+      "task_id": "multi_turn_base_177",
+      "record_hash": "f8fb93a9a9d8d408e05c73d7c72dfec52d2922b7c76fd913f9710d9b3b9da757"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0237",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_30",
+      "task_id": "multi_turn_base_30",
+      "record_hash": "6fcd701fb9123a357564c2d9a3950d0cedb3d54f811cd971223fe2e4072278b6"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0238",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_143",
+      "task_id": "multi_turn_base_143",
+      "record_hash": "d0d93e318cd035b8c7c63135120fca0437858fa90ee5bb4a55a0b3904cf1e691"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0239",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_98",
+      "task_id": "multi_turn_base_98",
+      "record_hash": "2f9fb0b65187bf0495f37f079b8086f8d5047d0361294da1f156f18d9fa6f9ad"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0240",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_77",
+      "task_id": "multi_turn_base_77",
+      "record_hash": "f69c1f80165fb11e8b8656ed9cf47f793fdc2ec2c96a01341388c4a04912c879"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0241",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_55",
+      "task_id": "multi_turn_base_55",
+      "record_hash": "2a853b9f2b1cf7503a283a6fa2b5e471504c2b9ff2fefce2d5d47c2f134e6929"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0242",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_130",
+      "task_id": "multi_turn_base_130",
+      "record_hash": "5427246373ea10c6f9c4c615b45f9748f059137c249b2831a14041e768b251d5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0243",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_103",
+      "task_id": "multi_turn_base_103",
+      "record_hash": "54fd63ea795bf3e627945d4a87f7548e66f621a5e11fac836ee6156d9366dfbf"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0244",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_119",
+      "task_id": "multi_turn_base_119",
+      "record_hash": "db39a6a827f9901f53bd64d24de838d2d73f9c821a7b94e6d12a6dd784eb93e3"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0245",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_30",
+      "task_id": "multi_turn_base_30",
+      "record_hash": "d27e675000aea58d7033de97dcb0e12f8f28359c34e3d7afe7c2e3cbe9ad0fc5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0246",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_117",
+      "task_id": "multi_turn_base_117",
+      "record_hash": "6263ce89204153ea8c978157c381077f32f687f6c5eccff89bff9a2324796b1e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0247",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_141",
+      "task_id": "multi_turn_base_141",
+      "record_hash": "48af65d0eb728f6c379ad418f6ea914c9acf130c6941ce75fd18ad1b0fe6b82d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0248",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_92",
+      "task_id": "multi_turn_base_92",
+      "record_hash": "80166d2b4fdc11eaecb08dbc4717ab2e22ecfd6937e213d95097ce4d939fcbd4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0249",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_66",
+      "task_id": "multi_turn_base_66",
+      "record_hash": "91ecf312696f3c36261f916b4d0018b851bceae1f88c5d0c563b04aab10701ba"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0250",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_68",
+      "task_id": "multi_turn_base_68",
+      "record_hash": "ed543ae6a6334f0563f29e22b8e1c960b69e17a352efb29efaeb30be3d38f740"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0251",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_123",
+      "task_id": "multi_turn_base_123",
+      "record_hash": "161d4427276a90ce2459f6e4620a17463e583d7212f5574102f8ca34e381d686"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0252",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_27",
+      "task_id": "multi_turn_base_27",
+      "record_hash": "483073ff4b10c2243416dd942acac0f3ee37c6a18a969575eb1afad014b0f6d9"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0253",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_139",
+      "task_id": "multi_turn_base_139",
+      "record_hash": "7d1fdd7250ec214d798d7822fe51c7642d7bec262e4b9afd4465fa2b26fa881b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0254",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_65",
+      "task_id": "multi_turn_base_65",
+      "record_hash": "f6cf0796299d88bc0b52d1c984a1ac7833d3a2864a22e68548d948ff1feff09e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0255",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_155",
+      "task_id": "multi_turn_base_155",
+      "record_hash": "1e5fe1792933357228304f1bbdf559d21a6481895a5070bc6b50026b85d6c2d8"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0256",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_106",
+      "task_id": "multi_turn_base_106",
+      "record_hash": "39937c3b17a4d6208731781e5cab02be724f48c8d8c0d95635e1275cad6e186e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0257",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_138",
+      "task_id": "multi_turn_base_138",
+      "record_hash": "24b7b31556f71a2251174e4d1079b79dca30c50546104fa1250a8dc0ac8997d5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0258",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_3",
+      "task_id": "multi_turn_base_3",
+      "record_hash": "75a3c22b66591d88bc3d1d05b354b76c4fd96f56f83ce802081367381ed6c3ab"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0259",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_59",
+      "task_id": "multi_turn_base_59",
+      "record_hash": "a20a162fb635aa09c7f1ad8837def83befd29b08c645e6a83431304efb0d393c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0260",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_89",
+      "task_id": "multi_turn_base_89",
+      "record_hash": "ea6d5ee88ddfd6c4d7f472bfd3c6bb2e81235f18efb13cd6b41619069b2894c6"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0261",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_57",
+      "task_id": "multi_turn_base_57",
+      "record_hash": "304abce23abd41354b45d105c49e119783fb9fb467c9f0484ab2d59683f4973f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0262",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_199",
+      "task_id": "multi_turn_base_199",
+      "record_hash": "182e03e1457c2fe9e2922a356585fc1d9f7b729546c4818dd879c8103186f8a8"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0263",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_175",
+      "task_id": "multi_turn_base_175",
+      "record_hash": "a9428b79b2c6c4641d507a4bb17793dcd4e560e3132f578b8dc9f3a245d315db"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0264",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_178",
+      "task_id": "multi_turn_base_178",
+      "record_hash": "03deecceb875d734f1addd8bff72ce1eb997a0aed0f00cc671aafc8ee29f94c5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0265",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_177",
+      "task_id": "multi_turn_base_177",
+      "record_hash": "4d636c2b850d0bc46340f8b7845d4e68aba10e5515602003beabf9d09fae3da2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0266",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_182",
+      "task_id": "multi_turn_base_182",
+      "record_hash": "dfb38fb0c9efd98699d1c9a0d53e5e10084595f134bc9180bdf42f10f425f222"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0267",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_61",
+      "task_id": "multi_turn_base_61",
+      "record_hash": "4d0293974e2a25dc66a3e81d3ba520ef460fea32c1499a16256633dfa369ce86"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0268",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_19",
+      "task_id": "multi_turn_base_19",
+      "record_hash": "c4818636223c23eb49ece321cc771aca298c4c02aa6ef3546bce7df02a190ff2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0269",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_175",
+      "task_id": "multi_turn_base_175",
+      "record_hash": "97e85486133a1e13dee6efa9356530556b6727c7831417235f417c8d81ec96f7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0270",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_145",
+      "task_id": "multi_turn_base_145",
+      "record_hash": "020eb1de4b502f961939b2a5cef5ee9a87ffcd5154ebbbfce2a3637b8d9ba8dc"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0271",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_78",
+      "task_id": "multi_turn_base_78",
+      "record_hash": "9ae22d9661f0c696cf27c014a86200a1f123b28cebe773aba2eccd4e439cfac4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0272",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_115",
+      "task_id": "multi_turn_base_115",
+      "record_hash": "6f8077f2868b8954602cc18f74d05a9e8b39f5b321e06626aec77f4814abf28c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0273",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_32",
+      "task_id": "multi_turn_base_32",
+      "record_hash": "5c405f9e586e7e4fb2daa58a94a40d4a8bc4a2545b7a432f2bf3785ea292d704"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0274",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_68",
+      "task_id": "multi_turn_base_68",
+      "record_hash": "046d9a9042c083067ee5bba69d35a4cb10b1c678db2e4df7cd49642be2ca3773"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0275",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_118",
+      "task_id": "multi_turn_base_118",
+      "record_hash": "3269c51804112aa9a82181eadc1bbd7118c73dfbf3cab61c4392457ac2cba75a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0276",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_195",
+      "task_id": "multi_turn_base_195",
+      "record_hash": "5d114e5f49ffc5f825a6ed30de7081a9af8dc8d97ee2249ee47569e1451e4a1c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0277",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_146",
+      "task_id": "multi_turn_base_146",
+      "record_hash": "1b44871633498ea24417eb57e8b3745fc33cf279560cdab00411ecfa4ac48b89"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0278",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_3",
+      "task_id": "multi_turn_base_3",
+      "record_hash": "c5393f85cdf97d997531d63bd5ac2213e949ec7c94576299cf4566ee5402b10b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0279",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_53",
+      "task_id": "multi_turn_base_53",
+      "record_hash": "9f504725e23e48625921ba586a520bd481b32bd380fded7bc853fa3ff5e14c80"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0280",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_47",
+      "task_id": "multi_turn_base_47",
+      "record_hash": "61ceed9b41070feaf11fc3b8f3cafea1a7d6d5cc0ec8a27376346f6a6da6028f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0281",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_166",
+      "task_id": "multi_turn_base_166",
+      "record_hash": "3f3d666d8d5fd11c93dc7bafb3a9a9fd6056ad3ddef9f886da5e9152db8f279a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0282",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_120",
+      "task_id": "multi_turn_base_120",
+      "record_hash": "f143823704fce0f15d40ec6b1d7476e3e144314369d447125cbfc1601e141587"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0283",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_191",
+      "task_id": "multi_turn_base_191",
+      "record_hash": "bd499e8fc0ee643076d2e952bc36041f76f1341b29cf4cc3f26af386d9537e47"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0284",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_102",
+      "task_id": "multi_turn_base_102",
+      "record_hash": "f17e4c164f478ffd2cb3674ba69f434f89c1ae1ee8564fe75b13215bb4908bbd"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0285",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_125",
+      "task_id": "multi_turn_base_125",
+      "record_hash": "085522714ac94c1dbd19e168e974004b523604825d87fc2a61a50e39ec98b7fb"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0286",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_10",
+      "task_id": "multi_turn_base_10",
+      "record_hash": "568c2e8bfbf4cbe1bfbaf7e52847b4e33abb99f42cf76edee95eed38c14f4a8f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0287",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_64",
+      "task_id": "multi_turn_base_64",
+      "record_hash": "32063ed0ca65463a42330b7c40ffcc6b9a3969dce21d68ddfc30775ba61b6206"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0288",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_171",
+      "task_id": "multi_turn_base_171",
+      "record_hash": "1bde635c1f532c5636d7811861765368fa7cb29e7acaed3f26aa5c25015c5998"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0289",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_194",
+      "task_id": "multi_turn_base_194",
+      "record_hash": "eff111263550fc9437a14866eab5306d66d6f93c82d822790401ce26ba15147f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0290",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_14",
+      "task_id": "multi_turn_base_14",
+      "record_hash": "1c2ab61cb1e9b51fbe0b71f612c67694155ef648cad989d98b0b695be5d20e2a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0291",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_69",
+      "task_id": "multi_turn_base_69",
+      "record_hash": "6d3bc38cc4df0c73664935b565759571f22c8a3532e772b00548d1d76dcdbe3e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0292",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_50",
+      "task_id": "multi_turn_base_50",
+      "record_hash": "8e1fde5383547e52991e92eb2ecad75b6688f019300a18327cfccbd8f3454260"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0293",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_38",
+      "task_id": "multi_turn_base_38",
+      "record_hash": "048584447007187c5302feec05dd4639ba96cb93c72c1a77b32b4c2b5b96c51f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0294",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_14",
+      "task_id": "multi_turn_base_14",
+      "record_hash": "7b152be5e50dcf21c0b9cda8ea91dc54721283094e5ea6a77b0aa9ce8ded3b29"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0295",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_108",
+      "task_id": "multi_turn_base_108",
+      "record_hash": "1bc9f2dee5c5e4a0cfa54b79d03cd2aaaf21314fb926279c47162d2bc21642b7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0296",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_176",
+      "task_id": "multi_turn_base_176",
+      "record_hash": "d197eadabde7d2638ae8b31d5a44be4441dfaf121602ff0ca94cdcf8760e291c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0297",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_8",
+      "task_id": "multi_turn_base_8",
+      "record_hash": "9ee448380cb9f71a4572b5d6e670cc808ec31a8a5d938a425af0325112f54781"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0298",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_138",
+      "task_id": "multi_turn_base_138",
+      "record_hash": "bd60228cb2e99bf7076616406241bd668bae454cd9fa55a21f055cb026f8d901"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0299",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_10",
+      "task_id": "multi_turn_base_10",
+      "record_hash": "8bd2ae312ac4a6ebc7b188a863bed2c0ca3871ab5cfb05a2843daf0fa4c996c4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0300",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_13",
+      "task_id": "multi_turn_base_13",
+      "record_hash": "726a4788f5ea92c60f08b69c0c6fa31707c0fbc67e257903085bbbeb03e037a9"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0301",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_20",
+      "task_id": "multi_turn_base_20",
+      "record_hash": "825c18f739208b344c9ab8f0bf51c25b392a741bcd4cdbb46fa4eef37d1a42d7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0302",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_26",
+      "task_id": "multi_turn_base_26",
+      "record_hash": "1c1b8c68bd0fba6644ea6049daee4e411c84ba26eeb0bfd53a3f80d1147e42b9"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0303",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_18",
+      "task_id": "multi_turn_base_18",
+      "record_hash": "349ce02f35a4259a8ef4cb13d1d92709de7fbd921da40ddbf30122df2c412b32"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0304",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_76",
+      "task_id": "multi_turn_base_76",
+      "record_hash": "f84376937ec3495b66feb49273008049fe64a3c91d4dafb0815ab4b624d1fcab"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0305",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_70",
+      "task_id": "multi_turn_base_70",
+      "record_hash": "521339594baf3a3cc526a880f85eedc9470041d78919b6d6afca8d17e56c00c4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0306",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_10",
+      "task_id": "multi_turn_base_10",
+      "record_hash": "68ff36bd8499879183e63c62eea25bc7c6670838460d75fadd0f60aad12f62d7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0307",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_98",
+      "task_id": "multi_turn_base_98",
+      "record_hash": "c081247c4c452be16f260701f9b930cd3acec796f40b58dbb6028aa9769de967"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0308",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_169",
+      "task_id": "multi_turn_base_169",
+      "record_hash": "1f2fb3f163940a776198efbc798d25de25bee0e443b177e1966cb9f8a8073ea1"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0309",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_65",
+      "task_id": "multi_turn_base_65",
+      "record_hash": "8b58d2d33e94d0f38d06c26b3f6dd6de5def2cdb4fa23282df9e151732f97402"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0310",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_75",
+      "task_id": "multi_turn_base_75",
+      "record_hash": "87be4c4d79047b0ffac97e07299a9182b268f6ba09e61fcf3f794fcead32cdd4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0311",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_11",
+      "task_id": "multi_turn_base_11",
+      "record_hash": "70d627d8f6ab185fe2956f943d9af3c5f3dd531e2ae76977f280a2f6a858c74f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0312",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_151",
+      "task_id": "multi_turn_base_151",
+      "record_hash": "d7f2badd53c2107d606e875c8e845fc92dc48c2f4e70b3d5a35476375b222033"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0313",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_153",
+      "task_id": "multi_turn_base_153",
+      "record_hash": "02ff955916275cf66eb4d77da6523e955c220c44609672373a77ea86f011bd55"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0314",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_45",
+      "task_id": "multi_turn_base_45",
+      "record_hash": "bef031c8b188148f00650dd426197e8a96e87bbde37e9cfaf51502468b44e00e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0315",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_56",
+      "task_id": "multi_turn_base_56",
+      "record_hash": "5d34b7503399f36eae8842169f4a36eee183f97e2b53e7d61feb855a697e3b27"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0316",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_97",
+      "task_id": "multi_turn_base_97",
+      "record_hash": "e7e6cd0fc85c113314064c41291c69d1e8c682e928a01dd6870a3f8a68ba614c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0317",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_196",
+      "task_id": "multi_turn_base_196",
+      "record_hash": "b928ce7eaf79e80029991d154fc8910fc2e74362f100dbdb7d63e84c0715c4db"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0318",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_172",
+      "task_id": "multi_turn_base_172",
+      "record_hash": "ff56bdfe3bd60630dcf290917623cb6a8696b5e24b26d39b76313bc24a6d7918"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0319",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_15",
+      "task_id": "multi_turn_base_15",
+      "record_hash": "b70b3ca0b2be35710405557ccb8d0df0837a89c39412b36ff86f70607c236258"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0320",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_53",
+      "task_id": "multi_turn_base_53",
+      "record_hash": "1dc89c80a197e476bf68bb88e4e4cf553504a754af786f0713532a48e552b795"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0321",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_155",
+      "task_id": "multi_turn_base_155",
+      "record_hash": "978b4765e243da62de2c0b7b32aece3fe16431b05446b495dd67724047381374"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0322",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_135",
+      "task_id": "multi_turn_base_135",
+      "record_hash": "2b7554c261e998d7fae8f37ca22e20a8c342b2e64edd18316df0f9279230f355"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0323",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_63",
+      "task_id": "multi_turn_base_63",
+      "record_hash": "2e97ba61c89b47aae3be782b304f1ae96213301f48d49104521725e8ab64c0ea"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0324",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_78",
+      "task_id": "multi_turn_base_78",
+      "record_hash": "0fa3182604b79fdfc621c90a852e7864be320171ce032f103ce59b609ebcc604"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0325",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_9",
+      "task_id": "multi_turn_base_9",
+      "record_hash": "585fca22a8eded30501e82837cf2a51a4291b044536ea6d047e5b9e5d3719921"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0326",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_12",
+      "task_id": "multi_turn_base_12",
+      "record_hash": "f69cc90d63d400a3f791779acbcdc7fbb6ef47bde64c7d6f9070b478eb049539"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0327",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_76",
+      "task_id": "multi_turn_base_76",
+      "record_hash": "ad55f0b425f8a3c9bf242b42e50230c437fc6ff970e8f85e4ce644c6a7dd7dfa"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0328",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_87",
+      "task_id": "multi_turn_base_87",
+      "record_hash": "612c158e8ddcd954074e939006685fc4381f4bb0d555a981da25a20bce76af6e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0329",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_83",
+      "task_id": "multi_turn_base_83",
+      "record_hash": "ba2c4a2692046e6a7bf4822e9b277ba2ee0492ee912a4f0e01d51d6afab9006b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0330",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_19",
+      "task_id": "multi_turn_base_19",
+      "record_hash": "9945b562fe3cbc5c758044ba4c17b9258e43fe5464c306fdc231f258eda9a6c4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0331",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_71",
+      "task_id": "multi_turn_base_71",
+      "record_hash": "a1f91477663ded0fd3fbfd01b3e502e8978ec443e4176db67cc80057dbe21fa4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0332",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_147",
+      "task_id": "multi_turn_base_147",
+      "record_hash": "a174c7c1ebf1af18f23bb11df65aa0f9ac0d770112268e82cb77de36a80d22b0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0333",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_96",
+      "task_id": "multi_turn_base_96",
+      "record_hash": "c8c646ad5fe13f6f22b73901bf57edceb048ab6ba184ea0315af77b5cc74666e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0334",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_178",
+      "task_id": "multi_turn_base_178",
+      "record_hash": "8745bca3f381bebf68d8d9b65760dc356593452644ad5ccd6765ac6d6bcbfd9c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0335",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_162",
+      "task_id": "multi_turn_base_162",
+      "record_hash": "740464c5014e2989a8e5d0d44962223a56a4e70218800c6ac8a01ecfeda0733e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0336",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_168",
+      "task_id": "multi_turn_base_168",
+      "record_hash": "5e75c5f4fd8c4a9c4f77835c5c1613141cbe01dd3af98a8b2f1e29b624be727a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0337",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_157",
+      "task_id": "multi_turn_base_157",
+      "record_hash": "ad6e5377e5db729a8f05aa99ddb550c2c893e5506f71109b5edbc7452a839dce"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0338",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_6",
+      "task_id": "multi_turn_base_6",
+      "record_hash": "f229fb6375a1f1dc46a761cf262940a1fd14018e585052e20fdec0db91abf9d8"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0339",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_103",
+      "task_id": "multi_turn_base_103",
+      "record_hash": "d04f940a66fa4711d2af2dcbd5e97bcf15c27737a039946efaa4427969737ea7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0340",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_85",
+      "task_id": "multi_turn_base_85",
+      "record_hash": "0fdd075abc74931adb6a02fe264dd445dad0032413b2e7dd9a8f0179767ef6f0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0341",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_99",
+      "task_id": "multi_turn_base_99",
+      "record_hash": "bcdf50d2540c59c244858e2855af46a1f54ed2c626f0f72d31abe761bd342758"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0342",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_148",
+      "task_id": "multi_turn_base_148",
+      "record_hash": "23aaea1ed3ac9041ed892a2151427a13f8ce65bba5494b7ea6bb3af03a1d0afa"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0343",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_147",
+      "task_id": "multi_turn_base_147",
+      "record_hash": "77a517b406b089ae3b2c829448e93f71dfe1df8b73fd9163407f4db966cd757b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0344",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_12",
+      "task_id": "multi_turn_base_12",
+      "record_hash": "e480af1169a06bc8df567ab5fd5f405231a8096e128428a16bdd66ce37e253d3"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0345",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_77",
+      "task_id": "multi_turn_base_77",
+      "record_hash": "91badeabf6943e8dd7c2483f58603a1616b54a8391d657e43cadd9fa769b0351"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0346",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_191",
+      "task_id": "multi_turn_base_191",
+      "record_hash": "d36398735deb3aa19ea7b89f6ed986655af8dd253ec5434d54311a5eebc330b9"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0347",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_94",
+      "task_id": "multi_turn_base_94",
+      "record_hash": "f1088d796e30ba0c70492c7ef52f25efbffb2fdd45df7b06a29c7153c5ecfcfb"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0348",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_78",
+      "task_id": "multi_turn_base_78",
+      "record_hash": "6b30f884bf9fe8ec04fb1cbac056697bd6fd82cbf804df432d7976200b17935b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0349",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_160",
+      "task_id": "multi_turn_base_160",
+      "record_hash": "5e7383827992504b19a499a6ea503f5c2e6ef06c2a8b9546783f639ea88b8bc2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0350",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_73",
+      "task_id": "multi_turn_base_73",
+      "record_hash": "dffecb1b71a569adf8cc7e21995ea95add191cba57290b7b4838c58b2ac90056"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0351",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_140",
+      "task_id": "multi_turn_base_140",
+      "record_hash": "0a60de3b76b4e11790c944b33be76896bf72597a3c59ed6230b0a7c73c180aaa"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0352",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_79",
+      "task_id": "multi_turn_base_79",
+      "record_hash": "dd04a4c00fd017fa7b46aa95b75d8511950eb8a2ec5468c3dcfeb921d51c354a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0353",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_88",
+      "task_id": "multi_turn_base_88",
+      "record_hash": "5f907c76062b4fa78fd0907ff26f765833d0044ae3c907a120fb4c2280cc6882"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0354",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_89",
+      "task_id": "multi_turn_base_89",
+      "record_hash": "157b6fedfb449de4a0b277d12a2f55565fa47695fed7f8a06e9bbd583fd39e32"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0355",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_41",
+      "task_id": "multi_turn_base_41",
+      "record_hash": "674a9902e8fd254b34e1d66a92ec2561f1880749dfca49baae9af61058b370c1"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0356",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_44",
+      "task_id": "multi_turn_base_44",
+      "record_hash": "b1bf644c52e551c64d7c3fa5f830c0ada4ec9c6ea186526ac45acb245f5be812"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0357",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_87",
+      "task_id": "multi_turn_base_87",
+      "record_hash": "8281faba9118eb268cb6f2a5f76162b69b89431461b97c473bb03c1ddcaf6f60"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0358",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_108",
+      "task_id": "multi_turn_base_108",
+      "record_hash": "08c1c9538a2f9db750efd22a60f411d19a64c64d0f718ca5f8155772272410d4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0359",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_71",
+      "task_id": "multi_turn_base_71",
+      "record_hash": "45fa1cd8c4ae23be2f4f3c81c3692c97c9cfce8f559dcc59f16791fb5421c278"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0360",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_159",
+      "task_id": "multi_turn_base_159",
+      "record_hash": "2a856fe085bb395354ae443403a07e58bddf05584673290b2fe62e7e830538e9"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0361",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_194",
+      "task_id": "multi_turn_base_194",
+      "record_hash": "3badda9f0ef7c733c44325a8d0d37dbdafe82a9ed9900b16b633594616f62d90"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0362",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_192",
+      "task_id": "multi_turn_base_192",
+      "record_hash": "79eac90b47d32e1867e8f4a5a03973653cf3aa9a3a011523e6a6c6e625326aff"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0363",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_179",
+      "task_id": "multi_turn_base_179",
+      "record_hash": "c41bbae1b188fe91625752746f8383f843be57394389374de497979244127220"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0364",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_72",
+      "task_id": "multi_turn_base_72",
+      "record_hash": "02b3d26a210f44d2114ba7cd6557ef1c2b4b25155a70a6a9d87a80e19295ea58"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0365",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_155",
+      "task_id": "multi_turn_base_155",
+      "record_hash": "9dadb40f7d8ace2d278c9053b7dc53a59e9b452f0daccdf6fcbf67b0638840c6"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0366",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_150",
+      "task_id": "multi_turn_base_150",
+      "record_hash": "ba3534c042d217ba9724f5fbe100fb5fca7ad44216b9cd78330ec0397d8a7b2f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0367",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_21",
+      "task_id": "multi_turn_base_21",
+      "record_hash": "d180c7f4e90260a1ef2d87fef3b9b8f44c0df69ad410114535295dae7a2cb023"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0368",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_193",
+      "task_id": "multi_turn_base_193",
+      "record_hash": "e487285cc1d3b9e05cf632ddb5dc5b76ab064f7631c2ebdb049248ce09f9fdc5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0369",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_137",
+      "task_id": "multi_turn_base_137",
+      "record_hash": "790bf002036eaa46d6ab9eafa738e3f431571288543a1a2f185801d25049963c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0370",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_107",
+      "task_id": "multi_turn_base_107",
+      "record_hash": "dc98fa20dd52ca620a511052bb8c25624f1b7fcc55950f92f62076b0326ff39d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0371",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_64",
+      "task_id": "multi_turn_base_64",
+      "record_hash": "67213111415e67a4b8fc9e3f50689acd83615d13f8cb267dab26f1b1c1d062f9"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0372",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_175",
+      "task_id": "multi_turn_base_175",
+      "record_hash": "634545588e808848f07815de7c9294cf80b5adc5716d04b863da779bfaccc975"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0373",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_179",
+      "task_id": "multi_turn_base_179",
+      "record_hash": "62bf38461f307487935aa2979b120d059c6c7a122d603f22c52711e330cce8d9"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0374",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_143",
+      "task_id": "multi_turn_base_143",
+      "record_hash": "1f654eb6e7f15fdd581f310011db235252c17c280eb778efff0f95e912357407"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0375",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_103",
+      "task_id": "multi_turn_base_103",
+      "record_hash": "ade471acf963fe1de2e2dd6d9402a6cd91b95bdf87bcc4d4daa104059bcdc6ce"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0376",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_25",
+      "task_id": "multi_turn_base_25",
+      "record_hash": "935fefda285870e1321a2d672fb6f494cbe091da1b8259afd2a5ae38ba255a5e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0377",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_106",
+      "task_id": "multi_turn_base_106",
+      "record_hash": "6a3db9df8e5c69c46fe31378022d5d96067757fa94088b8203ca9e271bd67563"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0378",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_188",
+      "task_id": "multi_turn_base_188",
+      "record_hash": "edec52288ba315595a2251218a444ba3a9a9c3a2f2e193eeca47281b99463392"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0379",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_39",
+      "task_id": "multi_turn_base_39",
+      "record_hash": "0a1ac28a33512155f784e22dfcb1e7a1babfed017f5629fd6176baaa81b47f8b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0380",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_11",
+      "task_id": "multi_turn_base_11",
+      "record_hash": "a92eef57c6516fb3fbccef104c9fa630359389269826f2a64bdec02410d826d3"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0381",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_65",
+      "task_id": "multi_turn_base_65",
+      "record_hash": "8362b0d82577f6b7791157dfbb012c3e74357b5880b3ce14af81b1dcfbe5794c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0382",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_187",
+      "task_id": "multi_turn_base_187",
+      "record_hash": "9ae8bc52681fac1f22d9c07b11c736c918937a8548456f39b874c18c3a2f97d5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0383",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_33",
+      "task_id": "multi_turn_base_33",
+      "record_hash": "98def61052a346a10f5edae77d1efcc4e80b2348a6ee03084fe7bca8a0f52ad5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0384",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_128",
+      "task_id": "multi_turn_base_128",
+      "record_hash": "88377bff356a9fffb6e5c35aa2c397e1fa2ca71d2bc23ed55f56c33d055209f5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0385",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_20",
+      "task_id": "multi_turn_base_20",
+      "record_hash": "6d84348825888b1143098306d79c8ba40213e0c3dba06493f2a015811e2e6756"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0386",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_179",
+      "task_id": "multi_turn_base_179",
+      "record_hash": "57b478f3f2d2baa2c6bc662f1c640c7b74dc6085a4fca53b74c61c4b2d82a97c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0387",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_60",
+      "task_id": "multi_turn_base_60",
+      "record_hash": "b8f4d5985bfe221dc5b99a8478d4b055eff1639de9507997452c2305e5331162"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0388",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_151",
+      "task_id": "multi_turn_base_151",
+      "record_hash": "da9ba6865f0d03e680c066ce25fd3109eac3d6de37d39ee21438b451874663cc"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0389",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_1",
+      "task_id": "multi_turn_base_1",
+      "record_hash": "a0fff39b70ee60379035b3368acefae5d472dc2c0c3bb4428a21ae82512b75d4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0390",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_24",
+      "task_id": "multi_turn_base_24",
+      "record_hash": "00f9bf0feb912f04a5ef43dcb4c5f3d133f26bddf5057ed8b4f2a98c728a783b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0391",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_141",
+      "task_id": "multi_turn_base_141",
+      "record_hash": "87e776cce0e05444b48f54d9b76907336c1d699c8ba4a3eaef7b762a56bd95f0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0392",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_37",
+      "task_id": "multi_turn_base_37",
+      "record_hash": "f764cb47ba44e7d8e7f02d6a7f3e6140fc6a93181a36c9cfea65f6f41364d645"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0393",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_146",
+      "task_id": "multi_turn_base_146",
+      "record_hash": "4ae18a8a4e29007e7a25e543572b4c4884b8baef66e2d5d2281ed1bd0037bfe0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0394",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_92",
+      "task_id": "multi_turn_base_92",
+      "record_hash": "2380b5266860a05d37e9c4b16edeb7b01fc264c08c5348f69edc968b5dd6db1f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0395",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_28",
+      "task_id": "multi_turn_base_28",
+      "record_hash": "e4ca1ad6ae31a79c9532991a66debbc0188a44de6c193dfc7eaadf8b66c36a1b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0396",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_6",
+      "task_id": "multi_turn_base_6",
+      "record_hash": "dadf42536c5839a9f1045790d18b4915cd62a3e9ec05190f74ba5d5333990952"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0397",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_130",
+      "task_id": "multi_turn_base_130",
+      "record_hash": "e75085009942f0d95630e4533c6ef35eda514c6139e5c2a8094c617035dce1b8"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0398",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_174",
+      "task_id": "multi_turn_base_174",
+      "record_hash": "059195576226f25a933853a50e074a3a7cdaf8b3a48af2f8eb0a5df349a8dca2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0399",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_48",
+      "task_id": "multi_turn_base_48",
+      "record_hash": "553029c19d5c2594238a483274ef87a8047ebdffe4276316774f31bbf913abd7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0400",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_163",
+      "task_id": "multi_turn_base_163",
+      "record_hash": "e313c5bf5f2029d06bef76294d83d6a9ca36fa087b54568b85b1a29aff297745"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0401",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_18",
+      "task_id": "multi_turn_base_18",
+      "record_hash": "b247668940320d310995086c14537941b7943e6bb7f4c05d3418de8ce8e3a929"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0402",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_12",
+      "task_id": "multi_turn_base_12",
+      "record_hash": "d2da512ec670c2d86619f8a6f5d57533bac366c86b68b9266a58cbc9ec0d9648"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0403",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_112",
+      "task_id": "multi_turn_base_112",
+      "record_hash": "00d19839020c3885aaee896f9ca887afac8e0660237dce9751f874b4b9b901ea"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0404",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_126",
+      "task_id": "multi_turn_base_126",
+      "record_hash": "cf27d4992d7452a738c6b652695253e6259f3cc8042235feb045436a1c7001e0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0405",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_123",
+      "task_id": "multi_turn_base_123",
+      "record_hash": "b5cdab6037fb1d913db6b4752f9c555e82ec075fb95ad50d92fed562445bba17"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0406",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_105",
+      "task_id": "multi_turn_base_105",
+      "record_hash": "65d1886ed0bf1c4c732d7d2f689699b79f3d1dfe934ec4517a658a3bc8815144"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0407",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_23",
+      "task_id": "multi_turn_base_23",
+      "record_hash": "97fd5087825d6eac2d8bbe0a682bc091e2ebe98d96be4ae5a451b8d26707b9ed"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0408",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_59",
+      "task_id": "multi_turn_base_59",
+      "record_hash": "db09c3b91b425c8dceebfc65ba7cd63bf8a0a9aec4b476b83fc70bae7e62c779"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0409",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_4",
+      "task_id": "multi_turn_base_4",
+      "record_hash": "bc2844e3b503bf877ae626d8ad0cb7cf882e7b77d4728976ed8a03b3a0b9a2df"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0410",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_127",
+      "task_id": "multi_turn_base_127",
+      "record_hash": "75687c225a8cd395dcc417596f5e5248304fea748a481e25fd28b02b53018ba8"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0411",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_149",
+      "task_id": "multi_turn_base_149",
+      "record_hash": "7b1c74fcd9e25446551db6181d1fd84828554c20d0d5325f13d549f728e75f3e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0412",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_44",
+      "task_id": "multi_turn_base_44",
+      "record_hash": "c5c7ab9834ad766dd0845b0e952a7b4258faf1cdf717a5ffc76521a423c1aa10"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0413",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_23",
+      "task_id": "multi_turn_base_23",
+      "record_hash": "80f6417f16d07dd0d4232457435dad9c0258b3737a85feb29f3b046bcc37768e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0414",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_129",
+      "task_id": "multi_turn_base_129",
+      "record_hash": "37d33309d43eef9082465efd366af8b471f25ed0d787076dc00cf864690bc6c4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0415",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_49",
+      "task_id": "multi_turn_base_49",
+      "record_hash": "648970fff09401ffbb6f0047a47b5d1cc62c3f17d8ea393ff91d404371d34c44"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0416",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_52",
+      "task_id": "multi_turn_base_52",
+      "record_hash": "0a285bb3e0de4941c76cc20efe921798c50b187c9a55fa4316ff29647cf3bd91"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0417",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_0",
+      "task_id": "multi_turn_base_0",
+      "record_hash": "ef644c33dec619e0e0ad0089ae2d2e885cb9ab56260f5aac1b6d0d8ad43672e9"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0418",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_156",
+      "task_id": "multi_turn_base_156",
+      "record_hash": "3b7159c6080d2f5c95bfd8c192d0495701fe4ebc8e0addfc1c0b30a62fc436d2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0419",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_8",
+      "task_id": "multi_turn_base_8",
+      "record_hash": "861d90c1d19fe38860b9b6857c2ee55f482b26d648c1095e5204906350f9d04f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0420",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_174",
+      "task_id": "multi_turn_base_174",
+      "record_hash": "d07b50763c47483a75ee2332682fa97ede7ccbbbad184bc74a9beaaec5ed236c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0421",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_180",
+      "task_id": "multi_turn_base_180",
+      "record_hash": "59ca27067e10290667a9ff38e83cdcfff448d3fd41b1478a4973cb5602087597"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0422",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_174",
+      "task_id": "multi_turn_base_174",
+      "record_hash": "54d6cfcc398b3bcdbc09ea5c6e0a68993280a09d82c595a2c9e730606f8a8a11"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0423",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_113",
+      "task_id": "multi_turn_base_113",
+      "record_hash": "7f48fa00f0d6a5f658ffe0736df222b397ec0ba663aae203e3f57904161d395e"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0424",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_5",
+      "task_id": "multi_turn_base_5",
+      "record_hash": "709a8d34e33b0277786ca981f299cdad739864fbc54069d27101d78b5dfbf526"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0425",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_121",
+      "task_id": "multi_turn_base_121",
+      "record_hash": "a28157c1ee37563783b2bc461cde5bb33016736a37d089cfd11f26c9b6062bfd"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0426",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_46",
+      "task_id": "multi_turn_base_46",
+      "record_hash": "2f18e9381338b4641a9a5b898e06650445c796b49b3836d75fe9070e03f3165b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0427",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_114",
+      "task_id": "multi_turn_base_114",
+      "record_hash": "6b4ee2a850691bb27e5828728ff37b52b1cff99a00f7f4f8b4424eefa533b0c7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0428",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_77",
+      "task_id": "multi_turn_base_77",
+      "record_hash": "5c9b9b38676ff8af7c9947275bbc5acd8bd7117ce4125ef6b5cd3e956c5e994c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0429",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_182",
+      "task_id": "multi_turn_base_182",
+      "record_hash": "86a890287b655e458631a14e231e802cc2d898baa55647a0434b5b554c7c069f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0430",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_187",
+      "task_id": "multi_turn_base_187",
+      "record_hash": "042acfe05ec2fb22345783be7df7cf097e39fbca8ce4cfe57e096ca9ce55e53a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0431",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_144",
+      "task_id": "multi_turn_base_144",
+      "record_hash": "526ed7948b463977eff48b9e3911ef30106de4811eb8f8fe3c700bf9bad4d1c5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0432",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_85",
+      "task_id": "multi_turn_base_85",
+      "record_hash": "c80f0b2a82f865ff571a8189e98633641083e3f6026ebf251f6e989af4e5ffef"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0433",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_197",
+      "task_id": "multi_turn_base_197",
+      "record_hash": "841148ca2b57c7e25464ae5037ae49b7812d2c3110558ac32b3388dbeb30782d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0434",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_52",
+      "task_id": "multi_turn_base_52",
+      "record_hash": "e6d0bd83979c9bb7cc018a074a82738a13f06de25703ea98ab6cce1f6ed4db5f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0435",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_184",
+      "task_id": "multi_turn_base_184",
+      "record_hash": "74205bc3888bc1e1007c61aa09f65d130bda1692cc342b9f9267756c935922ea"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0436",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_157",
+      "task_id": "multi_turn_base_157",
+      "record_hash": "8dd5edbc1a9bb8fa2f551fee26e20b311b061bb866dd5f8ffadd773e40d52926"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0437",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_142",
+      "task_id": "multi_turn_base_142",
+      "record_hash": "eefaacd0fda0056a2bee6db328fbc971c3330ebe62157b0dba25024c3b982cd2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0438",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_17",
+      "task_id": "multi_turn_base_17",
+      "record_hash": "d7095a1ef01ffcd7ebfcc83f4d63176f536e7b31c1c74079a6f18d475f17147d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0439",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_185",
+      "task_id": "multi_turn_base_185",
+      "record_hash": "2fb79a73db33c18565b8760f096cd0b20b354afecd3c01710d4d066fa56e45a7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0440",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_162",
+      "task_id": "multi_turn_base_162",
+      "record_hash": "42a2c400539ba5e043188e94d22c0c8850503d46d76ba6edc7c1a68eb0d97bb9"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0441",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_62",
+      "task_id": "multi_turn_base_62",
+      "record_hash": "ff2576775c9874b9e44334096fd32c43a4990c26cce4dcdfb3ab76ac285d2277"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0442",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_90",
+      "task_id": "multi_turn_base_90",
+      "record_hash": "2e697959ad91d5240df93c7f1c10a43146e2f3b63357bb1753ab6835bb5533ca"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0443",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_93",
+      "task_id": "multi_turn_base_93",
+      "record_hash": "d8c6f011c70cd204b6c48adffea9fa4550ec9848cbec8adfed94a5447ad050c7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0444",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_63",
+      "task_id": "multi_turn_base_63",
+      "record_hash": "f186237877df9528aabaa498f18d8ca9df780844456eb4b81d766680e5f3a2a3"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0445",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_172",
+      "task_id": "multi_turn_base_172",
+      "record_hash": "f0c608517e3a8973d8ad1a5e36d01e545f85e38ce1f00e155fa42c34b0ca03e2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0446",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_56",
+      "task_id": "multi_turn_base_56",
+      "record_hash": "8088c68f0f0c132f2b30d313cb17c2cc7384c7df6fc27b8f1770417dd8571c6a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0447",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_171",
+      "task_id": "multi_turn_base_171",
+      "record_hash": "b241a21ccb9ce1b68d2ab9ad36b9212b13b25a44a662467d4e55f5b96699cdba"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0448",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_47",
+      "task_id": "multi_turn_base_47",
+      "record_hash": "d51f621b6df026bf28736c2da240bd5518dd551a5875d55c9d53d209b7e36309"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0449",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_41",
+      "task_id": "multi_turn_base_41",
+      "record_hash": "65badf196190ed09c5c1a435e8eca5173be9b58ed688c34a3128eee23e6f526d"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0450",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_197",
+      "task_id": "multi_turn_base_197",
+      "record_hash": "3a0200862056e47ee37ee28bb6fd6eb080e1b2736a32c077e479fe27d4acb69a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0451",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_97",
+      "task_id": "multi_turn_base_97",
+      "record_hash": "ca2bfb536e4eb9d98d4c679171377b728a9b87e6644e388dd3ee63c194c8afd7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0452",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_19",
+      "task_id": "multi_turn_base_19",
+      "record_hash": "ae6f4ac4786bac7c400dd7412d7f28bc740dd008d499b5881cadd35817a7dad2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0453",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_99",
+      "task_id": "multi_turn_base_99",
+      "record_hash": "f0922352d7e0ee957ddd40683f3e660ca3f83370073b6098ec092fb612daa8e1"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0454",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_21",
+      "task_id": "multi_turn_base_21",
+      "record_hash": "6a5ec3199ecb32ef644473757b41d82c2bddd02baa7a2130ef5e2ac855898af4"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0455",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_192",
+      "task_id": "multi_turn_base_192",
+      "record_hash": "d037e697f84e89a09d9fc28161d9d8ce848ef7d437b9d0ccd6b2c57316b18638"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0456",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_17",
+      "task_id": "multi_turn_base_17",
+      "record_hash": "d95876287f3e9096a2f92de88e8406cf74591f8089e57f809e9d57bc5fc927b0"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0457",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_100",
+      "task_id": "multi_turn_base_100",
+      "record_hash": "045c046f4852feaa667ccb9390c1b9814143e17d2a5e16997407f4048afc783f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0458",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_148",
+      "task_id": "multi_turn_base_148",
+      "record_hash": "161fbce29039b88813574f4abf1cdf17b0e0cc0514fe9565384cbefa5ff6c26f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0459",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_45",
+      "task_id": "multi_turn_base_45",
+      "record_hash": "f7b2936a4d0f0d992c7c63bc63cee9c800152086818c3bb5d2ecedbb2c49eb01"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0460",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_100",
+      "task_id": "multi_turn_base_100",
+      "record_hash": "8a44feb1667f728b3afec1741f6a17024f45c80a6c87487ebd3c546fd6b92799"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0461",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_188",
+      "task_id": "multi_turn_base_188",
+      "record_hash": "3a55fb9081d7fc31a7ecb8c55a228db41638a957d485dc362caf0543e4787c43"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0462",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_137",
+      "task_id": "multi_turn_base_137",
+      "record_hash": "7a4e2e66589cc4bf8de2ea502146a34d61693b907f9e088707c616cdd3cc4bca"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0463",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_16",
+      "task_id": "multi_turn_base_16",
+      "record_hash": "da00a868923ee870891bac37e2c2519d7ca209e61e7e7799cb3ea9b2f5596809"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0464",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_80",
+      "task_id": "multi_turn_base_80",
+      "record_hash": "52f3a7558131e947b33c01bba2c6d65d3258b5339a00fa82183c695c1df5c268"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0465",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_55",
+      "task_id": "multi_turn_base_55",
+      "record_hash": "f5c5b2b183c52801a940d845f580e47701fb9f23029f5254ff52d6f42a7fc146"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0466",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_11",
+      "task_id": "multi_turn_base_11",
+      "record_hash": "870e5071ff1839fe7d83ba37bd4ff5157736e36ca9bcdc8a1ef4702393c1ca80"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0467",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_97",
+      "task_id": "multi_turn_base_97",
+      "record_hash": "4485f360fb042d57fa51906936faab1d163bdb95b368973ef49849e247e59689"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0468",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_100",
+      "task_id": "multi_turn_base_100",
+      "record_hash": "4c81702282f52a12594abe4ed38262cdf8a915ff62134a0b5a5ffd6026700f52"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0469",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_86",
+      "task_id": "multi_turn_base_86",
+      "record_hash": "722eac30466035bb0d9b7ee00cefb1131c4d95fa8c9b86671326192dcc98348f"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0470",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_164",
+      "task_id": "multi_turn_base_164",
+      "record_hash": "b95ced403521008537aee1620360cec8b48779d66ac5944a4c648cdaff49f961"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0471",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_151",
+      "task_id": "multi_turn_base_151",
+      "record_hash": "d8b42ced2d3bb7c0c2c94ac3e2f38de8183459c1ffb972087913357a71b61df5"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0472",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_95",
+      "task_id": "multi_turn_base_95",
+      "record_hash": "3afeefd6236b8a7e240429023017ebf92c43fbdad04a20395cd45b2488c1727b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0473",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_31",
+      "task_id": "multi_turn_base_31",
+      "record_hash": "f2e5ce9e3cc9df59813c5d69030fdcb1caa000672a2d875e8a1f58e388d273a9"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0474",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_92",
+      "task_id": "multi_turn_base_92",
+      "record_hash": "b573213f2660032782701180dde43f6508c871b330f01f69fca35f3cfe718496"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0475",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_190",
+      "task_id": "multi_turn_base_190",
+      "record_hash": "e2816b39623e7cec206797c27f3d8cc1ecc3ea1b056fc3d15883ad560527256b"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0476",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_21",
+      "task_id": "multi_turn_base_21",
+      "record_hash": "df87002c87a44151772d7f057759413b5b0b71a26ececc0007316b271f5a2479"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0477",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_3",
+      "task_id": "multi_turn_base_3",
+      "record_hash": "bcc33bafd3dfafbf56a38972b387e69e55c6f8dca99cd542bdb48f0ff555635c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0478",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_89",
+      "task_id": "multi_turn_base_89",
+      "record_hash": "eec5025de32353323ce42c40d13d1d9a0b16a1f24a9e566fdac38e5fc30e5d9c"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0479",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_124",
+      "task_id": "multi_turn_base_124",
+      "record_hash": "3833087bdb72a4cc0154585e6497029020c9761833626995c193448675b2e9dc"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0480",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_32",
+      "task_id": "multi_turn_base_32",
+      "record_hash": "8c56ed5d6b113c73427ce98293bb840d04bddb4e443216d9d63615b2132776d6"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0481",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_177",
+      "task_id": "multi_turn_base_177",
+      "record_hash": "76714d3b81b02f9b2b7920d276368638b5c5474db4f72c062b05b31e670ce67a"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0482",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_165",
+      "task_id": "multi_turn_base_165",
+      "record_hash": "25b8fef26c74ec1fb7654cdcc6498c92f45d1de36eb998cbd8954917e2563b39"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0483",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_111",
+      "task_id": "multi_turn_base_111",
+      "record_hash": "48043fc8ee7e83e9c31eddc4e08ef25aea6aea048b70dc91e65512fe1eae4ef2"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0484",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_43",
+      "task_id": "multi_turn_base_43",
+      "record_hash": "0fb6c89bcfdd6d433eef3b321d32d9ce31048e93cee59f0d4b06d3a59f63c634"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0485",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_152",
+      "task_id": "multi_turn_base_152",
+      "record_hash": "2a84b4726be37495644024fbb3f4992fb84bb75efa55f4d05b5b1b349aad21c3"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0486",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_190",
+      "task_id": "multi_turn_base_190",
+      "record_hash": "d0e5f7eab86f53566b3d4d79ba295b0bced4b19c5c212f9ee05fd1ca07fd85b3"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0487",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_54",
+      "task_id": "multi_turn_base_54",
+      "record_hash": "537b285b1fd9ed63f5a73e6301c87a89ce813676403fa1caa04d26e7f1910437"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0488",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_163",
+      "task_id": "multi_turn_base_163",
+      "record_hash": "f1e6054805f7283835912349f7d8c1d5d209bc07eff56943afd435bfc3283b13"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0489",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_8",
+      "task_id": "multi_turn_base_8",
+      "record_hash": "3e410fc0beccbdf6372c1a88317d57b32cb0ffdcdca95fff9efed7c84d17cbf7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0490",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_161",
+      "task_id": "multi_turn_base_161",
+      "record_hash": "57dc98a85d3cc5ea016e9f8cdc549cd4ba2438289c5d81e5dff6ebd17571f634"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0491",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_71",
+      "task_id": "multi_turn_base_71",
+      "record_hash": "f4cd121f9ec6da37e441846ab0430b3f320ca1408fbaa8841ac2517589d54d33"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0492",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_48",
+      "task_id": "multi_turn_base_48",
+      "record_hash": "5153436aa5fd941e9b811911a4ec0df8530dd0447f57af187f9e6252e8689a60"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0493",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_96",
+      "task_id": "multi_turn_base_96",
+      "record_hash": "443932d899225808d2a775f70ecf0ca928f4d1485dddf32e6960d65595a75258"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0494",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_110",
+      "task_id": "multi_turn_base_110",
+      "record_hash": "1c7d463cc219a143b10bbc347728065f2ebb84e65993196432b2c1b952642984"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0495",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_61",
+      "task_id": "multi_turn_base_61",
+      "record_hash": "91470380586a3f784c51699af2fc2885295ca76fe7d6f67a72ef16298aee35e7"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0496",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_167",
+      "task_id": "multi_turn_base_167",
+      "record_hash": "c3b5281cc95131982c661974892f18dff9f33f53d89c92bbdab73cc1a5e28aab"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0497",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_46",
+      "task_id": "multi_turn_base_46",
+      "record_hash": "fb8e141d6e97215026c855237efb1e2687e00aad20f542c7eed5e4498ee738ba"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0498",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_35",
+      "task_id": "multi_turn_base_35",
+      "record_hash": "e9928f4fe7df8226b8bcd7a8a9308a776fb9a072befda2e8ea4c5bb0587b1007"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0499",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_84",
+      "task_id": "multi_turn_base_84",
+      "record_hash": "ea0ebe417ebebff6060787b5e6772d80ba41a82088e0acf1cb10dada3df301c6"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0500",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_194",
+      "task_id": "multi_turn_base_194",
+      "record_hash": "077d8dd88abb6d646676962634dde2cad1994409f2b3fb19daccd6e145dadaa1"
+    },
+    {
+      "case_id": "v4_full_pool_plan_20261027_0501",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_132",
+      "task_id": "multi_turn_base_132",
+      "record_hash": "e13b8d2d0b13f76f181df5b4c9438fcd7c8d0ae06a78647d6b40812a315a9e02"
+    }
+  ],
+  "split_seed": "bfcl-judge-task-split-v1",
+  "selection_order": "sha256(seed|execution_id)",
+  "novelty_limitation": "Available records and documented historical task IDs only."
+}

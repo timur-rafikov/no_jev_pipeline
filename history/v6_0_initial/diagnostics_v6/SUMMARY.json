@@ -1,0 +1,18 @@
+{
+  "completed": 6,
+  "full_pass": 4,
+  "semantic_pass": 4,
+  "human_gold": false,
+  "iid_holdout": false,
+  "dataset_export": false,
+  "accounting": {
+    "budget_usd": 1.7868005,
+    "actual_usd": 1.559572908,
+    "unresolved_reserved_usd": 0.049568400000000006,
+    "remaining_usd": 0.17765919199999997,
+    "attempts": 112,
+    "session_limit_usd": 0.2,
+    "session_actual_usd": 0.022340808000000045,
+    "session_reserved_delta_usd": 0.0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "unsafe_adverb_only",
+  "expected_edit": "unsafe",
+  "actual_edit": "unsafe",
+  "passed": true,
+  "review": {
+    "edit_evidence_ids": [
+      "m4"
+    ],
+    "edit_reason": "The proposed deletion removes only the adverb 'successfully' and leaves the retrospective completion claim 'The ticket was created.' in place, so it does not remove the targeted claim. The remaining message is coherent, but the edit is not sufficient for the stated target.",
+    "edit_verdict": "unsafe",
+    "requests": [
+      {
+        "base": "success",
+        "evidence_ids": [
+          "m2",
+          "m3",
+          "m4"
+        ],
+        "original": "success",
+        "reason": "The user asked to create a ticket called Help and provide its ID; the tool result shows ticket T42 was created, and the assistant reported that ID in both ORIGINAL and BASE.",
+        "user_id": "m1"
+      }
+    ],
+    "suggested_deletion": {
+      "exact_text": "The ticket was successfully created. ",
+      "occurrence": 0
+    }
+  },
+  "decision": {
+    "status": "rejected",
+    "reasons": [
+      "edit_unsafe"
+    ],
+    "original_outcome": "success",
+    "base_outcome": "success"
+  },
+  "request_hash": "a45f27ef441470bb919f43a069763a64e67fe580a98e95572207b8ab39ccfdae"
+}

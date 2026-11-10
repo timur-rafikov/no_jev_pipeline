@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case_id": "v3_new10_01",
+      "original_reconstructed": true,
+      "requests_match_frozen_prompts": true,
+      "family_verified": true,
+      "decision_replayed": true,
+      "recorded_validation_error": null
+    },
+    {
+      "case_id": "v3_new10_02",
+      "original_reconstructed": true,
+      "requests_match_frozen_prompts": true,
+      "family_verified": true,
+      "decision_replayed": true,
+      "recorded_validation_error": null
+    },
+    {
+      "case_id": "v3_new10_03",
+      "original_reconstructed": true,
+      "requests_match_frozen_prompts": true,
+      "family_verified": true,
+      "decision_replayed": true,
+      "recorded_validation_error": null
+    },
+    {
+      "case_id": "v3_new10_04",
+      "original_reconstructed": true,
+      "requests_match_frozen_prompts": true,
+      "family_verified": true,
+      "decision_replayed": true,
+      "recorded_validation_error": null
+    },
+    {
+      "case_id": "v3_new10_05",
+      "original_reconstructed": true,
+      "requests_match_frozen_prompts": true,
+      "family_verified": true,
+      "decision_replayed": true,
+      "recorded_validation_error": null
+    },
+    {
+      "case_id": "v3_new10_06",
+      "original_reconstructed": true,
+      "requests_match_frozen_prompts": true,
+      "family_verified": false,
+      "decision_replayed": true,
+      "recorded_validation_error": null
+    },
+    {
+      "case_id": "v3_new10_07",
+      "original_reconstructed": true,
+      "requests_match_frozen_prompts": true,
+      "family_verified": false,
+      "decision_replayed": false,
+      "recorded_validation_error": "invalid_edit_evidence"
+    },
+    {
+      "case_id": "v3_new10_08",
+      "original_reconstructed": true,
+      "requests_match_frozen_prompts": true,
+      "family_verified": false,
+      "decision_replayed": false,
+      "recorded_validation_error": "invalid_edit_evidence"
+    },
+    {
+      "case_id": "v3_new10_09",
+      "original_reconstructed": true,
+      "requests_match_frozen_prompts": true,
+      "family_verified": false,
+      "decision_replayed": false,
+      "recorded_validation_error": "invalid_edit_evidence"
+    },
+    {
+      "case_id": "v3_new10_10",
+      "original_reconstructed": true,
+      "requests_match_frozen_prompts": true,
+      "family_verified": true,
+      "decision_replayed": true,
+      "recorded_validation_error": null
+    }
+  ],
+  "request_receipts_checked": 21,
+  "source_hashes_verified": true,
+  "secrets_included": false,
+  "validation_failures_reported_not_hidden": true
+}

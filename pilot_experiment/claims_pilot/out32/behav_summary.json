@@ -1,0 +1,518 @@
+{
+ "n_traces": 46,
+ "baseline": {
+  "success": {
+   "accept_rate": 1.0,
+   "median_logit_diff": 4.250000953674316
+  },
+  "failure": {
+   "accept_rate": 0.08695652173913043,
+   "median_logit_diff": -4.999997138977051
+  }
+ },
+ "cells": [
+  {
+   "rendering": "inline",
+   "source": "agent",
+   "truth": "success",
+   "claim": "success",
+   "consistency": "consistent",
+   "delta_logit_mean": 1.3478257941163105,
+   "ci": [
+    1.043478055363116,
+    1.6630430384174637
+   ],
+   "decision_flips": "0/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "agent",
+   "truth": "success",
+   "claim": "failure",
+   "consistency": "contradicting",
+   "delta_logit_mean": -6.695650177157444,
+   "ci": [
+    -7.695649876672289,
+    -5.749998740204003
+   ],
+   "decision_flips": "21/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "agent",
+   "truth": "failure",
+   "claim": "success",
+   "consistency": "contradicting",
+   "delta_logit_mean": 3.201087616060091,
+   "ci": [
+    2.293479044541069,
+    4.1684787526402785
+   ],
+   "decision_flips": "3/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "agent",
+   "truth": "failure",
+   "claim": "failure",
+   "consistency": "consistent",
+   "delta_logit_mean": -3.2554361185301905,
+   "ci": [
+    -4.38587156255608,
+    -2.1250010032044804
+   ],
+   "decision_flips": "1/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "user",
+   "truth": "success",
+   "claim": "success",
+   "consistency": "consistent",
+   "delta_logit_mean": 1.3478257111881091,
+   "ci": [
+    0.9019018377298895,
+    1.7717387500016586
+   ],
+   "decision_flips": "0/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "user",
+   "truth": "success",
+   "claim": "failure",
+   "consistency": "contradicting",
+   "delta_logit_mean": -5.7826064293799195,
+   "ci": [
+    -6.685052275981592,
+    -4.912769449890955
+   ],
+   "decision_flips": "20/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "user",
+   "truth": "failure",
+   "claim": "success",
+   "consistency": "contradicting",
+   "delta_logit_mean": 4.043479091447333,
+   "ci": [
+    2.8531249533852807,
+    5.5327455173691975
+   ],
+   "decision_flips": "5/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "user",
+   "truth": "failure",
+   "claim": "failure",
+   "consistency": "consistent",
+   "delta_logit_mean": -2.9619576581146405,
+   "ci": [
+    -4.087094231014666,
+    -1.8313862669403134
+   ],
+   "decision_flips": "2/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "tool",
+   "truth": "success",
+   "claim": "success",
+   "consistency": "consistent",
+   "delta_logit_mean": 1.4347821707310884,
+   "ci": [
+    1.0869560651157215,
+    1.7826083485846933
+   ],
+   "decision_flips": "0/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "tool",
+   "truth": "success",
+   "claim": "failure",
+   "consistency": "contradicting",
+   "delta_logit_mean": -7.364127550436103,
+   "ci": [
+    -8.570648901682834,
+    -6.282606002753195
+   ],
+   "decision_flips": "22/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "tool",
+   "truth": "failure",
+   "claim": "success",
+   "consistency": "contradicting",
+   "delta_logit_mean": 4.22826185045035,
+   "ci": [
+    2.902175036072731,
+    5.750136849413748
+   ],
+   "decision_flips": "4/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "tool",
+   "truth": "failure",
+   "claim": "failure",
+   "consistency": "consistent",
+   "delta_logit_mean": -3.483696573454401,
+   "ci": [
+    -4.369566560601411,
+    -2.6467397054900297
+   ],
+   "decision_flips": "1/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "agent",
+   "truth": "success",
+   "claim": "success",
+   "consistency": "consistent",
+   "delta_logit_mean": 2.5978254624035046,
+   "ci": [
+    2.2391296572659325,
+    2.967390609888927
+   ],
+   "decision_flips": "0/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "agent",
+   "truth": "success",
+   "claim": "failure",
+   "consistency": "contradicting",
+   "delta_logit_mean": -7.646737137566442,
+   "ci": [
+    -8.663041231424913,
+    -6.690215797398402
+   ],
+   "decision_flips": "23/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "agent",
+   "truth": "failure",
+   "claim": "success",
+   "consistency": "contradicting",
+   "delta_logit_mean": 5.021739922139956,
+   "ci": [
+    3.7717395564136296,
+    6.407745873150619
+   ],
+   "decision_flips": "6/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "agent",
+   "truth": "failure",
+   "claim": "failure",
+   "consistency": "consistent",
+   "delta_logit_mean": -3.7500012529932936,
+   "ci": [
+    -4.635871080535909,
+    -2.815218334612639
+   ],
+   "decision_flips": "2/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "user",
+   "truth": "success",
+   "claim": "success",
+   "consistency": "consistent",
+   "delta_logit_mean": 3.108694851398468,
+   "ci": [
+    2.7065208554267883,
+    3.5328798323221835
+   ],
+   "decision_flips": "0/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "user",
+   "truth": "success",
+   "claim": "failure",
+   "consistency": "contradicting",
+   "delta_logit_mean": -6.929344692955846,
+   "ci": [
+    -7.929480567380138,
+    -6.032470096388589
+   ],
+   "decision_flips": "23/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "user",
+   "truth": "failure",
+   "claim": "success",
+   "consistency": "contradicting",
+   "delta_logit_mean": 6.086957244769387,
+   "ci": [
+    4.543342175593843,
+    7.766441453345445
+   ],
+   "decision_flips": "10/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "user",
+   "truth": "failure",
+   "claim": "failure",
+   "consistency": "consistent",
+   "delta_logit_mean": -4.010870574609093,
+   "ci": [
+    -5.076225002531125,
+    -2.9129079092455945
+   ],
+   "decision_flips": "2/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "tool",
+   "truth": "success",
+   "claim": "success",
+   "consistency": "consistent",
+   "delta_logit_mean": 2.630434251349905,
+   "ci": [
+    2.2499993950128556,
+    3.022010531308859
+   ],
+   "decision_flips": "0/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "tool",
+   "truth": "success",
+   "claim": "failure",
+   "consistency": "contradicting",
+   "delta_logit_mean": -7.874997891809629,
+   "ci": [
+    -9.13043260804337,
+    -6.7771720588207245
+   ],
+   "decision_flips": "23/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "tool",
+   "truth": "failure",
+   "claim": "success",
+   "consistency": "contradicting",
+   "delta_logit_mean": 5.173913815747136,
+   "ci": [
+    3.635598472052294,
+    6.896740122949299
+   ],
+   "decision_flips": "4/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "tool",
+   "truth": "failure",
+   "claim": "failure",
+   "consistency": "consistent",
+   "delta_logit_mean": -3.3423922139665354,
+   "ci": [
+    -4.309919835238353,
+    -2.4076094849602034
+   ],
+   "decision_flips": "1/23"
+  }
+ ],
+ "claim_effect": [
+  {
+   "rendering": "inline",
+   "source": "agent",
+   "truth": "success",
+   "success_minus_failure_claim": 8.043475971273754,
+   "ci": [
+    7.195377337349497,
+    8.95651960544612
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "agent",
+   "truth": "failure",
+   "success_minus_failure_claim": 6.456523734590282,
+   "ci": [
+    5.608696750065555,
+    7.304349917302961
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "agent",
+   "truth": "all",
+   "success_minus_failure_claim": 7.249999852932018,
+   "ci": [
+    6.608627354985346,
+    7.891304266436593
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "user",
+   "truth": "success",
+   "success_minus_failure_claim": 7.130432140568028,
+   "ci": [
+    6.423910642447678,
+    7.869562212993269
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "user",
+   "truth": "failure",
+   "success_minus_failure_claim": 7.005436749561973,
+   "ci": [
+    5.76073497125636,
+    8.358834462062172
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "user",
+   "truth": "all",
+   "success_minus_failure_claim": 7.067934445065001,
+   "ci": [
+    6.334238858164653,
+    7.820651855951418
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "tool",
+   "truth": "success",
+   "success_minus_failure_claim": 8.798909721167192,
+   "ci": [
+    7.907605736151986,
+    9.864263449155766
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "tool",
+   "truth": "failure",
+   "success_minus_failure_claim": 7.7119584239047505,
+   "ci": [
+    6.461821166717488,
+    9.065355189857277
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "tool",
+   "truth": "all",
+   "success_minus_failure_claim": 8.255434072535971,
+   "ci": [
+    7.415759727164455,
+    9.127784564184106
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "agent",
+   "truth": "success",
+   "success_minus_failure_claim": 10.244562599969948,
+   "ci": [
+    9.364128281240877,
+    11.228258204200994
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "agent",
+   "truth": "failure",
+   "success_minus_failure_claim": 8.771741175133249,
+   "ci": [
+    7.739131750943868,
+    9.934785452096358
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "agent",
+   "truth": "all",
+   "success_minus_failure_claim": 9.508151887551598,
+   "ci": [
+    8.741711693095123,
+    10.255501872722222
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "user",
+   "truth": "success",
+   "success_minus_failure_claim": 10.038039544354314,
+   "ci": [
+    9.244424856745677,
+    10.8749954716019
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "user",
+   "truth": "failure",
+   "success_minus_failure_claim": 10.09782781937848,
+   "ci": [
+    8.978125755845205,
+    11.337095168783613
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "user",
+   "truth": "all",
+   "success_minus_failure_claim": 10.067933681866396,
+   "ci": [
+    9.350474219380514,
+    10.85883163144083
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "tool",
+   "truth": "success",
+   "success_minus_failure_claim": 10.505432143159535,
+   "ci": [
+    9.429209667768168,
+    11.690350504802622
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "tool",
+   "truth": "failure",
+   "success_minus_failure_claim": 8.516306029713672,
+   "ci": [
+    7.054077621257823,
+    9.989132198853337
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "tool",
+   "truth": "all",
+   "success_minus_failure_claim": 9.510869086436603,
+   "ci": [
+    8.505366696984224,
+    10.524456164273232
+   ]
+  }
+ ],
+ "fact_gap_no_claim": 11.429346446109854,
+ "judge_follows_claim_when_contradicting": {
+  "inline/agent": "26/46",
+  "inline/user": "27/46",
+  "inline/tool": "28/46",
+  "quoted/agent": "31/46",
+  "quoted/user": "35/46",
+  "quoted/tool": "29/46"
+ }
+}

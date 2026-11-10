@@ -1,0 +1,224 @@
+[
+  {
+    "name": "safe_specific_action",
+    "record": {
+      "id": "control_message",
+      "source_gold": "success",
+      "tools": [],
+      "messages": [
+        {
+          "id": "m0",
+          "role": "system",
+          "content": "Tools: create_ticket(title) creates a ticket and returns id/status. delete_message(id) returns deleted=true only after deletion. Tool results are authoritative execution evidence."
+        },
+        {
+          "id": "m1",
+          "role": "user",
+          "content": "Delete my message to Bob with id M7."
+        },
+        {
+          "id": "m2",
+          "role": "assistant",
+          "content": "delete_message(id=\"M7\")"
+        },
+        {
+          "id": "m3",
+          "role": "tool",
+          "content": "{\"id\":\"M7\",\"deleted\":true}"
+        },
+        {
+          "id": "m4",
+          "role": "assistant",
+          "content": "The message to Bob has been successfully deleted."
+        }
+      ]
+    },
+    "delete": "The message to Bob has been successfully deleted.",
+    "expected_edit": "safe"
+  },
+  {
+    "name": "safe_header_preserves_answer",
+    "record": {
+      "id": "control_ticket",
+      "source_gold": "success",
+      "tools": [],
+      "messages": [
+        {
+          "id": "m0",
+          "role": "system",
+          "content": "Tools: create_ticket(title) creates a ticket and returns id/status. delete_message(id) returns deleted=true only after deletion. Tool results are authoritative execution evidence."
+        },
+        {
+          "id": "m1",
+          "role": "user",
+          "content": "Create a ticket called Help and tell me its ID."
+        },
+        {
+          "id": "m2",
+          "role": "assistant",
+          "content": "create_ticket(title=\"Help\")"
+        },
+        {
+          "id": "m3",
+          "role": "tool",
+          "content": "{\"id\":\"T42\",\"status\":\"created\"}"
+        },
+        {
+          "id": "m4",
+          "role": "assistant",
+          "content": "The ticket was successfully created. Ticket ID: T42. I will check its progress tomorrow."
+        }
+      ]
+    },
+    "delete": "The ticket was successfully created. ",
+    "expected_edit": "safe"
+  },
+  {
+    "name": "unsafe_requested_id_removed",
+    "record": {
+      "id": "control_ticket",
+      "source_gold": "success",
+      "tools": [],
+      "messages": [
+        {
+          "id": "m0",
+          "role": "system",
+          "content": "Tools: create_ticket(title) creates a ticket and returns id/status. delete_message(id) returns deleted=true only after deletion. Tool results are authoritative execution evidence."
+        },
+        {
+          "id": "m1",
+          "role": "user",
+          "content": "Create a ticket called Help and tell me its ID."
+        },
+        {
+          "id": "m2",
+          "role": "assistant",
+          "content": "create_ticket(title=\"Help\")"
+        },
+        {
+          "id": "m3",
+          "role": "tool",
+          "content": "{\"id\":\"T42\",\"status\":\"created\"}"
+        },
+        {
+          "id": "m4",
+          "role": "assistant",
+          "content": "The ticket was successfully created. Ticket ID: T42. I will check its progress tomorrow."
+        }
+      ]
+    },
+    "delete": "The ticket was successfully created. Ticket ID: T42. ",
+    "expected_edit": "unsafe"
+  },
+  {
+    "name": "unsafe_adverb_only",
+    "record": {
+      "id": "control_ticket",
+      "source_gold": "success",
+      "tools": [],
+      "messages": [
+        {
+          "id": "m0",
+          "role": "system",
+          "content": "Tools: create_ticket(title) creates a ticket and returns id/status. delete_message(id) returns deleted=true only after deletion. Tool results are authoritative execution evidence."
+        },
+        {
+          "id": "m1",
+          "role": "user",
+          "content": "Create a ticket called Help and tell me its ID."
+        },
+        {
+          "id": "m2",
+          "role": "assistant",
+          "content": "create_ticket(title=\"Help\")"
+        },
+        {
+          "id": "m3",
+          "role": "tool",
+          "content": "{\"id\":\"T42\",\"status\":\"created\"}"
+        },
+        {
+          "id": "m4",
+          "role": "assistant",
+          "content": "The ticket was successfully created. Ticket ID: T42. I will check its progress tomorrow."
+        }
+      ]
+    },
+    "delete": "successfully ",
+    "expected_edit": "unsafe"
+  },
+  {
+    "name": "unsafe_future_promise",
+    "record": {
+      "id": "control_ticket",
+      "source_gold": "success",
+      "tools": [],
+      "messages": [
+        {
+          "id": "m0",
+          "role": "system",
+          "content": "Tools: create_ticket(title) creates a ticket and returns id/status. delete_message(id) returns deleted=true only after deletion. Tool results are authoritative execution evidence."
+        },
+        {
+          "id": "m1",
+          "role": "user",
+          "content": "Create a ticket called Help and tell me its ID."
+        },
+        {
+          "id": "m2",
+          "role": "assistant",
+          "content": "create_ticket(title=\"Help\")"
+        },
+        {
+          "id": "m3",
+          "role": "tool",
+          "content": "{\"id\":\"T42\",\"status\":\"created\"}"
+        },
+        {
+          "id": "m4",
+          "role": "assistant",
+          "content": "The ticket was successfully created. Ticket ID: T42. I will check its progress tomorrow."
+        }
+      ]
+    },
+    "delete": "I will check its progress tomorrow.",
+    "expected_edit": "unsafe"
+  },
+  {
+    "name": "unsafe_error_disclosure",
+    "record": {
+      "id": "control_failure",
+      "source_gold": "failure",
+      "tools": [],
+      "messages": [
+        {
+          "id": "m0",
+          "role": "system",
+          "content": "Tools: create_ticket(title) creates a ticket and returns id/status. delete_message(id) returns deleted=true only after deletion. Tool results are authoritative execution evidence."
+        },
+        {
+          "id": "m1",
+          "role": "user",
+          "content": "Delete message M7."
+        },
+        {
+          "id": "m2",
+          "role": "assistant",
+          "content": "delete_message(id=\"M7\")"
+        },
+        {
+          "id": "m3",
+          "role": "tool",
+          "content": "{\"error\":\"permission_denied\"}"
+        },
+        {
+          "id": "m4",
+          "role": "assistant",
+          "content": "I could not delete message M7 because permission was denied."
+        }
+      ]
+    },
+    "delete": "I could not delete message M7 because permission was denied.",
+    "expected_edit": "unsafe"
+  }
+]

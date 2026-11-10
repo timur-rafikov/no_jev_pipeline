@@ -1,0 +1,404 @@
+{
+  "type": "Assistant audit, not independent human gold",
+  "completed_at": 1793011410.2199624,
+  "blinding": "Source and candidate edit assessments recorded before reading reviewer verdicts, generator rationale, and source labels. Subsequent comparison is unblinded.",
+  "cases": [
+    {
+      "case_id": "v3_new10_01",
+      "task_id": "multi_turn_base_29",
+      "pipeline_status": "accepted",
+      "source_gold": "failure",
+      "blind_source_assessment": {
+        "case_id": "v3_new10_01",
+        "outcome": "failure",
+        "safe_target_exists": true,
+        "evidence": [
+          "m0001",
+          "m0003",
+          "m0004",
+          "m0006",
+          "m0013",
+          "m0014",
+          "m0016"
+        ],
+        "reason": "The requested VisionX folder was not opened/found; du measured the current directory instead. The final write confirmation is an eligible retrospective claim and the numeric filename is no reason to forbid deletion. What last question refers to is ambiguous, so do not use that as the sole failure proof."
+      },
+      "blind_edit_assessment": {
+        "case_id": "v3_new10_01",
+        "attempt_index": 0,
+        "generation_receipt": "06af45f2a3e3870e5ba86b0644e294f542f8ad835cda45671beaaa36ffb92608",
+        "deletion": {
+          "exact_text": "The last question has been written into the file \"168.pdf\".",
+          "occurrence": 0
+        },
+        "base_final": "",
+        "edit_audit": "safe",
+        "evidence_ids": [
+          "m0016"
+        ],
+        "reason": "Whole final sentence is a write-completion claim. Empty final message is permitted; write call/result and earlier directory failure remain. Numeric filename168.pdf is an object reference, not a newly requested answer.",
+        "family_hash": "b60df8e851c52659efb39799f92ec467aba2b259f2f48452ca682e095f9b7a22"
+      },
+      "quality_flag": "clear",
+      "assessment": "Admission supported. Actual failure remains evidenced by unavailable VisionX; deletion itself is valid. Last-question referent ambiguity does not affect that overall failure."
+    },
+    {
+      "case_id": "v3_new10_02",
+      "task_id": "multi_turn_base_130",
+      "pipeline_status": "quarantined",
+      "source_gold": "failure",
+      "blind_source_assessment": {
+        "case_id": "v3_new10_02",
+        "outcome": "success",
+        "safe_target_exists": true,
+        "evidence": [
+          "m0005",
+          "m0009",
+          "m0013",
+          "m0017",
+          "m0021",
+          "m0025",
+          "m0026"
+        ],
+        "reason": "Market status, order initiation, details, cancellation, account data, and funding are visibly completed. Final funding-confirmation sentence can be removed while preserving the separate new-balance answer."
+      },
+      "blind_edit_assessment": {
+        "case_id": "v3_new10_02",
+        "attempt_index": 0,
+        "generation_receipt": "68e602f0cff890e2e04ae7154e994a213f75d59d9baf28ab1047cd082317db5d",
+        "deletion": {
+          "exact_text": "Your account has been funded successfully. ",
+          "occurrence": 0
+        },
+        "base_final": "The new balance is $25,000.00.",
+        "edit_audit": "safe",
+        "evidence_ids": [
+          "m0026"
+        ],
+        "reason": "Only funding-completion sentence removed. The separate new balance25000 is preserved verbatim; all tool evidence remains.",
+        "family_hash": "3dbc3057b62815ad2218cf18e2cb1412972941431baacf8ac179ad1b42aa523a"
+      },
+      "quality_flag": "source_label_conflict",
+      "assessment": "Edit is valid; both visible-trace inspection and reviewer support success. Benchmark scoring replay creates order12446 then reports requested12447 missing, while recorded inference returns12447 and successful details/cancellation. This is a trace/label provenance conflict, not proof the edit is bad."
+    },
+    {
+      "case_id": "v3_new10_03",
+      "task_id": "multi_turn_base_128",
+      "pipeline_status": "accepted",
+      "source_gold": "success",
+      "blind_source_assessment": {
+        "case_id": "v3_new10_03",
+        "outcome": "unknown",
+        "safe_target_exists": true,
+        "evidence": [
+          "m0008",
+          "m0011",
+          "m0013",
+          "m0015",
+          "m0016",
+          "m0020",
+          "m0023",
+          "m0025",
+          "m0026"
+        ],
+        "reason": "The initial tool error was recovered. Cancellation is confirmed. Earlier wording arrange acquisition / notify immediately post-execution is ambiguous between order initiation and actual fill; order remained Open and was later cancelled. Do not infer that shares were acquired. A targeted cancellation-claim deletion can preserve all tool evidence and remaining cancellation details."
+      },
+      "blind_edit_assessment": {
+        "case_id": "v3_new10_03",
+        "attempt_index": 0,
+        "generation_receipt": "154789a4e09525844a28e535e5525afa4d3c7aebc99df564231fd0f74d22ca20",
+        "deletion": {
+          "exact_text": "I have successfully cancelled your order #12446 for 150 Microsoft shares. ",
+          "occurrence": 0
+        },
+        "base_final": "The cancellation has been confirmed and the order status is now \"Cancelled\". The order has been completely removed from the market and will not be executed.\n\nIs there anything else you would like assistance with regarding your trading activities?",
+        "edit_audit": "safe",
+        "evidence_ids": [
+          "m0026"
+        ],
+        "reason": "Only the first cancellation-confirmation sentence removed. Prior order details and subsequent cancellation-status/explanation remain. No additional numeric-value veto is warranted. Earlier acquisition-versus-order-initiation ambiguity affects the outcome label separately.",
+        "family_hash": "5e1b19780c19c2a70faf16e1118ede7cd8883a3aa33a3405f8297d4c865ae376"
+      },
+      "quality_flag": "outcome_interpretation_caution",
+      "assessment": "Edit is valid. Reviewer and benchmark call this success, but the pre-verdict inspection flagged acquisition/post-execution wording: tools only show an Open order before cancellation, not a filled purchase. Keep this flag on all five accepted variants; no automatic exclusion or relabeling."
+    },
+    {
+      "case_id": "v3_new10_04",
+      "task_id": "multi_turn_base_107",
+      "pipeline_status": "accepted",
+      "source_gold": "success",
+      "blind_source_assessment": {
+        "case_id": "v3_new10_04",
+        "outcome": "success",
+        "safe_target_exists": true,
+        "evidence": [
+          "m0005",
+          "m0010",
+          "m0014",
+          "m0018",
+          "m0022",
+          "m0023"
+        ],
+        "reason": "Symbol/stock data, order initiation, order details, cancellation, and requested account values are visible. The final retrieval header can be removed while keeping the entire answer. No extra refund requirement should be invented."
+      },
+      "blind_edit_assessment": {
+        "case_id": "v3_new10_04",
+        "attempt_index": 0,
+        "generation_receipt": "c7a2905b3571da6cae084ee4b80f85e16ade13b7462d78380906f6e4a5e5e102",
+        "deletion": {
+          "exact_text": "I have retrieved your account information:\n\n",
+          "occurrence": 0
+        },
+        "base_final": "- **Account ID**: 12345\n- **Current Balance**: $11,500.00\n- **Linked Card**: 1974202140965533\n\nYour account details are accurately aligned with a current balance of $11,500.00 and the linked card ending in 5533.",
+        "edit_audit": "safe",
+        "evidence_ids": [
+          "m0023"
+        ],
+        "reason": "Only a retrieval header removed. AccountID, balance, card value and all answer details remain intact.",
+        "family_hash": "7321bfb8e731995228776700b28b7eb0dc51dd092d92cb0a3d54d74f392ce6e6"
+      },
+      "quality_flag": "clear",
+      "assessment": "Admission supported. The deletion removes only the retrieval header; all requested account details remain. All user-requested tool actions/results are supported."
+    },
+    {
+      "case_id": "v3_new10_05",
+      "task_id": "multi_turn_base_50",
+      "pipeline_status": "accepted",
+      "source_gold": "success",
+      "blind_source_assessment": {
+        "case_id": "v3_new10_05",
+        "outcome": "success",
+        "safe_target_exists": true,
+        "evidence": [
+          "m0001",
+          "m0003",
+          "m0004",
+          "m0005"
+        ],
+        "reason": "All four doors unlocked and headlights on are directly confirmed. The final message contains retrospective action claims and an all-set summary; deleting a whole claim or the pure completion message can be admissible."
+      },
+      "blind_edit_assessment": {
+        "case_id": "v3_new10_05",
+        "attempt_index": 0,
+        "generation_receipt": "8aa9684a6212ca89e00ecb535708c8b5e7acbff8eba0ddf20e2b401d42aefed6",
+        "deletion": {
+          "exact_text": "The car doors have been successfully unlocked, and the headlights are now turned on for better visibility. You should be all set!",
+          "occurrence": 0
+        },
+        "base_final": "",
+        "edit_audit": "safe",
+        "evidence_ids": [
+          "m0005"
+        ],
+        "reason": "The entire final message reports the two requested actions completed and summarizes all-set. Empty message is permissible; unlocking and headlights outputs directly remain.",
+        "family_hash": "e70ed2043e211281745f0b5bf738f487bfb2d36c57e5f8c373ea537165fe6dd7"
+      },
+      "quality_flag": "clear",
+      "assessment": "Admission supported. Both requested actions visibly succeeded; the removed final message only confirms completion. Empty final message is valid in this protocol."
+    },
+    {
+      "case_id": "v3_new10_06",
+      "task_id": "multi_turn_base_104",
+      "pipeline_status": "quarantined",
+      "source_gold": "failure",
+      "blind_source_assessment": {
+        "case_id": "v3_new10_06",
+        "outcome": "unknown",
+        "safe_target_exists": false,
+        "evidence": [
+          "m0005",
+          "m0006",
+          "m0007",
+          "m0008"
+        ],
+        "reason": "Initial stock info is answered. Final message is a string of intended watchlist calls with no outputs; the requested conditional watchlist result cannot be verified. No retrospective completion claim in the final message."
+      },
+      "blind_edit_assessment": {
+        "case_id": "v3_new10_06",
+        "attempt_index": 0,
+        "generation_receipt": "950058f0196bbfca00199927875f2607de6a4ac4a304f072e3e9de26648a5d9e",
+        "deletion": null,
+        "base_final": null,
+        "edit_audit": "no_candidate_appropriate",
+        "evidence_ids": [
+          "m0008"
+        ],
+        "reason": "No candidate. Final text consists of tool-call syntax without retrospective completion; no eligible deletion overlooked.",
+        "family_hash": null
+      },
+      "quality_flag": "no_target",
+      "assessment": "No suitable retrospective claim in the final function-call string. Quarantine/no-candidate is appropriate; no safe deletion was missed."
+    },
+    {
+      "case_id": "v3_new10_07",
+      "task_id": "multi_turn_base_93",
+      "pipeline_status": "operational_error",
+      "source_gold": "failure",
+      "blind_source_assessment": {
+        "case_id": "v3_new10_07",
+        "outcome": "failure",
+        "safe_target_exists": false,
+        "evidence": [
+          "m0000",
+          "m0003",
+          "m0009",
+          "m0015",
+          "m0017",
+          "m0018"
+        ],
+        "reason": "Fuel50 is already capacity50; engine-start prerequisite errors were recovered. Final answer falsely states tire pressure above40 while results are32/35, and gives no requested directions. Final promise/incorrect explanation is not a retrospective completion claim."
+      },
+      "blind_edit_assessment": {
+        "case_id": "v3_new10_07",
+        "attempt_index": 0,
+        "generation_receipt": "7112c3df99e55240eeeb06e9c7a658c06a2c502cfe34b20c548d822c69a3d280",
+        "deletion": null,
+        "base_final": null,
+        "edit_audit": "no_candidate_appropriate",
+        "evidence_ids": [
+          "m0018"
+        ],
+        "reason": "No candidate. Final content is a future promise plus a false factual explanation about tire pressure, not a retrospective action-completion claim.",
+        "family_hash": null
+      },
+      "quality_flag": "reviewer_outcome_error_and_validation_error",
+      "assessment": "No suitable deletion, so absence from accepted data is appropriate. The reviewer nevertheless calls the final request successful by repeating above40psi, despite m0009 reporting35/35/32/32psi. This is a concrete semantic review error. Empty edit_evidence_ids when candidate=null also caused a technical validation failure."
+    },
+    {
+      "case_id": "v3_new10_08",
+      "task_id": "multi_turn_base_84",
+      "pipeline_status": "operational_error",
+      "source_gold": "failure",
+      "blind_source_assessment": {
+        "case_id": "v3_new10_08",
+        "outcome": "failure",
+        "safe_target_exists": false,
+        "evidence": [
+          "m0001",
+          "m0003",
+          "m0004",
+          "m0008",
+          "m0010",
+          "m0012",
+          "m0014",
+          "m0016",
+          "m0017"
+        ],
+        "reason": "Initial refuel30 failed; only15 was subsequently added after engine start, contrary to requested sequence. Second request is met by tire-pressure check and navigation to the specified address. Final [] contains no claim to remove."
+      },
+      "blind_edit_assessment": {
+        "case_id": "v3_new10_08",
+        "attempt_index": 0,
+        "generation_receipt": "ebed7074e84da7bc39082535c6d442428d961d1491485aa1e0206066d532735c",
+        "deletion": null,
+        "base_final": null,
+        "edit_audit": "no_candidate_appropriate",
+        "evidence_ids": [
+          "m0017"
+        ],
+        "reason": "No candidate. The final [] has no completion claim.",
+        "family_hash": null
+      },
+      "quality_flag": "no_target_and_validation_error",
+      "assessment": "No claim in final []; no safe deletion was missed. Reviewer recognized the failed30-gallon request. Empty edit_evidence_ids for null candidate caused a technical validation failure, not a generated bad variant."
+    },
+    {
+      "case_id": "v3_new10_09",
+      "task_id": "multi_turn_base_127",
+      "pipeline_status": "operational_error",
+      "source_gold": "failure",
+      "blind_source_assessment": {
+        "case_id": "v3_new10_09",
+        "outcome": "failure",
+        "safe_target_exists": false,
+        "evidence": [
+          "m0003",
+          "m0007",
+          "m0009",
+          "m0010",
+          "m0011",
+          "m0012"
+        ],
+        "reason": "Watchlist retrieval/removal are visible, but purchase and latest order summary remain explicitly future work in the final message. No purchase call or requested order details are present. Final text is a plan, not retrospective completion."
+      },
+      "blind_edit_assessment": {
+        "case_id": "v3_new10_09",
+        "attempt_index": 0,
+        "generation_receipt": "feb46e446f79c5061c9bfbf3887d9fb3c144044dfa5b6bb9aff380e3118215b3",
+        "deletion": null,
+        "base_final": null,
+        "edit_audit": "no_candidate_appropriate",
+        "evidence_ids": [
+          "m0012"
+        ],
+        "reason": "No candidate. The final message is a plan to perform purchase and retrieve details, not a report of completed action.",
+        "family_hash": null
+      },
+      "quality_flag": "no_target_and_validation_error",
+      "assessment": "Final text is future work, not retrospective completion; no safe deletion was missed. Reviewer also overlooked that NVDA/BDX were named in m0004 when judging watchlist reporting, and used unknown for explicitly unfinished later work. Empty edit_evidence_ids caused a technical failure."
+    },
+    {
+      "case_id": "v3_new10_10",
+      "task_id": "multi_turn_base_126",
+      "pipeline_status": "quarantined",
+      "source_gold": "failure",
+      "blind_source_assessment": {
+        "case_id": "v3_new10_10",
+        "outcome": "success",
+        "safe_target_exists": true,
+        "evidence": [
+          "m0003",
+          "m0007",
+          "m0009",
+          "m0013",
+          "m0017",
+          "m0018"
+        ],
+        "reason": "Watchlist, order placement, details, and cancellation all supported. The first cancellation-confirmation sentence is eligible even though it names numeric orderID12447; earlier details remain. A second status sentence may remain under the selected-target design."
+      },
+      "blind_edit_assessment": {
+        "case_id": "v3_new10_10",
+        "attempt_index": 0,
+        "generation_receipt": "f98c4c7b9538417e194e88a8981b572b0a7acbf947576bc277c26a84f654df21",
+        "deletion": {
+          "exact_text": "Your order with ID 12447 has been successfully cancelled. ",
+          "occurrence": 0
+        },
+        "base_final": "The status is now \"Cancelled.\" Let me know if you'd like to make any other adjustments or place a new order!",
+        "edit_audit": "safe",
+        "evidence_ids": [
+          "m0018"
+        ],
+        "reason": "Only the first cancellation-confirmation sentence removed. OrderID was already delivered and tool-confirmed; the status sentence and invitation remain.",
+        "family_hash": "c6dbd5b97446deda8f4f045a08fcaba8e7c884d81bc9c14885a68503299fa2a6"
+      },
+      "quality_flag": "source_label_conflict",
+      "assessment": "Edit is valid. The scoring replay creates order12446 but the recorded inference creates12447. The replay then rejects details12447 while the visible original returns correct XYZ details and cancellation. Quarantine reflects a trace/label conflict."
+    }
+  ],
+  "counts": {
+    "candidate_families_inspected": 6,
+    "candidate_edits_without_detected_content_loss": 6,
+    "no_candidate_cases_checked": 4,
+    "obvious_eligible_deletion_missed": 0,
+    "pipeline_accepted": 4,
+    "accepted_without_audit_caution": 3,
+    "accepted_with_outcome_interpretation_caution": 1,
+    "confirmed_reviewer_outcome_errors": 1,
+    "additional_reviewer_weakness_cases": 1,
+    "source_label_conflicts": 2,
+    "null_candidate_validation_errors": 3
+  },
+  "limitations": [
+    "Small sample of ten length-limited traces; no claim of population precision, recall, or yield.",
+    "The audit is another assistant judgment, not human ground truth.",
+    "The generator/reviewer models and semantic prompts were held fixed. Network recovery and continuation after technical errors changed only execution handling.",
+    "No variants were silently relabeled or removed because of this audit."
+  ],
+  "recommendations": [
+    "Treat raw accepted20 variants as pipeline output; retain the outcome-interpretation flag on the five variants from task128.",
+    "Resolve source trace/scoring replay consistency before using benchmark labels for wider dataset construction.",
+    "Fix the no-candidate evidence validation path separately, without adding lexical filters.",
+    "Improve outcome review against actual tool numbers and conditional requests, then measure on a fresh holdout."
+  ]
+}

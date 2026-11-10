@@ -1,0 +1,13 @@
+{
+  "type": "assistant inspection, not independent human gold",
+  "accepted_cases": {
+    "regression_1": "Deletion removes only ticket-creation header. Title, description, priority5, Open status, ticketID4 preserved. Tool confirmation matches all three user requests after recovered rename error.",
+    "regression_2": "Only final retrospective message-deletion confirmation removed; empty final message permitted. Earlier blank payload rather than notes proves failure regardless of final annotation. Tool result of deletion preserved."
+  },
+  "known_limitations": [
+    "Reviewer on regression_4 overlooked unresolved distance condition and broken comma splice; original/base unknown caused quarantine, and v2 guard separately detects the splice.",
+    "Reviewer accepted count9 deletion in fresh_1; v2 guard blocks it. This is a data-dependent fix, not independent test accuracy.",
+    "No positive fresh-hash result in two completed fresh records.",
+    "Numeric guard is conservative; semantic errors involving words can still evade it."
+  ]
+}

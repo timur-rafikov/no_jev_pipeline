@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "sources_checked": 8,
+  "request_response_pairs_checked": 16,
+  "families_checked": 4,
+  "paid_calls_during_verification": 0,
+  "resume_calls_api_zero": true,
+  "source_hashes_and_raw_normalization": true,
+  "frozen_protocol_and_selection": true,
+  "five_shared_bases_and_exact_patches": true,
+  "exact_or_ordered_elided_citations": true,
+  "benchmark_grade_agreement_not_overridden": true,
+  "accounting": {
+    "budget_usd": 0.711952776,
+    "actual_usd": 0.63067935,
+    "unresolved_reserved_usd": 0.049568400000000006,
+    "remaining_usd": 0.031705025999999976,
+    "attempts": 61
+  }
+}

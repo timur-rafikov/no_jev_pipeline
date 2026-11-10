@@ -1,0 +1,175 @@
+{
+  "case_id": "c08",
+  "request_id": "1a201a27a2c9bfb44c3d2b33797f667af52d779419d506ec4776b851857205f2",
+  "review": {
+    "edit_evidence_ids": [
+      "m0017"
+    ],
+    "edit_reason": "The deleted sentence is a retrospective completion/status claim: it says the GPS was set and the car is now navigating to the requested destination. The supporting tool observation remains in BASE at m0016, and the remaining final text is an intelligible pleasantry. No separately requested answer artifact or substantive caveat was removed.",
+    "edit_verdict": "safe",
+    "requests": [
+      {
+        "answer_evidence": [
+          {
+            "message_id": "m0007",
+            "quote": "Your fuel tank is already full at 50.0 gallons, which is the maximum capacity."
+          }
+        ],
+        "base": "success",
+        "criterion": "User wants assurance/result that the car has a full tank; this is a state_satisfied request when the tank is already full.",
+        "delivery_requirement": "required",
+        "evidence": [
+          {
+            "message_id": "m0003",
+            "quote": "{\"fuelLevel\": 50.0}"
+          },
+          {
+            "message_id": "m0004",
+            "quote": "{\"error\": \"Cannot fill gas above the tank capacity.\"}"
+          },
+          {
+            "message_id": "m0006",
+            "quote": "{\"fuelLevel\": 50.0}"
+          }
+        ],
+        "execution_checks": [
+          {
+            "evidence": [
+              {
+                "message_id": "m0003",
+                "quote": "{\"fuelLevel\": 50.0}"
+              },
+              {
+                "message_id": "m0006",
+                "quote": "{\"fuelLevel\": 50.0}"
+              }
+            ],
+            "observed_result": "state_satisfied",
+            "reason": "The tank is already at 50.0 gallons, the stated maximum capacity. The attempted additional fill was rejected because the tank was already full, so the requested full-tank state was satisfied without needing more fuel.",
+            "required_result": "state_satisfied",
+            "requirement_quote": "make sure I'm set with a full tank before hitting the road"
+          }
+        ],
+        "original": "success",
+        "reason": "The user asked for a full tank before a long drive. Tool observations show the fuel level already at 50.0 gallons, and the assistant reported that state accurately. Both ORIGINAL and BASE retain m0007, so this turn is unchanged and successful.",
+        "request_kind": "action_or_state",
+        "unsupported_material_claims": [],
+        "user_id": "m0001"
+      },
+      {
+        "answer_evidence": [
+          {
+            "message_id": "m0013",
+            "quote": "The car is ready for your adventure! The doors are locked, the parking brake is engaged, and the engine is running smoothly."
+          }
+        ],
+        "base": "success",
+        "criterion": "User requests engine start, door locking, parking-brake engagement, and confirmation that these states are good.",
+        "delivery_requirement": "required",
+        "evidence": [
+          {
+            "message_id": "m0010",
+            "quote": "{\"lockStatus\": \"locked\", \"remainingUnlockedDoors\": 0}"
+          },
+          {
+            "message_id": "m0011",
+            "quote": "{\"parkingBrakeStatus\": \"engaged\""
+          },
+          {
+            "message_id": "m0012",
+            "quote": "{\"engineState\": \"running\""
+          }
+        ],
+        "execution_checks": [
+          {
+            "evidence": [
+              {
+                "message_id": "m0012",
+                "quote": "{\"engineState\": \"running\""
+              }
+            ],
+            "observed_result": "completed_effect",
+            "reason": "The startEngine call returned engineState: running.",
+            "required_result": "completed_effect",
+            "requirement_quote": "Start up the engine for me"
+          },
+          {
+            "evidence": [
+              {
+                "message_id": "m0010",
+                "quote": "{\"lockStatus\": \"locked\", \"remainingUnlockedDoors\": 0}"
+              }
+            ],
+            "observed_result": "completed_effect",
+            "reason": "The lockDoors call returned locked status with zero remaining unlocked doors.",
+            "required_result": "completed_effect",
+            "requirement_quote": "the doors being locked"
+          },
+          {
+            "evidence": [
+              {
+                "message_id": "m0011",
+                "quote": "{\"parkingBrakeStatus\": \"engaged\""
+              }
+            ],
+            "observed_result": "completed_effect",
+            "reason": "The activateParkingBrake call returned parkingBrakeStatus: engaged.",
+            "required_result": "completed_effect",
+            "requirement_quote": "the handbrake engaged"
+          }
+        ],
+        "original": "success",
+        "reason": "The assistant started the engine, locked all doors, engaged the parking brake, and delivered the requested confirmation in m0013. Both ORIGINAL and BASE retain m0013, so this turn is unaffected by the edit and successful.",
+        "request_kind": "action_or_state",
+        "unsupported_material_claims": [],
+        "user_id": "m0008"
+      },
+      {
+        "answer_evidence": [],
+        "base": "success",
+        "criterion": "User requests navigation to a specific destination; success requires the navigation effect to be observed, not merely planned.",
+        "delivery_requirement": "not_requested",
+        "evidence": [
+          {
+            "message_id": "m0016",
+            "quote": "{\"status\": \"Navigating to 123 Pine St, San Francisco, CA 94016\"}"
+          }
+        ],
+        "execution_checks": [
+          {
+            "evidence": [
+              {
+                "message_id": "m0016",
+                "quote": "{\"status\": \"Navigating to 123 Pine St, San Francisco, CA 94016\"}"
+              }
+            ],
+            "observed_result": "completed_effect",
+            "reason": "The set_navigation call returned status 'Navigating to 123 Pine St, San Francisco, CA 94016', showing the requested navigation was established.",
+            "required_result": "completed_effect",
+            "requirement_quote": "Set the GPS for a seamless ride to that location"
+          }
+        ],
+        "original": "success",
+        "reason": "The navigation tool observation at m0016 establishes the requested navigation effect. The deleted final-assistant sentence was only a retrospective confirmation; the BASE still retains the execution evidence, and no separate user-facing report was required.",
+        "request_kind": "action_or_state",
+        "unsupported_material_claims": [],
+        "user_id": "m0014"
+      }
+    ]
+  },
+  "evaluation": {
+    "semantic_constraints_pass": true,
+    "semantic_errors": [],
+    "contract_valid": true,
+    "contract_error": null,
+    "assessment": {
+      "status": "accepted",
+      "reasons": [],
+      "original_outcome": "success",
+      "base_outcome": "success",
+      "label_policy": "two-blind-grounded-reviews-completion-contract-v4",
+      "benchmark_relation": "disagrees"
+    },
+    "full_pass": true
+  }
+}

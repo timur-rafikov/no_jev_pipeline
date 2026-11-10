@@ -1,0 +1,11 @@
+{
+  "last_case": "v3_new10_10",
+  "accounting": {
+    "budget_usd": 0.711952776,
+    "actual_usd": 0.37776135,
+    "unresolved_reserved_usd": 0.049568400000000006,
+    "remaining_usd": 0.28462302599999995,
+    "attempts": 42
+  },
+  "source_selection_sha256": "4da4cd3b667516753dea4143103ae788fcd1fc2d1407dc6026eb0746fecd96aa"
+}

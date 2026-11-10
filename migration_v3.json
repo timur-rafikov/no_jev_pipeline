@@ -1,0 +1,106 @@
+{
+  "from": "no-jev-edit-review-v2",
+  "to": "no-jev-edit-review-v3",
+  "paid_calls": 0,
+  "prompt_changes": true,
+  "historical_reviews_rerun_with_new_prompt": false,
+  "changes": [
+    {
+      "case": "fresh_1",
+      "before": {
+        "status": "rejected",
+        "reasons": [
+          "protected_numeric_literal_removed"
+        ]
+      },
+      "after": {
+        "status": "accepted",
+        "reasons": []
+      }
+    },
+    {
+      "case": "fresh_2",
+      "before": {
+        "status": "rejected",
+        "reasons": [
+          "no_candidate",
+          "edit_unsafe"
+        ]
+      },
+      "after": {
+        "status": "rejected",
+        "reasons": [
+          "no_candidate",
+          "edit_unsafe"
+        ]
+      }
+    },
+    {
+      "case": "fresh_3",
+      "before": {
+        "status": "budget_deferred",
+        "reasons": []
+      },
+      "after": {
+        "status": "budget_deferred",
+        "reasons": []
+      }
+    },
+    {
+      "case": "regression_1",
+      "before": {
+        "status": "accepted",
+        "reasons": []
+      },
+      "after": {
+        "status": "accepted",
+        "reasons": []
+      }
+    },
+    {
+      "case": "regression_2",
+      "before": {
+        "status": "accepted",
+        "reasons": []
+      },
+      "after": {
+        "status": "accepted",
+        "reasons": []
+      }
+    },
+    {
+      "case": "regression_3",
+      "before": {
+        "status": "rejected",
+        "reasons": [
+          "no_candidate",
+          "edit_unsafe"
+        ]
+      },
+      "after": {
+        "status": "rejected",
+        "reasons": [
+          "no_candidate",
+          "edit_unsafe"
+        ]
+      }
+    },
+    {
+      "case": "regression_4",
+      "before": {
+        "status": "quarantined",
+        "reasons": [
+          "dangling_punctuation_after_deletion",
+          "outcome_unknown"
+        ]
+      },
+      "after": {
+        "status": "quarantined",
+        "reasons": [
+          "outcome_unknown"
+        ]
+      }
+    }
+  ],
+  "reason": "User requested semantic review instead of numeric/punctuation vetoes. Original model verdicts and edits were preserved; only decision logic was replayed. This replay is not a live validation of the new prompts."
+}

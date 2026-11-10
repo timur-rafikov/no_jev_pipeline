@@ -1,0 +1,11 @@
+{
+  "original_manifest_files": 199,
+  "mismatches": [
+    "accounting.json"
+  ],
+  "note": "All 199 archived files checked. Only accounting.json changed, as expected after new paid calls; original code, raw data and 42 original receipt files match their archived hashes.",
+  "expected_mutable_files": [
+    "accounting.json"
+  ],
+  "unexpected_mismatches": []
+}

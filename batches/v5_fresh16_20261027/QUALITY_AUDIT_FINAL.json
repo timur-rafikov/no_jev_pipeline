@@ -1,0 +1,165 @@
+{
+  "protocol": "no-jev-edit-review-v5.6",
+  "annotator": "Root assistant; not an independent human annotator",
+  "pre_review_reference": {
+    "reviewer": "Root assistant, not independent human annotation",
+    "timing": "Written before any generation/review call on these16 records; source grades not displayed to annotator",
+    "limits": "Ambiguous rubric cases explicitly unresolved, not forced into gold labels. Tool definitions inspected for fuel semantics and selected other actions.",
+    "cases": [
+      {
+        "number": 1,
+        "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_31",
+        "candidate_expectation": "no_candidate",
+        "visible_outcome_expectation": "unknown",
+        "notes": "Only plans and malformed tool-looking text; no observations or retrospective final claim."
+      },
+      {
+        "number": 2,
+        "source_id": "gpt-4.1-2025-04-14::multi_turn_base_187",
+        "candidate_expectation": "candidate",
+        "visible_outcome_expectation": "failure",
+        "notes": "Invoice retrieved but never provided; draft request instead sent. Ticket creation is confirmed. Preserve original invoice omission."
+      },
+      {
+        "number": 3,
+        "source_id": "gpt-4.1-2025-04-14::multi_turn_base_97",
+        "candidate_expectation": "candidate",
+        "visible_outcome_expectation": "failure",
+        "notes": "Fill error unrecovered, no range answer or sent-message list. Engine final start lacks observation; message later sent."
+      },
+      {
+        "number": 4,
+        "source_id": "gpt-4.1-2025-04-14::multi_turn_base_143",
+        "candidate_expectation": "no_candidate",
+        "visible_outcome_expectation": "unknown",
+        "notes": "Final message only unobserved calls. Order-choice ambiguity and account answer absent."
+      },
+      {
+        "number": 5,
+        "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_49",
+        "candidate_expectation": "no_candidate",
+        "visible_outcome_expectation": "failure",
+        "notes": "Final is requested log10 answer, not completion claim. Sorted output not persisted and unsorted tail; temp not found."
+      },
+      {
+        "number": 6,
+        "source_id": "gpt-4.1-2025-04-14::multi_turn_base_195",
+        "candidate_expectation": "candidate",
+        "visible_outcome_expectation": "success_or_ambiguous",
+        "notes": "Flight booked/cancelled, tweet posted/retweeted; check whether draft wording requires only draft and whether fare needs prose."
+      },
+      {
+        "number": 7,
+        "source_id": "gpt-4.1-2025-04-14::multi_turn_base_164",
+        "candidate_expectation": "candidate",
+        "visible_outcome_expectation": "failure",
+        "notes": "Invoice requested but only retrieval claim given; budget 1428.57 vs fare 2100 also needs interpretation."
+      },
+      {
+        "number": 8,
+        "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_162",
+        "candidate_expectation": "no_candidate_or_uncertain",
+        "visible_outcome_expectation": "unknown",
+        "notes": "Final already-closed state is not clearly a retrospective agent-action claim. Invented airport expansions and traveller identity; incorrect verification."
+      },
+      {
+        "number": 9,
+        "source_id": "gpt-4.1-2025-04-14::multi_turn_base_33",
+        "candidate_expectation": "no_candidate",
+        "visible_outcome_expectation": "unknown",
+        "notes": "Final discloses unsent/wrong-recipient issue; protected error disclosure. Catherine identity is not established."
+      },
+      {
+        "number": 10,
+        "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_69",
+        "candidate_expectation": "candidate",
+        "visible_outcome_expectation": "success",
+        "notes": "980 km, 40 L converted and rounded to10.57 gallons, additional fuel confirmed; engine/tweet tags/mention correct."
+      },
+      {
+        "number": 11,
+        "source_id": "gpt-4.1-2025-04-14::multi_turn_base_136",
+        "candidate_expectation": "candidate",
+        "visible_outcome_expectation": "failure",
+        "notes": "Pure retrieval claim can be removed; requested account data not delivered. Earlier stock/purchase actions unobserved."
+      },
+      {
+        "number": 12,
+        "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_151",
+        "candidate_expectation": "candidate",
+        "visible_outcome_expectation": "failure",
+        "notes": "Converts1500 USD instead of actual400, reports1200 EUR. Cancellation and tweet confirmed. Do not remove wrong conversion."
+      },
+      {
+        "number": 13,
+        "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_23",
+        "candidate_expectation": "no_candidate_or_uncertain",
+        "visible_outcome_expectation": "unknown",
+        "notes": "Already-resolved status plus no-action statement, not newly performed retrospective action; existing resolution content unknown."
+      },
+      {
+        "number": 14,
+        "source_id": "gpt-4.1-2025-04-14::multi_turn_base_137",
+        "candidate_expectation": "candidate",
+        "visible_outcome_expectation": "failure",
+        "notes": "Watchlist and detailed stock report never delivered; final generic completion claim removable."
+      },
+      {
+        "number": 15,
+        "source_id": "gpt-4.1-2025-04-14::multi_turn_base_114",
+        "candidate_expectation": "no_candidate",
+        "visible_outcome_expectation": "success_or_ambiguous",
+        "notes": "Final delivers requested messages; no retrospective completion target. Sender identity may require tool context."
+      },
+      {
+        "number": 16,
+        "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_73",
+        "candidate_expectation": "candidate",
+        "visible_outcome_expectation": "success",
+        "notes": "Already full50gal; doors locked, brake engaged, engine running; GPS exact destination confirmed."
+      }
+    ]
+  },
+  "final_controls": [
+    14,
+    10,
+    16
+  ],
+  "final_controls_purposive_not_random": true,
+  "untouched_final_holdout": false,
+  "controls": [
+    {
+      "number": 14,
+      "expected": "Hold: required watchlist and detailed stock report never delivered in assistant prose.",
+      "observed": "quarantined",
+      "finding": "Primary still mistakes tool output for delivery; independent auditor finds failure; consensus gate holds family."
+    },
+    {
+      "number": 10,
+      "expected": "Accept: distance, rounded extra fuel, engine and exact tweet confirmed.",
+      "observed": "accepted",
+      "finding": "Full source and final edit inspected; requested content and execution preserved."
+    },
+    {
+      "number": 16,
+      "expected": "Accept: tank already full, engine/doors/brake confirmed, navigation exact.",
+      "observed": "accepted",
+      "finding": "Full source and final edit inspected; already-satisfied fuel state is supported by tools."
+    }
+  ],
+  "accepted_families": 2,
+  "accepted_variants": 10,
+  "accepted_label_distribution": {
+    "success": 2
+  },
+  "remaining_unvalidated_families": 7,
+  "precision_estimate": null,
+  "recall_estimate": null,
+  "limits": [
+    "Only two accepted source traces, both success; no independently validated failure-family yield.",
+    "Final controls were selected after diagnosis; not a fresh unbiased validation set.",
+    "Primary reviewer still fails the known directory and answer-delivery cases.",
+    "Two-model agreement is an automatic label, not independently established human gold.",
+    "The control removes one chosen claim; other original claims, including redundant ones, may remain."
+  ]
+}

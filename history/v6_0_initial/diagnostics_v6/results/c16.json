@@ -1,0 +1,213 @@
+{
+  "case_id": "c16",
+  "request_id": "01fb7d3aac4207cad2e2b250dc5508b1d9cde50b752d77aff45f93d750fa74b3",
+  "review": {
+    "edit_evidence_ids": [
+      "m0035",
+      "m0025"
+    ],
+    "edit_reason": "The deletion removes an explicit disclosure that the requested funding operation failed due to a system error. That is substantive error/caveat content, not a retrospective completion claim; removing it makes the BASE record misleading even though the later message still alludes to an issue.",
+    "edit_verdict": "unsafe",
+    "requests": [
+      {
+        "answer_evidence": [],
+        "base": "success",
+        "criterion": "Conditionally remove ZETA only if it is on the watchlist.",
+        "delivery_requirement": "not_requested",
+        "evidence": [
+          {
+            "message_id": "m0003",
+            "quote": "{\"watchlist\": [\"NVDA\"]}"
+          },
+          {
+            "message_id": "m0004",
+            "quote": "{\"error\": \"Stock ZETA not found in watchlist.\"}"
+          }
+        ],
+        "execution_checks": [
+          {
+            "evidence": [
+              {
+                "message_id": "m0003",
+                "quote": "{\"watchlist\": [\"NVDA\"]}"
+              },
+              {
+                "message_id": "m0004",
+                "quote": "{\"error\": \"Stock ZETA not found in watchlist.\"}"
+              }
+            ],
+            "observed_result": "state_satisfied",
+            "reason": "ZETA is absent from the observed watchlist and removal returned not found, so the conditional removal was unnecessary and the requested end state already held.",
+            "required_result": "state_satisfied",
+            "requirement_quote": "If Zeta Corp is part of my watchlist, please remove it for me."
+          }
+        ],
+        "original": "success",
+        "reason": "The assistant confirmed ZETA was not in the current watchlist, consistent with the tool result. BASE is unchanged for this turn.",
+        "request_kind": "action_or_state",
+        "unsupported_material_claims": [],
+        "user_id": "m0001"
+      },
+      {
+        "answer_evidence": [
+          {
+            "message_id": "m0009",
+            "quote": "Your current watchlist contains the following stock: NVDA."
+          }
+        ],
+        "base": "success",
+        "criterion": "Retrieve and clearly report the stocks currently on the watchlist.",
+        "delivery_requirement": "required",
+        "evidence": [
+          {
+            "message_id": "m0008",
+            "quote": "{\"watchlist\": [\"NVDA\"]}"
+          }
+        ],
+        "execution_checks": [],
+        "original": "success",
+        "reason": "The assistant delivered the current watchlist content: NVDA. BASE is unchanged.",
+        "request_kind": "information_only",
+        "unsupported_material_claims": [],
+        "user_id": "m0006"
+      },
+      {
+        "answer_evidence": [
+          {
+            "message_id": "m0013",
+            "quote": "Here is a list of available technology stock symbols: AAPL, GOOG, MSFT, and NVDA."
+          }
+        ],
+        "base": "success",
+        "criterion": "Provide a list of available technology stock symbols.",
+        "delivery_requirement": "required",
+        "evidence": [
+          {
+            "message_id": "m0012",
+            "quote": "{\"stock_list\": [\"AAPL\", \"GOOG\", \"MSFT\", \"NVDA\"]}"
+          }
+        ],
+        "execution_checks": [],
+        "original": "success",
+        "reason": "The assistant delivered the technology stock list from the tool result. BASE is unchanged.",
+        "request_kind": "information_only",
+        "unsupported_material_claims": [],
+        "user_id": "m0010"
+      },
+      {
+        "answer_evidence": [
+          {
+            "message_id": "m0017",
+            "quote": "**Current Price**: $310.23"
+          },
+          {
+            "message_id": "m0017",
+            "quote": "**Percent Change**: +0.09%"
+          }
+        ],
+        "base": "unknown",
+        "criterion": "Give a detailed update on Microsoft's current status and trends.",
+        "delivery_requirement": "required",
+        "evidence": [
+          {
+            "message_id": "m0016",
+            "quote": "{\"price\": 310.23, \"percent_change\": 0.09, \"volume\": 3.234, \"MA(5)\": 309.88, \"MA(20)\": 310.11}"
+          }
+        ],
+        "execution_checks": [],
+        "original": "unknown",
+        "reason": "The answer provides the price and trend indicators, but it states volume as '3.234 million' while the tool only reports volume 3.234 without establishing that unit.",
+        "request_kind": "information_only",
+        "unsupported_material_claims": [
+          "The answer states trading volume as '3.234 million'; the tool result reports volume 3.234 without establishing the 'million' unit."
+        ],
+        "user_id": "m0014"
+      },
+      {
+        "answer_evidence": [],
+        "base": "failure",
+        "criterion": "Purchase 50 shares of MSFT at $320 each; this requires a completed acquisition, not merely a pending order.",
+        "delivery_requirement": "not_requested",
+        "evidence": [
+          {
+            "message_id": "m0020",
+            "quote": "{\"order_id\": 12447, \"order_type\": \"Buy\", \"status\": \"Pending\", \"price\": 320.0, \"amount\": 50}"
+          }
+        ],
+        "execution_checks": [
+          {
+            "evidence": [
+              {
+                "message_id": "m0020",
+                "quote": "{\"order_id\": 12447, \"order_type\": \"Buy\", \"status\": \"Pending\", \"price\": 320.0, \"amount\": 50}"
+              }
+            ],
+            "observed_result": "in_progress",
+            "reason": "The order was accepted and is Pending; no observation shows the purchase completed.",
+            "required_result": "completed_effect",
+            "requirement_quote": "Please purchase 50 shares of Microsoft at $320 each"
+          }
+        ],
+        "original": "failure",
+        "reason": "The tool returned a Pending buy order, not a completed purchase of 50 shares. BASE is unchanged.",
+        "request_kind": "action_or_state",
+        "unsupported_material_claims": [],
+        "user_id": "m0018"
+      },
+      {
+        "answer_evidence": [],
+        "base": "failure",
+        "criterion": "Deposit 10 times OMEG's price, rounded to the nearest thousand, into the trading account.",
+        "delivery_requirement": "not_requested",
+        "evidence": [
+          {
+            "message_id": "m0024",
+            "quote": "{\"price\": 457.23, \"percent_change\": 0.12, \"volume\": 2.345, \"MA(5)\": 456.78, \"MA(20)\": 458.12}"
+          },
+          {
+            "message_id": "m0025",
+            "quote": "Error during execution: '<=' not supported between instances of 'str' and 'int'"
+          }
+        ],
+        "execution_checks": [
+          {
+            "evidence": [
+              {
+                "message_id": "m0025",
+                "quote": "Error during execution: '<=' not supported between instances of 'str' and 'int'"
+              }
+            ],
+            "observed_result": "failed",
+            "reason": "Every fund_account attempt returned a system error, so the deposit was not completed.",
+            "required_result": "completed_effect",
+            "requirement_quote": "I intend to deposit 10 times the prices of OMEG rounded to nearest thousands into my trading account"
+          }
+        ],
+        "original": "failure",
+        "reason": "The funding operation repeatedly failed with a system error; the calculation was shown but the deposit did not occur. BASE still fails, and the edit removes the explicit error disclosure.",
+        "request_kind": "action_or_state",
+        "unsupported_material_claims": [],
+        "user_id": "m0022"
+      }
+    ]
+  },
+  "evaluation": {
+    "semantic_constraints_pass": true,
+    "semantic_errors": [],
+    "contract_valid": true,
+    "contract_error": null,
+    "assessment": {
+      "status": "quarantined",
+      "reasons": [
+        "edit_unsafe",
+        "outcome_unknown",
+        "unsupported_material_claims"
+      ],
+      "original_outcome": "failure",
+      "base_outcome": "failure",
+      "label_policy": "two-blind-grounded-reviews-completion-contract-v4",
+      "benchmark_relation": "agrees"
+    },
+    "full_pass": true
+  }
+}

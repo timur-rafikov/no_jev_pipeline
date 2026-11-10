@@ -1,0 +1,213 @@
+{
+  "protocol": {
+    "protocol": "no-jev-edit-review-v5.3",
+    "code_sha256": "d0c7487fd751bc1952e7ad20054521bbb5be96899ca8acb5a315b7de432cc525",
+    "v4_sha256": "bce3b34e337d8e7d467041eacbe0492b0a7ef7d46dd0995ba9ef313c0691ed3c",
+    "v3_sha256": "64e6586bbf3fb2458a30fdfba7745ba397e413bc6d3e95449f8dc61d42049d4b",
+    "generation_prompt_hash": "e4bc7906a7ec003afc6d5824639585b0b21e75f6e42b34c7c5a838df602c6416",
+    "review_prompt_hash": "e6a55d57c8afc021987fa761e0c32a8ba9370bc86776d5150c850795dfb0ea9b",
+    "audit_prompt_hash": "e59f9b123642727610932ec1c6c1e16c39431cbba345b2bda9f00afde7a32f96",
+    "review_schema_hash": "83f155108c1af2bdd7035f11beb01a07edce351551493593ca9f3fbe9bab7e32",
+    "generator": "google/gemini-3.8-flash",
+    "reviewer": "openai/gpt-5.4-mini",
+    "auditor": "anthropic/claude-sonnet-4.6",
+    "conditions": [
+      [
+        "no_target_claim",
+        null,
+        null
+      ],
+      [
+        "agent_success",
+        "agent",
+        "The task was completed successfully."
+      ],
+      [
+        "agent_failure",
+        "agent",
+        "The task was not completed successfully."
+      ],
+      [
+        "user_success",
+        "user",
+        "The task was completed successfully."
+      ],
+      [
+        "user_failure",
+        "user",
+        "The task was not completed successfully."
+      ]
+    ],
+    "label_policy": "two-blind-visible-trace-reviews-v3",
+    "semantic_repairs": 0,
+    "null_policy": "reject_without_full_review; separately audit a sample"
+  },
+  "runtime_hashes": {
+    "assemble.py": "8692604643468f1c9a420d85070ce4e5fb5d00488320ca66a937b83c76324254",
+    "budget_v5.py": "ea2a161e6e691c8b66b0e9e58563389b5c0c39bd856404a42439bd82ff94ad7e",
+    "budget_v4.py": "df8c8835658fa01ef5e4f2e5027734a67b881ec3d7ac9944a3afcf85e94638bd",
+    "client.py": "613de9313c63f1c52aefaa72518a42d4ab4d7b6985193a402d9445032b33fadc",
+    "prepare_data.py": "d5e6438015e7eb1d0591be395c508692d72e61fa91397beb2b4ab5df07c90e47",
+    "build_dataset.py": "680c056e7abfb61468b72c48185a533c6e7855264ee342922d35333f8f39f8fe",
+    "models_snapshot_v5.json": "f9ddb484b11d06953346f17981cf69950ffc1faec85313324412c4f15459bc04"
+  },
+  "source": {
+    "dataset": "HuanzhiMao/BFCL-Result",
+    "release": "2025-11-03",
+    "commit": "cadd76a8dc62984e7bf15ecaf358f070bae745cc",
+    "raw_files": {
+      "DeepSeek-V3.2-Exp_result.jsonl": "2c5ffce21c7268c9ccc5c14d292f49240aaf57268b6eac133bdf19013b75fcca",
+      "DeepSeek-V3.2-Exp_score.jsonl": "a5c4df5a501265159a302f4b9fe0fbcced90429e5f73fd8fa590271a45f7fd0b",
+      "Qwen_Qwen3-235B-A22B-Instruct-2507_result.jsonl": "181b67429c8e9d520f9cfa2d04823ffc2ac7442a558cb71f9c2a18a58cf5a47b",
+      "Qwen_Qwen3-235B-A22B-Instruct-2507_score.jsonl": "8fedbc7871db2f2446ed1464de3ed9e87ec38ca4b6cf13851643810d58884364",
+      "gpt-4.1-2025-04-14_result.jsonl": "3e454198bf4b656016cde9044855d027db4cf4b12c265a8e466c3a1f7cadd3ac",
+      "gpt-4.1-2025-04-14_score.jsonl": "cafe862d44e1043a215ca0d03d7ecbe545b7ed93d01f0981cb9b82a7d5f4b575"
+    }
+  },
+  "seed": "v5-fresh-full-length-20261027",
+  "selection_order": "sha256(canonical([seed,source_id]))",
+  "max_message_bytes": 0,
+  "unique_tasks": true,
+  "excluded_task_ids": [
+    "multi_turn_base_1",
+    "multi_turn_base_104",
+    "multi_turn_base_107",
+    "multi_turn_base_118",
+    "multi_turn_base_12",
+    "multi_turn_base_122",
+    "multi_turn_base_126",
+    "multi_turn_base_128",
+    "multi_turn_base_130",
+    "multi_turn_base_132",
+    "multi_turn_base_146",
+    "multi_turn_base_15",
+    "multi_turn_base_158",
+    "multi_turn_base_163",
+    "multi_turn_base_179",
+    "multi_turn_base_182",
+    "multi_turn_base_194",
+    "multi_turn_base_197",
+    "multi_turn_base_27",
+    "multi_turn_base_29",
+    "multi_turn_base_39",
+    "multi_turn_base_41",
+    "multi_turn_base_46",
+    "multi_turn_base_50",
+    "multi_turn_base_6",
+    "multi_turn_base_64",
+    "multi_turn_base_79",
+    "multi_turn_base_82",
+    "multi_turn_base_99"
+  ],
+  "scope_exclusions": {
+    "already_used_task": 73,
+    "structural_no_final_assistant": 26,
+    "structural_no_final_prose": 73
+  },
+  "eligible_executions": 428,
+  "source_executions": 600,
+  "source_tasks": 200,
+  "semantic_preselection": false,
+  "gold_used_for_selection": false,
+  "split_seed": "bfcl-judge-task-split-v1",
+  "selected": [
+    {
+      "case_id": "v5_fresh16_20261027_0001",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_31",
+      "task_id": "multi_turn_base_31",
+      "record_hash": "31635615dc03ec1d9d1c04d7ba53b99ac1f8ad803c2e5bf70177861d8564ca04"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0002",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_187",
+      "task_id": "multi_turn_base_187",
+      "record_hash": "d155eb8ac439cfac5debdcc5357f8aede720b212f9ecb88e39134143a59bd9d4"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0003",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_97",
+      "task_id": "multi_turn_base_97",
+      "record_hash": "4b5677318e228889b877be034726fce5d9e8831a32affcccc65b883115b8d617"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0004",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_143",
+      "task_id": "multi_turn_base_143",
+      "record_hash": "29b53e49bcb0b9e6b5f6f36cbfc194e4a8f10ff144eaff7cca682cfe42682eb0"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0005",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_49",
+      "task_id": "multi_turn_base_49",
+      "record_hash": "00471f1034118d033d8ef5345d05b162f9f6419fc6ff0aa4aaed43ee3ac70930"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0006",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_195",
+      "task_id": "multi_turn_base_195",
+      "record_hash": "d8b5ce0f7c9ed0d476cc0c4055d006a20fdfa07f24cfd087a5587490e4888569"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0007",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_164",
+      "task_id": "multi_turn_base_164",
+      "record_hash": "985604b6107c40e07d6bb0b81734c629a9f47c97a8786a864c75752ac83a7bc5"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0008",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_162",
+      "task_id": "multi_turn_base_162",
+      "record_hash": "a8ad8ba2513ea55389e0d156da928ff65d3028b7946fcbe5fb7cc870d0a3d2af"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0009",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_33",
+      "task_id": "multi_turn_base_33",
+      "record_hash": "b10841e16f13045977560ba7f4be0efeef52f801163d40ddd183fa0f8741ea2c"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0010",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_69",
+      "task_id": "multi_turn_base_69",
+      "record_hash": "a559f3933b8f9f35594ee0d6f01f48e09e98ff4c62598b6f520726aae10687db"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0011",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_136",
+      "task_id": "multi_turn_base_136",
+      "record_hash": "629f840ca80b6c917e80802f6126204599a09b759bba1aa24f58643966a45d00"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0012",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_151",
+      "task_id": "multi_turn_base_151",
+      "record_hash": "6394abe466b1b9b188f8ff37ff9119a22095219cb134d8bc9de5e6fef471e5a9"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0013",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_23",
+      "task_id": "multi_turn_base_23",
+      "record_hash": "b5828d87b9b582b1f33c41dd5e0a17ac1754854692d86eb4ac5e9127ef1968bb"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0014",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_137",
+      "task_id": "multi_turn_base_137",
+      "record_hash": "cb78a8aacbcceb55dcce96ee28669e28b18492c9f2e1ff289e443ea1d5aaf393"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0015",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_114",
+      "task_id": "multi_turn_base_114",
+      "record_hash": "60595f3885dac5e0bde9210e341bb733d83bb0ac2f089f898b651f4ea4e6c2c3"
+    },
+    {
+      "case_id": "v5_fresh16_20261027_0016",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_73",
+      "task_id": "multi_turn_base_73",
+      "record_hash": "f3eb0e43cf320da6ebb6dd4b2ddb2f3ff0b13a5044d20e6ccfd538148f04fe3e"
+    }
+  ],
+  "novelty_limit": "Available executed history and documented prior IDs; earlier missing archives cannot be checked.",
+  "migration_note": "Same16 tasks and same editor/primary-review payloads. Source grade becomes metadata; stronger audit contract requires assistant-delivered answers; all older audits retired. This is calibration, not an untouched holdout of final version."
+}

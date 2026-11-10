@@ -1,0 +1,289 @@
+{
+  "encoding": "o200k_base",
+  "tiktoken_version": "0.12.0",
+  "model": "openai/gpt-5.4-mini",
+  "mapping_source": "https://raw.githubusercontent.com/openai/tiktoken/main/tiktoken/model.py",
+  "method": "Tokenize whole serialized payload, add 25% and 2048 input tokens; reserve maximum completion plus 5%. Provider-side accounting may differ; conservative estimate, not a provider-enforced credit limit. Other models retain byte reserve. Unknown historical reserves remain unchanged.",
+  "checks": [
+    {
+      "receipt": "ef048c0ad1c932d180c5a589accc63e290f026cceedbf117d3271a5358975bb4",
+      "observed_prompt_tokens": 9530,
+      "input_bound": 17108,
+      "actual_cost": 0.0181725,
+      "new_reserve": 0.03282615,
+      "pass": true
+    },
+    {
+      "receipt": "a128db3ea6521cc82ed840ad0681de103b0268a2749a2c1ae1405eded9fbac0e",
+      "observed_prompt_tokens": 1571,
+      "input_bound": 4303,
+      "actual_cost": 0.00639825,
+      "new_reserve": 0.0227422125,
+      "pass": true
+    },
+    {
+      "receipt": "a45f27ef441470bb919f43a069763a64e67fe580a98e95572207b8ab39ccfdae",
+      "observed_prompt_tokens": 1387,
+      "input_bound": 4078,
+      "actual_cost": 0.00756075,
+      "new_reserve": 0.022565025,
+      "pass": true
+    },
+    {
+      "receipt": "496bd0ea3bb3e44c2d19e8466f1538fbed0caa9028e7d60390fd5b965bdcb4cd",
+      "observed_prompt_tokens": 9855,
+      "input_bound": 17346,
+      "actual_cost": 0.01625625,
+      "new_reserve": 0.033013574999999996,
+      "pass": true
+    },
+    {
+      "receipt": "8fd1c74e4d62f6005bd6574d72aa53e259cd28a2e58c977d292d76e0581b3905.recovery1",
+      "observed_prompt_tokens": 6845,
+      "input_bound": 12632,
+      "actual_cost": 0.01341825,
+      "new_reserve": 0.029301300000000002,
+      "pass": true
+    },
+    {
+      "receipt": "30d269debaccf93ab5cb78319a3afe8a61f87fb70dfa80e76abbfbce6d912b81",
+      "observed_prompt_tokens": 9676,
+      "input_bound": 17357,
+      "actual_cost": 0.0212475,
+      "new_reserve": 0.0330222375,
+      "pass": true
+    },
+    {
+      "receipt": "1c9cb2eba5cb91966a0d408aa60c7f6c9836bbed3aa9c2d689b11c6ede3e195a",
+      "observed_prompt_tokens": 7232,
+      "input_bound": 13612,
+      "actual_cost": 0.011256,
+      "new_reserve": 0.03007305,
+      "pass": true
+    },
+    {
+      "receipt": "ea3fba08ee5ca8395b98b2a1790d1d3d1c0df1f5a8fb90036f80207f468b8431",
+      "observed_prompt_tokens": 8189,
+      "input_bound": 15016,
+      "actual_cost": 0.01437675,
+      "new_reserve": 0.0311787,
+      "pass": true
+    },
+    {
+      "receipt": "b6a5df8aeaff34a9ea32313261f0f2c4ccf15b235580c20a9524867c5c396ef9",
+      "observed_prompt_tokens": 7759,
+      "input_bound": 14392,
+      "actual_cost": 0.01074675,
+      "new_reserve": 0.030687300000000004,
+      "pass": true
+    },
+    {
+      "receipt": "7995a4e985dd7f71ee06fac7ddd9df8bc73c4efb8bba955f86fe1c9f0a5f2590",
+      "observed_prompt_tokens": 1544,
+      "input_bound": 4262,
+      "actual_cost": 0.004371,
+      "new_reserve": 0.022709925000000002,
+      "pass": true
+    },
+    {
+      "receipt": "29ee77e6c94745a2d7dd2c02e921ee940fb33c7d6e1128e2f5d2d30fdafa87ff",
+      "observed_prompt_tokens": 9820,
+      "input_bound": 17521,
+      "actual_cost": 0.015114,
+      "new_reserve": 0.0331513875,
+      "pass": true
+    },
+    {
+      "receipt": "924a81037c611381fc06a0c1f823cff4dd2708ba6210bfdfbcb03c560e6821f1",
+      "observed_prompt_tokens": 8896,
+      "input_bound": 16257,
+      "actual_cost": 0.0146145,
+      "new_reserve": 0.032155987500000004,
+      "pass": true
+    },
+    {
+      "receipt": "f1dabe29933e749143315feb34d70b3d8cfbf3783adb2c1801c7e70e16e18cc0",
+      "observed_prompt_tokens": 1363,
+      "input_bound": 4040,
+      "actual_cost": 0.00410925,
+      "new_reserve": 0.022535100000000002,
+      "pass": true
+    },
+    {
+      "receipt": "935bf8ab3df466aec846531e97090a8cd0ec0e08eee6cef5d8e9128f5727d0ad",
+      "observed_prompt_tokens": 9104,
+      "input_bound": 16515,
+      "actual_cost": 0.013857,
+      "new_reserve": 0.0323591625,
+      "pass": true
+    },
+    {
+      "receipt": "2d6208159ee2076046c492213ddbdd507938f7fec2213832fd80bb3f07be6e04",
+      "observed_prompt_tokens": 8910,
+      "input_bound": 16245,
+      "actual_cost": 0.010467,
+      "new_reserve": 0.0321465375,
+      "pass": true
+    },
+    {
+      "receipt": "49417cbd46ca53ac5b29ba13016ec9a0bcc797e4e8b0b2d38ecfa89763a03f2e",
+      "observed_prompt_tokens": 1386,
+      "input_bound": 4077,
+      "actual_cost": 0.004914,
+      "new_reserve": 0.022564237500000004,
+      "pass": true
+    },
+    {
+      "receipt": "ed6a95d777b7fcadca87e11417b989e6f8f30dd2d311ec1648802b36a98c21fa",
+      "observed_prompt_tokens": 9417,
+      "input_bound": 16997,
+      "actual_cost": 0.02030625,
+      "new_reserve": 0.032738737500000004,
+      "pass": true
+    },
+    {
+      "receipt": "554aa9b61d0386fb7d517cce2ca621003626c9af65fd25fa269dc4e8e7fb23b6",
+      "observed_prompt_tokens": 1364,
+      "input_bound": 4045,
+      "actual_cost": 0.003993,
+      "new_reserve": 0.0225390375,
+      "pass": true
+    },
+    {
+      "receipt": "508e9243645a5c68c6bb2f34251bdec6419f46da4c61378ab104a720ab3158c0",
+      "observed_prompt_tokens": 9131,
+      "input_bound": 16556,
+      "actual_cost": 0.01384125,
+      "new_reserve": 0.03239145,
+      "pass": true
+    },
+    {
+      "receipt": "c240901dccca822b80ac601500d4eb039ebb0008276dac879bb7c9f8b3579f85",
+      "observed_prompt_tokens": 8077,
+      "input_bound": 14868,
+      "actual_cost": 0.02283825,
+      "new_reserve": 0.03106215,
+      "pass": true
+    },
+    {
+      "receipt": "15c187aafac8f2641ac785febd42cc21a3fbe35acf6477e018703cb4ab3b0f91",
+      "observed_prompt_tokens": 7240,
+      "input_bound": 13645,
+      "actual_cost": 0.0151653,
+      "new_reserve": 0.030099037500000002,
+      "pass": true
+    },
+    {
+      "receipt": "294366f036090b19da6093ce26889acb612e5003bc752a99ece54db1abdf4511",
+      "observed_prompt_tokens": 7830,
+      "input_bound": 14507,
+      "actual_cost": 0.012195,
+      "new_reserve": 0.030777862500000003,
+      "pass": true
+    },
+    {
+      "receipt": "8d65a16a1089a539043401d9b1bbc66e58c66d1f9b45005faff61d823b1755b7",
+      "observed_prompt_tokens": 8735,
+      "input_bound": 15915,
+      "actual_cost": 0.00954375,
+      "new_reserve": 0.0318866625,
+      "pass": true
+    },
+    {
+      "receipt": "279a023aac96236c56628cae3f46362a4242db2971ebe230c50a6e05f0451c53",
+      "observed_prompt_tokens": 6957,
+      "input_bound": 12755,
+      "actual_cost": 0.01163025,
+      "new_reserve": 0.029398162500000005,
+      "pass": true
+    },
+    {
+      "receipt": "f403e9af2089ada0516600ad41945b8b2b278e0fe33b45826b02d237f8fa1577",
+      "observed_prompt_tokens": 1386,
+      "input_bound": 4077,
+      "actual_cost": 0.0088425,
+      "new_reserve": 0.022564237500000004,
+      "pass": true
+    },
+    {
+      "receipt": "87d12cb68dd4a16012cb35b3183517b145da151022aa2979c4b889d075a972c3",
+      "observed_prompt_tokens": 8230,
+      "input_bound": 15108,
+      "actual_cost": 0.0149925,
+      "new_reserve": 0.031251150000000005,
+      "pass": true
+    },
+    {
+      "receipt": "e59578a3be4f4c0c440c0528ded322fc7fb91ea22d07b5964a7bedcad1ffecb4",
+      "observed_prompt_tokens": 1652,
+      "input_bound": 4426,
+      "actual_cost": 0.007233,
+      "new_reserve": 0.022839075,
+      "pass": true
+    },
+    {
+      "receipt": "84a412fe8906354c59b33095713dcea517636e0a159218ff8b24c6799e5518d0",
+      "observed_prompt_tokens": 7428,
+      "input_bound": 13440,
+      "actual_cost": 0.0164655,
+      "new_reserve": 0.029937600000000005,
+      "pass": true
+    },
+    {
+      "receipt": "35d9ab1453882ed6b8ca6bc4b4ef0575fc329fde8aff9d2d4dc6f0de04e6be46",
+      "observed_prompt_tokens": 8424,
+      "input_bound": 15378,
+      "actual_cost": 0.023598,
+      "new_reserve": 0.031463775,
+      "pass": true
+    },
+    {
+      "receipt": "8886dc809c150aba58d0cca2a80aaf1e7e8becbdbccb78da33bc0faef79995d2",
+      "observed_prompt_tokens": 1386,
+      "input_bound": 4077,
+      "actual_cost": 0.0118395,
+      "new_reserve": 0.022564237500000004,
+      "pass": true
+    },
+    {
+      "receipt": "4af26d3e2a132f90e1c458c78d675471618fcb524f22cf5cae1923e2e2933f42",
+      "observed_prompt_tokens": 8630,
+      "input_bound": 15806,
+      "actual_cost": 0.0127545,
+      "new_reserve": 0.031800825000000005,
+      "pass": true
+    },
+    {
+      "receipt": "2f1dea8521db86a9479c51b0f46af5d72e53c94a0696c7be4128364f85f8be85",
+      "observed_prompt_tokens": 8840,
+      "input_bound": 16150,
+      "actual_cost": 0.0193443,
+      "new_reserve": 0.032071725,
+      "pass": true
+    },
+    {
+      "receipt": "719916232bf3e9744f036cd5d7e55c49f0fa85c5e90500cb377e85bd00fb69fa",
+      "observed_prompt_tokens": 8790,
+      "input_bound": 16060,
+      "actual_cost": 0.0193995,
+      "new_reserve": 0.032000850000000004,
+      "pass": true
+    },
+    {
+      "receipt": "1cec601ea7bc65242513cadba0efdfd6c8d360c0562dba81e9fa57b33664ec5f",
+      "observed_prompt_tokens": 6603,
+      "input_bound": 12301,
+      "actual_cost": 0.01548225,
+      "new_reserve": 0.029040637500000004,
+      "pass": true
+    },
+    {
+      "receipt": "fb21cb146fe9007c60a44b0c6673be83e00db84ff8e085d30cb4b97b1d7726ce",
+      "observed_prompt_tokens": 8345,
+      "input_bound": 15292,
+      "actual_cost": 0.01737825,
+      "new_reserve": 0.03139605,
+      "pass": true
+    }
+  ]
+}

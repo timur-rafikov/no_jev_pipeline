@@ -1,0 +1,398 @@
+{
+ "10": {
+  "rel_recon_error": 0.07576342672109604,
+  "mean_active_features": 15.534161567687988,
+  "keep_frac": 1.0,
+  "top_truth": [
+   {
+    "feat": 7443,
+    "auroc": 0.3210524320602417,
+    "mean_success": 0.2372526079416275,
+    "mean_failure": 0.6976200938224792
+   },
+   {
+    "feat": 4489,
+    "auroc": 0.33393773436546326,
+    "mean_success": 2.7313337326049805,
+    "mean_failure": 3.0017266273498535
+   },
+   {
+    "feat": 80,
+    "auroc": 0.34014892578125,
+    "mean_success": 7.346697807312012,
+    "mean_failure": 7.511969089508057
+   },
+   {
+    "feat": 12035,
+    "auroc": 0.6477759480476379,
+    "mean_success": 0.6368038654327393,
+    "mean_failure": 0.3530392050743103
+   },
+   {
+    "feat": 11971,
+    "auroc": 0.624242901802063,
+    "mean_success": 17.951269149780273,
+    "mean_failure": 17.7100830078125
+   },
+   {
+    "feat": 6791,
+    "auroc": 0.6242043375968933,
+    "mean_success": 0.21788494288921356,
+    "mean_failure": 0.0
+   },
+   {
+    "feat": 16359,
+    "auroc": 0.38077235221862793,
+    "mean_success": 1.313520073890686,
+    "mean_failure": 1.518774151802063
+   },
+   {
+    "feat": 3521,
+    "auroc": 0.3846687972545624,
+    "mean_success": 0.6287926435470581,
+    "mean_failure": 1.002617597579956
+   },
+   {
+    "feat": 12492,
+    "auroc": 0.612977921962738,
+    "mean_success": 0.06976635009050369,
+    "mean_failure": 0.0
+   },
+   {
+    "feat": 6558,
+    "auroc": 0.6060337424278259,
+    "mean_success": 0.03422721475362778,
+    "mean_failure": 0.06710745394229889
+   }
+  ],
+  "top_claim": [
+   {
+    "feat": 16359,
+    "auroc": 0.5429531335830688,
+    "mean_claim_success": 1.469861626625061,
+    "mean_claim_failure": 1.408610463142395
+   },
+   {
+    "feat": 7443,
+    "auroc": 0.47663307189941406,
+    "mean_claim_success": 0.43705862760543823,
+    "mean_claim_failure": 0.49763500690460205
+   },
+   {
+    "feat": 4552,
+    "auroc": 0.47705313563346863,
+    "mean_claim_success": 0.3335404098033905,
+    "mean_claim_failure": 0.40429627895355225
+   },
+   {
+    "feat": 1437,
+    "auroc": 0.4779983162879944,
+    "mean_claim_success": 10.707747459411621,
+    "mean_claim_failure": 10.745551109313965
+   },
+   {
+    "feat": 14427,
+    "auroc": 0.5214240550994873,
+    "mean_claim_success": 0.6142061948776245,
+    "mean_claim_failure": 0.5386706590652466
+   },
+   {
+    "feat": 2541,
+    "auroc": 0.48188406229019165,
+    "mean_claim_success": 4.259157657623291,
+    "mean_claim_failure": 4.27354097366333
+   },
+   {
+    "feat": 1151,
+    "auroc": 0.4825666844844818,
+    "mean_claim_success": 0.3339131772518158,
+    "mean_claim_failure": 0.3750859797000885
+   },
+   {
+    "feat": 15908,
+    "auroc": 0.48419448733329773,
+    "mean_claim_success": 41.67034149169922,
+    "mean_claim_failure": 41.720272064208984
+   },
+   {
+    "feat": 12035,
+    "auroc": 0.48450955748558044,
+    "mean_claim_success": 0.4805092215538025,
+    "mean_claim_failure": 0.5237417817115784
+   },
+   {
+    "feat": 11674,
+    "auroc": 0.4852446913719177,
+    "mean_claim_success": 0.6663153171539307,
+    "mean_claim_failure": 0.7172991633415222
+   }
+  ],
+  "overlap_top50_truth_claim": 32,
+  "n_features_auroc_gt_0.8_claim": 0,
+  "n_features_auroc_gt_0.8_truth": 0
+ },
+ "20": {
+  "rel_recon_error": 0.25156325101852417,
+  "mean_active_features": 25.083850860595703,
+  "keep_frac": 1.0,
+  "top_truth": [
+   {
+    "feat": 2992,
+    "auroc": 0.29053664207458496,
+    "mean_success": 3.491102457046509,
+    "mean_failure": 4.129934310913086
+   },
+   {
+    "feat": 4773,
+    "auroc": 0.661587119102478,
+    "mean_success": 0.50480055809021,
+    "mean_failure": 0.03563746437430382
+   },
+   {
+    "feat": 3957,
+    "auroc": 0.3442382514476776,
+    "mean_success": 1.4373056888580322,
+    "mean_failure": 2.4371399879455566
+   },
+   {
+    "feat": 11579,
+    "auroc": 0.3499864935874939,
+    "mean_success": 1.8693186044692993,
+    "mean_failure": 2.5731613636016846
+   },
+   {
+    "feat": 12010,
+    "auroc": 0.35754793882369995,
+    "mean_success": 1.6669398546218872,
+    "mean_failure": 2.4447202682495117
+   },
+   {
+    "feat": 4271,
+    "auroc": 0.36109718680381775,
+    "mean_success": 5.522919654846191,
+    "mean_failure": 5.932332992553711
+   },
+   {
+    "feat": 7384,
+    "auroc": 0.628332257270813,
+    "mean_success": 0.42332950234413147,
+    "mean_failure": 0.16122694313526154
+   },
+   {
+    "feat": 7025,
+    "auroc": 0.6247829794883728,
+    "mean_success": 0.29125624895095825,
+    "mean_failure": 0.01755487360060215
+   },
+   {
+    "feat": 4490,
+    "auroc": 0.623625636100769,
+    "mean_success": 11.800860404968262,
+    "mean_failure": 11.422325134277344
+   },
+   {
+    "feat": 15521,
+    "auroc": 0.6226997375488281,
+    "mean_success": 0.25919753313064575,
+    "mean_failure": 0.01722308248281479
+   }
+  ],
+  "top_claim": [
+   {
+    "feat": 10176,
+    "auroc": 0.640464186668396,
+    "mean_claim_success": 2.5613410472869873,
+    "mean_claim_failure": 1.8309234380722046
+   },
+   {
+    "feat": 16358,
+    "auroc": 0.6094833016395569,
+    "mean_claim_success": 28.46898078918457,
+    "mean_claim_failure": 28.051504135131836
+   },
+   {
+    "feat": 10506,
+    "auroc": 0.6014492511749268,
+    "mean_claim_success": 2.4924521446228027,
+    "mean_claim_failure": 2.2276597023010254
+   },
+   {
+    "feat": 9920,
+    "auroc": 0.40432682633399963,
+    "mean_claim_success": 1.4900171756744385,
+    "mean_claim_failure": 1.9645264148712158
+   },
+   {
+    "feat": 11579,
+    "auroc": 0.4085276126861572,
+    "mean_claim_success": 2.044826030731201,
+    "mean_claim_failure": 2.3496875762939453
+   },
+   {
+    "feat": 2992,
+    "auroc": 0.5788174867630005,
+    "mean_claim_success": 3.9213876724243164,
+    "mean_claim_failure": 3.6955819129943848
+   },
+   {
+    "feat": 3397,
+    "auroc": 0.5682629942893982,
+    "mean_claim_success": 1.3647572994232178,
+    "mean_claim_failure": 0.9051089286804199
+   },
+   {
+    "feat": 5084,
+    "auroc": 0.44433942437171936,
+    "mean_claim_success": 49.837459564208984,
+    "mean_claim_failure": 50.09191131591797
+   },
+   {
+    "feat": 12010,
+    "auroc": 0.4462297856807709,
+    "mean_claim_success": 1.8744816780090332,
+    "mean_claim_failure": 2.1840596199035645
+   },
+   {
+    "feat": 2149,
+    "auroc": 0.5504620671272278,
+    "mean_claim_success": 32.754268646240234,
+    "mean_claim_failure": 32.18028259277344
+   }
+  ],
+  "overlap_top50_truth_claim": 22,
+  "n_features_auroc_gt_0.8_claim": 0,
+  "n_features_auroc_gt_0.8_truth": 0
+ },
+ "30": {
+  "rel_recon_error": 0.2515709400177002,
+  "mean_active_features": 62.527950286865234,
+  "keep_frac": 1.0,
+  "top_truth": [
+   {
+    "feat": 5801,
+    "auroc": 0.10809767991304398,
+    "mean_success": 2.8683857917785645,
+    "mean_failure": 12.669793128967285
+   },
+   {
+    "feat": 12291,
+    "auroc": 0.11442460119724274,
+    "mean_success": 27.219432830810547,
+    "mean_failure": 31.259798049926758
+   },
+   {
+    "feat": 14016,
+    "auroc": 0.14575055241584778,
+    "mean_success": 4.2736735343933105,
+    "mean_failure": 12.322965621948242
+   },
+   {
+    "feat": 6620,
+    "auroc": 0.1540449857711792,
+    "mean_success": 5.892142295837402,
+    "mean_failure": 18.704326629638672
+   },
+   {
+    "feat": 410,
+    "auroc": 0.16330388188362122,
+    "mean_success": 5.860065937042236,
+    "mean_failure": 14.579361915588379
+   },
+   {
+    "feat": 10444,
+    "auroc": 0.18186026811599731,
+    "mean_success": 10.633217811584473,
+    "mean_failure": 25.753196716308594
+   },
+   {
+    "feat": 3390,
+    "auroc": 0.18213032186031342,
+    "mean_success": 15.109743118286133,
+    "mean_failure": 20.37710952758789
+   },
+   {
+    "feat": 13685,
+    "auroc": 0.19686740636825562,
+    "mean_success": 2.8201024532318115,
+    "mean_failure": 9.496469497680664
+   },
+   {
+    "feat": 14370,
+    "auroc": 0.7960726618766785,
+    "mean_success": 20.024715423583984,
+    "mean_failure": 4.029604434967041
+   },
+   {
+    "feat": 12703,
+    "auroc": 0.7924462556838989,
+    "mean_success": 8.579959869384766,
+    "mean_failure": 0.6349502205848694
+   }
+  ],
+  "top_claim": [
+   {
+    "feat": 14367,
+    "auroc": 0.8970804214477539,
+    "mean_claim_success": 26.658096313476562,
+    "mean_claim_failure": 15.414722442626953
+   },
+   {
+    "feat": 5443,
+    "auroc": 0.8791220188140869,
+    "mean_claim_success": 14.926658630371094,
+    "mean_claim_failure": 1.9026954174041748
+   },
+   {
+    "feat": 5073,
+    "auroc": 0.874606192111969,
+    "mean_claim_success": 13.964942932128906,
+    "mean_claim_failure": 2.699798822402954
+   },
+   {
+    "feat": 12972,
+    "auroc": 0.1352131962776184,
+    "mean_claim_success": 4.697293758392334,
+    "mean_claim_failure": 17.605873107910156
+   },
+   {
+    "feat": 7095,
+    "auroc": 0.8636316061019897,
+    "mean_claim_success": 18.97644805908203,
+    "mean_claim_failure": 13.51240348815918
+   },
+   {
+    "feat": 3390,
+    "auroc": 0.13726107776165009,
+    "mean_claim_success": 15.193914413452148,
+    "mean_claim_failure": 21.081859588623047
+   },
+   {
+    "feat": 4152,
+    "auroc": 0.13773366808891296,
+    "mean_claim_success": 4.854223251342773,
+    "mean_claim_failure": 16.761512756347656
+   },
+   {
+    "feat": 3813,
+    "auroc": 0.14608275890350342,
+    "mean_claim_success": 38.09257888793945,
+    "mean_claim_failure": 54.605987548828125
+   },
+   {
+    "feat": 410,
+    "auroc": 0.14981096982955933,
+    "mean_claim_success": 5.56845235824585,
+    "mean_claim_failure": 15.839035034179688
+   },
+   {
+    "feat": 7771,
+    "auroc": 0.15017853677272797,
+    "mean_claim_success": 5.1764984130859375,
+    "mean_claim_failure": 16.325328826904297
+   }
+  ],
+  "overlap_top50_truth_claim": 38,
+  "n_features_auroc_gt_0.8_claim": 19,
+  "n_features_auroc_gt_0.8_truth": 8
+ }
+}

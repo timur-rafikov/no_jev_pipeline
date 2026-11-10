@@ -1,0 +1,9 @@
+{
+  "additional_authorized_usd": 0.5,
+  "remaining_before_extension_usd": 0.029236276,
+  "total_available_at_start_usd": 0.529236276,
+  "global_cap_usd": 1.0,
+  "previous_spend_not_in_shared_ledger_usd": 0.288047224,
+  "shared_ledger_cap_usd": 0.711952776,
+  "scope": "Frozen v3 ten-sample pilot; extra unrequested paid experiments are not included."
+}

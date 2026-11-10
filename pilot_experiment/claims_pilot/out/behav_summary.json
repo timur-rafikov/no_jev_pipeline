@@ -1,0 +1,518 @@
+{
+ "n_traces": 46,
+ "baseline": {
+  "success": {
+   "accept_rate": 1.0,
+   "median_logit_diff": 20.5
+  },
+  "failure": {
+   "accept_rate": 0.08695652173913043,
+   "median_logit_diff": -19.0
+  }
+ },
+ "cells": [
+  {
+   "rendering": "inline",
+   "source": "agent",
+   "truth": "success",
+   "claim": "success",
+   "consistency": "consistent",
+   "delta_logit_mean": 2.3260869565217392,
+   "ci": [
+    1.8695652173913044,
+    2.8152173913043477
+   ],
+   "decision_flips": "0/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "agent",
+   "truth": "success",
+   "claim": "failure",
+   "consistency": "contradicting",
+   "delta_logit_mean": -30.467391304347824,
+   "ci": [
+    -33.261141304347824,
+    -27.47826086956522
+   ],
+   "decision_flips": "21/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "agent",
+   "truth": "failure",
+   "claim": "success",
+   "consistency": "contradicting",
+   "delta_logit_mean": 8.875,
+   "ci": [
+    6.586820652173913,
+    11.723097826086958
+   ],
+   "decision_flips": "3/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "agent",
+   "truth": "failure",
+   "claim": "failure",
+   "consistency": "consistent",
+   "delta_logit_mean": -12.304347826086957,
+   "ci": [
+    -16.706521739130434,
+    -8.032472826086956
+   ],
+   "decision_flips": "2/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "user",
+   "truth": "success",
+   "claim": "success",
+   "consistency": "consistent",
+   "delta_logit_mean": 2.4456521739130435,
+   "ci": [
+    1.8804347826086956,
+    3.0434782608695654
+   ],
+   "decision_flips": "0/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "user",
+   "truth": "success",
+   "claim": "failure",
+   "consistency": "contradicting",
+   "delta_logit_mean": -29.76086956521739,
+   "ci": [
+    -32.77173913043478,
+    -26.67391304347826
+   ],
+   "decision_flips": "21/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "user",
+   "truth": "failure",
+   "claim": "success",
+   "consistency": "contradicting",
+   "delta_logit_mean": 8.842391304347826,
+   "ci": [
+    6.2661684782608695,
+    11.559782608695652
+   ],
+   "decision_flips": "4/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "user",
+   "truth": "failure",
+   "claim": "failure",
+   "consistency": "consistent",
+   "delta_logit_mean": -11.646739130434783,
+   "ci": [
+    -16.000407608695653,
+    -7.353260869565218
+   ],
+   "decision_flips": "2/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "tool",
+   "truth": "success",
+   "claim": "success",
+   "consistency": "consistent",
+   "delta_logit_mean": 2.5434782608695654,
+   "ci": [
+    1.7934782608695652,
+    3.2065217391304346
+   ],
+   "decision_flips": "0/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "tool",
+   "truth": "success",
+   "claim": "failure",
+   "consistency": "contradicting",
+   "delta_logit_mean": -37.28260869565217,
+   "ci": [
+    -40.46739130434783,
+    -33.901902173913044
+   ],
+   "decision_flips": "22/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "tool",
+   "truth": "failure",
+   "claim": "success",
+   "consistency": "contradicting",
+   "delta_logit_mean": 10.706521739130435,
+   "ci": [
+    7.575951086956522,
+    14.29904891304348
+   ],
+   "decision_flips": "6/23"
+  },
+  {
+   "rendering": "inline",
+   "source": "tool",
+   "truth": "failure",
+   "claim": "failure",
+   "consistency": "consistent",
+   "delta_logit_mean": -12.092391304347826,
+   "ci": [
+    -16.54375,
+    -7.814809782608694
+   ],
+   "decision_flips": "2/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "agent",
+   "truth": "success",
+   "claim": "success",
+   "consistency": "consistent",
+   "delta_logit_mean": 3.858695652173913,
+   "ci": [
+    3.2065217391304346,
+    4.467391304347826
+   ],
+   "decision_flips": "0/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "agent",
+   "truth": "success",
+   "claim": "failure",
+   "consistency": "contradicting",
+   "delta_logit_mean": -35.97826086956522,
+   "ci": [
+    -39.48913043478261,
+    -32.401902173913044
+   ],
+   "decision_flips": "21/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "agent",
+   "truth": "failure",
+   "claim": "success",
+   "consistency": "contradicting",
+   "delta_logit_mean": 13.005434782608695,
+   "ci": [
+    10.652038043478262,
+    15.652309782608697
+   ],
+   "decision_flips": "10/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "agent",
+   "truth": "failure",
+   "claim": "failure",
+   "consistency": "consistent",
+   "delta_logit_mean": -13.994565217391305,
+   "ci": [
+    -18.76086956521739,
+    -9.287907608695651
+   ],
+   "decision_flips": "2/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "user",
+   "truth": "success",
+   "claim": "success",
+   "consistency": "consistent",
+   "delta_logit_mean": 4.478260869565218,
+   "ci": [
+    3.8043478260869565,
+    5.0978260869565215
+   ],
+   "decision_flips": "0/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "user",
+   "truth": "success",
+   "claim": "failure",
+   "consistency": "contradicting",
+   "delta_logit_mean": -32.5,
+   "ci": [
+    -35.72826086956522,
+    -29.23913043478261
+   ],
+   "decision_flips": "21/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "user",
+   "truth": "failure",
+   "claim": "success",
+   "consistency": "contradicting",
+   "delta_logit_mean": 14.701086956521738,
+   "ci": [
+    11.684510869565218,
+    18.038179347826087
+   ],
+   "decision_flips": "9/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "user",
+   "truth": "failure",
+   "claim": "failure",
+   "consistency": "consistent",
+   "delta_logit_mean": -13.434782608695652,
+   "ci": [
+    -18.272010869565214,
+    -8.71711956521739
+   ],
+   "decision_flips": "2/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "tool",
+   "truth": "success",
+   "claim": "success",
+   "consistency": "consistent",
+   "delta_logit_mean": 3.4184782608695654,
+   "ci": [
+    2.7119565217391304,
+    4.086956521739131
+   ],
+   "decision_flips": "0/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "tool",
+   "truth": "success",
+   "claim": "failure",
+   "consistency": "contradicting",
+   "delta_logit_mean": -41.05434782608695,
+   "ci": [
+    -44.67418478260869,
+    -37.22826086956522
+   ],
+   "decision_flips": "23/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "tool",
+   "truth": "failure",
+   "claim": "success",
+   "consistency": "contradicting",
+   "delta_logit_mean": 11.994565217391305,
+   "ci": [
+    9.076086956521738,
+    15.097826086956522
+   ],
+   "decision_flips": "9/23"
+  },
+  {
+   "rendering": "quoted",
+   "source": "tool",
+   "truth": "failure",
+   "claim": "failure",
+   "consistency": "consistent",
+   "delta_logit_mean": -13.98913043478261,
+   "ci": [
+    -18.772010869565214,
+    -9.33695652173913
+   ],
+   "decision_flips": "2/23"
+  }
+ ],
+ "claim_effect": [
+  {
+   "rendering": "inline",
+   "source": "agent",
+   "truth": "success",
+   "success_minus_failure_claim": 32.79347826086956,
+   "ci": [
+    29.66304347826087,
+    35.565489130434784
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "agent",
+   "truth": "failure",
+   "success_minus_failure_claim": 21.179347826086957,
+   "ci": [
+    16.488722826086956,
+    26.02173913043478
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "agent",
+   "truth": "all",
+   "success_minus_failure_claim": 26.98641304347826,
+   "ci": [
+    23.66834239130435,
+    30.13858695652174
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "user",
+   "truth": "success",
+   "success_minus_failure_claim": 32.20652173913044,
+   "ci": [
+    29.33695652173913,
+    35.18478260869565
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "user",
+   "truth": "failure",
+   "success_minus_failure_claim": 20.48913043478261,
+   "ci": [
+    15.450951086956522,
+    25.511684782608697
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "user",
+   "truth": "all",
+   "success_minus_failure_claim": 26.347826086956523,
+   "ci": [
+    22.899320652173913,
+    29.73919836956522
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "tool",
+   "truth": "success",
+   "success_minus_failure_claim": 39.82608695652174,
+   "ci": [
+    36.40217391304348,
+    43.07608695652174
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "tool",
+   "truth": "failure",
+   "success_minus_failure_claim": 22.79891304347826,
+   "ci": [
+    17.249592391304347,
+    28.174864130434788
+   ]
+  },
+  {
+   "rendering": "inline",
+   "source": "tool",
+   "truth": "all",
+   "success_minus_failure_claim": 31.3125,
+   "ci": [
+    27.17914402173913,
+    35.236480978260865
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "agent",
+   "truth": "success",
+   "success_minus_failure_claim": 39.83695652173913,
+   "ci": [
+    36.08695652173913,
+    43.45679347826087
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "agent",
+   "truth": "failure",
+   "success_minus_failure_claim": 27.0,
+   "ci": [
+    21.776766304347824,
+    31.831929347826087
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "agent",
+   "truth": "all",
+   "success_minus_failure_claim": 33.41847826086956,
+   "ci": [
+    29.71188858695652,
+    37.04904891304348
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "user",
+   "truth": "success",
+   "success_minus_failure_claim": 36.97826086956522,
+   "ci": [
+    33.706250000000004,
+    40.10896739130435
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "user",
+   "truth": "failure",
+   "success_minus_failure_claim": 28.13586956521739,
+   "ci": [
+    22.347690217391307,
+    33.95692934782609
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "user",
+   "truth": "all",
+   "success_minus_failure_claim": 32.557065217391305,
+   "ci": [
+    28.83383152173913,
+    35.89945652173913
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "tool",
+   "truth": "success",
+   "success_minus_failure_claim": 44.47282608695652,
+   "ci": [
+    40.67377717391304,
+    48.09252717391305
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "tool",
+   "truth": "failure",
+   "success_minus_failure_claim": 25.983695652173914,
+   "ci": [
+    20.516032608695653,
+    31.304483695652173
+   ]
+  },
+  {
+   "rendering": "quoted",
+   "source": "tool",
+   "truth": "all",
+   "success_minus_failure_claim": 35.22826086956522,
+   "ci": [
+    30.915625000000002,
+    39.30726902173913
+   ]
+  }
+ ],
+ "fact_gap_no_claim": 40.75,
+ "judge_follows_claim_when_contradicting": {
+  "inline/agent": "26/46",
+  "inline/user": "27/46",
+  "inline/tool": "30/46",
+  "quoted/agent": "33/46",
+  "quoted/user": "32/46",
+  "quoted/tool": "34/46"
+ }
+}

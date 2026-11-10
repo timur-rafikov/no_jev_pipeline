@@ -1,0 +1,114 @@
+[
+  {
+    "case_id": "v3_new10_02",
+    "source_id": "gpt-4.1-2025-04-14::multi_turn_base_130",
+    "recorded_inference_evidence": [
+      {
+        "content": "[place_order(order_type=\"Buy\", symbol=\"NEPT\", price=25.50, amount=150)]",
+        "id": "m0008",
+        "role": "assistant"
+      },
+      {
+        "content": "{\"order_id\": 12447, \"order_type\": \"Buy\", \"status\": \"Pending\", \"price\": 25.5, \"amount\": 150}",
+        "id": "m0009",
+        "role": "tool"
+      },
+      {
+        "content": "[get_order_details(order_id=12447)]",
+        "id": "m0012",
+        "role": "assistant"
+      },
+      {
+        "content": "{\"id\": 12447, \"order_type\": \"Buy\", \"symbol\": \"NEPT\", \"price\": 25.5, \"amount\": 150, \"status\": \"Open\"}",
+        "id": "m0013",
+        "role": "tool"
+      },
+      {
+        "content": "[cancel_order(order_id=12447)]",
+        "id": "m0016",
+        "role": "assistant"
+      },
+      {
+        "content": "{\"order_id\": 12447, \"status\": \"Cancelled\"}",
+        "id": "m0017",
+        "role": "tool"
+      }
+    ],
+    "scoring_replay_error": {
+      "details": {
+        "ground_truth_response (only the current turn)": [
+          "{\"id\": 12446, \"order_type\": \"Buy\", \"symbol\": \"NEPT\", \"price\": 25.5, \"amount\": 150, \"status\": \"Open\"}"
+        ],
+        "missing_items": [
+          "{\"id\": 12446, \"order_type\": \"Buy\", \"symbol\": \"NEPT\", \"price\": 25.5, \"amount\": 150, \"status\": \"Open\"}"
+        ],
+        "model_response (including all previous turns)": [
+          "{\"current_time\": \"10:30 AM\"}",
+          "{\"status\": \"Open\"}",
+          "{\"order_id\": 12446, \"order_type\": \"Buy\", \"status\": \"Pending\", \"price\": 25.5, \"amount\": 150}",
+          "{\"error\": \"Order with ID 12447 not found.Here is the list of orders_id: ['order_type', 12446]\"}"
+        ]
+      },
+      "error_message": "Model response execution results so far does not contain all the ground truth response execution results for turn 2.",
+      "error_type": "multi_turn:execution_response_mismatch"
+    },
+    "inference_and_scoring_outputs_differ": true,
+    "scope": "Observed mismatch between published inference outputs and scoring replay outputs; exact cause not established."
+  },
+  {
+    "case_id": "v3_new10_10",
+    "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_126",
+    "recorded_inference_evidence": [
+      {
+        "content": "[place_order(order_type=\"Buy\", symbol=\"XYZ\", price=150.0, amount=100)]",
+        "id": "m0008",
+        "role": "assistant"
+      },
+      {
+        "content": "{\"order_id\": 12447, \"order_type\": \"Buy\", \"status\": \"Pending\", \"price\": 150.0, \"amount\": 100}",
+        "id": "m0009",
+        "role": "tool"
+      },
+      {
+        "content": "[get_order_details(order_id=12447)]",
+        "id": "m0012",
+        "role": "assistant"
+      },
+      {
+        "content": "{\"id\": 12447, \"order_type\": \"Buy\", \"symbol\": \"XYZ\", \"price\": 150.0, \"amount\": 100, \"status\": \"Open\"}",
+        "id": "m0013",
+        "role": "tool"
+      },
+      {
+        "content": "[cancel_order(order_id=12447)]",
+        "id": "m0016",
+        "role": "assistant"
+      },
+      {
+        "content": "{\"order_id\": 12447, \"status\": \"Cancelled\"}",
+        "id": "m0017",
+        "role": "tool"
+      }
+    ],
+    "scoring_replay_error": {
+      "details": {
+        "ground_truth_response (only the current turn)": [
+          "{\"id\": 12446, \"order_type\": \"Buy\", \"symbol\": \"XYZ\", \"price\": 150.0, \"amount\": 100, \"status\": \"Open\"}"
+        ],
+        "missing_items": [
+          "{\"id\": 12446, \"order_type\": \"Buy\", \"symbol\": \"XYZ\", \"price\": 150.0, \"amount\": 100, \"status\": \"Open\"}"
+        ],
+        "model_response (including all previous turns)": [
+          "{\"watchlist\": [\"NVDA\", \"XYZ\"]}",
+          "{\"price\": 150.0, \"percent_change\": 0.1, \"volume\": 1.5, \"MA(5)\": 149.5, \"MA(20)\": 150.2}",
+          "{\"order_id\": 12446, \"order_type\": \"Buy\", \"status\": \"Pending\", \"price\": 150.0, \"amount\": 100}",
+          "{\"error\": \"Order with ID 12447 not found.Here is the list of orders_id: ['order_type', 12446]\"}"
+        ]
+      },
+      "error_message": "Model response execution results so far does not contain all the ground truth response execution results for turn 2.",
+      "error_type": "multi_turn:execution_response_mismatch"
+    },
+    "inference_and_scoring_outputs_differ": true,
+    "scope": "Observed mismatch between published inference outputs and scoring replay outputs; exact cause not established."
+  }
+]

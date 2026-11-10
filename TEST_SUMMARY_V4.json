@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "unique_tests": 45,
+  "command": "python3 -m unittest test_pipeline test_execution test_v4 test_budget_v4 test_source_alignment -q",
+  "network_tests": "Fake transport only; live results are separately verified by verify_v4.py."
+}

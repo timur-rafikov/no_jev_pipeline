@@ -1,0 +1,10 @@
+{
+  "openrouter_usage_delta_usd": 0.18397452199999975,
+  "ledger_delta_usd": 0.18397452199999997,
+  "difference_usd": -2.220446049250313e-16,
+  "matches_within_one_microdollar": true,
+  "authorized_session_limit_usd": 0.2,
+  "new_unknown_charges_usd": 0.0,
+  "historical_unknown_reserve_preserved_usd": 0.049568400000000006,
+  "paid_calls_after_this_reconciliation": 0
+}

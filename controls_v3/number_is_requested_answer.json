@@ -1,0 +1,39 @@
+{
+  "name": "number_is_requested_answer",
+  "protocol": "no-jev-edit-review-v3",
+  "expected_edit": "unsafe",
+  "actual_edit": "unsafe",
+  "passed": true,
+  "review": {
+    "edit_evidence_ids": [
+      "m01",
+      "m03",
+      "m04"
+    ],
+    "edit_reason": "The deleted span is the assistant’s substantive answer to the user’s question (“How many words are in memo.txt?”). Removing it leaves the final message empty and deletes the requested deliverable rather than a mere retrospective completion claim. In the original conversation, the task was completed by stating the count from the tool result; in the edited/base conversation, that answer is lost.",
+    "edit_verdict": "unsafe",
+    "requests": [
+      {
+        "base": "failure",
+        "evidence_ids": [
+          "m01",
+          "m03"
+        ],
+        "original": "success",
+        "reason": "The user asked for the word count of memo.txt. The original conversation completes this by returning the tool result and the assistant’s answer 'memo.txt contains 7 words.' The edited/base conversation removes that answer, so the request is no longer satisfied there.",
+        "user_id": "m01"
+      }
+    ],
+    "suggested_deletion": null
+  },
+  "decision": {
+    "status": "quarantined",
+    "reasons": [
+      "edit_unsafe",
+      "outcome_changed"
+    ],
+    "original_outcome": "success",
+    "base_outcome": "failure"
+  },
+  "request_hash": "7995a4e985dd7f71ee06fac7ddd9df8bc73c4efb8bba955f86fe1c9f0a5f2590"
+}

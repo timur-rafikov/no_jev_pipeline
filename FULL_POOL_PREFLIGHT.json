@@ -1,0 +1,12 @@
+{
+  "raw_executions": 600,
+  "raw_unique_tasks": 200,
+  "structural_eligible_executions": 501,
+  "structural_eligible_tasks": 200,
+  "within_36000_byte_scope_executions": 112,
+  "within_36000_byte_scope_tasks": 51,
+  "scope_rule": "36000-byte bound is only a pilot cost restriction, not a semantic rejection. Full prepare can set --max-bytes 0; do not truncate traces.",
+  "maximum_variants_before_semantic_review": 2505,
+  "can_supply_1000_distinct_source_executions": false,
+  "full_pool_paid_run_performed": false
+}

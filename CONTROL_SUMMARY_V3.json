@@ -1,0 +1,13 @@
+{
+  "protocol": "no-jev-edit-review-v3",
+  "type": "synthetic boundary checks",
+  "completed": 3,
+  "passed": 3,
+  "accounting": {
+    "budget_usd": 0.211952776,
+    "actual_usd": 0.1827165,
+    "unresolved_reserved_usd": 0,
+    "remaining_usd": 0.029236276000000005,
+    "attempts": 21
+  }
+}

@@ -1,0 +1,51 @@
+[32mActivated conda/uv virtual environment at [36m/venv/main[0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights: 100%|██████████| 707/707 [00:00<00:00, 7593.10it/s]
+visible_46_0001 4s
+visible_46_0002 7s
+visible_46_0003 14s
+visible_46_0004 17s
+visible_46_0005 19s
+visible_46_0006 27s
+visible_46_0007 32s
+visible_46_0008 37s
+visible_46_0009 41s
+visible_46_0010 46s
+visible_46_0011 50s
+visible_46_0012 54s
+visible_46_0013 58s
+visible_46_0014 68s
+visible_46_0015 71s
+visible_46_0016 76s
+visible_46_0017 80s
+visible_46_0018 83s
+visible_46_0019 88s
+visible_46_0020 95s
+visible_46_0021 102s
+visible_46_0022 105s
+visible_46_0023 109s
+visible_46_0024 115s
+visible_46_0025 123s
+visible_46_0026 129s
+visible_46_0027 132s
+visible_46_0028 136s
+visible_46_0029 140s
+visible_46_0030 143s
+visible_46_0031 147s
+visible_46_0032 148s
+visible_46_0033 154s
+visible_46_0034 157s
+visible_46_0035 161s
+visible_46_0036 166s
+visible_46_0037 171s
+visible_46_0038 175s
+visible_46_0039 185s
+visible_46_0040 192s
+visible_46_0041 197s
+visible_46_0042 204s
+visible_46_0043 207s
+visible_46_0044 210s
+visible_46_0045 215s
+visible_46_0046 219s
+done 322 state rows
+COLLECT32_DONE

@@ -1,0 +1,84 @@
+{
+  "case_id": "v3_new10_07",
+  "review": {
+    "edit_evidence_ids": [],
+    "edit_reason": "No candidate deletion was provided, so there is no editable span to assess; the final assistant message remains unchanged and the edit is invalid as submitted.",
+    "edit_verdict": "unsafe",
+    "requests": [
+      {
+        "base": "success",
+        "criterion": "Answer the current fuel amount from the vehicle status.",
+        "evidence": [
+          {
+            "message_id": "m0001",
+            "quote": "How much fuel I have right now?"
+          },
+          {
+            "message_id": "m0004",
+            "quote": "You currently have 50.0 gallons of fuel in your tank."
+          }
+        ],
+        "original": "success",
+        "reason": "The assistant queried fuel status and answered with the exact amount shown by the tool result (50.0 gallons).",
+        "user_id": "m0001"
+      },
+      {
+        "base": "success",
+        "criterion": "Add fuel to full if needed, start the engine with START, and verify tire pressure.",
+        "evidence": [
+          {
+            "message_id": "m0005",
+            "quote": "add it to full and then proceed to activate the engine using the 'START' function and verify the tire pressure"
+          },
+          {
+            "message_id": "m0009",
+            "quote": "\"healthy_tire_pressure\": true"
+          },
+          {
+            "message_id": "m0015",
+            "quote": "{\"engineState\": \"running\", \"fuelLevel\": 50.0, \"batteryVoltage\": 12.6}"
+          },
+          {
+            "message_id": "m0016",
+            "quote": "The engine is now running, the fuel tank is full, and the tire pressure is in optimal condition."
+          }
+        ],
+        "original": "success",
+        "reason": "The assistant completed the required sequence: fuel was already full, doors were locked, brake pedal was pressed, the engine started, and tire pressure was checked as healthy.",
+        "user_id": "m0005"
+      },
+      {
+        "base": "success",
+        "criterion": "If tire pressure falls below 40 psi, provide directions to the nearest tire service center; otherwise give an appropriate no-action update.",
+        "evidence": [
+          {
+            "message_id": "m0017",
+            "quote": "Should I notice that my tire pressure falls below 40 psi, kindly provide me with directions to the nearest tire service center for prompt resolution."
+          },
+          {
+            "message_id": "m0018",
+            "quote": "If your tire pressure falls below 40 psi, I will find the nearest tire shop for you. No action is needed at this moment since your tire pressure is currently above 40 psi."
+          }
+        ],
+        "original": "success",
+        "reason": "The assistant correctly handled the conditional request by stating no action was needed because the tire pressure was above 40 psi, while committing to provide the shop if the condition occurs later.",
+        "user_id": "m0017"
+      }
+    ],
+    "suggested_deletion": null
+  },
+  "request": "935bf8ab3df466aec846531e97090a8cd0ec0e08eee6cef5d8e9128f5727d0ad",
+  "family": null,
+  "decision": {
+    "status": "rejected",
+    "reasons": [
+      "no_candidate",
+      "edit_unsafe",
+      "source_gold_disagreement"
+    ],
+    "original_outcome": "success",
+    "base_outcome": "success",
+    "label_policy": "visible-evidence-and-benchmark-agreement-v1"
+  },
+  "diagnostic_pass": false
+}

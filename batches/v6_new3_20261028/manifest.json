@@ -1,0 +1,332 @@
+{
+  "protocol": {
+    "protocol": "no-jev-edit-review-v6.4",
+    "code_sha256": "044566bd88335f08584bbf07957351742f7f8e621b8f002a38555162f46ca0af",
+    "v5_sha256": "0b893c73d601152b0b24041df4df4cab4f974bfe1fc62287bfa86c90331b5c54",
+    "v4_sha256": "bce3b34e337d8e7d467041eacbe0492b0a7ef7d46dd0995ba9ef313c0691ed3c",
+    "v3_sha256": "64e6586bbf3fb2458a30fdfba7745ba397e413bc6d3e95449f8dc61d42049d4b",
+    "generation_prompt_hash": "e4bc7906a7ec003afc6d5824639585b0b21e75f6e42b34c7c5a838df602c6416",
+    "review_prompt_hash": "6b2769fbb8fe4a236530840279e6be829a54138d2b572c4577ca4ab330fc15d5",
+    "audit_prompt_hash": "baa166e68efa13814d277bd90fd1fd14714df7a416bb4c7a6b26c4d385238850",
+    "schema_version": "separate-role-evidence-v6",
+    "generator": "google/gemini-3.8-flash",
+    "reviewer": "openai/gpt-5.4-mini",
+    "auditor": "deepseek/deepseek-v4.1-flash-1017",
+    "conditions": [
+      [
+        "no_target_claim",
+        null,
+        null
+      ],
+      [
+        "agent_success",
+        "agent",
+        "The task was completed successfully."
+      ],
+      [
+        "agent_failure",
+        "agent",
+        "The task was not completed successfully."
+      ],
+      [
+        "user_success",
+        "user",
+        "The task was completed successfully."
+      ],
+      [
+        "user_failure",
+        "user",
+        "The task was not completed successfully."
+      ]
+    ],
+    "label_policy": "two-blind-grounded-reviews-completion-contract-v4",
+    "semantic_repairs": 0,
+    "automatic_network_retries": 0,
+    "known_billed_audit_length_retries": 1,
+    "audit_length_retry_max_tokens": 24576,
+    "citation_format_repairs_per_review": 1,
+    "citation_repair_changes_labels": false,
+    "null_policy": "reject_without_full_review; separately audit a sample"
+  },
+  "runtime_hashes": {
+    "assemble_v6.py": "1411202afa72de863d17f479f7e613ae3b40cb04acfd1d2c7b973d343106472b",
+    "budget_v6.py": "2921b8822d08f609d5af0f525bbb2d7d9a11050f3f9cf4467c4af8887e73e295",
+    "budget_v4.py": "df8c8835658fa01ef5e4f2e5027734a67b881ec3d7ac9944a3afcf85e94638bd",
+    "client.py": "9761dc47b040215540c67b706e9bae321e892435fbd41f0ab3f275761c6309ec",
+    "prepare_data.py": "d5e6438015e7eb1d0591be395c508692d72e61fa91397beb2b4ab5df07c90e47",
+    "build_dataset.py": "680c056e7abfb61468b72c48185a533c6e7855264ee342922d35333f8f39f8fe",
+    "models_snapshot_v6.json": "038dab43ca0d380e5b787b855881fd44d9fb95e85078b0320d69db09b605a5ab",
+    "external_seen_tasks_v6.json": "373377a9ab1c1ddd4336bf5fc82038abc66a9414609db217254f1d870308107b",
+    "citation_fix_v6.py": "2f8db245af2d504e9d8ba3ce367104846f212a5fb66d73faf3f96fb724b8428f"
+  },
+  "source": {
+    "dataset": "HuanzhiMao/BFCL-Result",
+    "release": "2025-11-03",
+    "commit": "cadd76a8dc62984e7bf15ecaf358f070bae745cc",
+    "raw_files": {
+      "DeepSeek-V3.2-Exp_result.jsonl": "2c5ffce21c7268c9ccc5c14d292f49240aaf57268b6eac133bdf19013b75fcca",
+      "DeepSeek-V3.2-Exp_score.jsonl": "a5c4df5a501265159a302f4b9fe0fbcced90429e5f73fd8fa590271a45f7fd0b",
+      "Qwen_Qwen3-235B-A22B-Instruct-2507_result.jsonl": "181b67429c8e9d520f9cfa2d04823ffc2ac7442a558cb71f9c2a18a58cf5a47b",
+      "Qwen_Qwen3-235B-A22B-Instruct-2507_score.jsonl": "8fedbc7871db2f2446ed1464de3ed9e87ec38ca4b6cf13851643810d58884364",
+      "gpt-4.1-2025-04-14_result.jsonl": "3e454198bf4b656016cde9044855d027db4cf4b12c265a8e466c3a1f7cadd3ac",
+      "gpt-4.1-2025-04-14_score.jsonl": "cafe862d44e1043a215ca0d03d7ecbe545b7ed93d01f0981cb9b82a7d5f4b575"
+    }
+  },
+  "seed": "v6-release-20261028-fixed-1",
+  "selection_order": "sha256(canonical([seed,source_id]))",
+  "max_message_bytes": 0,
+  "unique_tasks": true,
+  "excluded_task_ids": [
+    "multi_turn_base_0",
+    "multi_turn_base_1",
+    "multi_turn_base_104",
+    "multi_turn_base_107",
+    "multi_turn_base_114",
+    "multi_turn_base_117",
+    "multi_turn_base_118",
+    "multi_turn_base_12",
+    "multi_turn_base_122",
+    "multi_turn_base_126",
+    "multi_turn_base_128",
+    "multi_turn_base_130",
+    "multi_turn_base_132",
+    "multi_turn_base_136",
+    "multi_turn_base_137",
+    "multi_turn_base_143",
+    "multi_turn_base_146",
+    "multi_turn_base_15",
+    "multi_turn_base_151",
+    "multi_turn_base_156",
+    "multi_turn_base_158",
+    "multi_turn_base_162",
+    "multi_turn_base_163",
+    "multi_turn_base_164",
+    "multi_turn_base_179",
+    "multi_turn_base_182",
+    "multi_turn_base_187",
+    "multi_turn_base_194",
+    "multi_turn_base_195",
+    "multi_turn_base_197",
+    "multi_turn_base_23",
+    "multi_turn_base_27",
+    "multi_turn_base_29",
+    "multi_turn_base_31",
+    "multi_turn_base_33",
+    "multi_turn_base_39",
+    "multi_turn_base_40",
+    "multi_turn_base_41",
+    "multi_turn_base_46",
+    "multi_turn_base_49",
+    "multi_turn_base_50",
+    "multi_turn_base_6",
+    "multi_turn_base_64",
+    "multi_turn_base_69",
+    "multi_turn_base_73",
+    "multi_turn_base_79",
+    "multi_turn_base_8",
+    "multi_turn_base_82",
+    "multi_turn_base_97",
+    "multi_turn_base_99"
+  ],
+  "scope_exclusions": {
+    "already_used_task": 126,
+    "structural_no_final_assistant": 26,
+    "structural_no_final_prose": 73
+  },
+  "eligible_executions": 375,
+  "source_executions": 600,
+  "source_tasks": 200,
+  "semantic_preselection": false,
+  "gold_used_for_selection": false,
+  "split_seed": "bfcl-judge-task-split-v1",
+  "selected": [
+    {
+      "case_id": "v6_new3_20261028_0001",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_147",
+      "task_id": "multi_turn_base_147",
+      "record_hash": "ad30a66cab63e43b68224475c50c6c4640cab48f835ca2c2a104b13a824ad4b7"
+    },
+    {
+      "case_id": "v6_new3_20261028_0002",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_138",
+      "task_id": "multi_turn_base_138",
+      "record_hash": "a8863f7d7e953ea47c880774fc65e13aae84a5fab64ea09822c685db1f364437"
+    },
+    {
+      "case_id": "v6_new3_20261028_0003",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_34",
+      "task_id": "multi_turn_base_34",
+      "record_hash": "b071ecd9347e8b00fe9871757d017a7cef8229e5f8c02fd0c18775ac6c5bba0b"
+    }
+  ],
+  "novelty_limit": "Available executed history and documented prior IDs; earlier missing archives cannot be checked.",
+  "migration": {
+    "from_protocol": {
+      "protocol": "no-jev-edit-review-v6.1",
+      "code_sha256": "bda2a1994bea19548effe6ac5e0f56f905eb557c9f6dc6356c32d68521d1f5e4",
+      "v5_sha256": "0b893c73d601152b0b24041df4df4cab4f974bfe1fc62287bfa86c90331b5c54",
+      "v4_sha256": "bce3b34e337d8e7d467041eacbe0492b0a7ef7d46dd0995ba9ef313c0691ed3c",
+      "v3_sha256": "64e6586bbf3fb2458a30fdfba7745ba397e413bc6d3e95449f8dc61d42049d4b",
+      "generation_prompt_hash": "e4bc7906a7ec003afc6d5824639585b0b21e75f6e42b34c7c5a838df602c6416",
+      "review_prompt_hash": "6b2769fbb8fe4a236530840279e6be829a54138d2b572c4577ca4ab330fc15d5",
+      "audit_prompt_hash": "baa166e68efa13814d277bd90fd1fd14714df7a416bb4c7a6b26c4d385238850",
+      "schema_version": "separate-role-evidence-v6",
+      "generator": "google/gemini-3.8-flash",
+      "reviewer": "openai/gpt-5.4-mini",
+      "auditor": "deepseek/deepseek-v4.1-flash-1017",
+      "conditions": [
+        [
+          "no_target_claim",
+          null,
+          null
+        ],
+        [
+          "agent_success",
+          "agent",
+          "The task was completed successfully."
+        ],
+        [
+          "agent_failure",
+          "agent",
+          "The task was not completed successfully."
+        ],
+        [
+          "user_success",
+          "user",
+          "The task was completed successfully."
+        ],
+        [
+          "user_failure",
+          "user",
+          "The task was not completed successfully."
+        ]
+      ],
+      "label_policy": "two-blind-grounded-reviews-completion-contract-v4",
+      "semantic_repairs": 0,
+      "automatic_paid_retries": 0,
+      "null_policy": "reject_without_full_review; separately audit a sample"
+    },
+    "receipt_ids_verified": [
+      "cf9bf3b40d17fab5d175325d4adc0143bacd500870b45bce1bc9f1a0b73c7554",
+      "98cdc5ab8e2d196769a6fe74e8211192ed5e4531a63109c754ab8caea2538f97",
+      "f6d913562fd25d4163c246cce0f55921e85c5fb3078d97414b04acd8101016e6",
+      "236a3c202b5e2bb73288acb7d8bb1f9f68037044052cf63f77d878cfc4cdcc21",
+      "4b42cd209f88da2a9c6e19db97a961dacf31933bafff66cc66bd982db018ea2d",
+      "35d19e0a22cf2bd9e210f4ec4d85f196e0acb125da76c51104596b26c243419b"
+    ],
+    "new_paid_reviews_reused_only_if_payload_identical": true,
+    "old_manifest": "history/v6_1_before_quote_fix/batch/manifest.json"
+  },
+  "length_recovery_migration": {
+    "from_protocol": {
+      "protocol": "no-jev-edit-review-v6.2",
+      "code_sha256": "7b3045b1fb13a34a686f6337479faf117992d8dafe67be59334578000f933b99",
+      "v5_sha256": "0b893c73d601152b0b24041df4df4cab4f974bfe1fc62287bfa86c90331b5c54",
+      "v4_sha256": "bce3b34e337d8e7d467041eacbe0492b0a7ef7d46dd0995ba9ef313c0691ed3c",
+      "v3_sha256": "64e6586bbf3fb2458a30fdfba7745ba397e413bc6d3e95449f8dc61d42049d4b",
+      "generation_prompt_hash": "e4bc7906a7ec003afc6d5824639585b0b21e75f6e42b34c7c5a838df602c6416",
+      "review_prompt_hash": "6b2769fbb8fe4a236530840279e6be829a54138d2b572c4577ca4ab330fc15d5",
+      "audit_prompt_hash": "baa166e68efa13814d277bd90fd1fd14714df7a416bb4c7a6b26c4d385238850",
+      "schema_version": "separate-role-evidence-v6",
+      "generator": "google/gemini-3.8-flash",
+      "reviewer": "openai/gpt-5.4-mini",
+      "auditor": "deepseek/deepseek-v4.1-flash-1017",
+      "conditions": [
+        [
+          "no_target_claim",
+          null,
+          null
+        ],
+        [
+          "agent_success",
+          "agent",
+          "The task was completed successfully."
+        ],
+        [
+          "agent_failure",
+          "agent",
+          "The task was not completed successfully."
+        ],
+        [
+          "user_success",
+          "user",
+          "The task was completed successfully."
+        ],
+        [
+          "user_failure",
+          "user",
+          "The task was not completed successfully."
+        ]
+      ],
+      "label_policy": "two-blind-grounded-reviews-completion-contract-v4",
+      "semantic_repairs": 0,
+      "automatic_paid_retries": 0,
+      "null_policy": "reject_without_full_review; separately audit a sample"
+    },
+    "old_manifest": "history/v6_2_before_length_recovery/batch/manifest.json"
+  },
+  "citation_migration": {
+    "from_protocol": {
+      "protocol": "no-jev-edit-review-v6.3",
+      "code_sha256": "87ece2561c0f751b99b69bcc710c46a4df479dcc6546558fca3bb5d6c5d05ce6",
+      "v5_sha256": "0b893c73d601152b0b24041df4df4cab4f974bfe1fc62287bfa86c90331b5c54",
+      "v4_sha256": "bce3b34e337d8e7d467041eacbe0492b0a7ef7d46dd0995ba9ef313c0691ed3c",
+      "v3_sha256": "64e6586bbf3fb2458a30fdfba7745ba397e413bc6d3e95449f8dc61d42049d4b",
+      "generation_prompt_hash": "e4bc7906a7ec003afc6d5824639585b0b21e75f6e42b34c7c5a838df602c6416",
+      "review_prompt_hash": "6b2769fbb8fe4a236530840279e6be829a54138d2b572c4577ca4ab330fc15d5",
+      "audit_prompt_hash": "baa166e68efa13814d277bd90fd1fd14714df7a416bb4c7a6b26c4d385238850",
+      "schema_version": "separate-role-evidence-v6",
+      "generator": "google/gemini-3.8-flash",
+      "reviewer": "openai/gpt-5.4-mini",
+      "auditor": "deepseek/deepseek-v4.1-flash-1017",
+      "conditions": [
+        [
+          "no_target_claim",
+          null,
+          null
+        ],
+        [
+          "agent_success",
+          "agent",
+          "The task was completed successfully."
+        ],
+        [
+          "agent_failure",
+          "agent",
+          "The task was not completed successfully."
+        ],
+        [
+          "user_success",
+          "user",
+          "The task was completed successfully."
+        ],
+        [
+          "user_failure",
+          "user",
+          "The task was not completed successfully."
+        ]
+      ],
+      "label_policy": "two-blind-grounded-reviews-completion-contract-v4",
+      "semantic_repairs": 0,
+      "automatic_network_retries": 0,
+      "known_billed_audit_length_retries": 1,
+      "audit_length_retry_max_tokens": 24576,
+      "null_policy": "reject_without_full_review; separately audit a sample"
+    },
+    "old_manifest": "history/v6_3_before_citation_repair/batch/manifest.json"
+  },
+  "runtime_metadata_fix": {
+    "old_runtime_hashes": {
+      "assemble_v6.py": "ec85c5766f889c79f7c85882c21e2197f502cb6f7fc8d50e790e39e5f0dba697",
+      "budget_v6.py": "2921b8822d08f609d5af0f525bbb2d7d9a11050f3f9cf4467c4af8887e73e295",
+      "budget_v4.py": "df8c8835658fa01ef5e4f2e5027734a67b881ec3d7ac9944a3afcf85e94638bd",
+      "client.py": "9761dc47b040215540c67b706e9bae321e892435fbd41f0ab3f275761c6309ec",
+      "prepare_data.py": "d5e6438015e7eb1d0591be395c508692d72e61fa91397beb2b4ab5df07c90e47",
+      "build_dataset.py": "680c056e7abfb61468b72c48185a533c6e7855264ee342922d35333f8f39f8fe",
+      "models_snapshot_v6.json": "038dab43ca0d380e5b787b855881fd44d9fb95e85078b0320d69db09b605a5ab",
+      "external_seen_tasks_v6.json": "373377a9ab1c1ddd4336bf5fc82038abc66a9414609db217254f1d870308107b",
+      "citation_fix_v6.py": "2f8db245af2d504e9d8ba3ce367104846f212a5fb66d73faf3f96fb724b8428f"
+    },
+    "reason": "Persist awaiting_audit decision before a budget stop; payloads unchanged."
+  }
+}

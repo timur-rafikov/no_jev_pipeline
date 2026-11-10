@@ -1,0 +1,120 @@
+{
+  "case_id": "v3_new10_07",
+  "review": {
+    "edit_evidence_ids": [],
+    "edit_reason": "No candidate span was provided to delete, so there is no edit to validate. The visible conversation also contains no removable retrospective completion claim in the last assistant message; it is a conditional response rather than a completion confirmation.",
+    "edit_verdict": "unsafe",
+    "requests": [
+      {
+        "base": "success",
+        "criterion": "Report the current fuel amount.",
+        "evidence": [
+          {
+            "message_id": "m0001",
+            "quote": "How much fuel I have right now?"
+          },
+          {
+            "message_id": "m0004",
+            "quote": "You currently have 50.0 gallons of fuel in your tank."
+          }
+        ],
+        "original": "success",
+        "reason": "The assistant answered with the observed fuel level, and the tool result shows 50.0 gallons.",
+        "tool_comparison": "The observed fuel level was 50.0 gallons, which satisfies the request.",
+        "tool_evidence": [
+          {
+            "message_id": "m0003",
+            "quote": "{\"fuelLevel\": 50.0}"
+          }
+        ],
+        "user_id": "m0001"
+      },
+      {
+        "base": "success",
+        "criterion": "Fill the tank to full, start the engine with START, and verify tire pressure is optimal.",
+        "evidence": [
+          {
+            "message_id": "m0005",
+            "quote": "add it to full and then proceed to activate the engine using the 'START' function and verify the tire pressure to ensure it is in optimal condition."
+          },
+          {
+            "message_id": "m0016",
+            "quote": "The engine is now running, the fuel tank is full, and the tire pressure is in optimal condition."
+          }
+        ],
+        "original": "success",
+        "reason": "The sequence completed: fuel remained at full capacity, the engine was started after resolving prerequisites, and tire pressure was checked and reported healthy.",
+        "tool_comparison": "Fuel stayed at 50.0 gallons, the doors were locked, the brake was pressed, the engine reached running state, and tire pressure was reported healthy.",
+        "tool_evidence": [
+          {
+            "message_id": "m0007",
+            "quote": "{\"fuelLevel\": 50.0}"
+          },
+          {
+            "message_id": "m0008",
+            "quote": "{\"error\": \"All doors must be locked before starting the engine. Here are the unlocked doors: driver, passenger, rear_left, rear_right\"}"
+          },
+          {
+            "message_id": "m0009",
+            "quote": "{\"frontLeftTirePressure\": 35.0, \"frontRightTirePressure\": 35.0, \"rearLeftTirePressure\": 32.0, \"rearRightTirePressure\": 32.0, \"healthy_tire_pressure\": true, \"car_info\": {}}"
+          },
+          {
+            "message_id": "m0011",
+            "quote": "{\"lockStatus\": \"locked\", \"remainingUnlockedDoors\": 0}"
+          },
+          {
+            "message_id": "m0012",
+            "quote": "{\"error\": \"Brake pedal needs to be pressed when starting the engine.\"}"
+          },
+          {
+            "message_id": "m0014",
+            "quote": "{\"brakePedalStatus\": \"pressed\", \"brakePedalForce\": 1000.0}"
+          },
+          {
+            "message_id": "m0015",
+            "quote": "{\"engineState\": \"running\", \"fuelLevel\": 50.0, \"batteryVoltage\": 12.6}"
+          }
+        ],
+        "user_id": "m0005"
+      },
+      {
+        "base": "failure",
+        "criterion": "If tire pressure is below 40 psi, provide directions to the nearest tire service center; otherwise, do not falsely claim it is above 40 psi.",
+        "evidence": [
+          {
+            "message_id": "m0017",
+            "quote": "Should I notice that my tire pressure falls below 40 psi, kindly provide me with directions to the nearest tire service center for prompt resolution."
+          },
+          {
+            "message_id": "m0018",
+            "quote": "No action is needed at this moment since your tire pressure is currently above 40 psi."
+          }
+        ],
+        "original": "failure",
+        "reason": "The assistant said the pressure was above 40 psi, but the observed tire pressures are 35, 35, 32, and 32 psi, all below 40. That makes the response factually wrong for the user's condition.",
+        "tool_comparison": "The tool result shows pressures below 40 psi on all four tires, so the claim that the tire pressure is currently above 40 psi is false and the requested conditional guidance was not properly handled.",
+        "tool_evidence": [
+          {
+            "message_id": "m0009",
+            "quote": "{\"frontLeftTirePressure\": 35.0, \"frontRightTirePressure\": 35.0, \"rearLeftTirePressure\": 32.0, \"rearRightTirePressure\": 32.0, \"healthy_tire_pressure\": true, \"car_info\": {}}"
+          }
+        ],
+        "user_id": "m0017"
+      }
+    ],
+    "suggested_deletion": null
+  },
+  "request": "30d269debaccf93ab5cb78319a3afe8a61f87fb70dfa80e76abbfbce6d912b81",
+  "family": null,
+  "decision": {
+    "status": "rejected",
+    "reasons": [
+      "no_candidate",
+      "edit_unsafe"
+    ],
+    "original_outcome": "failure",
+    "base_outcome": "failure",
+    "label_policy": "visible-evidence-and-benchmark-agreement-v1"
+  },
+  "diagnostic_pass": true
+}

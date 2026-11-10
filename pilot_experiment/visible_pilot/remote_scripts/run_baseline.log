@@ -1,0 +1,145 @@
+[32mActivated conda/uv virtual environment at [36m/venv/main[0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]Fetching 8 files:  12%|█▎        | 1/8 [00:10<01:10, 10.08s/it]Fetching 8 files:  25%|██▌       | 2/8 [00:14<00:40,  6.69s/it]Fetching 8 files:  38%|███▊      | 3/8 [00:16<00:22,  4.43s/it]Fetching 8 files:  50%|█████     | 4/8 [00:18<00:13,  3.45s/it]Fetching 8 files:  62%|██████▎   | 5/8 [00:18<00:07,  2.39s/it]Fetching 8 files:  75%|███████▌  | 6/8 [00:19<00:03,  1.92s/it]Fetching 8 files:  88%|████████▊ | 7/8 [00:21<00:01,  1.88s/it]Fetching 8 files: 100%|██████████| 8/8 [00:22<00:00,  1.60s/it]Fetching 8 files: 100%|██████████| 8/8 [00:22<00:00,  2.80s/it]
+Loading weights:   0%|          | 0/443 [00:00<?, ?it/s]Loading weights: 100%|██████████| 443/443 [00:00<00:00, 7296.27it/s]
+{"case_id": "visible_46_0001", "label": "failure", "n_tokens": 452, "logp_yes": -7.500553131103516, "logp_no": -0.0005529781919904053, "p_yes_norm": 0.0005527785524441058, "mass_yes_no": 0.9999999531988453, "seconds": 1.3}
+{"case_id": "visible_46_0002", "label": "success", "n_tokens": 415, "logp_yes": 0.0, "logp_no": -19.5, "p_yes_norm": 0.9999999966017321, "mass_yes_no": 1.000000003398268, "seconds": 0.2}
+{"case_id": "visible_46_0003", "label": "success", "n_tokens": 993, "logp_yes": 0.0, "logp_no": -20.5, "p_yes_norm": 0.9999999987498471, "mass_yes_no": 1.0000000012501529, "seconds": 0.2}
+{"case_id": "visible_46_0004", "label": "success", "n_tokens": 558, "logp_yes": -1.7881377516459906e-06, "logp_no": -13.250001907348633, "p_yes_norm": 0.9999982396569966, "mass_yes_no": 0.9999999722068016, "seconds": 0.1}
+{"case_id": "visible_46_0005", "label": "success", "n_tokens": 277, "logp_yes": 0.0, "logp_no": -27.75, "p_yes_norm": 0.9999999999991123, "mass_yes_no": 1.0000000000008877, "seconds": 0.1}
+{"case_id": "visible_46_0006", "label": "success", "n_tokens": 1182, "logp_yes": 0.0, "logp_no": -22.0, "p_yes_norm": 0.9999999997210531, "mass_yes_no": 1.0000000002789469, "seconds": 0.3}
+{"case_id": "visible_46_0007", "label": "failure", "n_tokens": 729, "logp_yes": -3.576278118089249e-07, "logp_no": -14.75, "p_yes_norm": 0.9999996072136592, "mass_yes_no": 1.0000000351586067, "seconds": 0.2}
+{"case_id": "visible_46_0008", "label": "failure", "n_tokens": 783, "logp_yes": -5.753177642822266, "logp_no": -0.0031777145341038704, "p_yes_norm": 0.0031726830692822713, "mass_yes_no": 1.000000012164825, "seconds": 0.2}
+{"case_id": "visible_46_0009", "label": "failure", "n_tokens": 531, "logp_yes": -41.0, "logp_no": 0.0, "p_yes_norm": 1.5628821893349888e-18, "mass_yes_no": 1.0, "seconds": 0.1}
+{"case_id": "visible_46_0010", "label": "failure", "n_tokens": 712, "logp_yes": -6.251928806304932, "logp_no": -0.0019286142196506262, "p_yes_norm": 0.001926734293943221, "mass_yes_no": 0.9999999786144717, "seconds": 0.2}
+{"case_id": "visible_46_0011", "label": "success", "n_tokens": 690, "logp_yes": 0.0, "logp_no": -18.0, "p_yes_norm": 0.9999999847700205, "mass_yes_no": 1.0000000152299797, "seconds": 0.1}
+{"case_id": "visible_46_0012", "label": "failure", "n_tokens": 485, "logp_yes": -37.5, "logp_no": 0.0, "p_yes_norm": 5.175555005801869e-17, "mass_yes_no": 1.0, "seconds": 0.1}
+{"case_id": "visible_46_0013", "label": "success", "n_tokens": 639, "logp_yes": 0.0, "logp_no": -25.5, "p_yes_norm": 0.9999999999915765, "mass_yes_no": 1.0000000000084235, "seconds": 0.1}
+{"case_id": "visible_46_0014", "label": "failure", "n_tokens": 1454, "logp_yes": -31.5, "logp_no": 0.0, "p_yes_norm": 2.08796791164589e-14, "mass_yes_no": 1.0000000000000209, "seconds": 0.3}
+{"case_id": "visible_46_0015", "label": "failure", "n_tokens": 546, "logp_yes": -29.5, "logp_no": 0.0, "p_yes_norm": 1.5428112031916497e-13, "mass_yes_no": 1.0000000000001543, "seconds": 0.1}
+{"case_id": "visible_46_0016", "label": "success", "n_tokens": 579, "logp_yes": 0.0, "logp_no": -21.75, "p_yes_norm": 0.9999999996418252, "mass_yes_no": 1.0000000003581748, "seconds": 0.1}
+{"case_id": "visible_46_0017", "label": "success", "n_tokens": 582, "logp_yes": -1.0728830375228426e-06, "logp_no": -13.750000953674316, "p_yes_norm": 0.9999989322970027, "mass_yes_no": 0.9999999948205298, "seconds": 0.1}
+{"case_id": "visible_46_0018", "label": "success", "n_tokens": 405, "logp_yes": 0.0, "logp_no": -18.5, "p_yes_norm": 0.9999999907625504, "mass_yes_no": 1.0000000092374497, "seconds": 0.1}
+{"case_id": "visible_46_0019", "label": "success", "n_tokens": 792, "logp_yes": 0.0, "logp_no": -26.5, "p_yes_norm": 0.9999999999969011, "mass_yes_no": 1.0000000000030989, "seconds": 0.2}
+{"case_id": "visible_46_0020", "label": "failure", "n_tokens": 1093, "logp_yes": -14.000000953674316, "logp_no": -8.344646857949556e-07, "p_yes_norm": 8.315279285380714e-07, "mass_yes_no": 0.9999999970635884, "seconds": 0.2}
+{"case_id": "visible_46_0021", "label": "success", "n_tokens": 1003, "logp_yes": 0.0, "logp_no": -24.75, "p_yes_norm": 0.9999999999821676, "mass_yes_no": 1.0000000000178324, "seconds": 0.2}
+{"case_id": "visible_46_0022", "label": "failure", "n_tokens": 446, "logp_yes": -18.75, "logp_no": 0.0, "p_yes_norm": 7.194132978569834e-09, "mass_yes_no": 1.000000007194133, "seconds": 0.1}
+{"case_id": "visible_46_0023", "label": "success", "n_tokens": 547, "logp_yes": -3.576278118089249e-07, "logp_no": -14.75, "p_yes_norm": 0.9999996072136592, "mass_yes_no": 1.0000000351586067, "seconds": 0.1}
+{"case_id": "visible_46_0024", "label": "failure", "n_tokens": 872, "logp_yes": -42.375, "logp_no": 0.0, "p_yes_norm": 3.951585010418958e-19, "mass_yes_no": 1.0, "seconds": 0.2}
+{"case_id": "visible_46_0025", "label": "failure", "n_tokens": 1287, "logp_yes": -36.375, "logp_no": 0.0, "p_yes_norm": 1.5941831731372972e-16, "mass_yes_no": 1.0000000000000002, "seconds": 0.3}
+{"case_id": "visible_46_0026", "label": "failure", "n_tokens": 908, "logp_yes": -18.0, "logp_no": 0.0, "p_yes_norm": 1.522997951276035e-08, "mass_yes_no": 1.0000000152299797, "seconds": 0.2}
+{"case_id": "visible_46_0027", "label": "success", "n_tokens": 368, "logp_yes": 0.0, "logp_no": -23.25, "p_yes_norm": 0.9999999999200804, "mass_yes_no": 1.0000000000799196, "seconds": 0.1}
+{"case_id": "visible_46_0028", "label": "failure", "n_tokens": 556, "logp_yes": -39.875, "logp_no": 0.0, "p_yes_norm": 4.8140160524635325e-18, "mass_yes_no": 1.0, "seconds": 0.1}
+{"case_id": "visible_46_0029", "label": "failure", "n_tokens": 714, "logp_yes": -8.250261306762695, "logp_no": -0.00026127262390218675, "p_yes_norm": 0.0002611903101813263, "mass_yes_no": 0.99999995180241, "seconds": 0.2}
+{"case_id": "visible_46_0030", "label": "success", "n_tokens": 333, "logp_yes": 0.0, "logp_no": -18.25, "p_yes_norm": 0.99999998813888, "mass_yes_no": 1.00000001186112, "seconds": 0.1}
+{"case_id": "visible_46_0031", "label": "failure", "n_tokens": 528, "logp_yes": -0.00026127262390218675, "logp_no": -8.250261306762695, "p_yes_norm": 0.9997388096898188, "mass_yes_no": 0.99999995180241, "seconds": 0.1}
+{"case_id": "visible_46_0032", "label": "success", "n_tokens": 229, "logp_yes": 0.0, "logp_no": -21.0, "p_yes_norm": 0.9999999992417439, "mass_yes_no": 1.0000000007582561, "seconds": 0.1}
+{"case_id": "visible_46_0033", "label": "success", "n_tokens": 844, "logp_yes": -0.00020346954988781363, "logp_no": -8.500203132629395, "p_yes_norm": 0.99979657295342, "mass_yes_no": 0.9999999781907806, "seconds": 0.2}
+{"case_id": "visible_46_0034", "label": "failure", "n_tokens": 497, "logp_yes": -33.625, "logp_no": 0.0, "p_yes_norm": 2.49372205333537e-15, "mass_yes_no": 1.0000000000000024, "seconds": 0.1}
+{"case_id": "visible_46_0035", "label": "success", "n_tokens": 604, "logp_yes": 0.0, "logp_no": -21.25, "p_yes_norm": 0.9999999994094697, "mass_yes_no": 1.0000000005905303, "seconds": 0.1}
+{"case_id": "visible_46_0036", "label": "failure", "n_tokens": 699, "logp_yes": -38.75, "logp_no": 0.0, "p_yes_norm": 1.4828213355760042e-17, "mass_yes_no": 1.0, "seconds": 0.1}
+{"case_id": "visible_46_0037", "label": "failure", "n_tokens": 717, "logp_yes": -12.500003814697266, "logp_no": -3.6954811548639555e-06, "p_yes_norm": 3.7266388399128017e-06, "mass_yes_no": 1.0000000311646295, "seconds": 0.2}
+{"case_id": "visible_46_0038", "label": "failure", "n_tokens": 628, "logp_yes": -4.0181498527526855, "logp_no": -0.018149960786104202, "p_yes_norm": 0.01798621187025419, "mass_yes_no": 0.9999999690748179, "seconds": 0.1}
+{"case_id": "visible_46_0039", "label": "failure", "n_tokens": 1466, "logp_yes": -42.75, "logp_no": 0.0, "p_yes_norm": 2.715882011892062e-19, "mass_yes_no": 1.0, "seconds": 0.3}
+{"case_id": "visible_46_0040", "label": "success", "n_tokens": 965, "logp_yes": -4.768370445162873e-07, "logp_no": -14.5, "p_yes_norm": 0.9999994956523514, "mass_yes_no": 1.0000000275107317, "seconds": 0.2}
+{"case_id": "visible_46_0041", "label": "failure", "n_tokens": 819, "logp_yes": -28.5, "logp_no": 0.0, "p_yes_norm": 4.193795658377786e-13, "mass_yes_no": 1.0000000000004194, "seconds": 0.2}
+{"case_id": "visible_46_0042", "label": "failure", "n_tokens": 1042, "logp_yes": -19.0, "logp_no": 0.0, "p_yes_norm": 5.602796406145941e-09, "mass_yes_no": 1.0000000056027964, "seconds": 0.2}
+{"case_id": "visible_46_0043", "label": "success", "n_tokens": 363, "logp_yes": 0.0, "logp_no": -20.5, "p_yes_norm": 0.9999999987498471, "mass_yes_no": 1.0000000012501529, "seconds": 0.1}
+{"case_id": "visible_46_0044", "label": "success", "n_tokens": 504, "logp_yes": 0.0, "logp_no": -21.75, "p_yes_norm": 0.9999999996418252, "mass_yes_no": 1.0000000003581748, "seconds": 0.1}
+{"case_id": "visible_46_0045", "label": "success", "n_tokens": 633, "logp_yes": 0.0, "logp_no": -22.25, "p_yes_norm": 0.999999999782756, "mass_yes_no": 1.000000000217244, "seconds": 0.1}
+{"case_id": "visible_46_0046", "label": "success", "n_tokens": 545, "logp_yes": -0.0011701886542141438, "logp_no": -6.7511701583862305, "p_yes_norm": 0.9988304896995872, "mass_yes_no": 1.000000006057039, "seconds": 0.1}
+Loading weights:   0%|          | 0/443 [00:00<?, ?it/s]Loading weights: 100%|██████████| 443/443 [00:00<00:00, 8799.34it/s]
+{"case_id": "visible_46_0001", "label": "failure", "n_tokens": 526, "logp_yes": -7.750430583953857, "logp_no": -0.0004306104383431375, "p_yes_norm": 0.00043055709272278825, "mass_yes_no": 1.0000000393706996, "seconds": 0.6}
+{"case_id": "visible_46_0002", "label": "success", "n_tokens": 467, "logp_yes": 0.0, "logp_no": -18.0, "p_yes_norm": 0.9999999847700205, "mass_yes_no": 1.0000000152299797, "seconds": 0.1}
+{"case_id": "visible_46_0003", "label": "success", "n_tokens": 1118, "logp_yes": 0.0, "logp_no": -20.25, "p_yes_norm": 0.999999998394772, "mass_yes_no": 1.000000001605228, "seconds": 0.2}
+{"case_id": "visible_46_0004", "label": "success", "n_tokens": 632, "logp_yes": -4.768360213347478e-06, "logp_no": -12.250004768371582, "p_yes_norm": 0.9999952149055051, "mass_yes_no": 1.0000000167457301, "seconds": 0.1}
+{"case_id": "visible_46_0005", "label": "success", "n_tokens": 319, "logp_yes": 0.0, "logp_no": -26.5, "p_yes_norm": 0.9999999999969011, "mass_yes_no": 1.0000000000030989, "seconds": 0.1}
+{"case_id": "visible_46_0006", "label": "success", "n_tokens": 1270, "logp_yes": 0.0, "logp_no": -20.25, "p_yes_norm": 0.999999998394772, "mass_yes_no": 1.000000001605228, "seconds": 0.3}
+{"case_id": "visible_46_0007", "label": "failure", "n_tokens": 859, "logp_yes": -2.3841855067985307e-07, "logp_no": -15.25, "p_yes_norm": 0.9999997617630333, "mass_yes_no": 0.9999999998184445, "seconds": 0.2}
+{"case_id": "visible_46_0008", "label": "failure", "n_tokens": 921, "logp_yes": -10.500027656555176, "logp_no": -2.753696753643453e-05, "p_yes_norm": 2.753568782174604e-05, "mass_yes_no": 0.9999999990993993, "seconds": 0.2}
+{"case_id": "visible_46_0009", "label": "failure", "n_tokens": 643, "logp_yes": -38.875, "logp_no": 0.0, "p_yes_norm": 1.308585235732177e-17, "mass_yes_no": 1.0, "seconds": 0.2}
+{"case_id": "visible_46_0010", "label": "failure", "n_tokens": 807, "logp_yes": -3.288041353225708, "logp_no": -0.03804141283035278, "p_yes_norm": 0.03732688948593844, "mass_yes_no": 0.999999961082287, "seconds": 0.2}
+{"case_id": "visible_46_0011", "label": "success", "n_tokens": 801, "logp_yes": -1.1920928244535389e-07, "logp_no": -16.25, "p_yes_norm": 0.9999999123575151, "mass_yes_no": 0.9999999684332068, "seconds": 0.2}
+{"case_id": "visible_46_0012", "label": "failure", "n_tokens": 557, "logp_yes": -36.25, "logp_no": 0.0, "p_yes_norm": 1.806446196545693e-16, "mass_yes_no": 1.0000000000000002, "seconds": 0.1}
+{"case_id": "visible_46_0013", "label": "success", "n_tokens": 733, "logp_yes": 0.0, "logp_no": -25.0, "p_yes_norm": 0.999999999986112, "mass_yes_no": 1.000000000013888, "seconds": 0.2}
+{"case_id": "visible_46_0014", "label": "failure", "n_tokens": 1630, "logp_yes": -28.0, "logp_no": 0.0, "p_yes_norm": 6.914400106935423e-13, "mass_yes_no": 1.0000000000006914, "seconds": 0.3}
+{"case_id": "visible_46_0015", "label": "failure", "n_tokens": 619, "logp_yes": -28.75, "logp_no": 0.0, "p_yes_norm": 3.2661313427863805e-13, "mass_yes_no": 1.0000000000003266, "seconds": 0.1}
+{"case_id": "visible_46_0016", "label": "success", "n_tokens": 641, "logp_yes": 0.0, "logp_no": -21.0, "p_yes_norm": 0.9999999992417439, "mass_yes_no": 1.0000000007582561, "seconds": 0.1}
+{"case_id": "visible_46_0017", "label": "success", "n_tokens": 694, "logp_yes": 0.0, "logp_no": -18.25, "p_yes_norm": 0.99999998813888, "mass_yes_no": 1.00000001186112, "seconds": 0.1}
+{"case_id": "visible_46_0018", "label": "success", "n_tokens": 478, "logp_yes": 0.0, "logp_no": -18.25, "p_yes_norm": 0.99999998813888, "mass_yes_no": 1.00000001186112, "seconds": 0.1}
+{"case_id": "visible_46_0019", "label": "success", "n_tokens": 898, "logp_yes": 0.0, "logp_no": -24.0, "p_yes_norm": 0.9999999999622486, "mass_yes_no": 1.0000000000377514, "seconds": 0.2}
+{"case_id": "visible_46_0020", "label": "failure", "n_tokens": 1254, "logp_yes": -13.250001907348633, "logp_no": -1.7881377516459906e-06, "p_yes_norm": 1.760343003490802e-06, "mass_yes_no": 0.9999999722068016, "seconds": 0.3}
+{"case_id": "visible_46_0021", "label": "success", "n_tokens": 1113, "logp_yes": 0.0, "logp_no": -23.0, "p_yes_norm": 0.9999999998973812, "mass_yes_no": 1.0000000001026188, "seconds": 0.2}
+{"case_id": "visible_46_0022", "label": "failure", "n_tokens": 500, "logp_yes": -14.000000953674316, "logp_no": -8.344646857949556e-07, "p_yes_norm": 8.315279285380714e-07, "mass_yes_no": 0.9999999970635884, "seconds": 0.1}
+{"case_id": "visible_46_0023", "label": "success", "n_tokens": 603, "logp_yes": 0.0, "logp_no": -18.5, "p_yes_norm": 0.9999999907625504, "mass_yes_no": 1.0000000092374497, "seconds": 0.1}
+{"case_id": "visible_46_0024", "label": "failure", "n_tokens": 972, "logp_yes": -41.125, "logp_no": 0.0, "p_yes_norm": 1.3792386911927587e-18, "mass_yes_no": 1.0, "seconds": 0.2}
+{"case_id": "visible_46_0025", "label": "failure", "n_tokens": 1383, "logp_yes": -35.875, "logp_no": 0.0, "p_yes_norm": 2.628363706943687e-16, "mass_yes_no": 1.0000000000000002, "seconds": 0.3}
+{"case_id": "visible_46_0026", "label": "failure", "n_tokens": 989, "logp_yes": -19.25, "logp_no": 0.0, "p_yes_norm": 4.363462233903898e-09, "mass_yes_no": 1.0000000043634623, "seconds": 0.2}
+{"case_id": "visible_46_0027", "label": "success", "n_tokens": 445, "logp_yes": 0.0, "logp_no": -22.75, "p_yes_norm": 0.999999999868235, "mass_yes_no": 1.000000000131765, "seconds": 0.1}
+{"case_id": "visible_46_0028", "label": "failure", "n_tokens": 631, "logp_yes": -39.375, "logp_no": 0.0, "p_yes_norm": 7.93697066318849e-18, "mass_yes_no": 1.0, "seconds": 0.1}
+{"case_id": "visible_46_0029", "label": "failure", "n_tokens": 810, "logp_yes": -13.750000953674316, "logp_no": -1.0728830375228426e-06, "p_yes_norm": 1.0677029973235123e-06, "mass_yes_no": 0.9999999948205298, "seconds": 0.2}
+{"case_id": "visible_46_0030", "label": "success", "n_tokens": 379, "logp_yes": 0.0, "logp_no": -17.0, "p_yes_norm": 0.9999999586006244, "mass_yes_no": 1.0000000413993773, "seconds": 0.1}
+{"case_id": "visible_46_0031", "label": "failure", "n_tokens": 627, "logp_yes": -0.00012337400403339416, "logp_no": -9.000123023986816, "p_yes_norm": 0.9998766053808289, "mass_yes_no": 1.0000000282288806, "seconds": 0.1}
+{"case_id": "visible_46_0032", "label": "success", "n_tokens": 254, "logp_yes": 0.0, "logp_no": -24.25, "p_yes_norm": 0.9999999999705993, "mass_yes_no": 1.0000000000294007, "seconds": 0.1}
+{"case_id": "visible_46_0033", "label": "success", "n_tokens": 957, "logp_yes": -0.0004306104383431375, "logp_no": -7.750430583953857, "p_yes_norm": 0.9995694429072773, "mass_yes_no": 1.0000000393706996, "seconds": 0.2}
+{"case_id": "visible_46_0034", "label": "failure", "n_tokens": 579, "logp_yes": -34.375, "logp_no": 0.0, "p_yes_norm": 1.177950889828275e-15, "mass_yes_no": 1.000000000000001, "seconds": 0.1}
+{"case_id": "visible_46_0035", "label": "success", "n_tokens": 719, "logp_yes": 0.0, "logp_no": -21.25, "p_yes_norm": 0.9999999994094697, "mass_yes_no": 1.0000000005905303, "seconds": 0.2}
+{"case_id": "visible_46_0036", "label": "failure", "n_tokens": 829, "logp_yes": -33.75, "logp_no": 0.0, "p_yes_norm": 2.2007019879753617e-15, "mass_yes_no": 1.0000000000000022, "seconds": 0.2}
+{"case_id": "visible_46_0037", "label": "failure", "n_tokens": 763, "logp_yes": -10.250035285949707, "logp_no": -3.540453326422721e-05, "p_yes_norm": 3.535625493426631e-05, "mass_yes_no": 0.9999999523467183, "seconds": 0.2}
+{"case_id": "visible_46_0038", "label": "failure", "n_tokens": 703, "logp_yes": -5.829164365422912e-05, "logp_no": -9.7500581741333, "p_yes_norm": 0.9999417087274893, "mass_yes_no": 1.0000000013278587, "seconds": 0.1}
+{"case_id": "visible_46_0039", "label": "failure", "n_tokens": 1592, "logp_yes": -40.25, "logp_no": 0.0, "p_yes_norm": 3.3086216207858244e-18, "mass_yes_no": 1.0, "seconds": 0.3}
+{"case_id": "visible_46_0040", "label": "success", "n_tokens": 1075, "logp_yes": -3.540453326422721e-05, "logp_no": -10.250035285949707, "p_yes_norm": 0.9999646437450659, "mass_yes_no": 0.9999999523467183, "seconds": 0.2}
+{"case_id": "visible_46_0041", "label": "failure", "n_tokens": 966, "logp_yes": -30.0, "logp_no": 0.0, "p_yes_norm": 9.357622968839299e-14, "mass_yes_no": 1.0000000000000935, "seconds": 0.2}
+{"case_id": "visible_46_0042", "label": "failure", "n_tokens": 1135, "logp_yes": -21.75, "logp_no": 0.0, "p_yes_norm": 3.581747929000289e-10, "mass_yes_no": 1.0000000003581748, "seconds": 0.2}
+{"case_id": "visible_46_0043", "label": "success", "n_tokens": 419, "logp_yes": 0.0, "logp_no": -22.25, "p_yes_norm": 0.999999999782756, "mass_yes_no": 1.000000000217244, "seconds": 0.1}
+{"case_id": "visible_46_0044", "label": "success", "n_tokens": 564, "logp_yes": 0.0, "logp_no": -19.25, "p_yes_norm": 0.9999999956365377, "mass_yes_no": 1.0000000043634623, "seconds": 0.1}
+{"case_id": "visible_46_0045", "label": "success", "n_tokens": 727, "logp_yes": 0.0, "logp_no": -22.5, "p_yes_norm": 0.9999999998308102, "mass_yes_no": 1.0000000001691898, "seconds": 0.2}
+{"case_id": "visible_46_0046", "label": "success", "n_tokens": 626, "logp_yes": -0.023245446383953094, "logp_no": -3.773245334625244, "p_yes_norm": 0.9770226275810572, "mass_yes_no": 1.0000000205563935, "seconds": 0.1}
+Loading weights:   0%|          | 0/443 [00:00<?, ?it/s]Loading weights: 100%|██████████| 443/443 [00:00<00:00, 7289.35it/s]
+{"case_id": "visible_46_0001", "label": "failure", "n_tokens": 5133, "logp_yes": -8.000335693359375, "logp_no": -0.00033539868309162557, "p_yes_norm": 0.0003353500316799018, "mass_yes_no": 1.0000000075909845, "seconds": 1.6}
+{"case_id": "visible_46_0002", "label": "success", "n_tokens": 6065, "logp_yes": -1.7881377516459906e-06, "logp_no": -13.250001907348633, "p_yes_norm": 0.9999982396569966, "mass_yes_no": 0.9999999722068016, "seconds": 1.3}
+{"case_id": "visible_46_0003", "label": "success", "n_tokens": 7866, "logp_yes": -3.576278118089249e-07, "logp_no": -15.0, "p_yes_norm": 0.9999996940976638, "mass_yes_no": 0.9999999482745726, "seconds": 1.7}
+{"case_id": "visible_46_0004", "label": "success", "n_tokens": 5239, "logp_yes": -2.753696753643453e-05, "logp_no": -10.500027656555176, "p_yes_norm": 0.9999724643121783, "mass_yes_no": 0.9999999990993993, "seconds": 1.1}
+{"case_id": "visible_46_0005", "label": "success", "n_tokens": 8350, "logp_yes": 0.0, "logp_no": -20.5, "p_yes_norm": 0.9999999987498471, "mass_yes_no": 1.0000000012501529, "seconds": 1.9}
+{"case_id": "visible_46_0006", "label": "success", "n_tokens": 9009, "logp_yes": 0.0, "logp_no": -17.5, "p_yes_norm": 0.999999974890009, "mass_yes_no": 1.0000000251099916, "seconds": 2.0}
+{"case_id": "visible_46_0007", "label": "failure", "n_tokens": 10156, "logp_yes": -4.768370445162873e-07, "logp_no": -14.5, "p_yes_norm": 0.9999994956523514, "mass_yes_no": 1.0000000275107317, "seconds": 2.3}
+{"case_id": "visible_46_0008", "label": "failure", "n_tokens": 7396, "logp_yes": -0.01416344940662384, "logp_no": -4.264163494110107, "p_yes_norm": 0.9859363735766059, "mass_yes_no": 1.000000006896188, "seconds": 1.6}
+{"case_id": "visible_46_0009", "label": "failure", "n_tokens": 4977, "logp_yes": -31.25, "logp_no": 0.0, "p_yes_norm": 2.6810038677817314e-14, "mass_yes_no": 1.0000000000000269, "seconds": 1.1}
+{"case_id": "visible_46_0010", "label": "failure", "n_tokens": 7555, "logp_yes": -9.7500581741333, "logp_no": -5.829164365422912e-05, "p_yes_norm": 5.8291272510567e-05, "mass_yes_no": 1.0000000013278587, "seconds": 1.7}
+{"case_id": "visible_46_0011", "label": "success", "n_tokens": 8356, "logp_yes": -8.344646857949556e-07, "logp_no": -14.000000953674316, "p_yes_norm": 0.9999991684720715, "mass_yes_no": 0.9999999970635884, "seconds": 1.9}
+{"case_id": "visible_46_0012", "label": "failure", "n_tokens": 6865, "logp_yes": -25.25, "logp_no": 0.0, "p_yes_norm": 1.0815941557168708e-11, "mass_yes_no": 1.000000000010816, "seconds": 1.5}
+{"case_id": "visible_46_0013", "label": "success", "n_tokens": 7481, "logp_yes": -1.1920928244535389e-07, "logp_no": -16.25, "p_yes_norm": 0.9999999123575151, "mass_yes_no": 0.9999999684332068, "seconds": 1.7}
+{"case_id": "visible_46_0014", "label": "failure", "n_tokens": 6237, "logp_yes": -23.25, "logp_no": 0.0, "p_yes_norm": 7.991959892315218e-11, "mass_yes_no": 1.0000000000799196, "seconds": 1.3}
+{"case_id": "visible_46_0015", "label": "failure", "n_tokens": 7094, "logp_yes": -22.25, "logp_no": 0.0, "p_yes_norm": 2.1724399346070674e-10, "mass_yes_no": 1.000000000217244, "seconds": 1.6}
+{"case_id": "visible_46_0016", "label": "success", "n_tokens": 9460, "logp_yes": 0.0, "logp_no": -19.0, "p_yes_norm": 0.9999999943972036, "mass_yes_no": 1.0000000056027964, "seconds": 2.1}
+{"case_id": "visible_46_0017", "label": "success", "n_tokens": 5028, "logp_yes": -5.960462772236497e-07, "logp_no": -14.250000953674316, "p_yes_norm": 0.9999993524054333, "mass_yes_no": 1.0000000515485004, "seconds": 1.1}
+{"case_id": "visible_46_0018", "label": "success", "n_tokens": 4812, "logp_yes": -1.1920928244535389e-07, "logp_no": -15.75, "p_yes_norm": 0.9999998555019791, "mass_yes_no": 1.0000000252887493, "seconds": 1.0}
+{"case_id": "visible_46_0019", "label": "success", "n_tokens": 5505, "logp_yes": 0.0, "logp_no": -17.25, "p_yes_norm": 0.9999999677581336, "mass_yes_no": 1.0000000322418674, "seconds": 1.2}
+{"case_id": "visible_46_0020", "label": "failure", "n_tokens": 9101, "logp_yes": -6.7511701583862305, "logp_no": -0.0011701886542141438, "p_yes_norm": 0.0011695103004128338, "mass_yes_no": 1.000000006057039, "seconds": 2.1}
+{"case_id": "visible_46_0021", "label": "success", "n_tokens": 7694, "logp_yes": 0.0, "logp_no": -17.5, "p_yes_norm": 0.999999974890009, "mass_yes_no": 1.0000000251099916, "seconds": 1.7}
+{"case_id": "visible_46_0022", "label": "failure", "n_tokens": 8258, "logp_yes": -16.25, "logp_no": -1.1920928244535389e-07, "p_yes_norm": 8.764248496102855e-08, "mass_yes_no": 0.9999999684332068, "seconds": 1.8}
+{"case_id": "visible_46_0023", "label": "success", "n_tokens": 5210, "logp_yes": -2.264974000354414e-06, "logp_no": -13.000001907348633, "p_yes_norm": 0.9999977396748937, "mass_yes_no": 0.9999999953536605, "seconds": 1.1}
+{"case_id": "visible_46_0024", "label": "failure", "n_tokens": 6570, "logp_yes": -33.0, "logp_no": 0.0, "p_yes_norm": 4.658886145103376e-15, "mass_yes_no": 1.0000000000000047, "seconds": 1.4}
+{"case_id": "visible_46_0025", "label": "failure", "n_tokens": 10405, "logp_yes": -27.625, "logp_no": 0.0, "p_yes_norm": 1.0060392792823047e-12, "mass_yes_no": 1.000000000001006, "seconds": 2.4}
+{"case_id": "visible_46_0026", "label": "failure", "n_tokens": 8561, "logp_yes": -9.7500581741333, "logp_no": -5.829164365422912e-05, "p_yes_norm": 5.8291272510567e-05, "mass_yes_no": 1.0000000013278587, "seconds": 1.9}
+{"case_id": "visible_46_0027", "label": "success", "n_tokens": 8000, "logp_yes": 0.0, "logp_no": -17.5, "p_yes_norm": 0.999999974890009, "mass_yes_no": 1.0000000251099916, "seconds": 1.8}
+{"case_id": "visible_46_0028", "label": "failure", "n_tokens": 4965, "logp_yes": -31.0, "logp_no": 0.0, "p_yes_norm": 3.442477108469858e-14, "mass_yes_no": 1.0000000000000344, "seconds": 1.1}
+{"case_id": "visible_46_0029", "label": "failure", "n_tokens": 8549, "logp_yes": -5.753177642822266, "logp_no": -0.0031777145341038704, "p_yes_norm": 0.0031726830692822713, "mass_yes_no": 1.000000012164825, "seconds": 1.9}
+{"case_id": "visible_46_0030", "label": "success", "n_tokens": 7127, "logp_yes": -3.576278118089249e-07, "logp_no": -15.0, "p_yes_norm": 0.9999996940976638, "mass_yes_no": 0.9999999482745726, "seconds": 1.6}
+{"case_id": "visible_46_0031", "label": "failure", "n_tokens": 4961, "logp_yes": -2.753696753643453e-05, "logp_no": -10.500027656555176, "p_yes_norm": 0.9999724643121783, "mass_yes_no": 0.9999999990993993, "seconds": 1.1}
+{"case_id": "visible_46_0032", "label": "success", "n_tokens": 6127, "logp_yes": 0.0, "logp_no": -18.0, "p_yes_norm": 0.9999999847700205, "mass_yes_no": 1.0000000152299797, "seconds": 1.3}
+{"case_id": "visible_46_0033", "label": "success", "n_tokens": 7538, "logp_yes": -0.0005529781919904053, "logp_no": -7.500553131103516, "p_yes_norm": 0.999447221447556, "mass_yes_no": 0.9999999531988453, "seconds": 1.6}
+{"case_id": "visible_46_0034", "label": "failure", "n_tokens": 6452, "logp_yes": -27.75, "logp_no": 0.0, "p_yes_norm": 8.878265478451776e-13, "mass_yes_no": 1.0000000000008877, "seconds": 1.4}
+{"case_id": "visible_46_0035", "label": "success", "n_tokens": 7300, "logp_yes": -1.7881377516459906e-06, "logp_no": -13.250001907348633, "p_yes_norm": 0.9999982396569966, "mass_yes_no": 0.9999999722068016, "seconds": 1.6}
+{"case_id": "visible_46_0036", "label": "failure", "n_tokens": 8384, "logp_yes": -27.75, "logp_no": 0.0, "p_yes_norm": 8.878265478451776e-13, "mass_yes_no": 1.0000000000008877, "seconds": 1.9}
+{"case_id": "visible_46_0037", "label": "failure", "n_tokens": 8335, "logp_yes": -4.511047840118408, "logp_no": -0.011047743260860443, "p_yes_norm": 0.010986941578116867, "mass_yes_no": 1.000000000523565, "seconds": 1.9}
+{"case_id": "visible_46_0038", "label": "failure", "n_tokens": 8531, "logp_yes": -2.1269280910491943, "logp_no": -0.12692804634571075, "p_yes_norm": 0.11920291732853862, "mass_yes_no": 0.9999999593684767, "seconds": 1.9}
+{"case_id": "visible_46_0039", "label": "failure", "n_tokens": 9331, "logp_yes": -31.75, "logp_no": 0.0, "p_yes_norm": 1.6261110446177924e-14, "mass_yes_no": 1.0000000000000162, "seconds": 2.1}
+{"case_id": "visible_46_0040", "label": "success", "n_tokens": 7656, "logp_yes": -0.0019286142196506262, "logp_no": -6.251928806304932, "p_yes_norm": 0.9980732657060568, "mass_yes_no": 0.9999999786144717, "seconds": 1.7}
+{"case_id": "visible_46_0041", "label": "failure", "n_tokens": 6839, "logp_yes": -25.25, "logp_no": 0.0, "p_yes_norm": 1.0815941557168708e-11, "mass_yes_no": 1.000000000010816, "seconds": 1.5}
+{"case_id": "visible_46_0042", "label": "failure", "n_tokens": 8707, "logp_yes": -9.250096321105957, "logp_no": -9.60780744208023e-05, "p_yes_norm": 9.610239214580366e-05, "mass_yes_no": 1.0000000289358562, "seconds": 2.0}
+{"case_id": "visible_46_0043", "label": "success", "n_tokens": 9513, "logp_yes": 0.0, "logp_no": -18.5, "p_yes_norm": 0.9999999907625504, "mass_yes_no": 1.0000000092374497, "seconds": 2.2}
+{"case_id": "visible_46_0044", "label": "success", "n_tokens": 9861, "logp_yes": 0.0, "logp_no": -18.5, "p_yes_norm": 0.9999999907625504, "mass_yes_no": 1.0000000092374497, "seconds": 2.3}
+{"case_id": "visible_46_0045", "label": "success", "n_tokens": 7308, "logp_yes": 0.0, "logp_no": -17.5, "p_yes_norm": 0.999999974890009, "mass_yes_no": 1.0000000251099916, "seconds": 1.6}
+{"case_id": "visible_46_0046", "label": "success", "n_tokens": 8384, "logp_yes": -1.1920928244535389e-07, "logp_no": -16.25, "p_yes_norm": 0.9999999123575151, "mass_yes_no": 0.9999999684332068, "seconds": 1.9}
+ALLDONE

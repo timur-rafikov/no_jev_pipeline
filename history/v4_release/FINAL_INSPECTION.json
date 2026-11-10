@@ -1,0 +1,65 @@
+{
+  "protocol": "no-jev-edit-review-v4.2",
+  "source_audit": "blind_source_audit.json",
+  "auditor": "root assistant; not independent human gold",
+  "edit_audit_blinding": "Sources inspected before verdicts; edit review was not fully blind because progress statuses had been visible.",
+  "four_candidate_edits_have_no_detected_requested_content_loss": true,
+  "cases": [
+    {
+      "case": 1,
+      "automatic": "rejected",
+      "audit": "no_eligible_target",
+      "issue": "Reviewer used an old directory listing to justify later ordering and accepted first-file identity without evidence. Not admitted."
+    },
+    {
+      "case": 2,
+      "automatic": "rejected",
+      "audit": "no_eligible_target",
+      "issue": "Purchase completion criterion remains debatable; no final retrospective claim to delete. Not admitted."
+    },
+    {
+      "case": 3,
+      "automatic": "quarantined",
+      "audit": "edit_valid_outcome_unresolved",
+      "issue": "Final retrieval claim is removable; the order review was not observed. Reviewer treated fetched SYNX info as delivered although prose omitted the figures."
+    },
+    {
+      "case": 4,
+      "automatic": "quarantined",
+      "audit": "boundary_claim_and_outcome_uncertainty",
+      "issue": "No more functions need to be called is borderline harness/completion language. Calls were preserved. No confirmed engine/cruise recovery."
+    },
+    {
+      "case": 5,
+      "automatic": "rejected",
+      "audit": "no_eligible_target_with_reviewer_outcome_error",
+      "issue": "Reviewer missed current-directory context: the successful move was inside nested archive, not requested workspace destination. Source mismatch was caught; no family admitted."
+    },
+    {
+      "case": 6,
+      "automatic": "rejected",
+      "audit": "no_eligible_target",
+      "issue": "Final contains only function-looking text; no completion proposition."
+    },
+    {
+      "case": 7,
+      "automatic": "accepted",
+      "audit": "hold_for_outcome_rubric",
+      "issue": "Deletion itself is valid. Fare/codes/date and budget match observed tools, but answer incorrectly expands SVP as San Luis Obispo; official airport is SBP. Existing automatic rubric did not decide how this additional wrong factual statement affects task success. Do not call this family clean without adjudication.",
+      "external_source": "https://sloairport.com/",
+      "external_source_excerpt": "SLO County Airport (SBP)"
+    },
+    {
+      "case": 8,
+      "automatic": "quarantined",
+      "audit": "edit_valid_visible_success_benchmark_conflict",
+      "issue": "Original watchlist starts with TSLA; scorer replay starts with NVDA. See SOURCE_LABEL_CONFLICT.json. No automatic relabel."
+    }
+  ],
+  "automatic_accepted_families": 1,
+  "automatic_accepted_variants": 5,
+  "audit_clear_accepted_families": 0,
+  "audit_clear_accepted_variants": 0,
+  "release_readiness": "blocked_by_quality_validation",
+  "quality_claim": "No measured population precision/recall; eight short tasks and known diagnostics cannot establish production-grade selection. No extrapolation to full BFCL."
+}

@@ -1,0 +1,68 @@
+{
+  "case_id": "c13",
+  "request_id": "8d30876066bdd9dcd358202fb78dfd2f0a340ab08a61adc4596bf06cf4f34986",
+  "review": {
+    "requests": [
+      {
+        "user_id": "m0001",
+        "unsupported_material_claims": [],
+        "request_kind": "action_or_state",
+        "reason": "Ticket update succeeded; the remaining prose still states the requested status and priority changes.",
+        "original": "success",
+        "execution_checks": [
+          {
+            "requirement_quote": "securing a first-class seat using my travel card with id 'travel_card_12345'",
+            "required_result": "completed_effect",
+            "reason": "Flight was booked and budget condition satisfied.",
+            "observed_result": "completed_effect",
+            "evidence": []
+          },
+          {
+            "requirement_quote": "Just make sure that I can afford it because I only have 6000 dollars to spend for this flight.",
+            "required_result": "completed_effect",
+            "reason": "Observed cost 1000.0 is below the 6000 budget, and booking status is true.",
+            "observed_result": "completed_effect",
+            "evidence": []
+          }
+        ],
+        "evidence": [
+          {
+            "quote": "- **Status**: Updated to \"Urgent\"\n- **Priority**: Increased to the highest level (5)",
+            "message_id": "m0026"
+          }
+        ],
+        "delivery_requirement": "not_requested",
+        "criterion": "Action and answer both present and substantively unchanged.",
+        "base": "success",
+        "answer_evidence": [
+          {
+            "quote": "- **Status**: Updated to \"Urgent\"\n- **Priority**: Increased to the highest level (5)",
+            "message_id": "m0026"
+          }
+        ]
+      }
+    ],
+    "edit_verdict": "safe",
+    "edit_reason": "Deletion is limited to the introductory completion claim; the actual requested status/priority details remain in BASE.",
+    "edit_evidence_ids": [
+      "m0026"
+    ]
+  },
+  "evaluation": {
+    "semantic_constraints_pass": false,
+    "semantic_errors": [
+      "m0010:original",
+      "m0010:base",
+      "m0014:original",
+      "m0014:base",
+      "m0018:original",
+      "m0018:base",
+      "m0023:original",
+      "m0023:base"
+    ],
+    "contract_valid": false,
+    "contract_error": "claimed_observation_without_tool_evidence",
+    "assessment": null,
+    "full_pass": false
+  }
+}

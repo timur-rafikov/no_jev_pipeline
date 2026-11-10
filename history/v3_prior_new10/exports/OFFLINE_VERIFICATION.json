@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case_id": "regression_1",
+      "source_reconstruction": true,
+      "result_checks": true,
+      "status": "accepted"
+    },
+    {
+      "case_id": "regression_2",
+      "source_reconstruction": true,
+      "result_checks": true,
+      "status": "accepted"
+    },
+    {
+      "case_id": "regression_3",
+      "source_reconstruction": true,
+      "result_checks": true,
+      "status": "rejected"
+    },
+    {
+      "case_id": "regression_4",
+      "source_reconstruction": true,
+      "result_checks": true,
+      "status": "quarantined"
+    },
+    {
+      "case_id": "fresh_1",
+      "source_reconstruction": true,
+      "result_checks": true,
+      "status": "accepted"
+    },
+    {
+      "case_id": "fresh_2",
+      "source_reconstruction": true,
+      "result_checks": true,
+      "status": "rejected"
+    },
+    {
+      "case_id": "fresh_3",
+      "source_reconstruction": true,
+      "result_checks": true,
+      "status": "budget_deferred"
+    },
+    {
+      "case_id": "fresh_4",
+      "source_reconstruction": true,
+      "result_checks": true,
+      "status": "not_started_budget"
+    }
+  ],
+  "receipts_checked": 21,
+  "secrets_included": false,
+  "semantic_accuracy_verified_by_code": false
+}

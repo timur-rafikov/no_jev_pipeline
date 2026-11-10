@@ -1,0 +1,9 @@
+{
+  "case_id": "fresh_3",
+  "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_123",
+  "cohort": "hash_sample_new_to_current_pilot",
+  "status": "budget_deferred",
+  "attempts": [],
+  "ready_for_judge_run": false,
+  "error": "generation_review_pair_does_not_fit"
+}

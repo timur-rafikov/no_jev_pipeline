@@ -1,0 +1,252 @@
+[
+ {
+  "case_id": "pilot_50_0001",
+  "label": "success",
+  "n_tokens": 4786
+ },
+ {
+  "case_id": "pilot_50_0002",
+  "label": "failure",
+  "n_tokens": 9215
+ },
+ {
+  "case_id": "pilot_50_0003",
+  "label": "success",
+  "n_tokens": 6524
+ },
+ {
+  "case_id": "pilot_50_0004",
+  "label": "failure",
+  "n_tokens": 8924
+ },
+ {
+  "case_id": "pilot_50_0005",
+  "label": "success",
+  "n_tokens": 6818
+ },
+ {
+  "case_id": "pilot_50_0006",
+  "label": "failure",
+  "n_tokens": 6824
+ },
+ {
+  "case_id": "pilot_50_0007",
+  "label": "success",
+  "n_tokens": 8442
+ },
+ {
+  "case_id": "pilot_50_0008",
+  "label": "failure",
+  "n_tokens": 9953
+ },
+ {
+  "case_id": "pilot_50_0009",
+  "label": "success",
+  "n_tokens": 7320
+ },
+ {
+  "case_id": "pilot_50_0010",
+  "label": "failure",
+  "n_tokens": 6514
+ },
+ {
+  "case_id": "pilot_50_0011",
+  "label": "success",
+  "n_tokens": 8259
+ },
+ {
+  "case_id": "pilot_50_0012",
+  "label": "failure",
+  "n_tokens": 8864
+ },
+ {
+  "case_id": "pilot_50_0013",
+  "label": "success",
+  "n_tokens": 5320
+ },
+ {
+  "case_id": "pilot_50_0014",
+  "label": "failure",
+  "n_tokens": 7190
+ },
+ {
+  "case_id": "pilot_50_0015",
+  "label": "success",
+  "n_tokens": 7655
+ },
+ {
+  "case_id": "pilot_50_0016",
+  "label": "failure",
+  "n_tokens": 10095
+ },
+ {
+  "case_id": "pilot_50_0017",
+  "label": "success",
+  "n_tokens": 7299
+ },
+ {
+  "case_id": "pilot_50_0018",
+  "label": "failure",
+  "n_tokens": 4923
+ },
+ {
+  "case_id": "pilot_50_0019",
+  "label": "success",
+  "n_tokens": 7507
+ },
+ {
+  "case_id": "pilot_50_0020",
+  "label": "failure",
+  "n_tokens": 6656
+ },
+ {
+  "case_id": "pilot_50_0021",
+  "label": "success",
+  "n_tokens": 8338
+ },
+ {
+  "case_id": "pilot_50_0022",
+  "label": "failure",
+  "n_tokens": 7265
+ },
+ {
+  "case_id": "pilot_50_0023",
+  "label": "success",
+  "n_tokens": 7473
+ },
+ {
+  "case_id": "pilot_50_0024",
+  "label": "failure",
+  "n_tokens": 10184
+ },
+ {
+  "case_id": "pilot_50_0025",
+  "label": "success",
+  "n_tokens": 8840
+ },
+ {
+  "case_id": "pilot_50_0026",
+  "label": "failure",
+  "n_tokens": 8729
+ },
+ {
+  "case_id": "pilot_50_0027",
+  "label": "success",
+  "n_tokens": 7549
+ },
+ {
+  "case_id": "pilot_50_0028",
+  "label": "failure",
+  "n_tokens": 9015
+ },
+ {
+  "case_id": "pilot_50_0029",
+  "label": "success",
+  "n_tokens": 5196
+ },
+ {
+  "case_id": "pilot_50_0030",
+  "label": "failure",
+  "n_tokens": 8683
+ },
+ {
+  "case_id": "pilot_50_0031",
+  "label": "success",
+  "n_tokens": 6821
+ },
+ {
+  "case_id": "pilot_50_0032",
+  "label": "failure",
+  "n_tokens": 5221
+ },
+ {
+  "case_id": "pilot_50_0033",
+  "label": "success",
+  "n_tokens": 6432
+ },
+ {
+  "case_id": "pilot_50_0034",
+  "label": "failure",
+  "n_tokens": 8767
+ },
+ {
+  "case_id": "pilot_50_0035",
+  "label": "success",
+  "n_tokens": 8361
+ },
+ {
+  "case_id": "pilot_50_0036",
+  "label": "failure",
+  "n_tokens": 8776
+ },
+ {
+  "case_id": "pilot_50_0037",
+  "label": "success",
+  "n_tokens": 7991
+ },
+ {
+  "case_id": "pilot_50_0038",
+  "label": "failure",
+  "n_tokens": 8430
+ },
+ {
+  "case_id": "pilot_50_0039",
+  "label": "success",
+  "n_tokens": 9079
+ },
+ {
+  "case_id": "pilot_50_0040",
+  "label": "failure",
+  "n_tokens": 5511
+ },
+ {
+  "case_id": "pilot_50_0041",
+  "label": "success",
+  "n_tokens": 8132
+ },
+ {
+  "case_id": "pilot_50_0042",
+  "label": "failure",
+  "n_tokens": 9964
+ },
+ {
+  "case_id": "pilot_50_0043",
+  "label": "success",
+  "n_tokens": 8377
+ },
+ {
+  "case_id": "pilot_50_0044",
+  "label": "failure",
+  "n_tokens": 9435
+ },
+ {
+  "case_id": "pilot_50_0045",
+  "label": "success",
+  "n_tokens": 5257
+ },
+ {
+  "case_id": "pilot_50_0046",
+  "label": "failure",
+  "n_tokens": 10350
+ },
+ {
+  "case_id": "pilot_50_0047",
+  "label": "success",
+  "n_tokens": 8289
+ },
+ {
+  "case_id": "pilot_50_0048",
+  "label": "failure",
+  "n_tokens": 7458
+ },
+ {
+  "case_id": "pilot_50_0049",
+  "label": "success",
+  "n_tokens": 10019
+ },
+ {
+  "case_id": "pilot_50_0050",
+  "label": "failure",
+  "n_tokens": 5447
+ }
+]

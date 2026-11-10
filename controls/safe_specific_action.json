@@ -1,0 +1,36 @@
+{
+  "name": "safe_specific_action",
+  "expected_edit": "safe",
+  "actual_edit": "safe",
+  "passed": true,
+  "review": {
+    "edit_evidence_ids": [
+      "m4"
+    ],
+    "edit_reason": "The deleted span is a standalone retrospective completion claim and removing it leaves the final assistant message empty. The underlying task execution evidence remains unchanged in the conversation, so the edit is safe.",
+    "edit_verdict": "safe",
+    "requests": [
+      {
+        "base": "success",
+        "evidence_ids": [
+          "m2",
+          "m3"
+        ],
+        "original": "success",
+        "reason": "The user requested deletion of message M7, and the assistant issued the delete_message call with a tool-confirmed result deleted=true.",
+        "user_id": "m1"
+      }
+    ],
+    "suggested_deletion": {
+      "exact_text": "The message to Bob has been successfully deleted.",
+      "occurrence": 0
+    }
+  },
+  "decision": {
+    "status": "accepted",
+    "reasons": [],
+    "original_outcome": "success",
+    "base_outcome": "success"
+  },
+  "request_hash": "554aa9b61d0386fb7d517cce2ca621003626c9af65fd25fa269dc4e8e7fb23b6"
+}

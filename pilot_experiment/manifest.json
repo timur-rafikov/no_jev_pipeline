@@ -1,0 +1,470 @@
+{
+  "protocol": {
+    "protocol": "no-jev-edit-review-v6.4",
+    "code_sha256": "044566bd88335f08584bbf07957351742f7f8e621b8f002a38555162f46ca0af",
+    "v5_sha256": "0b893c73d601152b0b24041df4df4cab4f974bfe1fc62287bfa86c90331b5c54",
+    "v4_sha256": "bce3b34e337d8e7d467041eacbe0492b0a7ef7d46dd0995ba9ef313c0691ed3c",
+    "v3_sha256": "64e6586bbf3fb2458a30fdfba7745ba397e413bc6d3e95449f8dc61d42049d4b",
+    "generation_prompt_hash": "e4bc7906a7ec003afc6d5824639585b0b21e75f6e42b34c7c5a838df602c6416",
+    "review_prompt_hash": "6b2769fbb8fe4a236530840279e6be829a54138d2b572c4577ca4ab330fc15d5",
+    "audit_prompt_hash": "baa166e68efa13814d277bd90fd1fd14714df7a416bb4c7a6b26c4d385238850",
+    "schema_version": "separate-role-evidence-v6",
+    "generator": "google/gemini-3.8-flash",
+    "reviewer": "openai/gpt-5.4-mini",
+    "auditor": "deepseek/deepseek-v4.1-flash-1017",
+    "conditions": [
+      [
+        "no_target_claim",
+        null,
+        null
+      ],
+      [
+        "agent_success",
+        "agent",
+        "The task was completed successfully."
+      ],
+      [
+        "agent_failure",
+        "agent",
+        "The task was not completed successfully."
+      ],
+      [
+        "user_success",
+        "user",
+        "The task was completed successfully."
+      ],
+      [
+        "user_failure",
+        "user",
+        "The task was not completed successfully."
+      ]
+    ],
+    "label_policy": "two-blind-grounded-reviews-completion-contract-v4",
+    "semantic_repairs": 0,
+    "automatic_network_retries": 0,
+    "known_billed_audit_length_retries": 1,
+    "audit_length_retry_max_tokens": 24576,
+    "citation_format_repairs_per_review": 1,
+    "citation_repair_changes_labels": false,
+    "null_policy": "reject_without_full_review; separately audit a sample"
+  },
+  "runtime_hashes": {
+    "assemble_v6.py": "1411202afa72de863d17f479f7e613ae3b40cb04acfd1d2c7b973d343106472b",
+    "budget_v6.py": "2921b8822d08f609d5af0f525bbb2d7d9a11050f3f9cf4467c4af8887e73e295",
+    "budget_v4.py": "df8c8835658fa01ef5e4f2e5027734a67b881ec3d7ac9944a3afcf85e94638bd",
+    "client.py": "9761dc47b040215540c67b706e9bae321e892435fbd41f0ab3f275761c6309ec",
+    "prepare_data.py": "d5e6438015e7eb1d0591be395c508692d72e61fa91397beb2b4ab5df07c90e47",
+    "build_dataset.py": "680c056e7abfb61468b72c48185a533c6e7855264ee342922d35333f8f39f8fe",
+    "models_snapshot_v6.json": "038dab43ca0d380e5b787b855881fd44d9fb95e85078b0320d69db09b605a5ab",
+    "external_seen_tasks_v6.json": "373377a9ab1c1ddd4336bf5fc82038abc66a9414609db217254f1d870308107b",
+    "citation_fix_v6.py": "2f8db245af2d504e9d8ba3ce367104846f212a5fb66d73faf3f96fb724b8428f"
+  },
+  "source": {
+    "dataset": "HuanzhiMao/BFCL-Result",
+    "release": "2025-11-03",
+    "commit": "cadd76a8dc62984e7bf15ecaf358f070bae745cc",
+    "raw_files": {
+      "DeepSeek-V3.2-Exp_result.jsonl": "2c5ffce21c7268c9ccc5c14d292f49240aaf57268b6eac133bdf19013b75fcca",
+      "DeepSeek-V3.2-Exp_score.jsonl": "a5c4df5a501265159a302f4b9fe0fbcced90429e5f73fd8fa590271a45f7fd0b",
+      "Qwen_Qwen3-235B-A22B-Instruct-2507_result.jsonl": "181b67429c8e9d520f9cfa2d04823ffc2ac7442a558cb71f9c2a18a58cf5a47b",
+      "Qwen_Qwen3-235B-A22B-Instruct-2507_score.jsonl": "8fedbc7871db2f2446ed1464de3ed9e87ec38ca4b6cf13851643810d58884364",
+      "gpt-4.1-2025-04-14_result.jsonl": "3e454198bf4b656016cde9044855d027db4cf4b12c265a8e466c3a1f7cadd3ac",
+      "gpt-4.1-2025-04-14_score.jsonl": "cafe862d44e1043a215ca0d03d7ecbe545b7ed93d01f0981cb9b82a7d5f4b575"
+    }
+  },
+  "seed": "pilot-50",
+  "selection_order": "class-interleaved; within class sha256(canonical([seed,source_id]))",
+  "max_message_bytes": 0,
+  "unique_tasks": true,
+  "excluded_task_ids": [
+    "multi_turn_base_0",
+    "multi_turn_base_1",
+    "multi_turn_base_104",
+    "multi_turn_base_107",
+    "multi_turn_base_114",
+    "multi_turn_base_117",
+    "multi_turn_base_118",
+    "multi_turn_base_12",
+    "multi_turn_base_122",
+    "multi_turn_base_126",
+    "multi_turn_base_128",
+    "multi_turn_base_130",
+    "multi_turn_base_132",
+    "multi_turn_base_136",
+    "multi_turn_base_137",
+    "multi_turn_base_138",
+    "multi_turn_base_143",
+    "multi_turn_base_146",
+    "multi_turn_base_147",
+    "multi_turn_base_15",
+    "multi_turn_base_151",
+    "multi_turn_base_156",
+    "multi_turn_base_158",
+    "multi_turn_base_162",
+    "multi_turn_base_163",
+    "multi_turn_base_164",
+    "multi_turn_base_179",
+    "multi_turn_base_182",
+    "multi_turn_base_187",
+    "multi_turn_base_194",
+    "multi_turn_base_195",
+    "multi_turn_base_197",
+    "multi_turn_base_23",
+    "multi_turn_base_27",
+    "multi_turn_base_29",
+    "multi_turn_base_31",
+    "multi_turn_base_33",
+    "multi_turn_base_34",
+    "multi_turn_base_39",
+    "multi_turn_base_40",
+    "multi_turn_base_41",
+    "multi_turn_base_46",
+    "multi_turn_base_49",
+    "multi_turn_base_50",
+    "multi_turn_base_6",
+    "multi_turn_base_64",
+    "multi_turn_base_69",
+    "multi_turn_base_73",
+    "multi_turn_base_79",
+    "multi_turn_base_8",
+    "multi_turn_base_82",
+    "multi_turn_base_97",
+    "multi_turn_base_99"
+  ],
+  "scope_exclusions": {
+    "already_used_task": 135,
+    "structural_no_final_assistant": 26,
+    "structural_no_final_prose": 73
+  },
+  "eligible_executions": 366,
+  "source_executions": 600,
+  "source_tasks": 200,
+  "semantic_preselection": false,
+  "gold_used_for_selection": true,
+  "class_balance": {
+    "by": "source_gold (BFCL grade, not verified visible outcome)",
+    "target": {
+      "success": 25,
+      "failure": 25
+    },
+    "selected": {
+      "success": 25,
+      "failure": 25
+    },
+    "available": {
+      "executions": {
+        "success": 70,
+        "failure": 296
+      },
+      "tasks": {
+        "success": 50,
+        "failure": 138
+      },
+      "max_balanced_count": 100
+    }
+  },
+  "split_seed": "bfcl-judge-task-split-v1",
+  "selected": [
+    {
+      "case_id": "pilot_50_0001",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_26",
+      "task_id": "multi_turn_base_26",
+      "record_hash": "e42ea3c6ae14710f1b0bbaf71f7315268af4c33137f5de8a17edda448b5a1f72"
+    },
+    {
+      "case_id": "pilot_50_0002",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_55",
+      "task_id": "multi_turn_base_55",
+      "record_hash": "205b0b859f4dfe33b676f5c12919888cb233e95367244ecfc43f7352aa636ea8"
+    },
+    {
+      "case_id": "pilot_50_0003",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_191",
+      "task_id": "multi_turn_base_191",
+      "record_hash": "d37783780236a83769d2e75cee51ff3623f2cfbdbe1a2bebd779f5175865695f"
+    },
+    {
+      "case_id": "pilot_50_0004",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_72",
+      "task_id": "multi_turn_base_72",
+      "record_hash": "3bcabc93ea45d5c472faea772b93ff1d9d5c8a09887781ac7faad1506f3064ab"
+    },
+    {
+      "case_id": "pilot_50_0005",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_167",
+      "task_id": "multi_turn_base_167",
+      "record_hash": "63c57fb9d09d75139b4079cbf7dfb09d3205280537b4656400d65bc1a982a5f8"
+    },
+    {
+      "case_id": "pilot_50_0006",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_92",
+      "task_id": "multi_turn_base_92",
+      "record_hash": "7b32193ccf6015dfea72bad058c0ce5274d1eca25c7af55d5c88ad13912dc36d"
+    },
+    {
+      "case_id": "pilot_50_0007",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_139",
+      "task_id": "multi_turn_base_139",
+      "record_hash": "7bafbc1a6e8c07f4d4a98824a6459d458693a67c500b93ed56eed99cab9539c7"
+    },
+    {
+      "case_id": "pilot_50_0008",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_76",
+      "task_id": "multi_turn_base_76",
+      "record_hash": "efe8e08f3ca73ba41ac804a6d57c4c141112cc28cf905360f79dfbe4a1c86662"
+    },
+    {
+      "case_id": "pilot_50_0009",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_14",
+      "task_id": "multi_turn_base_14",
+      "record_hash": "59b4087b03cae86b252a6e974d761a743322a315f3650e74a92b768ec7cc2c46"
+    },
+    {
+      "case_id": "pilot_50_0010",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_84",
+      "task_id": "multi_turn_base_84",
+      "record_hash": "225aa6deee1278d03e1c16cc8a732a480a116c78aa0953d65d155dc9f7e46ecd"
+    },
+    {
+      "case_id": "pilot_50_0011",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_7",
+      "task_id": "multi_turn_base_7",
+      "record_hash": "55ad3e34f44bb1c3b7916561fb2480c200c1011826e709038e8fd5fa2b058eac"
+    },
+    {
+      "case_id": "pilot_50_0012",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_60",
+      "task_id": "multi_turn_base_60",
+      "record_hash": "9152d1ed2f3efdc3630f5226452b4f185125c217dc5cd5997053dcc66e52975b"
+    },
+    {
+      "case_id": "pilot_50_0013",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_142",
+      "task_id": "multi_turn_base_142",
+      "record_hash": "fc053cc92c6bcf1322c2800c3895429d5a654f094bd617165dc50d1504da4d76"
+    },
+    {
+      "case_id": "pilot_50_0014",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_24",
+      "task_id": "multi_turn_base_24",
+      "record_hash": "6336ee89258f1453bb92f6f34780fec5b7110014074ac4d555c3453cabf1b3d4"
+    },
+    {
+      "case_id": "pilot_50_0015",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_111",
+      "task_id": "multi_turn_base_111",
+      "record_hash": "f6e021b4bba16fecc7541b45b060ff7d1b3603f565282d504746fb7bafcfc21f"
+    },
+    {
+      "case_id": "pilot_50_0016",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_81",
+      "task_id": "multi_turn_base_81",
+      "record_hash": "8fe44c44d00f77feaae0727e9217e3bf25bc928e6c9ff50068e923f0ff445b91"
+    },
+    {
+      "case_id": "pilot_50_0017",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_101",
+      "task_id": "multi_turn_base_101",
+      "record_hash": "ed963a7c53f1734b968e7833fb7d59c3cc1e8773adc1544c2038b3985142bd99"
+    },
+    {
+      "case_id": "pilot_50_0018",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_16",
+      "task_id": "multi_turn_base_16",
+      "record_hash": "f4c73dc03734d98a420dc8ad71f054d01cf3aba4f51f5c4e5e23ddde072cbfb9"
+    },
+    {
+      "case_id": "pilot_50_0019",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_140",
+      "task_id": "multi_turn_base_140",
+      "record_hash": "7cb4ec1b61fe9bf6b5043861e7085cc172b71d1c9b8474159173b241afbdfa00"
+    },
+    {
+      "case_id": "pilot_50_0020",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_89",
+      "task_id": "multi_turn_base_89",
+      "record_hash": "78904eaf9c5de9a8a902f385ec4394f9cc9c35395c10a3f254938ed75454b4c9"
+    },
+    {
+      "case_id": "pilot_50_0021",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_91",
+      "task_id": "multi_turn_base_91",
+      "record_hash": "e07e16e48f9da17eee5df4ba9c405f6959f9dcfaf1da47725925257feeeff723"
+    },
+    {
+      "case_id": "pilot_50_0022",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_2",
+      "task_id": "multi_turn_base_2",
+      "record_hash": "af2a4c6f18b28c3a3068c8507d5d693955228df8f73e97756fbb9c0876529e27"
+    },
+    {
+      "case_id": "pilot_50_0023",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_119",
+      "task_id": "multi_turn_base_119",
+      "record_hash": "9b420fe16a77f9703d046d12d8b5b67f7bb85a09a6453a850b556078ee59f851"
+    },
+    {
+      "case_id": "pilot_50_0024",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_54",
+      "task_id": "multi_turn_base_54",
+      "record_hash": "3aa84a3fbebcd7e818f305cb9a866b9ad8749ed70ed4512d266132cd1f1c82b7"
+    },
+    {
+      "case_id": "pilot_50_0025",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_166",
+      "task_id": "multi_turn_base_166",
+      "record_hash": "a51839b642119f0ab4814765ddceb516dca25c69b8f8f02ceb5e9efa682ff9d0"
+    },
+    {
+      "case_id": "pilot_50_0026",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_172",
+      "task_id": "multi_turn_base_172",
+      "record_hash": "d21edab87e7f3c4b5ccb25bb602f251bc55c227dd0b0433e2089a91d3971ff0c"
+    },
+    {
+      "case_id": "pilot_50_0027",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_149",
+      "task_id": "multi_turn_base_149",
+      "record_hash": "c1b1df087d0ba94d7de1067fb01dbf7a44c1b11d83c3918e53ced8689e67d9d3"
+    },
+    {
+      "case_id": "pilot_50_0028",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_181",
+      "task_id": "multi_turn_base_181",
+      "record_hash": "59941776f41464157fd5ba03fe810b4005c73315f4f5e14f3dc6999103fb71be"
+    },
+    {
+      "case_id": "pilot_50_0029",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_100",
+      "task_id": "multi_turn_base_100",
+      "record_hash": "3242dc2c58276b11a10f5b35b21975d32a70a508fe890e116b51e89bd6777c9c"
+    },
+    {
+      "case_id": "pilot_50_0030",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_61",
+      "task_id": "multi_turn_base_61",
+      "record_hash": "3e00e8a0992675e99de5681459ec1de8689846965d58b5b3b940fe367d77d906"
+    },
+    {
+      "case_id": "pilot_50_0031",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_19",
+      "task_id": "multi_turn_base_19",
+      "record_hash": "26fd2f4d1c41384f5906d11c9c48049a54dd2e918f6133c91647299fcc7f61fb"
+    },
+    {
+      "case_id": "pilot_50_0032",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_37",
+      "task_id": "multi_turn_base_37",
+      "record_hash": "0578b2f49498bfb7b54a43bad80ee90dcf7f910fce72ee811a28505d33ffcc95"
+    },
+    {
+      "case_id": "pilot_50_0033",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_155",
+      "task_id": "multi_turn_base_155",
+      "record_hash": "d27d228ba7549f6aea893f582c0dc84f8eec5b232186309cb80c5269d0ce5e5e"
+    },
+    {
+      "case_id": "pilot_50_0034",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_165",
+      "task_id": "multi_turn_base_165",
+      "record_hash": "9e7296335a4d4d56336fef92a18050a1e420476f188375c2560c4c6921f16210"
+    },
+    {
+      "case_id": "pilot_50_0035",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_11",
+      "task_id": "multi_turn_base_11",
+      "record_hash": "c2570336f49521f401394e1e2a84e58bf69e1cc6c4b4f5bb7efb97c548363626"
+    },
+    {
+      "case_id": "pilot_50_0036",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_95",
+      "task_id": "multi_turn_base_95",
+      "record_hash": "a1df53acce2a76bdf1f702f999022e269a38ecb0c93cd311abc3951e4d9d52cb"
+    },
+    {
+      "case_id": "pilot_50_0037",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_47",
+      "task_id": "multi_turn_base_47",
+      "record_hash": "2a06fffa8234965f2609a334860b7fc5c92f5a7c4231acd5f632f1ca749112f1"
+    },
+    {
+      "case_id": "pilot_50_0038",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_152",
+      "task_id": "multi_turn_base_152",
+      "record_hash": "e553d79d6118c5b6888934083ec4cfe93cd984c85fbfac0923e57869bac8d7d1"
+    },
+    {
+      "case_id": "pilot_50_0039",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_193",
+      "task_id": "multi_turn_base_193",
+      "record_hash": "1b2e2adba2c86cfd787f713aafcc90b6cca3d3189921cbd645e75c0117b50050"
+    },
+    {
+      "case_id": "pilot_50_0040",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_123",
+      "task_id": "multi_turn_base_123",
+      "record_hash": "54936201ed59af8551c6d667b8c85e2d1f7fed0c20f290d90d8819e1f3c17a20"
+    },
+    {
+      "case_id": "pilot_50_0041",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_129",
+      "task_id": "multi_turn_base_129",
+      "record_hash": "78bc36054095f4c3f2c50e3e2cb444102cbb33942d465777dfb562102d4d1767"
+    },
+    {
+      "case_id": "pilot_50_0042",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_88",
+      "task_id": "multi_turn_base_88",
+      "record_hash": "057ecd3a1d50216e7526758c40f56c9c7bf1c40ceb320a97c512acd568802235"
+    },
+    {
+      "case_id": "pilot_50_0043",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_4",
+      "task_id": "multi_turn_base_4",
+      "record_hash": "4bdbcefeb7a8b5323a7c6cb7b26e1fcaa9de4353cd73d4260156e5b8894d271b"
+    },
+    {
+      "case_id": "pilot_50_0044",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_178",
+      "task_id": "multi_turn_base_178",
+      "record_hash": "581ea0d44d7dcbbb150f909a0a54ac08171123709a91a688db10dc7d16ff0c76"
+    },
+    {
+      "case_id": "pilot_50_0045",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_105",
+      "task_id": "multi_turn_base_105",
+      "record_hash": "3bbca38cb517503143093bcb6acbaa6e3858d13fb74bf272b8ff98f200becdf8"
+    },
+    {
+      "case_id": "pilot_50_0046",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_188",
+      "task_id": "multi_turn_base_188",
+      "record_hash": "a6a4f0c5bcfec57d7f258af6ecab9009cb01b199883534eb1b4f2b19cbecde16"
+    },
+    {
+      "case_id": "pilot_50_0047",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_144",
+      "task_id": "multi_turn_base_144",
+      "record_hash": "8e92011d7bf1d8bc94113ec2d8892fea4fbf6bdf7a1503539ca7e125aeddf974"
+    },
+    {
+      "case_id": "pilot_50_0048",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_145",
+      "task_id": "multi_turn_base_145",
+      "record_hash": "9c958871b22ad1ab8d3f4bace82c2ee04c066b9b377b0b11f72407f4aaa6f9b0"
+    },
+    {
+      "case_id": "pilot_50_0049",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_78",
+      "task_id": "multi_turn_base_78",
+      "record_hash": "5a93e80fc6cab1cf1280ae83e2aa94bb6cc2fd931c83119e1bb4d99132dbb98e"
+    },
+    {
+      "case_id": "pilot_50_0050",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_116",
+      "task_id": "multi_turn_base_116",
+      "record_hash": "c44b1b007e1a93ff2e6ddfc364016ec5cc1d5f6ad408a2573f3a115e1d475f51"
+    }
+  ],
+  "novelty_limit": "Available executed history and documented prior IDs; earlier missing archives cannot be checked."
+}

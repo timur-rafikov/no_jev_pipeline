@@ -1,0 +1,10 @@
+{
+  "authorization": "User: Бюджет $1. Подготовь готовую отлаженную систему.",
+  "date": "2026-10-27",
+  "additional_limit_usd": 1.0,
+  "baseline_actual_usd": 0.63067935,
+  "baseline_reserved_usd": 0.049568400000000006,
+  "baseline_attempts": 61,
+  "effective_ledger_cap_usd": 1.68024775,
+  "previous_remainder_not_spent": 0.031705025999999976
+}

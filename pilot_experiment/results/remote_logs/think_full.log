@@ -1,0 +1,18 @@
+Loading weights:   0%|          | 0/443 [00:00<?, ?it/s]Loading weights:  96%|█████████▋| 427/443 [00:00<00:00, 4117.79it/s]Loading weights: 100%|██████████| 443/443 [00:00<00:00, 4175.87it/s]
+batch 1: 3 traces in 43s
+batch 2: 3 traces in 32s
+batch 3: 3 traces in 54s
+batch 4: 3 traces in 70s
+batch 5: 3 traces in 36s
+batch 6: 3 traces in 54s
+batch 7: 3 traces in 78s
+batch 8: 3 traces in 40s
+batch 9: 3 traces in 39s
+batch 10: 3 traces in 37s
+batch 11: 3 traces in 40s
+batch 12: 3 traces in 50s
+batch 13: 3 traces in 166s
+batch 14: 3 traces in 46s
+batch 15: 3 traces in 47s
+batch 16: 3 traces in 60s
+batch 17: 2 traces in 34s

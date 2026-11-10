@@ -1,0 +1,2 @@
+{"case": "c13", "semantic_constraints_pass": true, "semantic_errors": [], "contract_valid": true, "contract_error": null, "assessment": {"status": "accepted", "reasons": [], "original_outcome": "success", "base_outcome": "success", "label_policy": "two-blind-grounded-reviews-completion-contract-v4", "benchmark_relation": "disagrees"}, "full_pass": true, "session_spend": 0.18145002199999993}
+{"case": "c10", "status": "budget_deferred"}

@@ -1,0 +1,18 @@
+{
+  "scope": "Every one of the ten tasks, including rejected and quarantined cases.",
+  "blinding": "Inspect originals and actual candidate edits before reading generator rationale, reviewer verdicts, or source benchmark labels.",
+  "checks": [
+    "Target is a completion claim rather than the requested answer.",
+    "Actual edits preserve requested deliverables, caveats, error disclosures, and execution evidence.",
+    "The remaining message is interpretable without an unintended change of meaning.",
+    "Execution outcome is supported for each request; source-label disagreement is recorded separately.",
+    "All five payloads are mechanically identical except the planned attributed annotation.",
+    "For no candidate, inspect whether a valid deletion was overlooked."
+  ],
+  "outputs": [
+    "Raw accepted family count and variant count.",
+    "Case-level audit with evidence IDs, possible false accepts, possible false rejects, and uncertain cases.",
+    "Any disagreements kept separate from raw pipeline results; no tuning on the same ten before reporting."
+  ],
+  "limitations": "Assistant audit is not independent human gold; ten cases cannot establish general precision or recall."
+}

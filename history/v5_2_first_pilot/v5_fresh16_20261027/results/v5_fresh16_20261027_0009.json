@@ -1,0 +1,21 @@
+{
+  "case_id": "v5_fresh16_20261027_0009",
+  "source_id": "gpt-4.1-2025-04-14::multi_turn_base_33",
+  "task_id": "multi_turn_base_33",
+  "source_hash": "b10841e16f13045977560ba7f4be0efeef52f801163d40ddd183fa0f8741ea2c",
+  "protocol": "no-jev-edit-review-v5.2",
+  "status": "rejected",
+  "generation": {
+    "deletion": null,
+    "reason": "The final assistant message discloses an error/discrepancy found upon double checking ('The message \"update the system\" was not sent to Catherine (USR002), but to USR003.') and asks a follow-up question. There is no retrospective completion claim to delete."
+  },
+  "generation_request": "8415309e9e95cfb92d4c99bcd202f7e17f70764277080b560ef88069c0922ac1",
+  "family": null,
+  "decision": {
+    "status": "rejected",
+    "reasons": [
+      "no_candidate"
+    ],
+    "label_policy": "two-blind-reviews-and-benchmark-agreement-v2"
+  }
+}

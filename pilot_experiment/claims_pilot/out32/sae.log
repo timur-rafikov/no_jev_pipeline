@@ -1,0 +1,7 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+keys ['b_dec', 'k', 'threshold', 'decoder.weight', 'encoder.weight', 'encoder.bias']
+16 {'rel_recon_error': 0.05774057283997536, 'mean_active_features': 9.440994262695312, 'keep_frac': 1.0, 'overlap_top50_truth_claim': 28, 'n_features_auroc_gt_0.8_claim': 0, 'n_features_auroc_gt_0.8_truth': 0}
+keys ['b_dec', 'k', 'threshold', 'decoder.weight', 'encoder.weight', 'encoder.bias']
+32 {'rel_recon_error': 0.396221786737442, 'mean_active_features': 44.5217399597168, 'keep_frac': 1.0, 'overlap_top50_truth_claim': 22, 'n_features_auroc_gt_0.8_claim': 0, 'n_features_auroc_gt_0.8_truth': 0}
+keys ['b_dec', 'k', 'threshold', 'decoder.weight', 'encoder.weight', 'encoder.bias']
+48 {'rel_recon_error': 0.18937502801418304, 'mean_active_features': 73.16459655761719, 'keep_frac': 1.0, 'overlap_top50_truth_claim': 30, 'n_features_auroc_gt_0.8_claim': 3, 'n_features_auroc_gt_0.8_truth': 6}

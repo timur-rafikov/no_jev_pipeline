@@ -1,0 +1,493 @@
+{
+  "source_repository": "HuanzhiMao/BFCL-Result",
+  "commit": "cadd76a8dc62984e7bf15ecaf358f070bae745cc",
+  "release": "2025-11-03",
+  "pool_executions": 600,
+  "structural_eligible": 501,
+  "size_eligible_after_task_exclusions": 107,
+  "selection": "4 prior task IDs (different public executions) + first 4 distinct tasks ordered by sha256(seed|id), <=36000 message bytes",
+  "seed": "no-jev-20261026-v1",
+  "no_lexical_or_semantic_screen": true,
+  "gold_used_for_selection": false,
+  "prior_archives_missing": true,
+  "exact_old_execution_equivalence": false,
+  "score_headers": [
+    {
+      "model": "Qwen_Qwen3-235B-A22B-Instruct-2507",
+      "accuracy": 0.17,
+      "correct_count": 34,
+      "total_count": 200,
+      "failed_records": 166
+    },
+    {
+      "model": "DeepSeek-V3.2-Exp",
+      "accuracy": 0.425,
+      "correct_count": 85,
+      "total_count": 200,
+      "failed_records": 115
+    },
+    {
+      "model": "gpt-4.1-2025-04-14",
+      "accuracy": 0.095,
+      "correct_count": 19,
+      "total_count": 200,
+      "failed_records": 181
+    }
+  ],
+  "local_ineligible": [
+    {
+      "id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_2",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_15",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_193",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_2",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_5",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_9",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_13",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_20",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_22",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_24",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_25",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_27",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_28",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_29",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_30",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_32",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_33",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_35",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_38",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_40",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_42",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_43",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_45",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_47",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_50",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_52",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_55",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_56",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_57",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_58",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_60",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_64",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_66",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_68",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_69",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_70",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_73",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_74",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_75",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_80",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_81",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_82",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_83",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_85",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_86",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_87",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_88",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_91",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_93",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_94",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_95",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_96",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_98",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_102",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_109",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_114",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_115",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_116",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_118",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_120",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_121",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_122",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_124",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_125",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_126",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_130",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_131",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_132",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_133",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_134",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_135",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_136",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_142",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_144",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_145",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_149",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_150",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_152",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_156",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_158",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_159",
+      "reason": "no_final_assistant"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_160",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_162",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_163",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_168",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_170",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_180",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_183",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_184",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_185",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_187",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_189",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_190",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_192",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_195",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_196",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_197",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_199",
+      "reason": "no_final_prose"
+    },
+    {
+      "id": "gpt-4.1-2025-04-14::multi_turn_base_111",
+      "reason": "no_final_prose"
+    }
+  ],
+  "selected": [
+    {
+      "id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_27",
+      "case_id": "regression_1",
+      "cohort": "task_regression_different_snapshot",
+      "source_hash": "7814f0ccd53141fb115cdf3346c6289c75d05bba96558b2764635896bf516163",
+      "bytes": 40394
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_41",
+      "case_id": "regression_2",
+      "cohort": "task_regression_different_snapshot",
+      "source_hash": "b9c6a7a377ffb9ff68be4b69cac98404b3cc0ef4502cbd5bd4e8c63e658f2d3b",
+      "bytes": 37645
+    },
+    {
+      "id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_46",
+      "case_id": "regression_3",
+      "cohort": "task_regression_different_snapshot",
+      "source_hash": "63fd367524b7cb4a709facb1966296b68dc9e87c51943ffdbf28c0d442e12752",
+      "bytes": 36667
+    },
+    {
+      "id": "gpt-4.1-2025-04-14::multi_turn_base_82",
+      "case_id": "regression_4",
+      "cohort": "task_regression_different_snapshot",
+      "source_hash": "2db14574f8572cb0d6810249dfda28b0e2107b2c4e261b9b792ae13dc6b350f4",
+      "bytes": 35688
+    },
+    {
+      "id": "gpt-4.1-2025-04-14::multi_turn_base_6",
+      "case_id": "fresh_1",
+      "cohort": "hash_sample_new_to_current_pilot",
+      "source_hash": "6e48c3b7d4ad0c115a45636468b917242fed8bbef08b5adb8618abb287b21894",
+      "bytes": 26691
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_12",
+      "case_id": "fresh_2",
+      "cohort": "hash_sample_new_to_current_pilot",
+      "source_hash": "0534d2c8cde8edb8265409cfe6daa5333d023b49c1740e633c34d4f949ea30c8",
+      "bytes": 26176
+    },
+    {
+      "id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_123",
+      "case_id": "fresh_3",
+      "cohort": "hash_sample_new_to_current_pilot",
+      "source_hash": "76836c5e0ae8ee0cf6bf0ed7d7de67881cdfca63bbe1ec7f0451dafe2c206ea6",
+      "bytes": 29935
+    },
+    {
+      "id": "DeepSeek-V3.2-Exp::multi_turn_base_100",
+      "case_id": "fresh_4",
+      "cohort": "hash_sample_new_to_current_pilot",
+      "source_hash": "168327f05a59e262e7b9ef5bd74d597ec511ecde5f9505fb55581028f7121ca8",
+      "bytes": 28840
+    }
+  ]
+}

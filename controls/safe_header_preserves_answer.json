@@ -1,0 +1,36 @@
+{
+  "name": "safe_header_preserves_answer",
+  "expected_edit": "safe",
+  "actual_edit": "safe",
+  "passed": true,
+  "review": {
+    "edit_evidence_ids": [
+      "m1",
+      "m3",
+      "m4"
+    ],
+    "edit_reason": "The deletion removes only the retrospective completion claim from the last assistant message, leaving the requested ticket ID and follow-up sentence intact. The user’s request was answered from the tool-confirmed creation result (T42), so the edit preserves the substantive answer.",
+    "edit_verdict": "safe",
+    "requests": [
+      {
+        "base": "success",
+        "evidence_ids": [
+          "m1",
+          "m3",
+          "m4"
+        ],
+        "original": "success",
+        "reason": "The user asked for a ticket to be created and for its ID. The tool result confirms creation with id T42, and the assistant message provides that ID.",
+        "user_id": "m1"
+      }
+    ],
+    "suggested_deletion": null
+  },
+  "decision": {
+    "status": "accepted",
+    "reasons": [],
+    "original_outcome": "success",
+    "base_outcome": "success"
+  },
+  "request_hash": "49417cbd46ca53ac5b29ba13016ec9a0bcc797e4e8b0b2d38ecfa89763a03f2e"
+}

@@ -1,0 +1,45 @@
+{
+  "changes": [
+    {
+      "case": "v4_holdout8_20261027_0001",
+      "before": "rejected",
+      "after": "rejected"
+    },
+    {
+      "case": "v4_holdout8_20261027_0002",
+      "before": "rejected",
+      "after": "rejected"
+    },
+    {
+      "case": "v4_holdout8_20261027_0003",
+      "before": "quarantined",
+      "after": "quarantined"
+    },
+    {
+      "case": "v4_holdout8_20261027_0004",
+      "before": "quarantined",
+      "after": "quarantined"
+    },
+    {
+      "case": "v4_holdout8_20261027_0005",
+      "before": "rejected",
+      "after": "rejected"
+    },
+    {
+      "case": "v4_holdout8_20261027_0006",
+      "before": "rejected",
+      "after": "rejected"
+    },
+    {
+      "case": "v4_holdout8_20261027_0007",
+      "before": "operational_error",
+      "after": "accepted"
+    },
+    {
+      "case": "v4_holdout8_20261027_0008",
+      "before": "budget_deferred",
+      "after": "budget_deferred"
+    }
+  ],
+  "new_paid_calls": 0
+}

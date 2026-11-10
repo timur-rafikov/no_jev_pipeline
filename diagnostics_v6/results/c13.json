@@ -1,0 +1,220 @@
+{
+  "case_id": "c13",
+  "request_id": "48ee4d4687dad793e5d44c7ff91e26734fe266e5024a1f870a3ba17795679c77",
+  "review": {
+    "requests": [
+      {
+        "user_id": "m0001",
+        "unsupported_material_claims": [],
+        "request_kind": "action_or_state",
+        "reason": "Original and BASE both show the cost check, successful booking, and confirmation; the candidate deletion only affects the later ticket-update turn.",
+        "original": "success",
+        "execution_checks": [
+          {
+            "requirement_quote": "Just make sure that I can afford it because I only have 6000 dollars to spend for this flight.",
+            "required_result": "completed_effect",
+            "reason": "The observed first-class fare is $1000.00, which is within the user's $6000 budget.",
+            "observed_result": "completed_effect",
+            "evidence": [
+              {
+                "quote": "{\"travel_cost_list\": [1000.0]}",
+                "message_id": "m0006"
+              }
+            ]
+          },
+          {
+            "requirement_quote": "Could you assist in securing a first-class seat using my travel card with id 'travel_card_12345'?",
+            "required_result": "completed_effect",
+            "reason": "The booking tool returned booking_status true with booking and transaction IDs, so the first-class seat was secured.",
+            "observed_result": "completed_effect",
+            "evidence": [
+              {
+                "quote": "{\"booking_id\": \"7223063\", \"transaction_id\": \"35535380\", \"booking_status\": true, \"booking_history\": {}}",
+                "message_id": "m0008"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "quote": "Your first-class flight from San Francisco (SFO) to Los Angeles (LAX) on October 15, 2026, has been successfully booked. The cost of $1000 is well within your budget of $6000.",
+            "message_id": "m0009"
+          }
+        ],
+        "delivery_requirement": "not_requested",
+        "criterion": "Secure a first-class SFO-LAX seat on 2026-10-15 with travel_card_12345, and ensure the cost does not exceed $6000.",
+        "base": "success",
+        "answer_evidence": [
+          {
+            "quote": "Your first-class flight from San Francisco (SFO) to Los Angeles (LAX) on October 15, 2026, has been successfully booked. The cost of $1000 is well within your budget of $6000.",
+            "message_id": "m0009"
+          }
+        ]
+      },
+      {
+        "user_id": "m0010",
+        "unsupported_material_claims": [],
+        "request_kind": "information_only",
+        "reason": "Original and BASE both contain the itemized invoice in assistant prose; the final-message deletion does not affect this turn.",
+        "original": "success",
+        "execution_checks": [],
+        "evidence": [
+          {
+            "quote": "Here is the itemized invoice for your flight:\n\n- **Booking ID**: 7223063\n- **Travel Date**: October 15, 2026\n- **Departure**: San Francisco (SFO)\n- **Destination**: Los Angeles (LAX)\n- **Travel Class**: First\n- **Travel Cost**: $1000.00\n- **Transaction ID**: 35535380",
+            "message_id": "m0013"
+          }
+        ],
+        "delivery_requirement": "required",
+        "criterion": "Provide an itemized invoice for the booked flight reflecting the costs.",
+        "base": "success",
+        "answer_evidence": [
+          {
+            "quote": "Here is the itemized invoice for your flight:\n\n- **Booking ID**: 7223063\n- **Travel Date**: October 15, 2026\n- **Departure**: San Francisco (SFO)\n- **Destination**: Los Angeles (LAX)\n- **Travel Class**: First\n- **Travel Cost**: $1000.00\n- **Transaction ID**: 35535380",
+            "message_id": "m0013"
+          }
+        ]
+      },
+      {
+        "user_id": "m0014",
+        "unsupported_material_claims": [],
+        "request_kind": "action_or_state",
+        "reason": "Original and BASE both show customer support was contacted and acknowledged the message; the deletion does not affect this turn.",
+        "original": "success",
+        "execution_checks": [
+          {
+            "requirement_quote": "please contact customer support immediately to resolve a last-minute complication",
+            "required_result": "completed_effect",
+            "reason": "The support tool returned a customer_support_message confirming receipt of the user's message.",
+            "observed_result": "completed_effect",
+            "evidence": [
+              {
+                "quote": "{\"customer_support_message\": \"Thank you for contacting customer support. Your message has been received and we will get back to you shortly.\"}",
+                "message_id": "m0016"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "quote": "Customer support has been contacted regarding your reservation issue. They have acknowledged your message and will get back to you shortly.",
+            "message_id": "m0017"
+          }
+        ],
+        "delivery_requirement": "not_requested",
+        "criterion": "Contact customer support immediately about the reservation complication.",
+        "base": "success",
+        "answer_evidence": [
+          {
+            "quote": "Customer support has been contacted regarding your reservation issue. They have acknowledged your message and will get back to you shortly.",
+            "message_id": "m0017"
+          }
+        ]
+      },
+      {
+        "user_id": "m0018",
+        "unsupported_material_claims": [],
+        "request_kind": "action_or_state",
+        "reason": "Original and BASE both show successful login and creation of ticket 1 with empty description and priority 4; the deletion does not affect this turn.",
+        "original": "success",
+        "execution_checks": [
+          {
+            "requirement_quote": "login the ticket with my username 'mthompson' and password as 'securePass123'.",
+            "required_result": "completed_effect",
+            "reason": "The login tool returned success true.",
+            "observed_result": "completed_effect",
+            "evidence": [
+              {
+                "quote": "{\"success\": true}",
+                "message_id": "m0020"
+              }
+            ]
+          },
+          {
+            "requirement_quote": "Kindly create a 'Urgent Flight Issue'. This matter demands high priority of 4. Don't put anything for ticket description",
+            "required_result": "completed_effect",
+            "reason": "The created ticket has the requested title, priority 4, and an empty description.",
+            "observed_result": "completed_effect",
+            "evidence": [
+              {
+                "quote": "{\"id\": 1, \"title\": \"Urgent Flight Issue\", \"description\": \"\", \"status\": \"Open\", \"priority\": 4, \"created_by\": \"mthompson\"}",
+                "message_id": "m0021"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "quote": "You have successfully logged in, and a ticket titled \"Urgent Flight Issue\" has been created with a high priority of 4.",
+            "message_id": "m0022"
+          }
+        ],
+        "delivery_requirement": "not_requested",
+        "criterion": "Log in as mthompson and create a ticket titled \"Urgent Flight Issue\" with priority 4 and no description.",
+        "base": "success",
+        "answer_evidence": [
+          {
+            "quote": "You have successfully logged in, and a ticket titled \"Urgent Flight Issue\" has been created with a high priority of 4.",
+            "message_id": "m0022"
+          }
+        ]
+      },
+      {
+        "user_id": "m0023",
+        "unsupported_material_claims": [],
+        "request_kind": "action_or_state",
+        "reason": "Original and BASE both show ticket 1 was updated successfully; the deletion removes only the completion header, while the status and priority bullets and action evidence remain.",
+        "original": "success",
+        "execution_checks": [
+          {
+            "requirement_quote": "updating its status to 'Urgent' and its priority to the highest level",
+            "required_result": "completed_effect",
+            "reason": "The edit_ticket call requested status Urgent and priority 5, and the tool result confirms ticket 1 was updated successfully.",
+            "observed_result": "completed_effect",
+            "evidence": [
+              {
+                "quote": "{\"status\": \"Ticket 1 has been updated successfully.\"}",
+                "message_id": "m0025"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "quote": "- **Status**: Updated to \"Urgent\"\n- **Priority**: Increased to the highest level (5)\n\nYour ticket now reflects its critical importance.",
+            "message_id": "m0026"
+          }
+        ],
+        "delivery_requirement": "not_requested",
+        "criterion": "Update ticket 1's status to 'Urgent' and priority to the highest level.",
+        "base": "success",
+        "answer_evidence": [
+          {
+            "quote": "- **Status**: Updated to \"Urgent\"\n- **Priority**: Increased to the highest level (5)\n\nYour ticket now reflects its critical importance.",
+            "message_id": "m0026"
+          }
+        ]
+      }
+    ],
+    "edit_verdict": "safe",
+    "edit_reason": "The deletion removes only the retrospective completion header in the final assistant message; the requested status/priority details, closing confirmation, and unchanged tool evidence remain.",
+    "edit_evidence_ids": [
+      "m0025",
+      "m0026"
+    ]
+  },
+  "evaluation": {
+    "semantic_constraints_pass": true,
+    "semantic_errors": [],
+    "contract_valid": true,
+    "contract_error": null,
+    "assessment": {
+      "status": "accepted",
+      "reasons": [],
+      "original_outcome": "success",
+      "base_outcome": "success",
+      "label_policy": "two-blind-grounded-reviews-completion-contract-v4",
+      "benchmark_relation": "disagrees"
+    },
+    "full_pass": true
+  }
+}

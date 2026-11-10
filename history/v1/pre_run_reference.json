@@ -1,0 +1,45 @@
+{
+  "kind": "assistant-authored inspection before paid generation; not human gold",
+  "cases": {
+    "regression_1": {
+      "safe_edit_exists": true,
+      "task_outcome": "success",
+      "reason": "Ticket header removable; rename recovered; exact ticket details retained."
+    },
+    "regression_2": {
+      "safe_edit_exists": true,
+      "task_outcome": "failure",
+      "reason": "Deletion confirmation removable; earlier send_message sent empty text instead of notes."
+    },
+    "regression_3": {
+      "safe_edit_exists": false,
+      "task_outcome": "unknown",
+      "reason": "Final message reports nonexistence/no action, not completed execution. No invented deletion outcome."
+    },
+    "regression_4": {
+      "safe_edit_exists": true,
+      "task_outcome": "failure",
+      "reason": "All-preparations claim removable while preserving car state. Capacity conversion requested but neither executed result nor numeric answer delivered."
+    },
+    "fresh_1": {
+      "safe_edit_exists": false,
+      "task_outcome": "unknown",
+      "reason": "Final report embeds requested count9 in the only completion sentence; cannot remove count or leave dangling subject."
+    },
+    "fresh_2": {
+      "safe_edit_exists": false,
+      "task_outcome": "success",
+      "reason": "Final answer is requested count2, no pure completion claim."
+    },
+    "fresh_3": {
+      "safe_edit_exists": true,
+      "task_outcome": "success",
+      "reason": "Logout confirmation removable; visible user requests fulfilled. Source benchmark failure may reflect unobserved state; must quarantine mismatch."
+    },
+    "fresh_4": {
+      "safe_edit_exists": false,
+      "task_outcome": "success",
+      "reason": "Final completion report embeds requested funding amount, market price and balance; bare Great is not execution claim."
+    }
+  }
+}

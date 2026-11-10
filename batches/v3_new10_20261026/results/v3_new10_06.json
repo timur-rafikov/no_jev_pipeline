@@ -1,0 +1,75 @@
+{
+  "case_id": "v3_new10_06",
+  "source_id": "gpt-4.1-2025-04-14::multi_turn_base_104",
+  "cohort": "v3_unseen_task_hash_sample",
+  "status": "quarantined",
+  "attempts": [
+    {
+      "generation_request": "950058f0196bbfca00199927875f2607de6a4ac4a304f072e3e9de26648a5d9e",
+      "review_request": "1c9cb2eba5cb91966a0d408aa60c7f6c9836bbed3aa9c2d689b11c6ede3e195a",
+      "generation": {
+        "deletion": null,
+        "reason": "The final assistant turn consists solely of tool calls with no conversational prose or retrospective completion claims to delete."
+      },
+      "family": null,
+      "review": {
+        "edit_evidence_ids": [
+          "m0001",
+          "m0006",
+          "m0007",
+          "m0008"
+        ],
+        "edit_reason": "No candidate final message was provided, so there is no deletable completion claim to evaluate or remove. The trace does show the first user request was answered with stock details, but the later watchlist request is unresolved in the visible conversation because it ends with tool-call syntax only and no returned tool results or final user-facing answer.",
+        "edit_verdict": "unsafe",
+        "requests": [
+          {
+            "base": "success",
+            "evidence_ids": [
+              "m0001",
+              "m0002",
+              "m0003",
+              "m0004",
+              "m0005",
+              "m0006"
+            ],
+            "original": "success",
+            "reason": "The assistant fulfilled the request by resolving the company name to QUAS and providing the current price and trading details in m0006.",
+            "user_id": "m0001"
+          },
+          {
+            "base": "unknown",
+            "evidence_ids": [
+              "m0007",
+              "m0008"
+            ],
+            "original": "unknown",
+            "reason": "The assistant issued watchlist-related tool calls, but the visible trace provides no tool results or final assistant prose confirming that QUAS was added or that the watchlist contents were listed, so completion cannot be verified.",
+            "user_id": "m0007"
+          }
+        ],
+        "suggested_deletion": null
+      },
+      "decision": {
+        "status": "quarantined",
+        "reasons": [
+          "no_candidate",
+          "edit_unsafe",
+          "outcome_unknown"
+        ],
+        "original_outcome": "unknown",
+        "base_outcome": "unknown"
+      },
+      "generation_protocol": "no-jev-edit-review-v3",
+      "review_protocol": "no-jev-edit-review-v3"
+    }
+  ],
+  "ready_for_judge_run": false,
+  "protocol": "no-jev-edit-review-v3",
+  "reasons": [
+    "no_candidate",
+    "edit_unsafe",
+    "outcome_unknown"
+  ],
+  "original_outcome": "unknown",
+  "base_outcome": "unknown"
+}

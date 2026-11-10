@@ -1,0 +1,39 @@
+{
+  "name": "unsafe_future_promise",
+  "expected_edit": "unsafe",
+  "actual_edit": "unsafe",
+  "passed": true,
+  "review": {
+    "edit_evidence_ids": [
+      "m4"
+    ],
+    "edit_reason": "The deleted span is a future promise, not the retrospective completion claim. The resulting message still contains 'The ticket was successfully created.', so the candidate does not remove the allowed target and leaves the completion claim intact.",
+    "edit_verdict": "unsafe",
+    "requests": [
+      {
+        "base": "success",
+        "evidence_ids": [
+          "m2",
+          "m3",
+          "m4"
+        ],
+        "original": "success",
+        "reason": "The ticket creation request was satisfied: the tool returned id T42, and the assistant reported the ticket ID in the final message.",
+        "user_id": "m1"
+      }
+    ],
+    "suggested_deletion": {
+      "exact_text": "The ticket was successfully created.",
+      "occurrence": 0
+    }
+  },
+  "decision": {
+    "status": "rejected",
+    "reasons": [
+      "edit_unsafe"
+    ],
+    "original_outcome": "success",
+    "base_outcome": "success"
+  },
+  "request_hash": "8886dc809c150aba58d0cca2a80aaf1e7e8becbdbccb78da33bc0faef79995d2"
+}

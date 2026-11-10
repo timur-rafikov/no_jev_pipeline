@@ -1,0 +1,218 @@
+{
+  "case_id": "c16_submission_contrast",
+  "request_id": "2981514b8e4515b8fdf3a7cae997ead8c31f488d336f67547e3880e4c4d9a19d",
+  "review": {
+    "edit_evidence_ids": [
+      "m0035"
+    ],
+    "edit_reason": "The deleted sentence is an explicit error disclosure about the failed funding operation, not a retrospective completion claim. Removing it hides material unresolved work and violates preservation of errors/caveats; the funding still failed in BASE.",
+    "edit_verdict": "unsafe",
+    "requests": [
+      {
+        "answer_evidence": [
+          {
+            "message_id": "m0005",
+            "quote": "The stock Zeta Corp (ZETA) is not in your current watchlist, so there is no need to remove it."
+          }
+        ],
+        "base": "success",
+        "criterion": "If ZETA is present, remove it; otherwise no removal is needed.",
+        "delivery_requirement": "not_requested",
+        "evidence": [
+          {
+            "message_id": "m0003",
+            "quote": "{\"watchlist\": [\"NVDA\"]}"
+          },
+          {
+            "message_id": "m0004",
+            "quote": "{\"error\": \"Stock ZETA not found in watchlist.\"}"
+          }
+        ],
+        "execution_checks": [
+          {
+            "evidence": [
+              {
+                "message_id": "m0003",
+                "quote": "{\"watchlist\": [\"NVDA\"]}"
+              },
+              {
+                "message_id": "m0004",
+                "quote": "{\"error\": \"Stock ZETA not found in watchlist.\"}"
+              }
+            ],
+            "observed_result": "state_satisfied",
+            "reason": "Watchlist contains only NVDA; remove call reports ZETA not found, so ZETA is not present and no removal was required.",
+            "required_result": "state_satisfied",
+            "requirement_quote": "If Zeta Corp is part of my watchlist, please remove it for me."
+          }
+        ],
+        "original": "success",
+        "reason": "The conditional request is satisfied because ZETA was not in the watchlist, and the assistant correctly reported this.",
+        "request_kind": "action_or_state",
+        "unsupported_material_claims": [],
+        "user_id": "m0001"
+      },
+      {
+        "answer_evidence": [
+          {
+            "message_id": "m0009",
+            "quote": "Your current watchlist contains the following stock: NVDA."
+          }
+        ],
+        "base": "success",
+        "criterion": "List the stocks currently on the watchlist.",
+        "delivery_requirement": "required",
+        "evidence": [
+          {
+            "message_id": "m0008",
+            "quote": "{\"watchlist\": [\"NVDA\"]}"
+          }
+        ],
+        "execution_checks": [],
+        "original": "success",
+        "reason": "get_watchlist returned NVDA and the assistant listed NVDA to the user.",
+        "request_kind": "information_only",
+        "unsupported_material_claims": [],
+        "user_id": "m0006"
+      },
+      {
+        "answer_evidence": [
+          {
+            "message_id": "m0013",
+            "quote": "Here is a list of available technology stock symbols: AAPL, GOOG, MSFT, and NVDA."
+          }
+        ],
+        "base": "success",
+        "criterion": "Provide available Technology stock symbols.",
+        "delivery_requirement": "required",
+        "evidence": [
+          {
+            "message_id": "m0012",
+            "quote": "{\"stock_list\": [\"AAPL\", \"GOOG\", \"MSFT\", \"NVDA\"]}"
+          }
+        ],
+        "execution_checks": [],
+        "original": "success",
+        "reason": "get_available_stocks returned AAPL, GOOG, MSFT, and NVDA, and the assistant delivered that list.",
+        "request_kind": "information_only",
+        "unsupported_material_claims": [],
+        "user_id": "m0010"
+      },
+      {
+        "answer_evidence": [
+          {
+            "message_id": "m0017",
+            "quote": "Here is the current information for Microsoft (MSFT):\n\n- **Current Price**: $310.23\n- **Percent Change**: +0.09%\n- **Trading Volume**: 3.234 million\n- **5-day Moving Average (MA(5))**: $309.88\n- **20-day Moving Average (MA(20))**: $310.11"
+          }
+        ],
+        "base": "success",
+        "criterion": "Give a detailed update on MSFT's current status and trends.",
+        "delivery_requirement": "required",
+        "evidence": [
+          {
+            "message_id": "m0016",
+            "quote": "{\"price\": 310.23, \"percent_change\": 0.09, \"volume\": 3.234, \"MA(5)\": 309.88, \"MA(20)\": 310.11}"
+          }
+        ],
+        "execution_checks": [],
+        "original": "success",
+        "reason": "The assistant retrieved MSFT data and reported price, change, volume, moving averages, and a trend interpretation.",
+        "request_kind": "information_only",
+        "unsupported_material_claims": [],
+        "user_id": "m0014"
+      },
+      {
+        "answer_evidence": [
+          {
+            "message_id": "m0021",
+            "quote": "Your order to purchase 50 shares of Microsoft (MSFT) at $320.00 per share has been successfully placed."
+          }
+        ],
+        "base": "success",
+        "criterion": "Place a limit buy order for 50 MSFT shares at $320.",
+        "delivery_requirement": "not_requested",
+        "evidence": [
+          {
+            "message_id": "m0020",
+            "quote": "{\"order_id\": 12447, \"order_type\": \"Buy\", \"status\": \"Pending\", \"price\": 320.0, \"amount\": 50}"
+          }
+        ],
+        "execution_checks": [
+          {
+            "evidence": [
+              {
+                "message_id": "m0020",
+                "quote": "{\"order_id\": 12447, \"order_type\": \"Buy\", \"status\": \"Pending\", \"price\": 320.0, \"amount\": 50}"
+              }
+            ],
+            "observed_result": "submission_only",
+            "reason": "The order was accepted with a Pending status, which fulfills the request to place a limit order.",
+            "required_result": "submission",
+            "requirement_quote": "Please place a limit buy order for 50 shares of Microsoft at $320 each."
+          }
+        ],
+        "original": "success",
+        "reason": "The order was placed and pending; this satisfies the requested submission.",
+        "request_kind": "action_or_state",
+        "unsupported_material_claims": [],
+        "user_id": "m0018"
+      },
+      {
+        "answer_evidence": [],
+        "base": "failure",
+        "criterion": "Deposit 10 times OMEG's price rounded to the nearest thousand into the trading account.",
+        "delivery_requirement": "not_requested",
+        "evidence": [
+          {
+            "message_id": "m0024",
+            "quote": "{\"price\": 457.23, \"percent_change\": 0.12, \"volume\": 2.345, \"MA(5)\": 456.78, \"MA(20)\": 458.12}"
+          },
+          {
+            "message_id": "m0034",
+            "quote": "Error during execution: '<=' not supported between instances of 'str' and 'int'"
+          }
+        ],
+        "execution_checks": [
+          {
+            "evidence": [
+              {
+                "message_id": "m0024",
+                "quote": "{\"price\": 457.23, \"percent_change\": 0.12, \"volume\": 2.345, \"MA(5)\": 456.78, \"MA(20)\": 458.12}"
+              },
+              {
+                "message_id": "m0034",
+                "quote": "Error during execution: '<=' not supported between instances of 'str' and 'int'"
+              }
+            ],
+            "observed_result": "failed",
+            "reason": "Multiple fund_account attempts returned the same execution error, and no successful funding observation exists.",
+            "required_result": "completed_effect",
+            "requirement_quote": "I intend to deposit 10 times the prices of OMEG rounded to nearest thousands into my trading account to secure liquidity for forthcoming ventures."
+          }
+        ],
+        "original": "failure",
+        "reason": "The funding operation never succeeded; repeated tool errors show the deposit was not completed. BASE remains failure even though the explicit error disclosure was deleted.",
+        "request_kind": "action_or_state",
+        "unsupported_material_claims": [],
+        "user_id": "m0022"
+      }
+    ]
+  },
+  "evaluation": {
+    "semantic_constraints_pass": true,
+    "semantic_errors": [],
+    "contract_valid": true,
+    "contract_error": null,
+    "assessment": {
+      "status": "rejected",
+      "reasons": [
+        "edit_unsafe"
+      ],
+      "original_outcome": "failure",
+      "base_outcome": "failure",
+      "label_policy": "two-blind-grounded-reviews-completion-contract-v4",
+      "benchmark_relation": "agrees"
+    },
+    "full_pass": true
+  }
+}

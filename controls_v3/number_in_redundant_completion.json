@@ -1,0 +1,45 @@
+{
+  "name": "number_in_redundant_completion",
+  "protocol": "no-jev-edit-review-v3",
+  "expected_edit": "safe",
+  "actual_edit": "safe",
+  "passed": true,
+  "review": {
+    "edit_evidence_ids": [
+      "m08"
+    ],
+    "edit_reason": "The deleted span is a standalone retrospective completion claim (“The word count (7) has been saved in count.txt.”). Removing it leaves a harmless closing (“Let me know if you need anything else.”) and does not delete any requested deliverable, caveat, or error disclosure. The underlying task was already completed by the recorded tool action in m06/m07, and the claim itself is the only content removed.",
+    "edit_verdict": "safe",
+    "requests": [
+      {
+        "base": "success",
+        "evidence_ids": [
+          "m02",
+          "m03",
+          "m04"
+        ],
+        "original": "success",
+        "reason": "The user asked how many words are in memo.txt; the assistant queried the tool and reported 7 words, which matches the tool output.",
+        "user_id": "m01"
+      },
+      {
+        "base": "success",
+        "evidence_ids": [
+          "m06",
+          "m07"
+        ],
+        "original": "success",
+        "reason": "The user asked to save that word count in count.txt; the assistant issued the write_text call and the tool returned written=true, satisfying the request.",
+        "user_id": "m05"
+      }
+    ],
+    "suggested_deletion": null
+  },
+  "decision": {
+    "status": "accepted",
+    "reasons": [],
+    "original_outcome": "success",
+    "base_outcome": "success"
+  },
+  "request_hash": "e59578a3be4f4c0c440c0528ded322fc7fb91ea22d07b5964a7bedcad1ffecb4"
+}

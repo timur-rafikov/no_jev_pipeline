@@ -1,0 +1,10 @@
+{
+  "case_id": "v3_new10_09",
+  "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_127",
+  "cohort": "v3_unseen_task_hash_sample",
+  "status": "operational_error",
+  "attempts": [],
+  "ready_for_judge_run": false,
+  "protocol": "no-jev-edit-review-v3",
+  "error_type": "ValueError"
+}

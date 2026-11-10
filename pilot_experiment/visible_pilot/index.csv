@@ -1,0 +1,47 @@
+case_id,visible_class,bfcl_gold,model,task_id,in_old_pilot_50,manual_note,source_id
+visible_46_0001,failure,failure,gpt-4.,multi_turn_base_146,False,"calls without results, unanswered",gpt-4.1-2025-04-14::multi_turn_base_146
+visible_46_0002,success,success,DeepSe,multi_turn_base_182,False,clean: results confirm requested actions,DeepSeek-V3.2-Exp::multi_turn_base_182
+visible_46_0003,success,success,DeepSe,multi_turn_base_106,False,clean: results confirm requested actions,DeepSeek-V3.2-Exp::multi_turn_base_106
+visible_46_0004,success,success,DeepSe,multi_turn_base_105,True,clean: results confirm requested actions,DeepSeek-V3.2-Exp::multi_turn_base_105
+visible_46_0005,success,success,Qwen_Q,multi_turn_base_139,False,clean: results confirm requested actions,Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_139
+visible_46_0006,success,success,DeepSe,multi_turn_base_193,True,clean: results confirm requested actions,DeepSeek-V3.2-Exp::multi_turn_base_193
+visible_46_0007,failure,failure,gpt-4.,multi_turn_base_58,False,"fill failed, engine unresolved",gpt-4.1-2025-04-14::multi_turn_base_58
+visible_46_0008,failure,failure,Qwen_Q,multi_turn_base_24,False,"files not found, reported",Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_24
+visible_46_0009,failure,failure,gpt-4.,multi_turn_base_1,False,log.txt missing,gpt-4.1-2025-04-14::multi_turn_base_1
+visible_46_0010,failure,failure,gpt-4.,multi_turn_base_129,False,"no order, calls without results",gpt-4.1-2025-04-14::multi_turn_base_129
+visible_46_0011,success,success,gpt-4.,multi_turn_base_15,False,clean: results confirm requested actions,gpt-4.1-2025-04-14::multi_turn_base_15
+visible_46_0012,failure,failure,gpt-4.,multi_turn_base_14,False,dir missing,gpt-4.1-2025-04-14::multi_turn_base_14
+visible_46_0013,success,success,DeepSe,multi_turn_base_119,False,clean: results confirm requested actions,DeepSeek-V3.2-Exp::multi_turn_base_119
+visible_46_0014,failure,failure,Qwen_Q,multi_turn_base_117,False,"last deposit fails with system error, agent reports honestly",Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_117
+visible_46_0015,failure,failure,gpt-4.,multi_turn_base_27,False,mv/cat fail,gpt-4.1-2025-04-14::multi_turn_base_27
+visible_46_0016,success,success,DeepSe,multi_turn_base_157,False,clean: results confirm requested actions,DeepSeek-V3.2-Exp::multi_turn_base_157
+visible_46_0017,success,success,Qwen_Q,multi_turn_base_39,False,clean: results confirm requested actions,Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_39
+visible_46_0018,success,success,DeepSe,multi_turn_base_12,False,clean: results confirm requested actions,DeepSeek-V3.2-Exp::multi_turn_base_12
+visible_46_0019,success,success,Qwen_Q,multi_turn_base_142,False,clean: results confirm requested actions,Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_142
+visible_46_0020,failure,failure,DeepSe,multi_turn_base_62,False,"doors stay unlocked, engine cannot start, agent reports honestly",DeepSeek-V3.2-Exp::multi_turn_base_62
+visible_46_0021,success,success,Qwen_Q,multi_turn_base_143,False,clean: results confirm requested actions,Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_143
+visible_46_0022,failure,failure,DeepSe,multi_turn_base_0,False,DeepSeek never gets tool results; ends unfinished,DeepSeek-V3.2-Exp::multi_turn_base_0
+visible_46_0023,success,success,Qwen_Q,multi_turn_base_100,True,clean: results confirm requested actions,Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_100
+visible_46_0024,failure,failure,Qwen_Q,multi_turn_base_153,False,passport/route/token failures reported,Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_153
+visible_46_0025,failure,failure,Qwen_Q,multi_turn_base_198,False,"invalid token, cannot book",Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_198
+visible_46_0026,failure,failure,Qwen_Q,multi_turn_base_197,False,card registration failed vs claim; invoice not found,Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_197
+visible_46_0027,success,success,gpt-4.,multi_turn_base_47,True,clean: results confirm requested actions,gpt-4.1-2025-04-14::multi_turn_base_47
+visible_46_0028,failure,failure,DeepSe,multi_turn_base_10,False,"func_name error, final wc fails, unfinished",DeepSeek-V3.2-Exp::multi_turn_base_10
+visible_46_0029,failure,failure,DeepSe,multi_turn_base_176,False,"ticket tool errors, agent claims ticket created",DeepSeek-V3.2-Exp::multi_turn_base_176
+visible_46_0030,success,success,Qwen_Q,multi_turn_base_133,False,clean: results confirm requested actions,Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_133
+visible_46_0031,failure,failure,Qwen_Q,multi_turn_base_26,False,"asked docx, created txt; touch error",Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_26
+visible_46_0032,success,success,Qwen_Q,multi_turn_base_50,False,clean: results confirm requested actions,Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_50
+visible_46_0033,success,success,Qwen_Q,multi_turn_base_149,True,clean: results confirm requested actions,Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_149
+visible_46_0034,failure,failure,DeepSe,multi_turn_base_79,False,"ends on cruise control error, unfinished",DeepSeek-V3.2-Exp::multi_turn_base_79
+visible_46_0035,success,success,gpt-4.,multi_turn_base_114,False,clean: results confirm requested actions,gpt-4.1-2025-04-14::multi_turn_base_114
+visible_46_0036,failure,failure,Qwen_Q,multi_turn_base_45,False,"file not found, copy fails",Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_45
+visible_46_0037,failure,failure,Qwen_Q,multi_turn_base_169,False,calls with no results; booking not found,Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_169
+visible_46_0038,failure,failure,Qwen_Q,multi_turn_base_134,False,turn 2 calls with empty args and no results,Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_134
+visible_46_0039,failure,failure,Qwen_Q,multi_turn_base_177,False,"invalid token, cannot proceed",Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_177
+visible_46_0040,success,success,Qwen_Q,multi_turn_base_111,True,clean: results confirm requested actions,Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_111
+visible_46_0041,failure,failure,DeepSe,multi_turn_base_89,False,ends on unfinished lockDoors/engine,DeepSeek-V3.2-Exp::multi_turn_base_89
+visible_46_0042,failure,failure,DeepSe,multi_turn_base_172,True,"booking failed, message failed, ends unfinished",DeepSeek-V3.2-Exp::multi_turn_base_172
+visible_46_0043,success,success,Qwen_Q,multi_turn_base_57,False,clean: results confirm requested actions,Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_57
+visible_46_0044,success,success,gpt-4.,multi_turn_base_76,False,clean: results confirm requested actions,gpt-4.1-2025-04-14::multi_turn_base_76
+visible_46_0045,success,success,gpt-4.,multi_turn_base_101,True,clean: results confirm requested actions,gpt-4.1-2025-04-14::multi_turn_base_101
+visible_46_0046,success,success,gpt-4.,multi_turn_base_21,False,clean: results confirm requested actions,gpt-4.1-2025-04-14::multi_turn_base_21

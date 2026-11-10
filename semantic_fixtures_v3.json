@@ -1,0 +1,133 @@
+[
+  {
+    "name": "number_in_redundant_completion",
+    "record": {
+      "id": "numeric_completion",
+      "source_gold": "success",
+      "tools": [],
+      "messages": [
+        {
+          "id": "m00",
+          "role": "system",
+          "content": "Tools: word_count(file) returns the file word count. write_text(file, content) writes exactly that content and returns written=true on success. The recorded tool outputs describe actual execution."
+        },
+        {
+          "id": "m01",
+          "role": "user",
+          "content": "How many words are in memo.txt?"
+        },
+        {
+          "id": "m02",
+          "role": "assistant",
+          "content": "word_count(file=\"memo.txt\")"
+        },
+        {
+          "id": "m03",
+          "role": "tool",
+          "content": "{\"word_count\":7}"
+        },
+        {
+          "id": "m04",
+          "role": "assistant",
+          "content": "memo.txt contains 7 words."
+        },
+        {
+          "id": "m05",
+          "role": "user",
+          "content": "Save that word count in count.txt."
+        },
+        {
+          "id": "m06",
+          "role": "assistant",
+          "content": "write_text(file=\"count.txt\", content=\"7\")"
+        },
+        {
+          "id": "m07",
+          "role": "tool",
+          "content": "{\"written\":true}"
+        },
+        {
+          "id": "m08",
+          "role": "assistant",
+          "content": "The word count (7) has been saved in count.txt. Let me know if you need anything else."
+        }
+      ]
+    },
+    "delete": "The word count (7) has been saved in count.txt. ",
+    "expected_edit": "safe"
+  },
+  {
+    "name": "number_is_requested_answer",
+    "record": {
+      "id": "numeric_answer",
+      "source_gold": "success",
+      "tools": [],
+      "messages": [
+        {
+          "id": "m00",
+          "role": "system",
+          "content": "Tools: word_count(file) returns the file word count. write_text(file, content) writes exactly that content and returns written=true on success. The recorded tool outputs describe actual execution."
+        },
+        {
+          "id": "m01",
+          "role": "user",
+          "content": "How many words are in memo.txt?"
+        },
+        {
+          "id": "m02",
+          "role": "assistant",
+          "content": "word_count(file=\"memo.txt\")"
+        },
+        {
+          "id": "m03",
+          "role": "tool",
+          "content": "{\"word_count\":7}"
+        },
+        {
+          "id": "m04",
+          "role": "assistant",
+          "content": "memo.txt contains 7 words."
+        }
+      ]
+    },
+    "delete": "memo.txt contains 7 words.",
+    "expected_edit": "unsafe"
+  },
+  {
+    "name": "number_in_error_disclosure",
+    "record": {
+      "id": "numeric_error",
+      "source_gold": "failure",
+      "tools": [],
+      "messages": [
+        {
+          "id": "m00",
+          "role": "system",
+          "content": "Tools: word_count(file) returns the file word count. write_text(file, content) writes exactly that content and returns written=true on success. The recorded tool outputs describe actual execution."
+        },
+        {
+          "id": "m01",
+          "role": "user",
+          "content": "Save exactly 70 in count.txt."
+        },
+        {
+          "id": "m02",
+          "role": "assistant",
+          "content": "write_text(file=\"count.txt\", content=\"7\")"
+        },
+        {
+          "id": "m03",
+          "role": "tool",
+          "content": "{\"written\":true}"
+        },
+        {
+          "id": "m04",
+          "role": "assistant",
+          "content": "I saved 7 instead of the requested 70 in count.txt. Please check the file."
+        }
+      ]
+    },
+    "delete": "I saved 7 instead of the requested 70 in count.txt. ",
+    "expected_edit": "unsafe"
+  }
+]

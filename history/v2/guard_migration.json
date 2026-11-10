@@ -1,0 +1,104 @@
+{
+  "paid_calls": 0,
+  "prompt_changes": false,
+  "changes": [
+    {
+      "case": "regression_4",
+      "before": {
+        "status": "quarantined",
+        "reasons": [
+          "outcome_unknown"
+        ]
+      },
+      "after": {
+        "status": "quarantined",
+        "reasons": [
+          "dangling_punctuation_after_deletion",
+          "outcome_unknown"
+        ],
+        "original_outcome": "unknown",
+        "base_outcome": "unknown"
+      }
+    },
+    {
+      "case": "regression_1",
+      "before": {
+        "status": "accepted",
+        "reasons": []
+      },
+      "after": {
+        "status": "accepted",
+        "reasons": [],
+        "original_outcome": "success",
+        "base_outcome": "success"
+      }
+    },
+    {
+      "case": "fresh_2",
+      "before": {
+        "status": "rejected",
+        "reasons": [
+          "no_candidate",
+          "edit_unsafe"
+        ]
+      },
+      "after": {
+        "status": "rejected",
+        "reasons": [
+          "no_candidate",
+          "edit_unsafe"
+        ],
+        "original_outcome": "success",
+        "base_outcome": "success"
+      }
+    },
+    {
+      "case": "regression_3",
+      "before": {
+        "status": "rejected",
+        "reasons": [
+          "no_candidate",
+          "edit_unsafe"
+        ]
+      },
+      "after": {
+        "status": "rejected",
+        "reasons": [
+          "no_candidate",
+          "edit_unsafe"
+        ],
+        "original_outcome": "failure",
+        "base_outcome": "failure"
+      }
+    },
+    {
+      "case": "regression_2",
+      "before": {
+        "status": "accepted",
+        "reasons": []
+      },
+      "after": {
+        "status": "accepted",
+        "reasons": [],
+        "original_outcome": "failure",
+        "base_outcome": "failure"
+      }
+    },
+    {
+      "case": "fresh_1",
+      "before": {
+        "status": "accepted",
+        "reasons": []
+      },
+      "after": {
+        "status": "rejected",
+        "reasons": [
+          "protected_numeric_literal_removed"
+        ],
+        "original_outcome": "failure",
+        "base_outcome": "failure"
+      }
+    }
+  ],
+  "reason": "Observed numeric payload removal and broken clause splice; new deterministic gates applied uniformly to every completed family."
+}

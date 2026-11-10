@@ -1,0 +1,41 @@
+{"case": "v6_new3_20261028_0001", "status": "accepted", "reasons": [], "error": null, "session_spend": 0.18243402200000003, "remaining": 0.01756597799999999}
+{"case": "v6_new3_20261028_0002", "status": "budget_deferred", "reasons": ["invalid_primary_review"], "error": "request_reserve_exceeds_remaining", "session_spend": 0.18332202200000003, "remaining": 0.01667797799999999}
+{
+  "protocol": "no-jev-edit-review-v6.4",
+  "selected": 3,
+  "processed": 3,
+  "completed_final_protocol": 2,
+  "pending_final_protocol": 1,
+  "current_primary_reviews": 3,
+  "current_independent_audits": 2,
+  "statuses": {
+    "accepted": 1,
+    "budget_deferred": 1,
+    "quarantined": 1
+  },
+  "candidate_families": 3,
+  "candidate_variants": 15,
+  "accepted_families": 1,
+  "accepted_variants": 5,
+  "calls_referenced": 11,
+  "batch_receipt_cost_usd": 0.154033196,
+  "cost_per_processed_source_usd": 0.05134439866666667,
+  "cost_per_accepted_family_usd": 0.154033196,
+  "acceptance_labels": {
+    "failure": 1
+  },
+  "accounting": {
+    "budget_usd": 1.7868005,
+    "actual_usd": 1.720554122,
+    "unresolved_reserved_usd": 0.049568400000000006,
+    "remaining_usd": 0.01667797799999999,
+    "attempts": 124,
+    "session_limit_usd": 0.2,
+    "session_actual_usd": 0.18332202200000003,
+    "session_reserved_delta_usd": 0.0
+  },
+  "Jev_calls": 0,
+  "judge_experiment_run": false,
+  "ready_for_judge_run": false,
+  "quality_claim": "Two blind LLM reviews, not a human-validated accuracy guarantee."
+}

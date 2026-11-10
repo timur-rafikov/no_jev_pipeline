@@ -1,0 +1,51 @@
+case_id,bfcl_label,manual_category,judge_p_yes,note
+pilot_50_0001,success,success_ok,0.881,
+pilot_50_0002,failure,genuine_visible,0.999,turn0 calls have no tool results; engine never confirmed started
+pilot_50_0003,success,success_ok,0.995,
+pilot_50_0004,failure,genuine_visible,0.998,"lockDoors(unlock=""false"") left doors unlocked; engine never started"
+pilot_50_0005,success,success_ok,0.165,
+pilot_50_0006,failure,looks_success,0.995,"all requests answered; no set_navigation, hidden fuel/state differences (borderline)"
+pilot_50_0007,success,success_ok,0.999,
+pilot_50_0008,failure,looks_success,0.974,"tweet posted, engine running; invented credentials for authenticate_twitter (borderline)"
+pilot_50_0009,success,success_ok,0.998,
+pilot_50_0010,failure,genuine_visible,0.881,user asked 30 gal; fill errored; agent filled 15 instead; final messages empty
+pilot_50_0011,success,success_ok,0.998,
+pilot_50_0012,failure,genuine_visible,0.997,startEngine/pressBrake/get_ticket given as text with no tool results
+pilot_50_0013,success,success_ok,1.0,
+pilot_50_0014,failure,genuine_weak,0.018,"honest ""nothing found"" but task had files; mv/ticket requests also unmet"
+pilot_50_0015,success,success_ok,0.932,
+pilot_50_0016,failure,looks_success,1.0,all requests visibly done; BFCL diff is hidden doors/brake state
+pilot_50_0017,success,success_ok,0.971,
+pilot_50_0018,failure,genuine_visible,0.94,turn0 no results; cd errors; agent says dirs do not exist
+pilot_50_0019,success,success_ok,0.997,
+pilot_50_0020,failure,genuine_visible,0.915,"degenerate repeated calls, no answer; fill 30 errored"
+pilot_50_0021,success,success_ok,0.997,
+pilot_50_0022,failure,genuine_visible,0.881,"cd error, diff error, copy to Archived has no tool result"
+pilot_50_0023,success,success_ok,0.99,
+pilot_50_0024,failure,genuine_visible,1.0,"posted ""healthy"" though user defined healthy as all tires 32-35 and rear are 30"
+pilot_50_0025,success,success_ok,0.995,
+pilot_50_0026,failure,genuine_visible,0.777,book_flight failed (empty card_id); message to empty receiver failed
+pilot_50_0027,success,success_ok,0.731,
+pilot_50_0028,failure,looks_success,0.953,all steps done; BFCL diff is RNG booking-id offset from extra get_nearest_airport call
+pilot_50_0029,success,success_ok,0.994,
+pilot_50_0030,failure,looks_success,0.998,tool said canDrive=true so no fill; hidden mismatch vs GT fill of 7
+pilot_50_0031,success,success_ok,0.999,
+pilot_50_0032,failure,genuine_visible,0.932,"last turn: agent only announces plan, file never created"
+pilot_50_0033,success,success_ok,0.998,
+pilot_50_0034,failure,looks_success,0.991,all steps done; BFCL diff is RNG booking-id offset
+pilot_50_0035,success,success_ok,1.0,
+pilot_50_0036,failure,genuine_visible,0.915,estimate_distance has no tool result; agent sent invented 832 miles
+pilot_50_0037,success,success_ok,1.0,
+pilot_50_0038,failure,genuine_visible,0.798,get_flight_cost used wrong code CHI -> error; booking abandoned
+pilot_50_0039,success,success_ok,0.991,
+pilot_50_0040,failure,looks_success,0.997,all steps done; BFCL diff is order-id offset (12447 vs 12446)
+pilot_50_0041,success,success_ok,1.0,
+pilot_50_0042,failure,genuine_visible,0.971,final turn startEngine/post_tweet have no tool results; empty end
+pilot_50_0043,success,success_ok,0.992,
+pilot_50_0044,failure,genuine_visible,0.971,user said ticket description empty; agent wrote a long description
+pilot_50_0045,success,success_ok,0.932,
+pilot_50_0046,failure,looks_success,0.958,all done; mismatch is missing authenticate call response; insurance_type unspecified
+pilot_50_0047,success,success_ok,0.991,
+pilot_50_0048,failure,genuine_visible,0.958,degenerate repeated calls; latest-order question unanswered
+pilot_50_0049,success,success_ok,0.5,
+pilot_50_0050,failure,genuine_visible,0.986,remove Zeta from watchlist never executed; no reply

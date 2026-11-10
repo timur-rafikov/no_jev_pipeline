@@ -1,0 +1,10 @@
+{
+  "budget_usd": 1.68024775,
+  "actual_usd": 0.82100085,
+  "unresolved_reserved_usd": 0.049568400000000006,
+  "remaining_usd": 0.8096785,
+  "attempts": 69,
+  "session_limit_usd": 1.0,
+  "session_actual_usd": 0.19032150000000003,
+  "session_reserved_delta_usd": 0.0
+}

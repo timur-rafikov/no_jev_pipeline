@@ -1,0 +1,17 @@
+{
+  "protocol": "no-jev-edit-review-v3",
+  "type": "assistant inspection, not independent human gold",
+  "accepted_cases": {
+    "regression_1": "Model approved deletion of completion header while preserving ticket details. Verdict retained.",
+    "regression_2": "Model approved deletion of action confirmation; earlier forwarding failure remains evidenced. Verdict retained.",
+    "fresh_1": "Model approved removal of retrospective count-storage confirmation. Count9 remains in the earlier user-facing answer and write call. The v2 numeric veto was not justified; removed."
+  },
+  "semantic_authority": "Independent reviewer, not numeric or punctuation heuristics.",
+  "validation": "Historical real responses replayed under v3 decision logic; three new synthetic checks of v3 reviewer prompt.",
+  "known_limitations": [
+    "No new real-data generation or review with v3 prompts in this revision.",
+    "Historical reviewer missed the distance condition and called the car splice coherent; the sample remains quarantined for unknown outcome. No bespoke veto was added.",
+    "Three synthetic checks cannot estimate real-data accuracy or recall.",
+    "Repair loop tested offline with a mocked reviewer, not by additional paid repairs."
+  ]
+}

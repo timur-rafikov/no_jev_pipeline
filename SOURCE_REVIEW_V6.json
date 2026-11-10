@@ -1,0 +1,39 @@
+{
+  "author": "root assistant; not independent human annotation",
+  "scope": "All three prespecified new sources, inspected against recorded observations",
+  "rows": [
+    {
+      "task": "multi_turn_base_147",
+      "visible_outcome": "failure",
+      "edit_assessment": "safe",
+      "evidence": [
+        "m0007: posted tweet contains literal ${price}, not the requested stock price",
+        "m0007: both mentions are present"
+      ],
+      "note": "Missing price makes the original task fail. Removing the final completion claim does not change the tools or that failure. The added mention request was fulfilled."
+    },
+    {
+      "task": "multi_turn_base_138",
+      "visible_outcome": "not_admitted",
+      "edit_assessment": "safe action-confirmation deletion",
+      "evidence": [
+        "m0010 Pending; m0014 Open do not prove acquisition",
+        "m0019 Sarah=USR006; m0022 login as USR006 does not establish sender Michael",
+        "primary evidence paraphrases providing as provide"
+      ],
+      "note": "The primary citation formatting was repaired without changing any labels or reasons. Sender-identity and completion concerns remain for the independent audit. This record is budget_deferred, not accepted and not a final semantic rejection."
+    },
+    {
+      "task": "multi_turn_base_34",
+      "visible_outcome": "failure_under_literal_record",
+      "edit_assessment": "safe",
+      "evidence": [
+        "m0003 and m0005 contain a single concatenated line, not just Deadline: Q4",
+        "m0009 mean=3333.3333333333335; m0010 rounded=3333.0",
+        "m0013/m0014 documented void success follows touch/echo"
+      ],
+      "note": "First answer disagrees with literal file observations. GPT calls this failure; DeepSeek calls it success. Correct pipeline action is quarantine, not a tiebreaker to force acceptance."
+    }
+  ],
+  "quality_limit": "These are diagnostic judgments by the implementing assistant. They are not independent ground truth or a precision/recall estimate."
+}

@@ -1,0 +1,12 @@
+{
+  "type": "synthetic controlled fixtures, not real-data yield or human-gold accuracy",
+  "completed": 6,
+  "passed": 6,
+  "accounting": {
+    "budget_usd": 0.211952776,
+    "actual_usd": 0.16471425,
+    "unresolved_reserved_usd": 0,
+    "remaining_usd": 0.047238526,
+    "attempts": 18
+  }
+}

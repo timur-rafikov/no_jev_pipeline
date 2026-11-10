@@ -1,0 +1,28 @@
+{
+  "protocol": "no-jev-edit-review-v4.1",
+  "selected": 8,
+  "processed": 8,
+  "statuses": {
+    "rejected": 4,
+    "quarantined": 2,
+    "operational_error": 1,
+    "budget_deferred": 1
+  },
+  "candidate_families": 2,
+  "candidate_variants": 10,
+  "accepted_families": 0,
+  "accepted_variants": 0,
+  "accounting": {
+    "budget_usd": 0.711952776,
+    "actual_usd": 0.61121835,
+    "unresolved_reserved_usd": 0.049568400000000006,
+    "remaining_usd": 0.05116602599999993,
+    "attempts": 60
+  },
+  "confirmed_usd_since_batch_prepare": 0.23345700000000003,
+  "cost_scope_note": "Shared ledger delta; diagnostic requests during this batch are included.",
+  "unresolved_reserved_delta_usd": 0.0,
+  "Jev_calls": 0,
+  "judge_experiment_run": false,
+  "ready_for_judge_run": false
+}

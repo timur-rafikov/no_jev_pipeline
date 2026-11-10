@@ -1,0 +1,21 @@
+{
+  "case_id": "v5_fresh16_20261027_0008",
+  "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_162",
+  "task_id": "multi_turn_base_162",
+  "source_hash": "a8ad8ba2513ea55389e0d156da928ff65d3028b7946fcbe5fb7cc870d0a3d2af",
+  "protocol": "no-jev-edit-review-v5.5",
+  "status": "rejected",
+  "generation": {
+    "deletion": null,
+    "reason": "The final assistant message informs the user that ticket ID 458219 is already closed and reports the error/status from the tool rather than making a retrospective claim of task completion or execution by the agent."
+  },
+  "generation_request": "1e77a9192df3911d70062cb3618f71feb9d9f872c97aa45a505548de3e1ea67e",
+  "family": null,
+  "decision": {
+    "status": "rejected",
+    "reasons": [
+      "no_candidate"
+    ],
+    "label_policy": "two-blind-visible-trace-reviews-v3"
+  }
+}

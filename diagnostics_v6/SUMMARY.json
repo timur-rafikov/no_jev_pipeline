@@ -1,0 +1,26 @@
+{
+  "completed": 1,
+  "full_pass": 1,
+  "semantic_pass": 1,
+  "execution_order": [
+    "c13",
+    "c10",
+    "c03",
+    "c08",
+    "c16",
+    "c16_submission_contrast"
+  ],
+  "human_gold": false,
+  "iid_holdout": false,
+  "dataset_export": false,
+  "accounting": {
+    "budget_usd": 1.7868005,
+    "actual_usd": 1.718682122,
+    "unresolved_reserved_usd": 0.049568400000000006,
+    "remaining_usd": 0.018549978000000085,
+    "attempts": 122,
+    "session_limit_usd": 0.2,
+    "session_actual_usd": 0.18145002199999993,
+    "session_reserved_delta_usd": 0.0
+  }
+}

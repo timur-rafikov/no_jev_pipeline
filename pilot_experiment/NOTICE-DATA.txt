@@ -1,0 +1,2 @@
+Source: https://github.com/HuanzhiMao/BFCL-Result/tree/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03
+Modifications: conversation normalization; one literal deletion in final assistant prose; five attributed status conditions; automatic labels stored separately from original benchmark grades.

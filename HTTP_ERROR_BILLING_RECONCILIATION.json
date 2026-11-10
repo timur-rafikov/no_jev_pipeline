@@ -1,0 +1,10 @@
+{
+  "provider": "OpenRouter authenticated /api/v1/key",
+  "date_utc": "2026-10-27",
+  "earlier_provider_daily_usd": 0.917526,
+  "latest_provider_daily_usd": 0.917526,
+  "all_confirmed_local_daily_usd": 0.917526,
+  "latest_provider_weekly_usd": 1.29528735,
+  "all_confirmed_local_ledger_usd": 1.29528735,
+  "scope": "Resolve only the new HTTPError reservation after matching two provider billing snapshots. The historical unknown reserve is unchanged."
+}

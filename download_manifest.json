@@ -1,0 +1,83 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/HuanzhiMao/BFCL-Result/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03/result/Qwen_Qwen3-235B-A22B-Instruct-2507/multi_turn/BFCL_v4_multi_turn_base_result.json",
+    "file": "Qwen_Qwen3-235B-A22B-Instruct-2507_result.jsonl",
+    "bytes": 10713912,
+    "sha256": "181b67429c8e9d520f9cfa2d04823ffc2ac7442a558cb71f9c2a18a58cf5a47b",
+    "records": 200,
+    "first_keys": [
+      "id",
+      "result",
+      "input_token_count",
+      "output_token_count",
+      "latency",
+      "inference_log"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/HuanzhiMao/BFCL-Result/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03/result/DeepSeek-V3.2-Exp/multi_turn/BFCL_v4_multi_turn_base_result.json",
+    "file": "DeepSeek-V3.2-Exp_result.jsonl",
+    "bytes": 10587938,
+    "sha256": "2c5ffce21c7268c9ccc5c14d292f49240aaf57268b6eac133bdf19013b75fcca",
+    "records": 200,
+    "first_keys": [
+      "id",
+      "result",
+      "input_token_count",
+      "output_token_count",
+      "latency",
+      "inference_log"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/HuanzhiMao/BFCL-Result/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03/result/gpt-4.1-2025-04-14/multi_turn/BFCL_v4_multi_turn_base_result.json",
+    "file": "gpt-4.1-2025-04-14_result.jsonl",
+    "bytes": 10252112,
+    "sha256": "3e454198bf4b656016cde9044855d027db4cf4b12c265a8e466c3a1f7cadd3ac",
+    "records": 200,
+    "first_keys": [
+      "id",
+      "result",
+      "input_token_count",
+      "output_token_count",
+      "latency",
+      "inference_log"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/HuanzhiMao/BFCL-Result/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03/score/Qwen_Qwen3-235B-A22B-Instruct-2507/multi_turn/BFCL_v4_multi_turn_base_score.json",
+    "file": "Qwen_Qwen3-235B-A22B-Instruct-2507_score.jsonl",
+    "bytes": 9860085,
+    "sha256": "8fedbc7871db2f2446ed1464de3ed9e87ec38ca4b6cf13851643810d58884364",
+    "records": 167,
+    "first_keys": [
+      "accuracy",
+      "correct_count",
+      "total_count"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/HuanzhiMao/BFCL-Result/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03/score/DeepSeek-V3.2-Exp/multi_turn/BFCL_v4_multi_turn_base_score.json",
+    "file": "DeepSeek-V3.2-Exp_score.jsonl",
+    "bytes": 6761501,
+    "sha256": "a5c4df5a501265159a302f4b9fe0fbcced90429e5f73fd8fa590271a45f7fd0b",
+    "records": 116,
+    "first_keys": [
+      "accuracy",
+      "correct_count",
+      "total_count"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/HuanzhiMao/BFCL-Result/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03/score/gpt-4.1-2025-04-14/multi_turn/BFCL_v4_multi_turn_base_score.json",
+    "file": "gpt-4.1-2025-04-14_score.jsonl",
+    "bytes": 10019641,
+    "sha256": "cafe862d44e1043a215ca0d03d7ecbe545b7ed93d01f0981cb9b82a7d5f4b575",
+    "records": 182,
+    "first_keys": [
+      "accuracy",
+      "correct_count",
+      "total_count"
+    ]
+  }
+]

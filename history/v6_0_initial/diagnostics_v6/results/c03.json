@@ -1,0 +1,169 @@
+{
+  "case_id": "c03",
+  "request_id": "f7ca553dc8c6d9b81489583df31ef9b9539d554800abf1cb746388df6643b73a",
+  "review": {
+    "edit_evidence_ids": [
+      "m0001",
+      "m0002",
+      "m0003",
+      "m0004",
+      "m0005",
+      "m0006",
+      "m0007",
+      "m0008",
+      "m0009",
+      "m0010",
+      "m0011",
+      "m0012",
+      "m0013",
+      "m0014",
+      "m0015",
+      "m0016",
+      "m0017",
+      "m0018",
+      "m0019",
+      "m0020"
+    ],
+    "edit_reason": "The proposed edit deletes only the retrospective completion claim 'The task is complete.' from the final assistant message. The remaining text, 'No further functions can be called.', is preserved, and no requested answer, tool result, caveat, or action evidence is removed.",
+    "edit_verdict": "safe",
+    "requests": [
+      {
+        "answer_evidence": [],
+        "base": "failure",
+        "criterion": "Add Zeta Corp (ZETA) to the user's watchlist.",
+        "delivery_requirement": "not_requested",
+        "evidence": [
+          {
+            "message_id": "m0005",
+            "quote": "{\"watchlist\": [\"NVDA\", \"ZETA\"]}"
+          }
+        ],
+        "execution_checks": [
+          {
+            "evidence": [
+              {
+                "message_id": "m0005",
+                "quote": "{\"watchlist\": [\"NVDA\", \"ZETA\"]}"
+              }
+            ],
+            "observed_result": "completed_effect",
+            "reason": "add_to_watchlist(stock=\"ZETA\") returned a watchlist containing ZETA.",
+            "required_result": "completed_effect",
+            "requirement_quote": "add it to my watchlist"
+          }
+        ],
+        "original": "success",
+        "reason": "The successful add_to_watchlist observation proves the requested effect in both ORIGINAL and BASE.",
+        "request_kind": "action_or_state",
+        "unsupported_material_claims": [],
+        "user_id": "m0001"
+      },
+      {
+        "answer_evidence": [],
+        "base": "failure",
+        "criterion": "Retrieve and show the existing watchlist to the user.",
+        "delivery_requirement": "required",
+        "evidence": [
+          {
+            "message_id": "m0009",
+            "quote": "{\"watchlist\": [\"NVDA\", \"ZETA\"]}"
+          },
+          {
+            "message_id": "m0010",
+            "quote": "No further functions can be called. The task is complete."
+          }
+        ],
+        "execution_checks": [],
+        "original": "failure",
+        "reason": "The tool fetched the watchlist, but the assistant did not deliver it in prose. The only final assistant text is completion boilerplate, so the requested user-facing answer is missing in both ORIGINAL and BASE.",
+        "request_kind": "information_only",
+        "unsupported_material_claims": [],
+        "user_id": "m0007"
+      },
+      {
+        "answer_evidence": [],
+        "base": "failure",
+        "criterion": "Report current price, percentage change, trading volume, MA(5), and MA(20) for the first stock in the watchlist (NVDA).",
+        "delivery_requirement": "required",
+        "evidence": [
+          {
+            "message_id": "m0009",
+            "quote": "{\"watchlist\": [\"NVDA\", \"ZETA\"]}"
+          },
+          {
+            "message_id": "m0013",
+            "quote": "{\"price\": 220.34, \"percent_change\": 0.34, \"volume\": 1.234, \"MA(5)\": 220.45, \"MA(20)\": 220.67}"
+          },
+          {
+            "message_id": "m0014",
+            "quote": "No further functions can be called. The task is complete."
+          }
+        ],
+        "execution_checks": [],
+        "original": "failure",
+        "reason": "The stock data was fetched into a tool observation, but no assistant prose delivered the requested report. Missing the requested user-facing answer makes both ORIGINAL and BASE failures.",
+        "request_kind": "information_only",
+        "unsupported_material_claims": [],
+        "user_id": "m0011"
+      },
+      {
+        "answer_evidence": [],
+        "base": "success",
+        "criterion": "Send the specified message to John (USR001).",
+        "delivery_requirement": "not_requested",
+        "evidence": [
+          {
+            "message_id": "m0017",
+            "quote": "{\"user_id\": \"USR001\"}"
+          },
+          {
+            "message_id": "m0019",
+            "quote": "{\"sent_status\": true, \"message_id\": {\"new_id\": 41772}, \"message\": \"Message sent to 'USR001' successfully.\"}"
+          }
+        ],
+        "execution_checks": [
+          {
+            "evidence": [
+              {
+                "message_id": "m0017",
+                "quote": "{\"user_id\": \"USR001\"}"
+              },
+              {
+                "message_id": "m0019",
+                "quote": "{\"sent_status\": true, \"message_id\": {\"new_id\": 41772}, \"message\": \"Message sent to 'USR001' successfully.\"}"
+              }
+            ],
+            "observed_result": "completed_effect",
+            "reason": "get_user_id resolved John to USR001 and send_message returned sent_status true.",
+            "required_result": "completed_effect",
+            "requirement_quote": "write a message 'I checked all the details. Move forward with the plan as we discussed earlier.' to John"
+          }
+        ],
+        "original": "success",
+        "reason": "The send_message observation confirms the requested communication occurred. The deletion of 'The task is complete.' from m0020 removes only a completion claim and leaves the action evidence intact.",
+        "request_kind": "action_or_state",
+        "unsupported_material_claims": [],
+        "user_id": "m0015"
+      }
+    ]
+  },
+  "evaluation": {
+    "semantic_constraints_pass": false,
+    "semantic_errors": [
+      "m0001:base"
+    ],
+    "contract_valid": true,
+    "contract_error": null,
+    "assessment": {
+      "status": "quarantined",
+      "reasons": [
+        "outcome_changed"
+      ],
+      "original_outcome": "failure",
+      "base_outcome": "failure",
+      "label_policy": "two-blind-grounded-reviews-completion-contract-v4",
+      "benchmark_relation": "disagrees"
+    },
+    "full_pass": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "processed": 7,
+  "statuses": {
+    "accepted": 3,
+    "rejected": 2,
+    "budget_deferred": 1,
+    "quarantined": 1
+  },
+  "accepted_families": 3,
+  "accounting": {
+    "budget_usd": 0.211952776,
+    "actual_usd": 0.12345525,
+    "unresolved_reserved_usd": 0,
+    "remaining_usd": 0.088497526,
+    "attempts": 12
+  },
+  "Jev_calls": 0,
+  "judge_experiment_run": false,
+  "accepted_variants": 15
+}

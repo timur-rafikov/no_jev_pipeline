@@ -1,0 +1,163 @@
+{
+  "case_id": "c10",
+  "request_id": "9eecb411f74bc891824a082118e51a4936af6a287172bcd1e26e996f5b058c34",
+  "review": {
+    "edit_evidence_ids": [
+      "m0022",
+      "m0021"
+    ],
+    "edit_reason": "The deleted span is not a retrospective completion claim about an action; it is the entire requested deliverable for the final user turn (the listing of all sent messages, matching the view_messages_sent result in m0021). Removing it leaves only the empty header 'You have sent the following messages so far:' and destroys the answer the user asked to be displayed, so the edit is unsafe.",
+    "edit_verdict": "unsafe",
+    "requests": [
+      {
+        "answer_evidence": [
+          {
+            "message_id": "m0006",
+            "quote": "The current price of 'Quasar Ltd.' (QUAS) is 725.89."
+          }
+        ],
+        "base": "success",
+        "criterion": "Tell the user the current price of 'Quasar Ltd.'",
+        "delivery_requirement": "required",
+        "evidence": [
+          {
+            "message_id": "m0005",
+            "quote": "{\"price\": 725.89, \"percent_change\": -0.03, \"volume\": 1.789, \"MA(5)\": 726.45, \"MA(20)\": 728.0}"
+          }
+        ],
+        "execution_checks": [],
+        "original": "success",
+        "reason": "Symbol lookup returned QUAS (m0003) and the stock price 725.89 was retrieved (m0005) and delivered in prose (m0006). BASE leaves this turn untouched.",
+        "request_kind": "information_only",
+        "unsupported_material_claims": [],
+        "user_id": "m0001"
+      },
+      {
+        "answer_evidence": [],
+        "base": "success",
+        "criterion": "Add the stock to the watchlist",
+        "delivery_requirement": "not_requested",
+        "evidence": [
+          {
+            "message_id": "m0009",
+            "quote": "{\"watchlist\": [\"NVDA\", \"QUAS\"]}"
+          }
+        ],
+        "execution_checks": [
+          {
+            "evidence": [
+              {
+                "message_id": "m0009",
+                "quote": "{\"watchlist\": [\"NVDA\", \"QUAS\"]}"
+              }
+            ],
+            "observed_result": "completed_effect",
+            "reason": "The add_to_watchlist call returned a watchlist containing QUAS, proving the append took effect.",
+            "required_result": "completed_effect",
+            "requirement_quote": "Please append this stock to your watchlist"
+          }
+        ],
+        "original": "success",
+        "reason": "add_to_watchlist(stock='QUAS') returned NVDA and QUAS (m0009), and the assistant confirmed the addition (m0010). BASE unchanged for this turn.",
+        "request_kind": "action_or_state",
+        "unsupported_material_claims": [],
+        "user_id": "m0007"
+      },
+      {
+        "answer_evidence": [
+          {
+            "message_id": "m0014",
+            "quote": "Your current watchlist includes the following stocks: NVDA, QUAS."
+          }
+        ],
+        "base": "success",
+        "criterion": "Present the current contents of the watchlist",
+        "delivery_requirement": "required",
+        "evidence": [
+          {
+            "message_id": "m0013",
+            "quote": "{\"watchlist\": [\"NVDA\", \"QUAS\"]}"
+          }
+        ],
+        "execution_checks": [],
+        "original": "success",
+        "reason": "get_watchlist returned NVDA and QUAS (m0013) and the list was presented to the user in prose (m0014). BASE unchanged for this turn.",
+        "request_kind": "information_only",
+        "unsupported_material_claims": [],
+        "user_id": "m0011"
+      },
+      {
+        "answer_evidence": [],
+        "base": "success",
+        "criterion": "Send the message 'NVDA and QUAS.' to user ID 'USR007'",
+        "delivery_requirement": "not_requested",
+        "evidence": [
+          {
+            "message_id": "m0017",
+            "quote": "{\"sent_status\": true, \"message_id\": {\"new_id\": 41772}, \"message\": \"Message sent to 'USR007' successfully.\"}"
+          }
+        ],
+        "execution_checks": [
+          {
+            "evidence": [
+              {
+                "message_id": "m0017",
+                "quote": "{\"sent_status\": true, \"message_id\": {\"new_id\": 41772}, \"message\": \"Message sent to 'USR007' successfully.\"}"
+              }
+            ],
+            "observed_result": "completed_effect",
+            "reason": "The send_message call to USR007 returned sent_status true with a message id, confirming delivery.",
+            "required_result": "completed_effect",
+            "requirement_quote": "dispatch a message 'NVDA and QUAS.' to user ID 'USR007'"
+          }
+        ],
+        "original": "success",
+        "reason": "send_message to USR007 returned sent_status true (m0017) and the send was confirmed in prose (m0018). BASE unchanged here.",
+        "request_kind": "action_or_state",
+        "unsupported_material_claims": [],
+        "user_id": "m0015"
+      },
+      {
+        "answer_evidence": [
+          {
+            "message_id": "m0022",
+            "quote": "You have sent the following messages so far:\n- To USR006: (via USR005) \"Interested in Quasar Ltd stocks.\"\n- To USR007: \"NVDA and QUAS.\", \"NVDA and QUAS.\""
+          }
+        ],
+        "base": "failure",
+        "criterion": "Display all messages sent so far in a user-facing answer",
+        "delivery_requirement": "required",
+        "evidence": [
+          {
+            "message_id": "m0021",
+            "quote": "{\"messages\": {\"USR006\": [{\"USR005\": [\"Interested in Quasar Ltd stocks.\"]}], \"USR007\": [\"NVDA and QUAS.\", \"NVDA and QUAS.\"]}}"
+          }
+        ],
+        "execution_checks": [],
+        "original": "success",
+        "reason": "ORIGINAL delivered the full listing of sent messages (m0022), matching the view_messages_sent observation (m0021). BASE deletes that listing, leaving only 'You have sent the following messages so far:' with no content, so the requested display never reaches the user.",
+        "request_kind": "information_only",
+        "unsupported_material_claims": [],
+        "user_id": "m0019"
+      }
+    ]
+  },
+  "evaluation": {
+    "semantic_constraints_pass": true,
+    "semantic_errors": [],
+    "contract_valid": true,
+    "contract_error": null,
+    "assessment": {
+      "status": "quarantined",
+      "reasons": [
+        "edit_unsafe",
+        "outcome_changed"
+      ],
+      "original_outcome": "success",
+      "base_outcome": "failure",
+      "label_policy": "two-blind-grounded-reviews-completion-contract-v4",
+      "benchmark_relation": "agrees"
+    },
+    "full_pass": true
+  }
+}

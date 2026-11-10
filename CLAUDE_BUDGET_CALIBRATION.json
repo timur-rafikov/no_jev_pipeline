@@ -1,0 +1,26 @@
+{
+  "observed": [
+    {
+      "receipt": "2bac112e75e6de51d44a6a7cf4e5a47a67fe5e7952fef4354074a5424360ad09",
+      "actual_prompt_tokens": 14371,
+      "bound": 33064
+    },
+    {
+      "receipt": "57ac7caf995dec4004d2ca986b81246857eba4921ec45043650c05659df690f7",
+      "actual_prompt_tokens": 14564,
+      "bound": 33340
+    },
+    {
+      "receipt": "832f981be08cd6b447af0648552464a0e9d82e53059a0ad04a0d60f1e4ea2c3c",
+      "actual_prompt_tokens": 12174,
+      "bound": 27848
+    },
+    {
+      "receipt": "65790394f07b67cebdb516108ae8eeacca1af4b76a9c333c7fb9016d91771c2c",
+      "actual_prompt_tokens": 14510,
+      "bound": 33452
+    }
+  ],
+  "validated": true,
+  "rule": "2*o200k_base(request)+4096; not actual Claude tokenizer, heuristic conservative reserve; fallback to bytes if any observation exceeds bound."
+}

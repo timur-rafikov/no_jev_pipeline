@@ -1,0 +1,21 @@
+{
+  "case_id": "v5_fresh16_20261027_0013",
+  "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_23",
+  "task_id": "multi_turn_base_23",
+  "source_hash": "b5828d87b9b582b1f33c41dd5e0a17ac1754854692d86eb4ac5e9127ef1968bb",
+  "protocol": "no-jev-edit-review-v5.2",
+  "status": "rejected",
+  "generation": {
+    "deletion": null,
+    "reason": "The final assistant message does not contain a retrospective completion claim asserting that the agent performed an action or completed the task; rather, it reports the status from the tool response that the ticket was already resolved."
+  },
+  "generation_request": "68eac86bc07dd7332773a86e01b8e37bcc1167b82d3518272ffd1df0f3e68982",
+  "family": null,
+  "decision": {
+    "status": "rejected",
+    "reasons": [
+      "no_candidate"
+    ],
+    "label_policy": "two-blind-reviews-and-benchmark-agreement-v2"
+  }
+}

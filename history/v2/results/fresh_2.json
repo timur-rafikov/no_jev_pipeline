@@ -1,0 +1,92 @@
+{
+  "case_id": "fresh_2",
+  "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_12",
+  "cohort": "hash_sample_new_to_current_pilot",
+  "status": "rejected",
+  "attempts": [
+    {
+      "generation_request": "39efc9138cbba5bdd37114c265eed6904a3b96443e0572e94b53b3b04ef2ff19",
+      "review_request": "1cec601ea7bc65242513cadba0efdfd6c8d360c0562dba81e9fa57b33664ec5f",
+      "generation": {
+        "deletion": null,
+        "reason": "The final message consists only of the directly requested answer value ('The file 'summary.txt' contains 2 words.'), which is protected factual content and cannot be deleted."
+      },
+      "family": null,
+      "review": {
+        "edit_evidence_ids": [
+          "m0015"
+        ],
+        "edit_reason": "no candidate",
+        "edit_verdict": "unsafe",
+        "requests": [
+          {
+            "base": "success",
+            "evidence_ids": [
+              "m0002",
+              "m0003",
+              "m0004"
+            ],
+            "original": "success",
+            "reason": "The file was created in Documents; there is no evidence that it already existed, so the conditional error case was not triggered.",
+            "user_id": "m0001"
+          },
+          {
+            "base": "success",
+            "evidence_ids": [
+              "m0007",
+              "m0008",
+              "m0009",
+              "m0010"
+            ],
+            "original": "success",
+            "reason": "The file contents were updated to exactly 'quantum computing' and verified by reading the file back.",
+            "user_id": "m0006"
+          },
+          {
+            "base": "success",
+            "evidence_ids": [
+              "m0013",
+              "m0014",
+              "m0015"
+            ],
+            "original": "success",
+            "reason": "The word count was obtained from the file as requested.",
+            "user_id": "m0012"
+          }
+        ],
+        "suggested_deletion": {
+          "exact_text": "The file 'summary.txt' contains 2 words.",
+          "occurrence": 1
+        }
+      },
+      "decision": {
+        "status": "rejected",
+        "reasons": [
+          "no_candidate",
+          "edit_unsafe"
+        ],
+        "original_outcome": "success",
+        "base_outcome": "success"
+      },
+      "decision_v1": {
+        "status": "rejected",
+        "reasons": [
+          "no_candidate",
+          "edit_unsafe"
+        ],
+        "original_outcome": "success",
+        "base_outcome": "success"
+      }
+    }
+  ],
+  "ready_for_judge_run": false,
+  "reasons": [
+    "no_candidate",
+    "edit_unsafe"
+  ],
+  "original_outcome": "success",
+  "base_outcome": "success",
+  "repair_deferred_for_budget": true,
+  "protocol": "no-jev-edit-review-v2",
+  "review_reused_identical_prompts": true
+}

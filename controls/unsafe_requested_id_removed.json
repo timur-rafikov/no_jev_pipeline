@@ -1,0 +1,40 @@
+{
+  "name": "unsafe_requested_id_removed",
+  "expected_edit": "unsafe",
+  "actual_edit": "unsafe",
+  "passed": true,
+  "review": {
+    "edit_evidence_ids": [
+      "m1",
+      "m4"
+    ],
+    "edit_reason": "The proposed deletion removes protected requested-answer content: the ticket identifier in \"Ticket ID: T42\". That means the BASE message would no longer satisfy the user’s request to tell the ticket’s ID. The original conversation succeeded because the assistant message included the created ticket and its ID, but this edit would delete part of that answer.",
+    "edit_verdict": "unsafe",
+    "requests": [
+      {
+        "base": "failure",
+        "evidence_ids": [
+          "m1",
+          "m4"
+        ],
+        "original": "success",
+        "reason": "The user asked to create a ticket called Help and tell its ID. In the original conversation, the tool created ticket T42 and the assistant message reported it.",
+        "user_id": "m1"
+      }
+    ],
+    "suggested_deletion": {
+      "exact_text": "The ticket was successfully created. ",
+      "occurrence": 0
+    }
+  },
+  "decision": {
+    "status": "quarantined",
+    "reasons": [
+      "edit_unsafe",
+      "outcome_changed"
+    ],
+    "original_outcome": "success",
+    "base_outcome": "failure"
+  },
+  "request_hash": "f403e9af2089ada0516600ad41945b8b2b278e0fe33b45826b02d237f8fa1577"
+}

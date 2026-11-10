@@ -1,0 +1,57 @@
+{
+  "scope": "Ten new task IDs; actual live v3 calls, not historical review replay",
+  "protocol": "no-jev-edit-review-v3",
+  "selected": 10,
+  "generation_and_review_responses_received": 10,
+  "statuses": {
+    "accepted": 4,
+    "quarantined": 3,
+    "operational_error": 3
+  },
+  "accepted_families": 4,
+  "accepted_variants": 20,
+  "candidate_families": 6,
+  "candidate_variants": 30,
+  "accepted_variants_without_audit_caution": 15,
+  "accepted_variants_with_audit_caution": 5,
+  "audit_counts": {
+    "candidate_families_inspected": 6,
+    "candidate_edits_without_detected_content_loss": 6,
+    "no_candidate_cases_checked": 4,
+    "obvious_eligible_deletion_missed": 0,
+    "pipeline_accepted": 4,
+    "accepted_without_audit_caution": 3,
+    "accepted_with_outcome_interpretation_caution": 1,
+    "confirmed_reviewer_outcome_errors": 1,
+    "additional_reviewer_weakness_cases": 1,
+    "source_label_conflicts": 2,
+    "null_candidate_validation_errors": 3
+  },
+  "confirmed_run_cost_usd": 0.19504485,
+  "unresolved_run_reserve_usd": 0.049568400000000006,
+  "run_cost_including_reserve_usd": 0.24461325,
+  "attempted_api_calls": 21,
+  "completed_api_calls": 20,
+  "cost_per_attempted_source_usd": 0.019504485,
+  "accounting": {
+    "budget_usd": 0.711952776,
+    "actual_usd": 0.37776135,
+    "unresolved_reserved_usd": 0.049568400000000006,
+    "remaining_usd": 0.28462302599999995,
+    "attempts": 42
+  },
+  "total_authorized_usd": 1.0,
+  "total_confirmed_spend_usd": 0.6658085739999999,
+  "semantic_protocol_changed_during_pilot": false,
+  "lexical_or_numeric_vetoes_added": false,
+  "tests": {
+    "tests_run": 21,
+    "passed": true,
+    "failures": 0,
+    "errors": 0,
+    "network_used": false
+  },
+  "judge_experiment_run": false,
+  "human_gold_accuracy_measured": false,
+  "technical_failures_not_counted_as_semantic_rejections": true
+}

@@ -1,0 +1,106 @@
+{
+  "method": "Root assistant read all eight original non-instruction messages and tool definitions BEFORE editor/reviewer responses and benchmark grades. Not human gold. No selection replacement.",
+  "scope": "Only the single allowed last-message completion claim; claims earlier in the history remain.",
+  "cases": [
+    {
+      "case": 1,
+      "eligible_target": "no",
+      "outcome": "unknown",
+      "evidence": [
+        "m0005",
+        "m0010",
+        "m0012",
+        "m0015",
+        "m0018"
+      ],
+      "reason": "Final is requested file content, not a completion claim. File creation/order not evidenced by returns; last result lacks evidence it was first in system order."
+    },
+    {
+      "case": 2,
+      "eligible_target": "no",
+      "outcome": "unknown",
+      "evidence": [
+        "m0007",
+        "m0014",
+        "m0019",
+        "m0020"
+      ],
+      "reason": "Final is requested order details. Zeta symbol resolution absent; purchase vs accepted order is ambiguous. No separate retrospective completion proposition in the final header."
+    },
+    {
+      "case": 3,
+      "eligible_target": "yes",
+      "outcome": "unknown_or_failure",
+      "evidence": [
+        "m0009",
+        "m0011",
+        "m0014",
+        "m0015"
+      ],
+      "reason": "Can remove The details of your orders have been retrieved. Preserve function-looking text and clarification. Stock details were not delivered in prose; order details lack execution returns. Which order was requested is ambiguous."
+    },
+    {
+      "case": 4,
+      "eligible_target": "borderline",
+      "outcome": "failure",
+      "evidence": [
+        "m0009",
+        "m0010",
+        "m0013",
+        "m0014"
+      ],
+      "reason": "Cruise control failed because engine not started; final corrections have no returns. No more functions need to be called is a possible global completion assertion but also harness control wording. Preserve call text if removed; manual ambiguity flag."
+    },
+    {
+      "case": 5,
+      "eligible_target": "no",
+      "outcome": "failure",
+      "evidence": [
+        "m0003",
+        "m0010",
+        "m0019",
+        "m0052",
+        "m0056",
+        "m0065",
+        "m0066"
+      ],
+      "reason": "Move went into nested archive instead of target workspace/archive and was not repaired; final is required tail output with no eligible completion header."
+    },
+    {
+      "case": 6,
+      "eligible_target": "no",
+      "outcome": "unknown_or_failure",
+      "evidence": [
+        "m0009",
+        "m0014"
+      ],
+      "reason": "Engine start was recovered; final is malformed function text without pressure/navigation return and contains no prose completion claim."
+    },
+    {
+      "case": 7,
+      "eligible_target": "yes",
+      "outcome": "success_on_tool_evidenced_requirements_with_caution",
+      "evidence": [
+        "m0003",
+        "m0004",
+        "m0007",
+        "m0008"
+      ],
+      "reason": "Budget-setting confirmation may be removed leaving offer of help; amount belongs to retrospective action claim. Fare request fields match tool call/result. Added airport-name expansion in answer is not supported by trace; do not claim all factual answer details independently verified."
+    },
+    {
+      "case": 8,
+      "eligible_target": "yes",
+      "outcome": "success",
+      "evidence": [
+        "m0003",
+        "m0007",
+        "m0013",
+        "m0019",
+        "m0023",
+        "m0024"
+      ],
+      "reason": "User explicitly asked ordering 100 shares, satisfied by accepted order; requested details delivered and cancellation confirmed. Final cancellation sentence is a legal deletion despite digits."
+    }
+  ]
+}

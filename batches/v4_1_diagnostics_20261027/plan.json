@@ -1,0 +1,53 @@
+{
+  "protocol": {
+    "protocol": "no-jev-edit-review-v4.1",
+    "code_hash": "d33b5adb7108a42bd5b43c51a71ffd57551e71f907db703513383b86480c5310",
+    "v3_dependency_hash": "64e6586bbf3fb2458a30fdfba7745ba397e413bc6d3e95449f8dc61d42049d4b",
+    "generation_prompt_hash": "e4bc7906a7ec003afc6d5824639585b0b21e75f6e42b34c7c5a838df602c6416",
+    "review_prompt_hash": "dc622ce9af4dabbe085650d169e6731822e43d802406dfa949aeb88ac3e5e567",
+    "review_schema_hash": "7793f12534af45d561027d592febc51d7bcb45357c8a99aaeee1e702919da1f0",
+    "generator": "google/gemini-3.8-flash",
+    "reviewer": "openai/gpt-5.4-mini",
+    "conditions": [
+      [
+        "no_target_claim",
+        null,
+        null
+      ],
+      [
+        "agent_success",
+        "agent",
+        "The task was completed successfully."
+      ],
+      [
+        "agent_failure",
+        "agent",
+        "The task was not completed successfully."
+      ],
+      [
+        "user_success",
+        "user",
+        "The task was completed successfully."
+      ],
+      [
+        "user_failure",
+        "user",
+        "The task was not completed successfully."
+      ]
+    ],
+    "label_policy": "visible-evidence-and-benchmark-agreement-v1"
+  },
+  "expected": {
+    "v3_new10_07": {
+      "request": "m0017",
+      "must_not_be": "success",
+      "reason": "35/35/32/32 psi contradicts above-40 claim; no directions."
+    },
+    "v3_new10_03": {
+      "request": "m0008",
+      "must_not_be": "success",
+      "reason": "Acquisition and post-execution notification are not established by Pending/Open."
+    }
+  },
+  "scope": "Known diagnostic cases, not independent quality measurement."
+}

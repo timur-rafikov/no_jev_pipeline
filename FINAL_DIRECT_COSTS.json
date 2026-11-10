@@ -1,0 +1,23 @@
+{
+  "families": [
+    {
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_69",
+      "stage_costs_usd": {
+        "editor": 0.00989175,
+        "reviewer": 0.024471,
+        "auditor": 0.065781
+      },
+      "total_usd": 0.10014375
+    },
+    {
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_73",
+      "stage_costs_usd": {
+        "editor": 0.006771,
+        "reviewer": 0.02032275,
+        "auditor": 0.049431
+      },
+      "total_usd": 0.07652475
+    }
+  ],
+  "scope": "Only the three necessary stage receipts of accepted families; excludes rejected sources and development."
+}

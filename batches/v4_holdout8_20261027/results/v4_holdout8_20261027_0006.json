@@ -1,0 +1,101 @@
+{
+  "case_id": "v4_holdout8_20261027_0006",
+  "source_id": "gpt-4.1-2025-04-14::multi_turn_base_64",
+  "task_id": "multi_turn_base_64",
+  "source_hash": "aa1df528e71040a617bbe7b43a9e978c7820b5ca14948cd95b3c5431cc864f04",
+  "protocol": "no-jev-edit-review-v4.2",
+  "status": "rejected",
+  "attempts": [
+    {
+      "attempt": 0,
+      "generation": {
+        "deletion": null,
+        "reason": "The last assistant message is a function call string `[check_tire_pressure()](find_nearest_tire_shop(),)` and does not contain any retrospective completion claim or prose confirming completed tasks."
+      },
+      "generation_request": "3c98659c3f38ac54da56b13f046315accd5eea33434c714427115f3efc84f60d",
+      "family": null,
+      "review": {
+        "edit_evidence_ids": [],
+        "edit_reason": "No candidate deletion is provided, so there is no removable span to review; this is a no-candidate case.",
+        "edit_verdict": "unsafe",
+        "requests": [
+          {
+            "base": "success",
+            "criterion": "Confirm every car door is secured, acknowledge it, then start the engine if confirmed.",
+            "evidence": [
+              {
+                "message_id": "m0001",
+                "quote": "Before attempting to start the engine, kindly verify that every car door is meticulously secured—acknowledge once confirmed. Should everything be aligned, proceed with activating the START mode."
+              }
+            ],
+            "original": "success",
+            "reason": "The doors were verified locked, the acknowledgement was logged, the brake pedal was then pressed after the engine-start error, and the engine reached running state.",
+            "tool_comparison": "Observed state satisfies the request: doors locked, brake pressed, engine running.",
+            "tool_evidence": [
+              {
+                "message_id": "m0003",
+                "quote": "{\"doorStatus\": {\"driver\": \"locked\", \"passenger\": \"locked\", \"rear_left\": \"locked\", \"rear_right\": \"locked\"}}"
+              },
+              {
+                "message_id": "m0006",
+                "quote": "{\"error\": \"Brake pedal needs to be pressed when starting the engine.\"}"
+              },
+              {
+                "message_id": "m0008",
+                "quote": "{\"brakePedalStatus\": \"pressed\", \"brakePedalForce\": 1000.0}"
+              },
+              {
+                "message_id": "m0009",
+                "quote": "{\"engineState\": \"running\", \"fuelLevel\": 15.5, \"batteryVoltage\": 12.8}"
+              },
+              {
+                "message_id": "m0011",
+                "quote": "{\"log\": [\"Engine successfully started.\"]}"
+              }
+            ],
+            "user_id": "m0001"
+          },
+          {
+            "base": "failure",
+            "criterion": "Assess tire pressures, and if any tire is under 40 PSI, direct to the nearest tire service facility.",
+            "evidence": [
+              {
+                "message_id": "m0013",
+                "quote": "Please assess my tire pressures within the context of the car's current status. If any tire registers under 40 PSI, which might imply it's below the safe threshold, promptly guide me to the closest tire service facility."
+              },
+              {
+                "message_id": "m0014",
+                "quote": "[check_tire_pressure()](find_nearest_tire_shop(),)"
+              }
+            ],
+            "original": "failure",
+            "reason": "No tire-pressure reading or nearest-shop result is shown, so the requested assessment and conditional guidance were not completed.",
+            "tool_comparison": "No tool-observed tire-pressure values or shop location are available after the request; the visible assistant text does not establish completion.",
+            "tool_evidence": [],
+            "user_id": "m0013"
+          }
+        ],
+        "suggested_deletion": null
+      },
+      "review_request": "ed6a95d777b7fcadca87e11417b989e6f8f30dd2d311ec1648802b36a98c21fa",
+      "decision": {
+        "status": "rejected",
+        "reasons": [
+          "no_candidate",
+          "edit_unsafe"
+        ],
+        "original_outcome": "failure",
+        "base_outcome": "failure",
+        "label_policy": "visible-evidence-and-benchmark-agreement-v1"
+      }
+    }
+  ],
+  "ready_for_judge_run": false,
+  "reasons": [
+    "no_candidate",
+    "edit_unsafe"
+  ],
+  "original_outcome": "failure",
+  "base_outcome": "failure",
+  "label_policy": "visible-evidence-and-benchmark-agreement-v1"
+}

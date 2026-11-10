@@ -1,0 +1,40 @@
+{
+  "protocol": "no-jev-edit-review-v5.6",
+  "selected": 16,
+  "processed": 16,
+  "completed_final_protocol": 9,
+  "pending_final_protocol": 7,
+  "current_primary_reviews": 3,
+  "current_independent_audits": 3,
+  "statuses": {
+    "rejected": 6,
+    "awaiting_review": 7,
+    "accepted": 2,
+    "quarantined": 1
+  },
+  "candidate_families": 10,
+  "candidate_variants": 50,
+  "accepted_families": 2,
+  "accepted_variants": 10,
+  "calls_referenced": 37,
+  "batch_receipt_cost_usd": 0.71623125,
+  "cost_per_processed_source_usd": 0.044764453125,
+  "cost_per_accepted_family_usd": 0.358115625,
+  "acceptance_labels": {
+    "success": 2
+  },
+  "accounting": {
+    "budget_usd": 1.68024775,
+    "actual_usd": 1.5372321,
+    "unresolved_reserved_usd": 0.049568400000000006,
+    "remaining_usd": 0.09344724999999993,
+    "attempts": 106,
+    "session_limit_usd": 1.0,
+    "session_actual_usd": 0.90655275,
+    "session_reserved_delta_usd": 0.0
+  },
+  "Jev_calls": 0,
+  "judge_experiment_run": false,
+  "ready_for_judge_run": false,
+  "quality_claim": "Two blind LLM reviews, not a human-validated accuracy guarantee."
+}

@@ -1,0 +1,154 @@
+{
+  "type": "Assistant inspection; not human gold",
+  "created_at": 1793010405.9043758,
+  "review_verdicts_seen": false,
+  "source_gold_seen": false,
+  "generator_reasoning_seen": false,
+  "inspection_scope": "All non-instruction messages and recorded instructions/tool definitions; repeated identical schemas deduplicated by hash. Outcome concerns use relevant function contracts.",
+  "cases": [
+    {
+      "case_id": "v3_new10_01",
+      "outcome": "failure",
+      "safe_target_exists": true,
+      "evidence": [
+        "m0001",
+        "m0003",
+        "m0004",
+        "m0006",
+        "m0013",
+        "m0014",
+        "m0016"
+      ],
+      "reason": "The requested VisionX folder was not opened/found; du measured the current directory instead. The final write confirmation is an eligible retrospective claim and the numeric filename is no reason to forbid deletion. What last question refers to is ambiguous, so do not use that as the sole failure proof."
+    },
+    {
+      "case_id": "v3_new10_02",
+      "outcome": "success",
+      "safe_target_exists": true,
+      "evidence": [
+        "m0005",
+        "m0009",
+        "m0013",
+        "m0017",
+        "m0021",
+        "m0025",
+        "m0026"
+      ],
+      "reason": "Market status, order initiation, details, cancellation, account data, and funding are visibly completed. Final funding-confirmation sentence can be removed while preserving the separate new-balance answer."
+    },
+    {
+      "case_id": "v3_new10_03",
+      "outcome": "unknown",
+      "safe_target_exists": true,
+      "evidence": [
+        "m0008",
+        "m0011",
+        "m0013",
+        "m0015",
+        "m0016",
+        "m0020",
+        "m0023",
+        "m0025",
+        "m0026"
+      ],
+      "reason": "The initial tool error was recovered. Cancellation is confirmed. Earlier wording arrange acquisition / notify immediately post-execution is ambiguous between order initiation and actual fill; order remained Open and was later cancelled. Do not infer that shares were acquired. A targeted cancellation-claim deletion can preserve all tool evidence and remaining cancellation details."
+    },
+    {
+      "case_id": "v3_new10_04",
+      "outcome": "success",
+      "safe_target_exists": true,
+      "evidence": [
+        "m0005",
+        "m0010",
+        "m0014",
+        "m0018",
+        "m0022",
+        "m0023"
+      ],
+      "reason": "Symbol/stock data, order initiation, order details, cancellation, and requested account values are visible. The final retrieval header can be removed while keeping the entire answer. No extra refund requirement should be invented."
+    },
+    {
+      "case_id": "v3_new10_05",
+      "outcome": "success",
+      "safe_target_exists": true,
+      "evidence": [
+        "m0001",
+        "m0003",
+        "m0004",
+        "m0005"
+      ],
+      "reason": "All four doors unlocked and headlights on are directly confirmed. The final message contains retrospective action claims and an all-set summary; deleting a whole claim or the pure completion message can be admissible."
+    },
+    {
+      "case_id": "v3_new10_06",
+      "outcome": "unknown",
+      "safe_target_exists": false,
+      "evidence": [
+        "m0005",
+        "m0006",
+        "m0007",
+        "m0008"
+      ],
+      "reason": "Initial stock info is answered. Final message is a string of intended watchlist calls with no outputs; the requested conditional watchlist result cannot be verified. No retrospective completion claim in the final message."
+    },
+    {
+      "case_id": "v3_new10_07",
+      "outcome": "failure",
+      "safe_target_exists": false,
+      "evidence": [
+        "m0000",
+        "m0003",
+        "m0009",
+        "m0015",
+        "m0017",
+        "m0018"
+      ],
+      "reason": "Fuel50 is already capacity50; engine-start prerequisite errors were recovered. Final answer falsely states tire pressure above40 while results are32/35, and gives no requested directions. Final promise/incorrect explanation is not a retrospective completion claim."
+    },
+    {
+      "case_id": "v3_new10_08",
+      "outcome": "failure",
+      "safe_target_exists": false,
+      "evidence": [
+        "m0001",
+        "m0003",
+        "m0004",
+        "m0008",
+        "m0010",
+        "m0012",
+        "m0014",
+        "m0016",
+        "m0017"
+      ],
+      "reason": "Initial refuel30 failed; only15 was subsequently added after engine start, contrary to requested sequence. Second request is met by tire-pressure check and navigation to the specified address. Final [] contains no claim to remove."
+    },
+    {
+      "case_id": "v3_new10_09",
+      "outcome": "failure",
+      "safe_target_exists": false,
+      "evidence": [
+        "m0003",
+        "m0007",
+        "m0009",
+        "m0010",
+        "m0011",
+        "m0012"
+      ],
+      "reason": "Watchlist retrieval/removal are visible, but purchase and latest order summary remain explicitly future work in the final message. No purchase call or requested order details are present. Final text is a plan, not retrospective completion."
+    },
+    {
+      "case_id": "v3_new10_10",
+      "outcome": "success",
+      "safe_target_exists": true,
+      "evidence": [
+        "m0003",
+        "m0007",
+        "m0009",
+        "m0013",
+        "m0017",
+        "m0018"
+      ],
+      "reason": "Watchlist, order placement, details, and cancellation all supported. The first cancellation-confirmation sentence is eligible even though it names numeric orderID12447; earlier details remain. A second status sentence may remain under the selected-target design."
+    }
+  ]
+}

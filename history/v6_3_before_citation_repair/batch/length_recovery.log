@@ -1,0 +1,38 @@
+{"case": "v6_new3_20261028_0001", "status": "quarantined", "reasons": ["invalid_independent_audit"], "error": null, "session_spend": 0.17450200400000004, "remaining": 0.025497995999999974}
+{"case": "v6_new3_20261028_0002", "status": "quarantined", "reasons": ["invalid_primary_review"], "error": null, "session_spend": 0.17450200400000004, "remaining": 0.025497995999999974}
+{"case": "v6_new3_20261028_0003", "status": "quarantined", "reasons": ["independent_audit_disagreement"], "error": null, "session_spend": 0.17450200400000004, "remaining": 0.025497995999999974}
+{
+  "protocol": "no-jev-edit-review-v6.3",
+  "selected": 3,
+  "processed": 3,
+  "completed_final_protocol": 3,
+  "pending_final_protocol": 0,
+  "current_primary_reviews": 3,
+  "current_independent_audits": 2,
+  "statuses": {
+    "quarantined": 3
+  },
+  "candidate_families": 3,
+  "candidate_variants": 15,
+  "accepted_families": 0,
+  "accepted_variants": 0,
+  "calls_referenced": 9,
+  "batch_receipt_cost_usd": 0.152161196,
+  "cost_per_processed_source_usd": 0.050720398666666666,
+  "cost_per_accepted_family_usd": null,
+  "acceptance_labels": {},
+  "accounting": {
+    "budget_usd": 1.7868005,
+    "actual_usd": 1.711734104,
+    "unresolved_reserved_usd": 0.049568400000000006,
+    "remaining_usd": 0.025497995999999974,
+    "attempts": 121,
+    "session_limit_usd": 0.2,
+    "session_actual_usd": 0.17450200400000004,
+    "session_reserved_delta_usd": 0.0
+  },
+  "Jev_calls": 0,
+  "judge_experiment_run": false,
+  "ready_for_judge_run": false,
+  "quality_claim": "Two blind LLM reviews, not a human-validated accuracy guarantee."
+}

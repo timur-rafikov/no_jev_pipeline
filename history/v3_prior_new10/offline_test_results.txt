@@ -1,0 +1,25 @@
+test_accept_and_gold_mismatch_quarantine (test_pipeline.ProtocolTests.test_accept_and_gold_mismatch_quarantine) ... ok
+test_aggregate_failure_survives_later_success (test_pipeline.ProtocolTests.test_aggregate_failure_survives_later_success) ... ok
+test_annotation_role_or_wording_drift (test_pipeline.ProtocolTests.test_annotation_role_or_wording_drift) ... ok
+test_exact_deletion_and_five_shared_bases (test_pipeline.ProtocolTests.test_exact_deletion_and_five_shared_bases) ... ok
+test_gold_and_reason_blind_review (test_pipeline.ProtocolTests.test_gold_and_reason_blind_review) ... ok
+test_missing_request_or_fabricated_evidence (test_pipeline.ProtocolTests.test_missing_request_or_fabricated_evidence) ... ok
+test_no_redundant_existence_flag (test_pipeline.ProtocolTests.test_no_redundant_existence_flag) ... ok
+test_null_candidate_never_accepted (test_pipeline.ProtocolTests.test_null_candidate_never_accepted) ... ok
+test_numeric_edit_follows_semantic_reviewer (test_pipeline.ProtocolTests.test_numeric_edit_follows_semantic_reviewer) ... ok
+test_object_name_with_digits_not_a_standalone_value (test_pipeline.ProtocolTests.test_object_name_with_digits_not_a_standalone_value) ... ok
+test_one_variant_drift (test_pipeline.ProtocolTests.test_one_variant_drift) ... ok
+test_only_actual_patch_allowed (test_pipeline.ProtocolTests.test_only_actual_patch_allowed) ... ok
+test_punctuation_uses_reviewer_judgment (test_pipeline.ProtocolTests.test_punctuation_uses_reviewer_judgment) ... ok
+test_request_change_cannot_hide_behind_earlier_failure (test_pipeline.ProtocolTests.test_request_change_cannot_hide_behind_earlier_failure) ... ok
+test_tool_result_tamper (test_pipeline.ProtocolTests.test_tool_result_tamper) ... ok
+test_unknown_and_outcome_change_not_accepted (test_pipeline.ProtocolTests.test_unknown_and_outcome_change_not_accepted) ... ok
+test_budget_block_happens_before_network (test_execution.ExecutionTests.test_budget_block_happens_before_network) ... ok
+test_only_reviewer_rejects_numeric_edit_and_repair_is_reviewed (test_execution.ExecutionTests.test_only_reviewer_rejects_numeric_edit_and_repair_is_reviewed) ... ok
+test_replay_does_not_double_bill (test_execution.ExecutionTests.test_replay_does_not_double_bill) ... ok
+test_timeout_keeps_reserve_and_is_not_retried (test_execution.ExecutionTests.test_timeout_keeps_reserve_and_is_not_retried) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.014s
+
+OK

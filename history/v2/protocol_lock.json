@@ -1,0 +1,9 @@
+{
+  "protocol": "no-jev-edit-review-v2",
+  "code_hash": "a8465e76b4782132e70537324007ac5d5038aaf3d376ec1a6f52ffabde3a2bce",
+  "policy_hash": "6d4e0c0c7cac1ae5b516e5fb3bdc39bc168daae075851e0e4239c5ef2d93f30a",
+  "generation_prompt_hash": "2427b82a546cbb76efce748e3af6dedb508da69b990e7400fd7842fadda8d12b",
+  "review_prompt_hash": "516d737db688eeb4aa15008ea4100756f2d1713b9a92a4424bf2ec6793a151dc",
+  "generator": "google/gemini-3.8-flash",
+  "reviewer": "openai/gpt-5.4-mini"
+}

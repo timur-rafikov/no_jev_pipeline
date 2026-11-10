@@ -1,0 +1,10 @@
+{
+  "case_id": "v3_new10_08",
+  "source_id": "gpt-4.1-2025-04-14::multi_turn_base_84",
+  "cohort": "v3_unseen_task_hash_sample",
+  "status": "operational_error",
+  "attempts": [],
+  "ready_for_judge_run": false,
+  "protocol": "no-jev-edit-review-v3",
+  "error_type": "ValueError"
+}

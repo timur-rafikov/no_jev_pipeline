@@ -1,0 +1,119 @@
+Loading weights:   0%|          | 0/443 [00:00<?, ?it/s]Loading weights: 100%|██████████| 443/443 [00:00<00:00, 4850.20it/s]
+{"case_id": "pilot_50_0001", "label": "success", "n_tokens": 426, "logp_yes": -1.7014133930206299, "logp_no": -0.2014133334159851, "p_yes_norm": 0.1824255149165352, "mass_yes_no": 0.9999999336933613, "seconds": 0.5}
+{"case_id": "pilot_50_0002", "label": "failure", "n_tokens": 1098, "logp_yes": 0.0, "logp_no": -22.0, "p_yes_norm": 0.9999999997210531, "mass_yes_no": 1.0000000002789469, "seconds": 0.2}
+{"case_id": "pilot_50_0003", "label": "success", "n_tokens": 917, "logp_yes": 0.0, "logp_no": -19.75, "p_yes_norm": 0.9999999973534264, "mass_yes_no": 1.0000000026465736, "seconds": 0.2}
+{"case_id": "pilot_50_0004", "label": "failure", "n_tokens": 1018, "logp_yes": 0.0, "logp_no": -19.75, "p_yes_norm": 0.9999999973534264, "mass_yes_no": 1.0000000026465736, "seconds": 0.2}
+{"case_id": "pilot_50_0005", "label": "success", "n_tokens": 1216, "logp_yes": -18.0, "logp_no": 0.0, "p_yes_norm": 1.522997951276035e-08, "mass_yes_no": 1.0000000152299797, "seconds": 0.2}
+{"case_id": "pilot_50_0006", "label": "failure", "n_tokens": 928, "logp_yes": -6.198863957251888e-06, "logp_no": -12.000005722045898, "p_yes_norm": 0.9999938558224681, "mass_yes_no": 0.9999999453324516, "seconds": 0.2}
+{"case_id": "pilot_50_0007", "label": "success", "n_tokens": 333, "logp_yes": 0.0, "logp_no": -20.0, "p_yes_norm": 0.9999999979388463, "mass_yes_no": 1.0000000020611537, "seconds": 0.1}
+{"case_id": "pilot_50_0008", "label": "failure", "n_tokens": 536, "logp_yes": -18.25, "logp_no": 0.0, "p_yes_norm": 1.1861120010657661e-08, "mass_yes_no": 1.00000001186112, "seconds": 0.1}
+{"case_id": "pilot_50_0009", "label": "success", "n_tokens": 980, "logp_yes": -2.3841855067985307e-07, "logp_no": -15.25, "p_yes_norm": 0.9999997617630333, "mass_yes_no": 0.9999999998184445, "seconds": 0.2}
+{"case_id": "pilot_50_0010", "label": "failure", "n_tokens": 588, "logp_yes": -2.578889846801758, "logp_no": -0.07888974994421005, "p_yes_norm": 0.07585817323116976, "mass_yes_no": 0.9999999770009029, "seconds": 0.1}
+{"case_id": "pilot_50_0011", "label": "success", "n_tokens": 431, "logp_yes": 0.0, "logp_no": -17.75, "p_yes_norm": 0.9999999804443193, "mass_yes_no": 1.000000019555681, "seconds": 0.1}
+{"case_id": "pilot_50_0012", "label": "failure", "n_tokens": 738, "logp_yes": -1.1920928244535389e-07, "logp_no": -16.25, "p_yes_norm": 0.9999999123575151, "mass_yes_no": 0.9999999684332068, "seconds": 0.1}
+{"case_id": "pilot_50_0013", "label": "success", "n_tokens": 720, "logp_yes": 0.0, "logp_no": -21.75, "p_yes_norm": 0.9999999996418252, "mass_yes_no": 1.0000000003581748, "seconds": 0.1}
+{"case_id": "pilot_50_0014", "label": "failure", "n_tokens": 671, "logp_yes": -13.500000953674316, "logp_no": -1.4305104514278355e-06, "p_yes_norm": 1.3709578605790399e-06, "mass_yes_no": 0.9999999404483507, "seconds": 0.1}
+{"case_id": "pilot_50_0015", "label": "success", "n_tokens": 1075, "logp_yes": -5.829164365422912e-05, "logp_no": -9.7500581741333, "p_yes_norm": 0.9999417087274893, "mass_yes_no": 1.0000000013278587, "seconds": 0.2}
+{"case_id": "pilot_50_0016", "label": "failure", "n_tokens": 978, "logp_yes": 0.0, "logp_no": -22.25, "p_yes_norm": 0.999999999782756, "mass_yes_no": 1.000000000217244, "seconds": 0.2}
+{"case_id": "pilot_50_0017", "label": "success", "n_tokens": 727, "logp_yes": 0.0, "logp_no": -22.75, "p_yes_norm": 0.999999999868235, "mass_yes_no": 1.000000000131765, "seconds": 0.1}
+{"case_id": "pilot_50_0018", "label": "failure", "n_tokens": 571, "logp_yes": -26.75, "logp_no": 0.0, "p_yes_norm": 2.4133627718273897e-12, "mass_yes_no": 1.0000000000024134, "seconds": 0.1}
+{"case_id": "pilot_50_0019", "label": "success", "n_tokens": 718, "logp_yes": 0.0, "logp_no": -25.0, "p_yes_norm": 0.999999999986112, "mass_yes_no": 1.000000000013888, "seconds": 0.1}
+{"case_id": "pilot_50_0020", "label": "failure", "n_tokens": 706, "logp_yes": -8.750158309936523, "logp_no": -0.00015841660206206143, "p_yes_norm": 0.00015843623599953396, "mass_yes_no": 1.0000000321862843, "seconds": 0.2}
+{"case_id": "pilot_50_0021", "label": "success", "n_tokens": 419, "logp_yes": -2.264974000354414e-06, "logp_no": -13.000001907348633, "p_yes_norm": 0.9999977396748937, "mass_yes_no": 0.9999999953536605, "seconds": 0.1}
+{"case_id": "pilot_50_0022", "label": "failure", "n_tokens": 729, "logp_yes": -3.529750347137451, "logp_no": -0.029750416055321693, "p_yes_norm": 0.0293122327122782, "mass_yes_no": 1.0000000042374355, "seconds": 0.2}
+{"case_id": "pilot_50_0023", "label": "success", "n_tokens": 682, "logp_yes": 0.0, "logp_no": -23.5, "p_yes_norm": 0.9999999999377585, "mass_yes_no": 1.0000000000622415, "seconds": 0.1}
+{"case_id": "pilot_50_0024", "label": "failure", "n_tokens": 791, "logp_yes": 0.0, "logp_no": -20.0, "p_yes_norm": 0.9999999979388463, "mass_yes_no": 1.0000000020611537, "seconds": 0.2}
+{"case_id": "pilot_50_0025", "label": "success", "n_tokens": 1270, "logp_yes": 0.0, "logp_no": -21.5, "p_yes_norm": 0.9999999995400946, "mass_yes_no": 1.0000000004599054, "seconds": 0.2}
+{"case_id": "pilot_50_0026", "label": "failure", "n_tokens": 1135, "logp_yes": -22.25, "logp_no": 0.0, "p_yes_norm": 2.1724399346070674e-10, "mass_yes_no": 1.000000000217244, "seconds": 0.2}
+{"case_id": "pilot_50_0027", "label": "success", "n_tokens": 957, "logp_yes": -0.0004306104383431375, "logp_no": -7.750430583953857, "p_yes_norm": 0.9995694429072773, "mass_yes_no": 1.0000000393706996, "seconds": 0.2}
+{"case_id": "pilot_50_0028", "label": "failure", "n_tokens": 1206, "logp_yes": -2.3841855067985307e-07, "logp_no": -15.25, "p_yes_norm": 0.9999997617630333, "mass_yes_no": 0.9999999998184445, "seconds": 0.2}
+{"case_id": "pilot_50_0029", "label": "success", "n_tokens": 603, "logp_yes": 0.0, "logp_no": -18.5, "p_yes_norm": 0.9999999907625504, "mass_yes_no": 1.0000000092374497, "seconds": 0.1}
+{"case_id": "pilot_50_0030", "label": "failure", "n_tokens": 768, "logp_yes": 0.0, "logp_no": -21.0, "p_yes_norm": 0.9999999992417439, "mass_yes_no": 1.0000000007582561, "seconds": 0.2}
+{"case_id": "pilot_50_0031", "label": "success", "n_tokens": 456, "logp_yes": -5.960462772236497e-07, "logp_no": -14.250000953674316, "p_yes_norm": 0.9999993524054333, "mass_yes_no": 1.0000000515485004, "seconds": 0.1}
+{"case_id": "pilot_50_0032", "label": "failure", "n_tokens": 857, "logp_yes": -0.10020658373832703, "logp_no": -2.3502066135406494, "p_yes_norm": 0.9046505376715775, "mass_yes_no": 0.9999999723367852, "seconds": 0.2}
+{"case_id": "pilot_50_0033", "label": "success", "n_tokens": 869, "logp_yes": -2.3841855067985307e-07, "logp_no": -15.5, "p_yes_norm": 0.999999814460854, "mass_yes_no": 0.999999947120614, "seconds": 0.2}
+{"case_id": "pilot_50_0034", "label": "failure", "n_tokens": 983, "logp_yes": -4.768370445162873e-07, "logp_no": -14.5, "p_yes_norm": 0.9999994956523514, "mass_yes_no": 1.0000000275107317, "seconds": 0.2}
+{"case_id": "pilot_50_0035", "label": "success", "n_tokens": 529, "logp_yes": -1.1920928244535389e-07, "logp_no": -15.75, "p_yes_norm": 0.9999998555019791, "mass_yes_no": 1.0000000252887493, "seconds": 0.1}
+{"case_id": "pilot_50_0036", "label": "failure", "n_tokens": 878, "logp_yes": -0.825939416885376, "logp_no": -0.575939416885376, "p_yes_norm": 0.43782349911420193, "mass_yes_no": 1.0000000029934677, "seconds": 0.2}
+{"case_id": "pilot_50_0037", "label": "success", "n_tokens": 445, "logp_yes": 0.0, "logp_no": -23.25, "p_yes_norm": 0.9999999999200804, "mass_yes_no": 1.0000000000799196, "seconds": 0.1}
+{"case_id": "pilot_50_0038", "label": "failure", "n_tokens": 586, "logp_yes": -9.7500581741333, "logp_no": -5.829164365422912e-05, "p_yes_norm": 5.8291272510567e-05, "mass_yes_no": 1.0000000013278587, "seconds": 0.1}
+{"case_id": "pilot_50_0039", "label": "success", "n_tokens": 1270, "logp_yes": 0.0, "logp_no": -20.5, "p_yes_norm": 0.9999999987498471, "mass_yes_no": 1.0000000012501529, "seconds": 0.2}
+{"case_id": "pilot_50_0040", "label": "failure", "n_tokens": 982, "logp_yes": 0.0, "logp_no": -19.0, "p_yes_norm": 0.9999999943972036, "mass_yes_no": 1.0000000056027964, "seconds": 0.2}
+{"case_id": "pilot_50_0041", "label": "success", "n_tokens": 1385, "logp_yes": 0.0, "logp_no": -19.75, "p_yes_norm": 0.9999999973534264, "mass_yes_no": 1.0000000026465736, "seconds": 0.3}
+{"case_id": "pilot_50_0042", "label": "failure", "n_tokens": 568, "logp_yes": -0.825939416885376, "logp_no": -0.575939416885376, "p_yes_norm": 0.43782349911420193, "mass_yes_no": 1.0000000029934677, "seconds": 0.1}
+{"case_id": "pilot_50_0043", "label": "success", "n_tokens": 553, "logp_yes": -2.264974000354414e-06, "logp_no": -13.000001907348633, "p_yes_norm": 0.9999977396748937, "mass_yes_no": 0.9999999953536605, "seconds": 0.1}
+{"case_id": "pilot_50_0044", "label": "failure", "n_tokens": 1718, "logp_yes": -0.006715348921716213, "logp_no": -5.006715297698975, "p_yes_norm": 0.9933071487351836, "mass_yes_no": 0.999999999910228, "seconds": 0.3}
+{"case_id": "pilot_50_0045", "label": "success", "n_tokens": 632, "logp_yes": -6.198863957251888e-06, "logp_no": -12.000005722045898, "p_yes_norm": 0.9999938558224681, "mass_yes_no": 0.9999999453324516, "seconds": 0.1}
+{"case_id": "pilot_50_0046", "label": "failure", "n_tokens": 1264, "logp_yes": -0.00026127262390218675, "logp_no": -8.250261306762695, "p_yes_norm": 0.9997388096898188, "mass_yes_no": 0.99999995180241, "seconds": 0.2}
+{"case_id": "pilot_50_0047", "label": "success", "n_tokens": 457, "logp_yes": -0.0015023384476080537, "logp_no": -6.501502513885498, "p_yes_norm": 0.9984988180062319, "mass_yes_no": 0.9999999714487824, "seconds": 0.1}
+{"case_id": "pilot_50_0048", "label": "failure", "n_tokens": 859, "logp_yes": 0.0, "logp_no": -18.5, "p_yes_norm": 0.9999999907625504, "mass_yes_no": 1.0000000092374497, "seconds": 0.2}
+{"case_id": "pilot_50_0049", "label": "success", "n_tokens": 615, "logp_yes": -2.578889846801758, "logp_no": -0.07888974994421005, "p_yes_norm": 0.07585817323116976, "mass_yes_no": 0.9999999770009029, "seconds": 0.1}
+{"case_id": "pilot_50_0050", "label": "failure", "n_tokens": 859, "logp_yes": -3.576278118089249e-07, "logp_no": -15.0, "p_yes_norm": 0.9999996940976638, "mass_yes_no": 0.9999999482745726, "seconds": 0.2}
+Loading weights:   0%|          | 0/443 [00:00<?, ?it/s]Loading weights: 100%|██████████| 443/443 [00:00<00:00, 5147.68it/s]
+{"case_id": "pilot_50_0001", "label": "success", "n_tokens": 359, "logp_yes": -7.2507100105285645, "logp_no": -0.0007098776986822486, "p_yes_norm": 0.0007096703049020563, "mass_yes_no": 1.0000000445413926, "seconds": 0.5}
+{"case_id": "pilot_50_0002", "label": "failure", "n_tokens": 971, "logp_yes": 0.0, "logp_no": -22.5, "p_yes_norm": 0.9999999998308102, "mass_yes_no": 1.0000000001691898, "seconds": 0.2}
+{"case_id": "pilot_50_0003", "label": "success", "n_tokens": 811, "logp_yes": 0.0, "logp_no": -21.0, "p_yes_norm": 0.9999999992417439, "mass_yes_no": 1.0000000007582561, "seconds": 0.2}
+{"case_id": "pilot_50_0004", "label": "failure", "n_tokens": 874, "logp_yes": 0.0, "logp_no": -17.75, "p_yes_norm": 0.9999999804443193, "mass_yes_no": 1.000000019555681, "seconds": 0.2}
+{"case_id": "pilot_50_0005", "label": "success", "n_tokens": 1087, "logp_yes": -15.5, "logp_no": -2.3841855067985307e-07, "p_yes_norm": 1.8553914607279396e-07, "mass_yes_no": 0.999999947120614, "seconds": 0.2}
+{"case_id": "pilot_50_0006", "label": "failure", "n_tokens": 812, "logp_yes": -1.0728830375228426e-06, "logp_no": -13.750000953674316, "p_yes_norm": 0.9999989322970027, "mass_yes_no": 0.9999999948205298, "seconds": 0.2}
+{"case_id": "pilot_50_0007", "label": "success", "n_tokens": 291, "logp_yes": 0.0, "logp_no": -21.75, "p_yes_norm": 0.9999999996418252, "mass_yes_no": 1.0000000003581748, "seconds": 0.1}
+{"case_id": "pilot_50_0008", "label": "failure", "n_tokens": 482, "logp_yes": -10.250035285949707, "logp_no": -3.540453326422721e-05, "p_yes_norm": 3.535625493426631e-05, "mass_yes_no": 0.9999999523467183, "seconds": 0.1}
+{"case_id": "pilot_50_0009", "label": "success", "n_tokens": 870, "logp_yes": -3.576278118089249e-07, "logp_no": -15.0, "p_yes_norm": 0.9999996940976638, "mass_yes_no": 0.9999999482745726, "seconds": 0.2}
+{"case_id": "pilot_50_0010", "label": "failure", "n_tokens": 502, "logp_yes": -3.773245334625244, "logp_no": -0.023245446383953094, "p_yes_norm": 0.02297737241894287, "mass_yes_no": 1.0000000205563935, "seconds": 0.1}
+{"case_id": "pilot_50_0011", "label": "success", "n_tokens": 356, "logp_yes": 0.0, "logp_no": -16.75, "p_yes_norm": 0.9999999468421502, "mass_yes_no": 1.0000000531578526, "seconds": 0.1}
+{"case_id": "pilot_50_0012", "label": "failure", "n_tokens": 624, "logp_yes": -1.7881377516459906e-06, "logp_no": -13.250001907348633, "p_yes_norm": 0.9999982396569966, "mass_yes_no": 0.9999999722068016, "seconds": 0.1}
+{"case_id": "pilot_50_0013", "label": "success", "n_tokens": 604, "logp_yes": 0.0, "logp_no": -25.25, "p_yes_norm": 0.999999999989184, "mass_yes_no": 1.000000000010816, "seconds": 0.1}
+{"case_id": "pilot_50_0014", "label": "failure", "n_tokens": 571, "logp_yes": -14.75, "logp_no": -3.576278118089249e-07, "p_yes_norm": 3.9278634073828347e-07, "mass_yes_no": 1.0000000351586067, "seconds": 0.1}
+{"case_id": "pilot_50_0015", "label": "success", "n_tokens": 965, "logp_yes": -8.344646857949556e-07, "logp_no": -14.000000953674316, "p_yes_norm": 0.9999991684720715, "mass_yes_no": 0.9999999970635884, "seconds": 0.2}
+{"case_id": "pilot_50_0016", "label": "failure", "n_tokens": 873, "logp_yes": 0.0, "logp_no": -22.25, "p_yes_norm": 0.999999999782756, "mass_yes_no": 1.000000000217244, "seconds": 0.2}
+{"case_id": "pilot_50_0017", "label": "success", "n_tokens": 633, "logp_yes": 0.0, "logp_no": -22.0, "p_yes_norm": 0.9999999997210531, "mass_yes_no": 1.0000000002789469, "seconds": 0.1}
+{"case_id": "pilot_50_0018", "label": "failure", "n_tokens": 496, "logp_yes": -30.25, "logp_no": 0.0, "p_yes_norm": 7.287724095819161e-14, "mass_yes_no": 1.0000000000000728, "seconds": 0.1}
+{"case_id": "pilot_50_0019", "label": "success", "n_tokens": 624, "logp_yes": 0.0, "logp_no": -25.75, "p_yes_norm": 0.9999999999934397, "mass_yes_no": 1.0000000000065603, "seconds": 0.1}
+{"case_id": "pilot_50_0020", "label": "failure", "n_tokens": 619, "logp_yes": -6.251928806304932, "logp_no": -0.0019286142196506262, "p_yes_norm": 0.001926734293943221, "mass_yes_no": 0.9999999786144717, "seconds": 0.1}
+{"case_id": "pilot_50_0021", "label": "success", "n_tokens": 363, "logp_yes": -4.768370445162873e-07, "logp_no": -14.5, "p_yes_norm": 0.9999994956523514, "mass_yes_no": 1.0000000275107317, "seconds": 0.1}
+{"case_id": "pilot_50_0022", "label": "failure", "n_tokens": 626, "logp_yes": -10.000045776367188, "logp_no": -4.541770613286644e-05, "p_yes_norm": 4.5397852420729034e-05, "mass_yes_no": 0.9999999811768018, "seconds": 0.1}
+{"case_id": "pilot_50_0023", "label": "success", "n_tokens": 590, "logp_yes": 0.0, "logp_no": -24.75, "p_yes_norm": 0.9999999999821676, "mass_yes_no": 1.0000000000178324, "seconds": 0.1}
+{"case_id": "pilot_50_0024", "label": "failure", "n_tokens": 691, "logp_yes": 0.0, "logp_no": -21.75, "p_yes_norm": 0.9999999996418252, "mass_yes_no": 1.0000000003581748, "seconds": 0.1}
+{"case_id": "pilot_50_0025", "label": "success", "n_tokens": 1151, "logp_yes": 0.0, "logp_no": -22.75, "p_yes_norm": 0.999999999868235, "mass_yes_no": 1.000000000131765, "seconds": 0.2}
+{"case_id": "pilot_50_0026", "label": "failure", "n_tokens": 1042, "logp_yes": -18.75, "logp_no": 0.0, "p_yes_norm": 7.194132978569834e-09, "mass_yes_no": 1.000000007194133, "seconds": 0.2}
+{"case_id": "pilot_50_0027", "label": "success", "n_tokens": 844, "logp_yes": -0.00026127262390218675, "logp_no": -8.250261306762695, "p_yes_norm": 0.9997388096898188, "mass_yes_no": 0.99999995180241, "seconds": 0.2}
+{"case_id": "pilot_50_0028", "label": "failure", "n_tokens": 1093, "logp_yes": 0.0, "logp_no": -18.25, "p_yes_norm": 0.99999998813888, "mass_yes_no": 1.00000001186112, "seconds": 0.2}
+{"case_id": "pilot_50_0029", "label": "success", "n_tokens": 547, "logp_yes": -3.576278118089249e-07, "logp_no": -14.75, "p_yes_norm": 0.9999996072136592, "mass_yes_no": 1.0000000351586067, "seconds": 0.1}
+{"case_id": "pilot_50_0030", "label": "failure", "n_tokens": 657, "logp_yes": 0.0, "logp_no": -23.5, "p_yes_norm": 0.9999999999377585, "mass_yes_no": 1.0000000000622415, "seconds": 0.1}
+{"case_id": "pilot_50_0031", "label": "success", "n_tokens": 375, "logp_yes": -3.6954811548639555e-06, "logp_no": -12.500003814697266, "p_yes_norm": 0.9999962733611601, "mass_yes_no": 1.0000000311646295, "seconds": 0.1}
+{"case_id": "pilot_50_0032", "label": "failure", "n_tokens": 766, "logp_yes": -1.1368709802627563, "logp_no": -0.38687101006507874, "p_yes_norm": 0.3208213073183839, "mass_yes_no": 1.0000000056110412, "seconds": 0.2}
+{"case_id": "pilot_50_0033", "label": "success", "n_tokens": 803, "logp_yes": 0.0, "logp_no": -18.25, "p_yes_norm": 0.99999998813888, "mass_yes_no": 1.00000001186112, "seconds": 0.2}
+{"case_id": "pilot_50_0034", "label": "failure", "n_tokens": 862, "logp_yes": -8.344646857949556e-07, "logp_no": -14.000000953674316, "p_yes_norm": 0.9999991684720715, "mass_yes_no": 0.9999999970635884, "seconds": 0.2}
+{"case_id": "pilot_50_0035", "label": "success", "n_tokens": 441, "logp_yes": 0.0, "logp_no": -17.0, "p_yes_norm": 0.9999999586006244, "mass_yes_no": 1.0000000413993773, "seconds": 0.1}
+{"case_id": "pilot_50_0036", "label": "failure", "n_tokens": 744, "logp_yes": -3.0485873222351074, "logp_no": -0.04858732968568802, "p_yes_norm": 0.047425873514159125, "mass_yes_no": 1.0000000222414045, "seconds": 0.2}
+{"case_id": "pilot_50_0037", "label": "success", "n_tokens": 368, "logp_yes": 0.0, "logp_no": -23.25, "p_yes_norm": 0.9999999999200804, "mass_yes_no": 1.0000000000799196, "seconds": 0.1}
+{"case_id": "pilot_50_0038", "label": "failure", "n_tokens": 523, "logp_yes": -10.500027656555176, "logp_no": -2.753696753643453e-05, "p_yes_norm": 2.753568782174604e-05, "mass_yes_no": 0.9999999990993993, "seconds": 0.1}
+{"case_id": "pilot_50_0039", "label": "success", "n_tokens": 1182, "logp_yes": 0.0, "logp_no": -21.75, "p_yes_norm": 0.9999999996418252, "mass_yes_no": 1.0000000003581748, "seconds": 0.2}
+{"case_id": "pilot_50_0040", "label": "failure", "n_tokens": 860, "logp_yes": 0.0, "logp_no": -20.0, "p_yes_norm": 0.9999999979388463, "mass_yes_no": 1.0000000020611537, "seconds": 0.2}
+{"case_id": "pilot_50_0041", "label": "success", "n_tokens": 1238, "logp_yes": 0.0, "logp_no": -20.75, "p_yes_norm": 0.9999999990263799, "mass_yes_no": 1.00000000097362, "seconds": 0.2}
+{"case_id": "pilot_50_0042", "label": "failure", "n_tokens": 509, "logp_yes": -0.03804141283035278, "logp_no": -3.288041353225708, "p_yes_norm": 0.9626731105140616, "mass_yes_no": 0.999999961082287, "seconds": 0.1}
+{"case_id": "pilot_50_0043", "label": "success", "n_tokens": 482, "logp_yes": -0.00033539868309162557, "logp_no": -8.000335693359375, "p_yes_norm": 0.99966464996832, "mass_yes_no": 1.0000000075909845, "seconds": 0.1}
+{"case_id": "pilot_50_0044", "label": "failure", "n_tokens": 1583, "logp_yes": -0.0019286142196506262, "logp_no": -6.251928806304932, "p_yes_norm": 0.9980732657060568, "mass_yes_no": 0.9999999786144717, "seconds": 0.3}
+{"case_id": "pilot_50_0045", "label": "success", "n_tokens": 558, "logp_yes": -1.7881377516459906e-06, "logp_no": -13.250001907348633, "p_yes_norm": 0.9999982396569966, "mass_yes_no": 0.9999999722068016, "seconds": 0.1}
+{"case_id": "pilot_50_0046", "label": "failure", "n_tokens": 1125, "logp_yes": -0.07888974994421005, "logp_no": -2.578889846801758, "p_yes_norm": 0.9241418267688303, "mass_yes_no": 0.9999999770009029, "seconds": 0.2}
+{"case_id": "pilot_50_0047", "label": "success", "n_tokens": 384, "logp_yes": -0.07888974994421005, "logp_no": -2.578889846801758, "p_yes_norm": 0.9241418267688303, "mass_yes_no": 0.9999999770009029, "seconds": 0.1}
+{"case_id": "pilot_50_0048", "label": "failure", "n_tokens": 754, "logp_yes": 0.0, "logp_no": -20.75, "p_yes_norm": 0.9999999990263799, "mass_yes_no": 1.00000000097362, "seconds": 0.2}
+{"case_id": "pilot_50_0049", "label": "success", "n_tokens": 561, "logp_yes": -0.029750416055321693, "logp_no": -3.529750347137451, "p_yes_norm": 0.9706877672877219, "mass_yes_no": 1.0000000042374355, "seconds": 0.1}
+{"case_id": "pilot_50_0050", "label": "failure", "n_tokens": 743, "logp_yes": -3.576278118089249e-07, "logp_no": -14.75, "p_yes_norm": 0.9999996072136592, "mass_yes_no": 1.0000000351586067, "seconds": 0.2}
+Loading weights:   0%|          | 0/443 [00:00<?, ?it/s]Loading weights: 100%|██████████| 443/443 [00:00<00:00, 5007.78it/s]
+batch 1: 8 traces in 18s
+batch 2: 8 traces in 43s
+batch 3: 8 traces in 57s
+batch 4: 8 traces in 25s
+batch 5: 8 traces in 36s
+batch 6: 8 traces in 52s
+batch 7: 2 traces in 18s
+Loading weights:   0%|          | 0/443 [00:00<?, ?it/s]Loading weights: 100%|██████████| 443/443 [00:00<00:00, 4853.38it/s]
+batch 1: 8 traces in 76s
+batch 2: 8 traces in 59s
+batch 3: 8 traces in 45s
+batch 4: 8 traces in 101s
+batch 5: 8 traces in 73s
+batch 6: 8 traces in 76s
+batch 7: 2 traces in 13s
+ALLDONE

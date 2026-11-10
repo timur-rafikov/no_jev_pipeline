@@ -1,0 +1,35 @@
+{
+  "case": "v4_holdout8_20261027_0008",
+  "task_id": "multi_turn_base_118",
+  "source_gold": "failure",
+  "original_tool_message": {
+    "content": "{\"watchlist\": [\"TSLA\", \"GOOG\"]}",
+    "id": "m0003",
+    "role": "tool"
+  },
+  "score_replay_execution": [
+    {
+      "model": [
+        [
+          "{\"watchlist\": [\"NVDA\", \"TSLA\", \"GOOG\"]}"
+        ]
+      ],
+      "ground_truth": [
+        "{\"watchlist\": [\"NVDA\", \"TSLA\", \"GOOG\"]}"
+      ]
+    },
+    {
+      "model": [
+        [
+          "{\"status\": \"Stock TSLA removed from watchlist successfully.\"}"
+        ]
+      ],
+      "ground_truth": [
+        "{\"status\": \"Stock NVDA removed from watchlist successfully.\"}"
+      ]
+    }
+  ],
+  "score_error": "multi_turn:instance_state_mismatch",
+  "conclusion": "Original observed first symbol is TSLA. Scorer replay begins with NVDA, TSLA, GOOG and expects removal of NVDA. These are different observations; the benchmark failure is not a verified outcome for the displayed trace. Keep quarantined, do not silently relabel.",
+  "original_raw_hash": "eb42a0f5288c46c28f51fa61792d79f5378587f1d745719894e818cf0fb2ba86"
+}

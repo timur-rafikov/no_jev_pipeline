@@ -1,0 +1,56 @@
+{
+  "protocol": "no-jev-edit-review-v3",
+  "selected": 8,
+  "real_completed": 6,
+  "statuses": {
+    "accepted": 3,
+    "rejected": 2,
+    "quarantined": 1,
+    "budget_deferred": 1,
+    "not_started_budget": 1
+  },
+  "accepted_families": 3,
+  "accepted_variants": 15,
+  "candidate_variants": 20,
+  "Jev_calls": 0,
+  "cohorts": {
+    "hash_sample_new_to_current_pilot": {
+      "accepted": 1,
+      "rejected": 1,
+      "budget_deferred": 1,
+      "not_started_budget": 1
+    },
+    "task_regression_different_snapshot": {
+      "accepted": 2,
+      "rejected": 1,
+      "quarantined": 1
+    }
+  },
+  "historical_controls_completed": 6,
+  "historical_controls_passed": 6,
+  "v3_controls_completed": 3,
+  "v3_controls_passed": 3,
+  "control_type": "synthetic fixtures, not real-data yield",
+  "offline_distinct_tests_passed": 20,
+  "real_pipeline_cost_usd": 0.12345525,
+  "quality_controls_cost_usd": 0.05926125,
+  "cost_per_completed_real_trace_usd": 0.020575875,
+  "cost_per_accepted_family_in_this_pilot_usd": 0.04115175,
+  "accounting": {
+    "budget_usd": 0.211952776,
+    "actual_usd": 0.1827165,
+    "unresolved_reserved_usd": 0,
+    "remaining_usd": 0.029236276000000005,
+    "attempts": 21
+  },
+  "total_with_previous_050_spend_usd": 0.470763724,
+  "this_revision_cost_usd": 0.018002249999999997,
+  "no_human_gold_accuracy_claim": true,
+  "no_direct_old_new_comparison": true,
+  "judge_experiment_run": false,
+  "target_judge_context_token_check": "not_configured_in_rebuilt_workspace",
+  "repair_path_tested": "mock test only; no paid repair fit remaining budget",
+  "v3_validation": "Historical real reviews replayed under v3 decisions; v3 prompt tested on focused synthetic fixtures only.",
+  "v3_real_live_reviews": 0,
+  "caveat": "No new real-data validation of v3 prompts. No accuracy or recall estimate."
+}

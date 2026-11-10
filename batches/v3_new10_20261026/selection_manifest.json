@@ -1,0 +1,111 @@
+{
+  "protocol": {
+    "protocol": "no-jev-edit-review-v3",
+    "code_hash": "64e6586bbf3fb2458a30fdfba7745ba397e413bc6d3e95449f8dc61d42049d4b",
+    "policy_hash": "a5d64f9bd89d5678c94ec27fc91d1bf5450c983cd1d410305acc531366f442a6",
+    "generation_prompt_hash": "e4bc7906a7ec003afc6d5824639585b0b21e75f6e42b34c7c5a838df602c6416",
+    "review_prompt_hash": "78bff8b1f59e8cdc58ac73b8b75ee7c2243adec33897804b67c4f48fc65b4b4f",
+    "generator": "google/gemini-3.8-flash",
+    "reviewer": "openai/gpt-5.4-mini"
+  },
+  "seed": "no-jev-v3-new10-20261026",
+  "source_commit": "cadd76a8dc62984e7bf15ecaf358f070bae745cc",
+  "selection": "First 10 distinct task IDs in sha256(seed|execution_id) order; same <=36000-byte context scope as previous pilot.",
+  "excluded_task_ids": [
+    "multi_turn_base_100",
+    "multi_turn_base_12",
+    "multi_turn_base_122",
+    "multi_turn_base_123",
+    "multi_turn_base_15",
+    "multi_turn_base_158",
+    "multi_turn_base_163",
+    "multi_turn_base_179",
+    "multi_turn_base_194",
+    "multi_turn_base_197",
+    "multi_turn_base_27",
+    "multi_turn_base_41",
+    "multi_turn_base_46",
+    "multi_turn_base_6",
+    "multi_turn_base_82",
+    "multi_turn_base_99"
+  ],
+  "excluded_previously_selected_even_if_unprocessed": true,
+  "gold_used_for_selection": false,
+  "semantic_screening": false,
+  "lexical_screening": false,
+  "structurally_eligible_executions": 501,
+  "size_eligible_unseen_executions": 95,
+  "novelty_scope": "No task overlap with currently available selection and documented historical task exclusions; unavailable earlier archives cannot be checked.",
+  "selected": [
+    {
+      "case_id": "v3_new10_01",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_29",
+      "task_id": "multi_turn_base_29",
+      "source_hash": "54e99b33a8d916a298ba1ebca4144a37fe20763bca8b2552888912b4efa9554d",
+      "message_bytes": 25626
+    },
+    {
+      "case_id": "v3_new10_02",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_130",
+      "task_id": "multi_turn_base_130",
+      "source_hash": "8954a671630c00541ad76e59cb573497e60912476982f6334645b21d31e4faf2",
+      "message_bytes": 29879
+    },
+    {
+      "case_id": "v3_new10_03",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_128",
+      "task_id": "multi_turn_base_128",
+      "source_hash": "ba425a241fad7a607253c12e3c1a46ea403488f16889352670111daae563eb2d",
+      "message_bytes": 31474
+    },
+    {
+      "case_id": "v3_new10_04",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_107",
+      "task_id": "multi_turn_base_107",
+      "source_hash": "eef7b391f3b6693af1469c554e2109076f1d564dce096cddee45f59c4fc1d296",
+      "message_bytes": 30841
+    },
+    {
+      "case_id": "v3_new10_05",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_50",
+      "task_id": "multi_turn_base_50",
+      "source_hash": "1c51795b3023bc8a86594ef9de15f7bbeb22520dc4792f712d7df9d7bef9f2e4",
+      "message_bytes": 34424
+    },
+    {
+      "case_id": "v3_new10_06",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_104",
+      "task_id": "multi_turn_base_104",
+      "source_hash": "69319c4f51ff109e174475cb5a481bfc2e781a85305fd191a17e5e08c819690f",
+      "message_bytes": 28280
+    },
+    {
+      "case_id": "v3_new10_07",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_93",
+      "task_id": "multi_turn_base_93",
+      "source_hash": "e34bbb486454c556d43d099c329197971f656a8c4f449a3add736e0ff048fe3a",
+      "message_bytes": 35962
+    },
+    {
+      "case_id": "v3_new10_08",
+      "source_id": "gpt-4.1-2025-04-14::multi_turn_base_84",
+      "task_id": "multi_turn_base_84",
+      "source_hash": "f2868c5e8a1f2e8f6dcc4e33a47de15dd581c2700e29ca5f01a8bf10c95fefcf",
+      "message_bytes": 35570
+    },
+    {
+      "case_id": "v3_new10_09",
+      "source_id": "DeepSeek-V3.2-Exp::multi_turn_base_127",
+      "task_id": "multi_turn_base_127",
+      "source_hash": "251e96e1d7f04006b87582b6ab80fd1fbda17a73946024945623d1eb4bf3adca",
+      "message_bytes": 28474
+    },
+    {
+      "case_id": "v3_new10_10",
+      "source_id": "Qwen_Qwen3-235B-A22B-Instruct-2507::multi_turn_base_126",
+      "task_id": "multi_turn_base_126",
+      "source_hash": "88cbaa3cf9892683c23dc3665dfcb3dddd475bbe7b863c034da9a7e175848ac6",
+      "message_bytes": 29452
+    }
+  ]
+}

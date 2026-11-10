@@ -1,0 +1,21 @@
+{
+  "case_id": "v5_fresh16_20261027_0004",
+  "source_id": "gpt-4.1-2025-04-14::multi_turn_base_143",
+  "task_id": "multi_turn_base_143",
+  "source_hash": "29b53e49bcb0b9e6b5f6f36cbfc194e4a8f10ff144eaff7cca682cfe42682eb0",
+  "protocol": "no-jev-edit-review-v5.5",
+  "status": "rejected",
+  "generation": {
+    "deletion": null,
+    "reason": "The last assistant message contains only tool calls and no prose message or retrospective completion claims to delete."
+  },
+  "generation_request": "49520d5e8951f8e64818f00e49ceddefcbfd4f12bd64e03248741ce7055ec96e",
+  "family": null,
+  "decision": {
+    "status": "rejected",
+    "reasons": [
+      "no_candidate"
+    ],
+    "label_policy": "two-blind-visible-trace-reviews-v3"
+  }
+}

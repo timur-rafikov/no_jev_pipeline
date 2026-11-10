@@ -1,0 +1,90 @@
+{
+  "status": "completed_with_validation_errors",
+  "selected": 10,
+  "paid_calls": 0,
+  "current_accounting": {
+    "budget_usd": 0.211952776,
+    "actual_usd": 0.1827165,
+    "unresolved_reserved_usd": 0,
+    "remaining_usd": 0.029236276000000005,
+    "attempts": 21
+  },
+  "expected_initial_run_usd_from_six_prior_records": 0.20575875,
+  "estimate_is_not_a_quote": true,
+  "cost_reserves": [
+    {
+      "case_id": "v3_new10_01",
+      "generation_reserve_usd": 0.048059550000000006,
+      "review_reserve_usd": 0.0522144,
+      "initial_pair_reserve_usd": 0.10027395
+    },
+    {
+      "case_id": "v3_new10_02",
+      "generation_reserve_usd": 0.052661936250000006,
+      "review_reserve_usd": 0.05642043750000001,
+      "initial_pair_reserve_usd": 0.10908237375000002
+    },
+    {
+      "case_id": "v3_new10_03",
+      "generation_reserve_usd": 0.054156217500000006,
+      "review_reserve_usd": 0.05816790000000001,
+      "initial_pair_reserve_usd": 0.11232411750000001
+    },
+    {
+      "case_id": "v3_new10_04",
+      "generation_reserve_usd": 0.053513460000000006,
+      "review_reserve_usd": 0.0574812,
+      "initial_pair_reserve_usd": 0.11099466000000001
+    },
+    {
+      "case_id": "v3_new10_05",
+      "generation_reserve_usd": 0.05701657500000001,
+      "review_reserve_usd": 0.0604674,
+      "initial_pair_reserve_usd": 0.117483975
+    },
+    {
+      "case_id": "v3_new10_06",
+      "generation_reserve_usd": 0.05100739875,
+      "review_reserve_usd": 0.054905287500000004,
+      "initial_pair_reserve_usd": 0.10591268625
+    },
+    {
+      "case_id": "v3_new10_07",
+      "generation_reserve_usd": 0.05855330250000001,
+      "review_reserve_usd": 0.061930575000000015,
+      "initial_pair_reserve_usd": 0.12048387750000003
+    },
+    {
+      "case_id": "v3_new10_08",
+      "generation_reserve_usd": 0.05820680250000001,
+      "review_reserve_usd": 0.061349400000000005,
+      "initial_pair_reserve_usd": 0.11955620250000001
+    },
+    {
+      "case_id": "v3_new10_09",
+      "generation_reserve_usd": 0.05122222875,
+      "review_reserve_usd": 0.055317937500000004,
+      "initial_pair_reserve_usd": 0.10654016625000001
+    },
+    {
+      "case_id": "v3_new10_10",
+      "generation_reserve_usd": 0.052210620000000006,
+      "review_reserve_usd": 0.056156625,
+      "initial_pair_reserve_usd": 0.108367245
+    }
+  ],
+  "sum_initial_pair_upper_reserves_usd": 1.11101925375,
+  "cheapest_pair_fits_current_budget": false,
+  "quality_audit": "Assistant reads all ten original traces and actual edits without model verdicts first; then compares against accepted/rejected/quarantined decisions. No extra paid LLM calls planned for this audit.",
+  "pipeline_fixed_during_pilot": true,
+  "existing_budget_unchanged": true,
+  "authorization": "AUTHORIZATION.json",
+  "accounting_after_authorization": {
+    "budget_usd": 0.711952776,
+    "actual_usd": 0.1827165,
+    "unresolved_reserved_usd": 0,
+    "remaining_usd": 0.529236276,
+    "attempts": 21
+  },
+  "final_summary": "FINAL_SUMMARY.json"
+}

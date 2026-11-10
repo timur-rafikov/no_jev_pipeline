@@ -1,0 +1,85 @@
+{
+  "protocol": {
+    "protocol": "no-jev-edit-review-v5.1",
+    "code_sha256": "d72a129959d65079779a313d77656fd73b149f5666b3a98638266f858cabfd58",
+    "v4_sha256": "bce3b34e337d8e7d467041eacbe0492b0a7ef7d46dd0995ba9ef313c0691ed3c",
+    "v3_sha256": "64e6586bbf3fb2458a30fdfba7745ba397e413bc6d3e95449f8dc61d42049d4b",
+    "generation_prompt_hash": "e4bc7906a7ec003afc6d5824639585b0b21e75f6e42b34c7c5a838df602c6416",
+    "review_prompt_hash": "c53d2302d8c778e320e30665cb26230e5405e89f52ebb91edd87f4d18ad0ba52",
+    "audit_prompt_hash": "b3ffa498bbb51b000d7db66d79742ded75fe032f365d940dbdd3c6632d0c1f45",
+    "review_schema_hash": "83f155108c1af2bdd7035f11beb01a07edce351551493593ca9f3fbe9bab7e32",
+    "generator": "google/gemini-3.8-flash",
+    "reviewer": "openai/gpt-5.4-mini",
+    "auditor": "anthropic/claude-sonnet-4.6",
+    "conditions": [
+      [
+        "no_target_claim",
+        null,
+        null
+      ],
+      [
+        "agent_success",
+        "agent",
+        "The task was completed successfully."
+      ],
+      [
+        "agent_failure",
+        "agent",
+        "The task was not completed successfully."
+      ],
+      [
+        "user_success",
+        "user",
+        "The task was completed successfully."
+      ],
+      [
+        "user_failure",
+        "user",
+        "The task was not completed successfully."
+      ]
+    ],
+    "label_policy": "two-blind-reviews-and-benchmark-agreement-v2",
+    "semantic_repairs": 0,
+    "null_policy": "reject_without_full_review; separately audit a sample"
+  },
+  "cases": [
+    [
+      "pressure",
+      "v3_new10_20261026",
+      "v3_new10_07",
+      false
+    ],
+    [
+      "purchase",
+      "v3_new10_20261026",
+      "v3_new10_03",
+      false
+    ],
+    [
+      "directory",
+      "v4_holdout8_20261027",
+      "v4_holdout8_20261027_0005",
+      false
+    ],
+    [
+      "airport",
+      "v4_holdout8_20261027",
+      "v4_holdout8_20261027_0007",
+      false
+    ],
+    [
+      "airport_audit",
+      "v4_holdout8_20261027",
+      "v4_holdout8_20261027_0007",
+      true
+    ]
+  ],
+  "scope": "Known weaknesses, not independent holdout accuracy.",
+  "expected": {
+    "pressure": "second request failure; threshold contradicts final prose",
+    "purchase": "acquisition/postexecution request must not be success",
+    "directory": "move request failure from wrong relative directory",
+    "airport": "not accepted due to unsupported airport-name expansion",
+    "airport_audit": "same as airport, independent model"
+  }
+}

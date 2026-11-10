@@ -1,0 +1,2 @@
+# Optional for a tighter, empirically calibrated reservation. Byte fallback remains available.
+tiktoken==0.14.0

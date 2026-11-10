@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-10-27T19:28:25.409968+00:00",
+  "provider_daily_usd": 1.15947075,
+  "local_daily_usd": 1.15947075,
+  "provider_weekly_usd": 1.5372321,
+  "local_shared_ledger_usd": 1.5372321,
+  "daily_match": true,
+  "weekly_match": true,
+  "historical_unknown_reserve_retained_usd": 0.0495684
+}

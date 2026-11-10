@@ -1,0 +1,4 @@
+.git
+.venv*
+baseline_results.jsonl
+baseline_run.log
